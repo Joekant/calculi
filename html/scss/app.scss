@@ -51,8 +51,8 @@ $em-base : 16 !default;
 }
 
 /*Global Variables*/
-$font-family : Open Sans;
-$font-weight : 300;
+$font-family : Lato;
+$font-weight : 400;
 
 html, body {
 	background-color: $bg-color;
@@ -72,6 +72,9 @@ h1, h2, h3, h4, h5, h6, p, label,a,span {
 	color:white;
 	margin:0;
 	padding:15px 40px;
+	text-transform: uppercase;
+	letter-spacing: 1.1px;
+
 }
 
 /* -----------------------------------------
@@ -100,29 +103,28 @@ h1, h2, h3, h4, h5, h6, p, label,a,span {
 	margin-top:60px;
 }
 
-
-
 .secondary-bg {
 	background-color:$secondary-color;
 }
 
-header {
-	
+header {	
 	background-color:$topbar-color;
-	height:90px;
-	padding-top:10px;
+	min-height:90px;
+	padding-top:15px;
 	width:100%;
 	
 	img {
-		width:60px;
+		width: 170px
 	}
 
 	nav {
 		padding-top:20px;
+		float: right;
 		
 		a {
 			color:$secondary-color;
 			font-size:16px;
+			font-weight: 400;
 			margin-left:50px;
 			text-transform:uppercase;
 		}
@@ -134,8 +136,40 @@ main {
 }
 
 footer {
+
 	background-color:$secondary-color;
-	min-height:80px;
+	border-top:5px solid $primary-color;
+	color: $bg-color;
+
+	#copyright {
+		#social {
+			text-align: right;
+		}
+
+		#logo {
+			text-align: center;
+		}
+
+		#link {
+			text-align: left;
+			font-size: 0.8em;
+			text-transform: lowercase;
+		}
+
+	}
+
+	#testimonial {
+		font-style: italic;
+		padding-bottom: 30px;
+
+		img {
+			float: left;
+		}
+
+		#author {
+			color: $primary-color;
+		}
+	}
 }
 
 
@@ -171,8 +205,8 @@ footer {
 #main-user-number {
 	border-top:5px solid $primary-color;
 	border-bottom:5px solid $primary-color;
-	height:100px;
 	padding-top:13px;
+	padding-bottom:13px;
 	text-align: center;
 	
 	h2 {
