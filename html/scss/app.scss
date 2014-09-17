@@ -18,10 +18,12 @@ $topbar-color:#ffffff;
 
 $cyan:#32aebd;
 $orange:#ff6c60;
+$lightgrey:#565656;
 
 $p_color:#272727;
 $primary-color:#32aebd;
 $secondary-color:#293c4e;
+
 
 /* -----------------------------------------
    Shared Properties
@@ -67,6 +69,14 @@ h1, h2, h3, h4, h5, h6, p, label,a,span {
 	font-weight: $font-weight;
 }
 
+p {
+	text-align: justify;
+}
+
+a:hover {
+	color: $primary-color;
+}
+
 .button {
 	background-color:$primary-color;
 	color:white;
@@ -76,6 +86,12 @@ h1, h2, h3, h4, h5, h6, p, label,a,span {
 	letter-spacing: 1.1px;
 
 }
+
+/* -----------------------------------------
+   Form Styles
+----------------------------------------- */
+
+
 
 /* -----------------------------------------
    General Styles
@@ -103,6 +119,14 @@ h1, h2, h3, h4, h5, h6, p, label,a,span {
 	margin-top:60px;
 }
 
+.padding-top {
+	margin-top:30px;
+}
+
+.padding-bottom {
+	margin-top:30px;
+}
+
 .secondary-bg {
 	background-color:$secondary-color;
 }
@@ -128,6 +152,12 @@ header {
 			margin-left:50px;
 			text-transform:uppercase;
 		}
+		
+		#login {
+		color: $orange;
+
+
+		}
 	}
 
 }
@@ -136,31 +166,46 @@ main {
 }
 
 footer {
-
 	background-color:$secondary-color;
 	border-top:5px solid $primary-color;
 	color: $bg-color;
+	text-align: center;
+
+	img {
+		width: 70px;
+	}
+
+	#social {
+		margin-top: 35px;
+		text-align: right;	
+		text-transform: lowercase;	
+	}
+	
+	span {
+		color: $bg-color;
+		padding-top: 20px;
+	}
+	
+	#link {
+		margin-top: 35px;
+		text-transform: lowercase;	
+		text-align: left;
+	}
+
+		a {
+			margin-left: 20px;
+			color: $bg-color;
+		}
 
 	#copyright {
-		#social {
-			text-align: right;
-		}
-
-		#logo {
-			text-align: center;
-		}
-
-		#link {
-			text-align: left;
-			font-size: 0.8em;
-			text-transform: lowercase;
-		}
-
+		font-size: 0.8em;
+		margin-top: 15px;
+		text-transform: lowercase;
 	}
 
 	#testimonial {
 		font-style: italic;
-		padding-bottom: 30px;
+		padding-top: 20px;
 
 		img {
 			float: left;
@@ -180,19 +225,33 @@ footer {
 	background-color:$secondary-color;
 	border-top:5px solid $primary-color;
 	border-bottom:5px solid $primary-color;
-	height:360px;
 	padding-top:20px;
+	padding-bottom:20px;
+
 
 	h2 {
 		color:$primary_color;
 		padding-bottom:20px;
 		text-align: center;	
+		font-weight: 300
 	}
 
 	p {
-		color:white;
+		color: $bg-color;
 	}
+	
 
+	ul {
+		padding-left: 20px;
+		color: $primary-color;
+		
+		li {
+			list-style: disc;
+			span {
+				color: $bg-color;
+			}
+		}
+	}
 }
 
 #main-services {
@@ -200,6 +259,7 @@ footer {
 		color:$primary-color;
 		font-weight:500;
 	}
+
 }
 
 #main-user-number {
@@ -221,3 +281,73 @@ footer {
 	}
 }
 
+/* -----------------------------------------
+   Loginform
+----------------------------------------- */
+
+#login {
+	width: 300px;
+
+	img {
+		width: 120px;
+	}
+
+	h1 {
+		font-weight: 300;
+		text-transform: uppercase;
+		color: $lightgrey;
+	}
+
+	#loginbutton {
+		width: 100%;
+	}
+
+	#loginlinks {	
+		text-transform: lowercase;
+		font-size: 0.9em;
+		padding-top: 10px;
+
+		a {
+			color: $lightgrey;
+		}	
+
+		#helplink {
+			float: left;
+		}
+
+		#reglink {
+			float: right;
+		}
+	}
+
+
+	input[type=text],
+	input[type=password] {
+		padding: 10px;
+		border: none;
+		background-color: $bg-color;
+		border-bottom: 2px solid $lightgrey;
+		box-shadow: none;
+		color: $lightgrey;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+
+	}
+
+	input[type=text]:focus,
+	input[type=password]:focus,
+	 {
+		color: $primary-color;
+		padding: 10px;
+		border: none;
+		background-color: $bg-color;
+		border-bottom: 2px solid $primary-color;
+		box-shadow: none;
+	}
+
+
+
+
+
+
+}

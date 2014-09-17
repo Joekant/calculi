@@ -28,6 +28,12 @@ h1, h2, h3, h4, h5, h6, p, label, a, span {
   font-family: Lato;
   font-weight: 400; }
 
+p {
+  text-align: justify; }
+
+a:hover {
+  color: #32aebd; }
+
 .button {
   background-color: #32aebd;
   color: white;
@@ -36,6 +42,9 @@ h1, h2, h3, h4, h5, h6, p, label, a, span {
   text-transform: uppercase;
   letter-spacing: 1.1px; }
 
+/* -----------------------------------------
+   Form Styles
+----------------------------------------- */
 /* -----------------------------------------
    General Styles
 ----------------------------------------- */
@@ -56,6 +65,12 @@ h1, h2, h3, h4, h5, h6, p, label, a, span {
 .margin-top {
   margin-top: 60px; }
 
+.padding-top {
+  margin-top: 30px; }
+
+.padding-bottom {
+  margin-top: 30px; }
+
 .secondary-bg {
   background-color: #293c4e; }
 
@@ -75,6 +90,8 @@ header {
       font-weight: 400;
       margin-left: 50px;
       text-transform: uppercase; }
+    header nav #login {
+      color: #ff6c60; }
 
 main {
   width: 100%; }
@@ -82,18 +99,31 @@ main {
 footer {
   background-color: #293c4e;
   border-top: 5px solid #32aebd;
-  color: #f7f7f7; }
-  footer #copyright #social {
-    text-align: right; }
-  footer #copyright #logo {
-    text-align: center; }
-  footer #copyright #link {
-    text-align: left;
+  color: #f7f7f7;
+  text-align: center; }
+  footer img {
+    width: 70px; }
+  footer #social {
+    margin-top: 35px;
+    text-align: right;
+    text-transform: lowercase; }
+  footer span {
+    color: #f7f7f7;
+    padding-top: 20px; }
+  footer #link {
+    margin-top: 35px;
+    text-transform: lowercase;
+    text-align: left; }
+  footer a {
+    margin-left: 20px;
+    color: #f7f7f7; }
+  footer #copyright {
     font-size: 0.8em;
+    margin-top: 15px;
     text-transform: lowercase; }
   footer #testimonial {
     font-style: italic;
-    padding-bottom: 30px; }
+    padding-top: 20px; }
     footer #testimonial img {
       float: left; }
     footer #testimonial #author {
@@ -106,14 +136,22 @@ footer {
   background-color: #293c4e;
   border-top: 5px solid #32aebd;
   border-bottom: 5px solid #32aebd;
-  height: 360px;
-  padding-top: 20px; }
+  padding-top: 20px;
+  padding-bottom: 20px; }
   .main-slider h2 {
     color: #32aebd;
     padding-bottom: 20px;
-    text-align: center; }
+    text-align: center;
+    font-weight: 300; }
   .main-slider p {
-    color: white; }
+    color: #f7f7f7; }
+  .main-slider ul {
+    padding-left: 20px;
+    color: #32aebd; }
+    .main-slider ul li {
+      list-style: disc; }
+      .main-slider ul li span {
+        color: #f7f7f7; }
 
 #main-services h4 {
   color: #32aebd;
@@ -132,3 +170,45 @@ footer {
     color: white;
     font-weight: 300;
     line-height: 1; }
+
+/* -----------------------------------------
+   Loginform
+----------------------------------------- */
+#login {
+  width: 300px; }
+  #login img {
+    width: 120px; }
+  #login h1 {
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #565656; }
+  #login #loginbutton {
+    width: 100%; }
+  #login #loginlinks {
+    text-transform: lowercase;
+    font-size: 0.9em;
+    padding-top: 10px; }
+    #login #loginlinks a {
+      color: #565656; }
+    #login #loginlinks #helplink {
+      float: left; }
+    #login #loginlinks #reglink {
+      float: right; }
+  #login input[type=text],
+  #login input[type=password] {
+    padding: 10px;
+    border: none;
+    background-color: #f7f7f7;
+    border-bottom: 2px solid #565656;
+    box-shadow: none;
+    color: #565656;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+  #login input[type=text]:focus,
+  #login input[type=password]:focus {
+    color: #32aebd;
+    padding: 10px;
+    border: none;
+    background-color: #f7f7f7;
+    border-bottom: 2px solid #32aebd;
+    box-shadow: none; }
