@@ -18,6 +18,7 @@ $topbar-color:#ffffff;
 
 $cyan:#32aebd;
 $orange:#ff6c60;
+$green:#37d074;
 $lightgrey:#565656;
 
 $p_color:#272727;
@@ -77,7 +78,7 @@ a:hover {
 	color: $primary-color;
 }
 
-.button {
+button {
 	background-color:$primary-color;
 	color:white;
 	margin:0;
@@ -90,6 +91,7 @@ a:hover {
 /* -----------------------------------------
    Form Styles
 ----------------------------------------- */
+
 
 
 
@@ -113,6 +115,11 @@ a:hover {
 .half-padding {
 	padding-top:30px;
 	padding-bottom:30px;	
+}
+
+.half-margin {
+	margin-top:30px;
+	margin-bottom:30px;	
 }
 
 .margin-top {
@@ -175,28 +182,30 @@ footer {
 		width: 70px;
 	}
 
+
 	#social {
 		margin-top: 35px;
-		text-align: right;	
+		
 		text-transform: lowercase;	
 	}
-	
-	span {
-		color: $bg-color;
-		padding-top: 20px;
-	}
-	
+
 	#link {
 		margin-top: 35px;
-		text-transform: lowercase;	
-		text-align: left;
+		text-transform: lowercase;
+		padding-bottom: 20px;	
+		
 	}
 
 		a {
 			margin-left: 20px;
 			color: $bg-color;
 		}
-
+	
+	span {
+		color: $bg-color;
+		padding-top: 20px;
+	}
+	
 	#copyright {
 		font-size: 0.8em;
 		margin-top: 15px;
@@ -282,7 +291,7 @@ footer {
 }
 
 /* -----------------------------------------
-   Loginform
+   Login Styles
 ----------------------------------------- */
 
 #login {
@@ -300,6 +309,8 @@ footer {
 
 	#loginbutton {
 		width: 100%;
+		background-color: $primary-color;
+		text-transform: uppercase;
 	}
 
 	#loginlinks {	
@@ -344,10 +355,103 @@ footer {
 		border-bottom: 2px solid $primary-color;
 		box-shadow: none;
 	}
+}
 
+/* -----------------------------------------
+   Compare Styles
+----------------------------------------- */
 
+.container {
+	max-width:800px;
+	margin:0px auto;
+}
 
+.box {
+	width: 400px;
 
+	.icon,
+	.text, 
+	.value {
+		float: left;
+		padding: 15px;
+	}
 
+	.icon {
+		color: white;
+		background-color: $primary-color;
+		padding: 39px 20px
+	}
+
+	.text {
+		color: white;
+		background-color: $secondary-color;
+	}
+	
+	.value {
+		background-color: white;
+		color: $secondary-color;
+	}
 
 }
+
+.statistic {
+	float:right;
+}
+
+.item {
+	background-color: $secondary-color;
+	border-top: 4px solid $primary-color;
+	color: white;
+
+	.rating, 
+	.name,
+	.price,
+	.marker {	
+		padding: 10px 20px;
+	}
+
+	.rating {
+		background-color: $primary-color;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	.name {
+		text-transform: uppercase;
+	}
+
+	.price {
+		text-align: right;
+		color: $primary-color;
+	}
+
+	.marker {
+		text-align: right;
+	}
+}
+
+.collapsed {
+	background-color: white;
+	color: $secondary-color;
+	padding: 20px;
+	margin-bottom: 60px;
+	border-bottom: 5px solid $primary-color;
+
+	.buttons {
+		position: absolute;
+		padding-top: 25px;
+		margin-left: -35px;
+	}	
+
+	button {
+		font-size: 12px;
+		width: 120px;
+		padding: 10px 10px;
+	}
+
+	.green {
+		background-color: $green;
+	}
+}
+
+

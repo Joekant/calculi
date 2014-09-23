@@ -34,7 +34,7 @@ p {
 a:hover {
   color: #32aebd; }
 
-.button {
+button {
   background-color: #32aebd;
   color: white;
   margin: 0;
@@ -61,6 +61,10 @@ a:hover {
 .half-padding {
   padding-top: 30px;
   padding-bottom: 30px; }
+
+.half-margin {
+  margin-top: 30px;
+  margin-bottom: 30px; }
 
 .margin-top {
   margin-top: 60px; }
@@ -105,18 +109,17 @@ footer {
     width: 70px; }
   footer #social {
     margin-top: 35px;
-    text-align: right;
     text-transform: lowercase; }
-  footer span {
-    color: #f7f7f7;
-    padding-top: 20px; }
   footer #link {
     margin-top: 35px;
     text-transform: lowercase;
-    text-align: left; }
+    padding-bottom: 20px; }
   footer a {
     margin-left: 20px;
     color: #f7f7f7; }
+  footer span {
+    color: #f7f7f7;
+    padding-top: 20px; }
   footer #copyright {
     font-size: 0.8em;
     margin-top: 15px;
@@ -172,7 +175,7 @@ footer {
     line-height: 1; }
 
 /* -----------------------------------------
-   Loginform
+   Login Styles
 ----------------------------------------- */
 #login {
   width: 300px; }
@@ -183,7 +186,9 @@ footer {
     text-transform: uppercase;
     color: #565656; }
   #login #loginbutton {
-    width: 100%; }
+    width: 100%;
+    background-color: #32aebd;
+    text-transform: uppercase; }
   #login #loginlinks {
     text-transform: lowercase;
     font-size: 0.9em;
@@ -212,3 +217,69 @@ footer {
     background-color: #f7f7f7;
     border-bottom: 2px solid #32aebd;
     box-shadow: none; }
+
+/* -----------------------------------------
+   Compare Styles
+----------------------------------------- */
+.container {
+  max-width: 800px;
+  margin: 0px auto; }
+
+.box {
+  width: 400px; }
+  .box .icon,
+  .box .text,
+  .box .value {
+    float: left;
+    padding: 15px; }
+  .box .icon {
+    color: white;
+    background-color: #32aebd;
+    padding: 39px 20px; }
+  .box .text {
+    color: white;
+    background-color: #293c4e; }
+  .box .value {
+    background-color: white;
+    color: #293c4e; }
+
+.statistic {
+  float: right; }
+
+.item {
+  background-color: #293c4e;
+  border-top: 4px solid #32aebd;
+  color: white; }
+  .item .rating,
+  .item .name,
+  .item .price,
+  .item .marker {
+    padding: 10px 20px; }
+  .item .rating {
+    background-color: #32aebd;
+    text-align: center;
+    font-weight: bold; }
+  .item .name {
+    text-transform: uppercase; }
+  .item .price {
+    text-align: right;
+    color: #32aebd; }
+  .item .marker {
+    text-align: right; }
+
+.collapsed {
+  background-color: white;
+  color: #293c4e;
+  padding: 20px;
+  margin-bottom: 60px;
+  border-bottom: 5px solid #32aebd; }
+  .collapsed .buttons {
+    position: absolute;
+    padding-top: 25px;
+    margin-left: -35px; }
+  .collapsed button {
+    font-size: 12px;
+    width: 120px;
+    padding: 10px 10px; }
+  .collapsed .green {
+    background-color: #37d074; }
