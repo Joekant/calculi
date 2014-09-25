@@ -19,7 +19,10 @@ $topbar-color:#ffffff;
 $cyan:#32aebd;
 $orange:#ff6c60;
 $green:#37d074;
-$lightgrey:#565656;
+$red:#e85458;
+$yellow: #e8cb59;
+$darkgrey:#565656;
+$lightgrey:#afafaf;
 
 $p_color:#272727;
 $primary-color:#32aebd;
@@ -101,6 +104,51 @@ button {
 
 .orange-font {
 	color:$orange;
+}
+
+.green-font {
+	color:$green;
+}
+
+.dark-bg {
+	background-color: $secondary-color;
+	color: white;
+}
+
+.green-bg {
+	background-color: $green;
+	color: white;
+}
+
+.red-bg {
+	background-color: $red;
+	color: white;
+}
+
+.orange-bg {
+	background-color: $orange;
+	color: white;
+}
+
+.yellow-bg {
+	background-color: $yellow;
+	color: white;
+}
+
+.red-border {
+		border-top: 4px solid $red;
+}
+
+.green-border {
+	border-top: 4px solid $green;
+}
+
+.orange-border {
+	border-top: 4px solid $orange;
+}
+
+.yellow-border {
+	border-top: 4px solid $yellow;
 }
 
 .primary-color-font {
@@ -304,11 +352,10 @@ footer {
 	h1 {
 		font-weight: 300;
 		text-transform: uppercase;
-		color: $lightgrey;
+		color: $darkgrey;
 	}
 
 	#loginbutton {
-		width: 100%;
 		background-color: $primary-color;
 		text-transform: uppercase;
 	}
@@ -319,7 +366,7 @@ footer {
 		padding-top: 10px;
 
 		a {
-			color: $lightgrey;
+			color: $darkgrey;
 		}	
 
 		#helplink {
@@ -337,9 +384,9 @@ footer {
 		padding: 10px;
 		border: none;
 		background-color: $bg-color;
-		border-bottom: 2px solid $lightgrey;
+		border-bottom: 2px solid $darkgrey;
 		box-shadow: none;
-		color: $lightgrey;
+		color: $darkgrey;
 		letter-spacing: 2px;
 		text-transform: uppercase;
 
@@ -367,42 +414,39 @@ footer {
 }
 
 .box {
-	width: 400px;
-
-	.icon,
+	font-weight: 300;
 	.text, 
 	.value {
 		float: left;
 		padding: 15px;
 	}
 
-	.icon {
-		color: white;
-		background-color: $primary-color;
-		padding: 39px 20px
-	}
-
 	.text {
-		color: white;
-		background-color: $secondary-color;
+		border-left: 5px solid $primary-color;
 	}
 	
 	.value {
 		background-color: white;
-		color: $secondary-color;
-	}
 
+	}
 }
 
-.statistic {
-	float:right;
+.sort {
+margin-bottom: 30px;
+	.sortbuttons {
+		background-color: $lightgrey;
+		padding: 10px 20px;
+			a {
+				color: white;
+			}
+		}
+
+		:hover {
+			background-color: $darkgrey;
+		}
 }
 
 .item {
-	background-color: $secondary-color;
-	border-top: 4px solid $primary-color;
-	color: white;
-
 	.rating, 
 	.name,
 	.price,
@@ -411,13 +455,15 @@ footer {
 	}
 
 	.rating {
-		background-color: $primary-color;
 		text-align: center;
 		font-weight: bold;
+		letter-spacing: 2px;
+		font-size: 1.3em;
 	}
 
 	.name {
 		text-transform: uppercase;
+		font-weight: 300;
 	}
 
 	.price {
@@ -447,10 +493,6 @@ footer {
 		font-size: 12px;
 		width: 120px;
 		padding: 10px 10px;
-	}
-
-	.green {
-		background-color: $green;
 	}
 }
 
