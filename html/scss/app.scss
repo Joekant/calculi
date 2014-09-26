@@ -61,7 +61,10 @@ $font-family : Lato;
 $font-weight : 400;
 
 html, body {
-	background-color: $bg-color;
+	background: url("../img/bg_pattern.png") repeat;
+	font-family: $font-family;
+	font-weight: $font-weight;
+
 }
 
 
@@ -96,7 +99,30 @@ a:hover {
 ----------------------------------------- */
 
 
+input[type=text],
+input[type=email],
+input[type=password] {
+	padding: 10px;
+	border: none;
+	background: url("../img/bg_pattern.png") repeat;
+	border-bottom: 2px solid $darkgrey;
+	box-shadow: none;
+	color: $darkgrey;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
 
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+ {
+	color: $primary-color;
+	padding: 10px;
+	border: none;
+	background: url("../img/bg_pattern.png") repeat;
+	border-bottom: 2px solid $primary-color;
+	box-shadow: none;
+}
 
 /* -----------------------------------------
    General Styles
@@ -110,9 +136,13 @@ a:hover {
 	color:$green;
 }
 
+.primary-color-font {
+	color:$primary-color;
+}
+
 .dark-bg {
 	background-color: $secondary-color;
-	color: white;
+	color: $bg-color;
 }
 
 .green-bg {
@@ -151,10 +181,6 @@ a:hover {
 	border-top: 4px solid $yellow;
 }
 
-.primary-color-font {
-	color:$primary-color;
-}
-
 .full-padding {
 	padding-top:60px;
 	padding-bottom:60px;
@@ -182,19 +208,15 @@ a:hover {
 	margin-bottom:30px;
 }
 
-.secondary-bg {
-	background-color:$secondary-color;
-}
-
 .logo {
 	width: 150px
 }
 
 header {		
 
-	 background-color: $bg-color;
+	 background-color: transparent;
 	.top-bar {
-		background-color: $bg-color;
+		background-color: transparent;
 
 		img {
 			padding-top: 8px;
@@ -205,12 +227,11 @@ header {
 
 main {
 	width:100%;
+	min-height: 100%;
 }
 
 footer {
-	background-color:$secondary-color;
 	border-top:5px solid $primary-color;
-	color: $bg-color;
 	text-align: center;
 
 	img {
@@ -220,7 +241,6 @@ footer {
 
 	#social {
 		margin-top: 35px;
-		
 		text-transform: lowercase;	
 	}
 
@@ -346,13 +366,13 @@ footer {
 	text-align: center;
 	
 	h2 {
-		color:white;
+		color: $bg-color;
 		line-height:1;
 		font-size: 1.5em;
 	}
 
 	h5 {
-		color:white;
+		color: $bg-color;
 		font-weight:300;
 		line-height:1;
 		font-size: 1em;
@@ -364,7 +384,10 @@ footer {
 ----------------------------------------- */
 
 #login {
-	width: 300px;
+
+	.row {
+		width: 300px;
+	}
 
 	h1 {
 		font-weight: 300;
@@ -388,31 +411,6 @@ footer {
 		#reglink {
 			float: right;
 		}
-	}
-
-
-	input[type=text],
-	input[type=password] {
-		padding: 10px;
-		border: none;
-		background-color: $bg-color;
-		border-bottom: 2px solid $darkgrey;
-		box-shadow: none;
-		color: $darkgrey;
-		letter-spacing: 2px;
-		text-transform: uppercase;
-
-	}
-
-	input[type=text]:focus,
-	input[type=password]:focus,
-	 {
-		color: $primary-color;
-		padding: 10px;
-		border: none;
-		background-color: $bg-color;
-		border-bottom: 2px solid $primary-color;
-		box-shadow: none;
 	}
 }
 
@@ -480,7 +478,7 @@ margin-bottom: 30px;
 
 	.price {
 		text-align: right;
-		color: $primary-color;
+		font-weight: 200;
 	}
 
 	.marker {
@@ -505,6 +503,14 @@ margin-bottom: 30px;
 		font-size: 12px;
 		width: 120px;
 		padding: 10px 10px;
+	}
+}
+
+a.show {
+	color: white;
+
+	:hover {
+		color: $primary-color;
 	}
 }
 
@@ -549,3 +555,33 @@ aside {
 		text-transform: uppercase;
 	}
 }
+
+/* -----------------------------------------
+   Briefing Styles
+----------------------------------------- */
+
+#form-pagination {
+	.row {
+		width: 550px;
+	}
+}
+
+#briefing-form {
+	.row {
+		width: 500px;
+	}
+}
+
+.joyride-content-wrapper {
+	p {
+		color: white;
+		padding: 10px 0px;
+		font-size: 1em;
+		font-weight: 300;
+	}
+
+	h4 {
+		font-weight: 300;
+	}
+}
+
