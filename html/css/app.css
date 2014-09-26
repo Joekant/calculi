@@ -28,7 +28,7 @@ ul li {
 
 /* line 70, ../scss/app.scss */
 h1, h2, h3, h4, h5, h6, p, label, a, span {
-  color: #272727;
+  color: #565656;
   font-family: Lato;
   font-weight: 400; }
 
@@ -41,7 +41,7 @@ a:hover {
   color: #32aebd; }
 
 /* line 84, ../scss/app.scss */
-button {
+.button {
   background-color: #32aebd;
   color: white;
   margin: 0;
@@ -140,160 +140,174 @@ button {
   background-color: #293c4e; }
 
 /* line 189, ../scss/app.scss */
-header {
-  background-color: white;
-  min-height: 90px;
-  padding-top: 15px;
-  width: 100%; }
-  /* line 195, ../scss/app.scss */
-  header img {
-    width: 170px; }
-  /* line 199, ../scss/app.scss */
-  header nav {
-    padding-top: 20px;
-    float: right; }
-    /* line 203, ../scss/app.scss */
-    header nav a {
-      color: #293c4e;
-      font-size: 16px;
-      font-weight: 400;
-      margin-left: 50px;
-      text-transform: uppercase; }
-    /* line 211, ../scss/app.scss */
-    header nav #login {
-      color: #ff6c60; }
+.logo {
+  width: 150px; }
 
-/* line 219, ../scss/app.scss */
+/* line 193, ../scss/app.scss */
+header {
+  background-color: #f7f7f7; }
+  /* line 196, ../scss/app.scss */
+  header .top-bar {
+    background-color: #f7f7f7; }
+    /* line 199, ../scss/app.scss */
+    header .top-bar img {
+      padding-top: 8px; }
+
+/* line 207, ../scss/app.scss */
 main {
   width: 100%; }
 
-/* line 223, ../scss/app.scss */
+/* line 211, ../scss/app.scss */
 footer {
   background-color: #293c4e;
   border-top: 5px solid #32aebd;
   color: #f7f7f7;
   text-align: center; }
-  /* line 229, ../scss/app.scss */
+  /* line 217, ../scss/app.scss */
   footer img {
     width: 70px; }
-  /* line 234, ../scss/app.scss */
+  /* line 222, ../scss/app.scss */
   footer #social {
     margin-top: 35px;
     text-transform: lowercase; }
-  /* line 240, ../scss/app.scss */
+  /* line 228, ../scss/app.scss */
   footer #link {
     margin-top: 35px;
     text-transform: lowercase;
     padding-bottom: 20px; }
-  /* line 247, ../scss/app.scss */
+  /* line 235, ../scss/app.scss */
   footer a {
     margin-left: 20px;
     color: #f7f7f7; }
-  /* line 252, ../scss/app.scss */
+  /* line 240, ../scss/app.scss */
   footer span {
     color: #f7f7f7;
     padding-top: 20px; }
-  /* line 257, ../scss/app.scss */
+  /* line 245, ../scss/app.scss */
   footer #copyright {
     font-size: 0.8em;
     margin-top: 15px;
     text-transform: lowercase; }
-  /* line 263, ../scss/app.scss */
+  /* line 251, ../scss/app.scss */
   footer #testimonial {
     font-style: italic;
+    font-weight: 300;
     padding-top: 20px; }
-    /* line 267, ../scss/app.scss */
+    /* line 256, ../scss/app.scss */
     footer #testimonial img {
       float: left; }
-    /* line 271, ../scss/app.scss */
+    /* line 260, ../scss/app.scss */
     footer #testimonial #author {
       color: #32aebd; }
 
 /* -----------------------------------------
    Frontpage Styles
 ----------------------------------------- */
-/* line 281, ../scss/app.scss */
+/* line 270, ../scss/app.scss */
+#headline {
+  margin-top: 50px;
+  font-size: 2.3em;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1.1px;
+  color: #ff6c60; }
+
+/* line 279, ../scss/app.scss */
+.subline {
+  padding-top: 20px;
+  font-size: 1.7em;
+  font-weight: 300;
+  letter-spacing: 1.1px;
+  font-style: italic; }
+
+/* line 287, ../scss/app.scss */
 .main-slider {
   background-color: #293c4e;
   border-top: 5px solid #32aebd;
   border-bottom: 5px solid #32aebd;
   padding-top: 20px;
-  padding-bottom: 20px; }
-  /* line 289, ../scss/app.scss */
+  padding-bottom: 10px; }
+  /* line 295, ../scss/app.scss */
   .main-slider h2 {
     color: #32aebd;
     padding-bottom: 20px;
     text-align: center;
-    font-weight: 300; }
-  /* line 296, ../scss/app.scss */
+    font-weight: 200; }
+  /* line 302, ../scss/app.scss */
   .main-slider p {
-    color: #f7f7f7; }
-  /* line 301, ../scss/app.scss */
+    color: #f7f7f7;
+    font-weight: 300; }
+  /* line 307, ../scss/app.scss */
+  .main-slider #bullethead {
+    color: #ff6c60;
+    font-size: 1.2em;
+    font-weight: 300; }
+  /* line 313, ../scss/app.scss */
   .main-slider ul {
     padding-left: 20px;
     color: #32aebd; }
-    /* line 305, ../scss/app.scss */
+    /* line 318, ../scss/app.scss */
     .main-slider ul li {
       list-style: disc; }
-      /* line 307, ../scss/app.scss */
+      /* line 321, ../scss/app.scss */
       .main-slider ul li span {
-        color: #f7f7f7; }
+        color: #f7f7f7;
+        font-weight: 300; }
 
-/* line 315, ../scss/app.scss */
+/* line 330, ../scss/app.scss */
 #main-services h4 {
   color: #32aebd;
   font-weight: 500; }
+/* line 335, ../scss/app.scss */
+#main-services h3 {
+  color: #ff6c60;
+  font-weight: 300;
+  font-style: italic; }
 
-/* line 322, ../scss/app.scss */
+/* line 343, ../scss/app.scss */
 #main-user-number {
   border-top: 5px solid #32aebd;
   border-bottom: 5px solid #32aebd;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding: 8px 0px;
   text-align: center; }
-  /* line 329, ../scss/app.scss */
+  /* line 349, ../scss/app.scss */
   #main-user-number h2 {
     color: white;
-    line-height: 1; }
-  /* line 334, ../scss/app.scss */
+    line-height: 1;
+    font-size: 1.5em; }
+  /* line 355, ../scss/app.scss */
   #main-user-number h5 {
     color: white;
     font-weight: 300;
-    line-height: 1; }
+    line-height: 1;
+    font-size: 1em; }
 
 /* -----------------------------------------
    Login Styles
 ----------------------------------------- */
-/* line 345, ../scss/app.scss */
+/* line 367, ../scss/app.scss */
 #login {
   width: 300px; }
-  /* line 348, ../scss/app.scss */
-  #login img {
-    width: 120px; }
-  /* line 352, ../scss/app.scss */
+  /* line 370, ../scss/app.scss */
   #login h1 {
     font-weight: 300;
     text-transform: uppercase;
     color: #565656; }
-  /* line 358, ../scss/app.scss */
-  #login #loginbutton {
-    background-color: #32aebd;
-    text-transform: uppercase; }
-  /* line 363, ../scss/app.scss */
+  /* line 376, ../scss/app.scss */
   #login #loginlinks {
     text-transform: lowercase;
     font-size: 0.9em;
     padding-top: 10px; }
-    /* line 368, ../scss/app.scss */
+    /* line 381, ../scss/app.scss */
     #login #loginlinks a {
       color: #565656; }
-    /* line 372, ../scss/app.scss */
+    /* line 385, ../scss/app.scss */
     #login #loginlinks #helplink {
       float: left; }
-    /* line 376, ../scss/app.scss */
+    /* line 389, ../scss/app.scss */
     #login #loginlinks #reglink {
       float: right; }
-  /* line 382, ../scss/app.scss */
+  /* line 395, ../scss/app.scss */
   #login input[type=text],
   #login input[type=password] {
     padding: 10px;
@@ -304,7 +318,7 @@ footer {
     color: #565656;
     letter-spacing: 2px;
     text-transform: uppercase; }
-  /* line 395, ../scss/app.scss */
+  /* line 408, ../scss/app.scss */
   #login input[type=text]:focus,
   #login input[type=password]:focus {
     color: #32aebd;
@@ -317,77 +331,77 @@ footer {
 /* -----------------------------------------
    Compare Styles
 ----------------------------------------- */
-/* line 411, ../scss/app.scss */
+/* line 424, ../scss/app.scss */
 .container {
   max-width: 800px;
   margin: 0px auto; }
 
-/* line 416, ../scss/app.scss */
+/* line 429, ../scss/app.scss */
 .box {
   font-weight: 300; }
-  /* line 418, ../scss/app.scss */
+  /* line 431, ../scss/app.scss */
   .box .text,
   .box .value {
     float: left;
     padding: 15px; }
-  /* line 424, ../scss/app.scss */
+  /* line 437, ../scss/app.scss */
   .box .text {
     border-left: 5px solid #32aebd; }
-  /* line 428, ../scss/app.scss */
+  /* line 441, ../scss/app.scss */
   .box .value {
     background-color: white; }
 
-/* line 434, ../scss/app.scss */
+/* line 447, ../scss/app.scss */
 .sort {
   margin-bottom: 30px; }
-  /* line 436, ../scss/app.scss */
+  /* line 449, ../scss/app.scss */
   .sort .sortbuttons {
     background-color: #afafaf;
     padding: 10px 20px; }
-    /* line 439, ../scss/app.scss */
+    /* line 452, ../scss/app.scss */
     .sort .sortbuttons a {
       color: white; }
-  /* line 444, ../scss/app.scss */
+  /* line 457, ../scss/app.scss */
   .sort :hover {
     background-color: #565656; }
 
-/* line 450, ../scss/app.scss */
+/* line 463, ../scss/app.scss */
 .item .rating,
 .item .name,
 .item .price,
 .item .marker {
   padding: 10px 20px; }
-/* line 457, ../scss/app.scss */
+/* line 470, ../scss/app.scss */
 .item .rating {
   text-align: center;
   font-weight: bold;
   letter-spacing: 2px;
   font-size: 1.3em; }
-/* line 464, ../scss/app.scss */
+/* line 477, ../scss/app.scss */
 .item .name {
   text-transform: uppercase;
   font-weight: 300; }
-/* line 469, ../scss/app.scss */
+/* line 482, ../scss/app.scss */
 .item .price {
   text-align: right;
   color: #32aebd; }
-/* line 474, ../scss/app.scss */
+/* line 487, ../scss/app.scss */
 .item .marker {
   text-align: right; }
 
-/* line 479, ../scss/app.scss */
+/* line 492, ../scss/app.scss */
 .collapsed {
   background-color: white;
   color: #293c4e;
   padding: 20px;
   margin-bottom: 60px;
   border-bottom: 5px solid #32aebd; }
-  /* line 486, ../scss/app.scss */
+  /* line 499, ../scss/app.scss */
   .collapsed .buttons {
     position: absolute;
     padding-top: 25px;
     margin-left: -35px; }
-  /* line 492, ../scss/app.scss */
+  /* line 505, ../scss/app.scss */
   .collapsed button {
     font-size: 12px;
     width: 120px;

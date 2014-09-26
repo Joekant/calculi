@@ -50,7 +50,7 @@ $secondary-color:#293c4e;
  	padding:0;
 }
 
-$em-base : 16 !default;
+$em-base : 17 !default;
 
 @function emCalc($pxWidth) {
   @return $pxWidth / $em-base * 1em;
@@ -68,7 +68,7 @@ html, body {
 ul li { list-style: none}
 
 h1, h2, h3, h4, h5, h6, p, label,a,span {
-	color: $p-color;
+	color: $darkgrey;
 	font-family: $font-family;
 	font-weight: $font-weight;
 }
@@ -81,7 +81,7 @@ a:hover {
 	color: $primary-color;
 }
 
-button {
+.button {
 	background-color:$primary-color;
 	color:white;
 	margin:0;
@@ -186,37 +186,25 @@ button {
 	background-color:$secondary-color;
 }
 
-header {	
-	background-color:$topbar-color;
-	min-height:90px;
-	padding-top:15px;
-	width:100%;
-	
-	img {
-		width: 170px
-	}
-
-	nav {
-		padding-top:20px;
-		float: right;
-		
-		a {
-			color:$secondary-color;
-			font-size:16px;
-			font-weight: 400;
-			margin-left:50px;
-			text-transform:uppercase;
-		}
-		
-		#login {
-		color: $orange;
-
-
-		}
-	}
-
+.logo {
+	width: 150px
 }
-main {
+
+header {		
+
+	 background-color: $bg-color;
+	.top-bar {
+		background-color: $bg-color;
+
+		img {
+			padding-top: 8px;
+
+		}
+	}
+}
+
+
+ main {
 	width:100%;
 }
 
@@ -262,6 +250,7 @@ footer {
 
 	#testimonial {
 		font-style: italic;
+		font-weight: 300;
 		padding-top: 20px;
 
 		img {
@@ -278,34 +267,60 @@ footer {
 /* -----------------------------------------
    Frontpage Styles
 ----------------------------------------- */
+#headline {
+	margin-top: 50px;
+	font-size: 2.3em;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 1.1px;
+	color: $orange;
+} 
+
+.subline {
+	padding-top: 20px;
+	font-size: 1.7em;
+	font-weight: 300;
+	letter-spacing: 1.1px;
+	font-style: italic;
+} 
+
 .main-slider {
 	background-color:$secondary-color;
 	border-top:5px solid $primary-color;
 	border-bottom:5px solid $primary-color;
 	padding-top:20px;
-	padding-bottom:20px;
+	padding-bottom:10px;
 
 
 	h2 {
 		color:$primary_color;
 		padding-bottom:20px;
 		text-align: center;	
-		font-weight: 300
+		font-weight: 200;
 	}
 
 	p {
 		color: $bg-color;
+		font-weight: 300;
 	}
-	
+
+	#bullethead {
+		color: $orange;
+		font-size: 1.2em;
+		font-weight: 300;
+	}
 
 	ul {
 		padding-left: 20px;
 		color: $primary-color;
+
 		
 		li {
+
 			list-style: disc;
 			span {
 				color: $bg-color;
+				font-weight: 300;
 			}
 		}
 	}
@@ -317,24 +332,31 @@ footer {
 		font-weight:500;
 	}
 
+	h3 {
+		color:$orange;
+		font-weight:300;
+		font-style: italic;
+	}	
+
 }
 
 #main-user-number {
 	border-top:5px solid $primary-color;
 	border-bottom:5px solid $primary-color;
-	padding-top:13px;
-	padding-bottom:13px;
+	padding: 8px 0px;
 	text-align: center;
 	
 	h2 {
 		color:white;
 		line-height:1;
+		font-size: 1.5em;
 	}
 
 	h5 {
 		color:white;
 		font-weight:300;
 		line-height:1;
+		font-size: 1em;
 	}
 }
 
@@ -345,19 +367,10 @@ footer {
 #login {
 	width: 300px;
 
-	img {
-		width: 120px;
-	}
-
 	h1 {
 		font-weight: 300;
 		text-transform: uppercase;
 		color: $darkgrey;
-	}
-
-	#loginbutton {
-		background-color: $primary-color;
-		text-transform: uppercase;
 	}
 
 	#loginlinks {	
