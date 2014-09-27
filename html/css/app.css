@@ -523,7 +523,7 @@ aside #logo-dark {
     padding: 0px 30px -10px 25px; }
   /* line 642, ../scss/app.scss */
   #profile-head img {
-    margin: 10px;
+    margin-top: 10px;
     width: 150px;
     border: 2px solid #f7f7f7; }
     @media only screen and (max-width: 40em) {
@@ -574,7 +574,7 @@ aside #logo-dark {
   /* line 701, ../scss/app.scss */
   #profile-body #references span {
     margin-right: 20px;
-    padding: 5px;
+    padding: 5px 8px;
     background-color: #afafaf;
     color: white; }
   /* line 708, ../scss/app.scss */
@@ -606,14 +606,38 @@ aside #logo-dark {
   border-bottom: 5px solid #32aebd;
   background-color: #f7f7f7;
   padding: 30px 0px;
-  margin-bottom: 30px; }
-  /* line 742, ../scss/app.scss */
+  margin-bottom: 60px; }
+  /* line 736, ../scss/app.scss */
+  #profile-comments .row {
+    padding-top: 30px;
+    margin: 0px;
+    position: relative; }
+  /* line 749, ../scss/app.scss */
   #profile-comments .author {
-    padding: 8px 0px; }
-    /* line 745, ../scss/app.scss */
-    #profile-comments .author span {
-      color: #f7f7f7;
-      font-size: 0.8em; }
-  /* line 751, ../scss/app.scss */
+    margin-top: 15px; }
+    /* line 752, ../scss/app.scss */
+    #profile-comments .author .name {
+      font-size: 1.0em;
+      font-weight: 400; }
+    /* line 758, ../scss/app.scss */
+    #profile-comments .author .time {
+      font-size: 0.7em; }
+  /* line 764, ../scss/app.scss */
+  #profile-comments .row:nth-child(even) .author {
+    float: left;
+    border-left: 5px solid #afafaf; }
+  /* line 771, ../scss/app.scss */
+  #profile-comments .row:nth-child(odd) .author {
+    float: right;
+    border-right: 5px solid #afafaf; }
+  /* line 777, ../scss/app.scss */
   #profile-comments .comment {
-    font-style: italic; }
+    font-style: italic;
+    padding: 10px 20px 0px 20px; }
+  /* line 782, ../scss/app.scss */
+  #profile-comments .comment:before, #profile-comments .comment:after {
+    content: '"'; }
+  /* line 786, ../scss/app.scss */
+  #profile-comments #more-comments {
+    position: relative;
+    bottom: -80px; }

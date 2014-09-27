@@ -640,7 +640,7 @@ aside {
 	}
 
 	img {
-		margin: 10px;
+		margin-top: 10px;
 		width: 150px;
 		border:2px solid $bg-color;
 
@@ -700,7 +700,7 @@ aside {
 	#references {
 		span {
 			margin-right: 20px;
-			padding: 5px;
+			padding: 5px 8px;
 			background-color: $lightgrey;
 			color: white;
 		}
@@ -732,24 +732,60 @@ aside {
 }
 
 #profile-comments {
+
+	.row {
+		padding-top: 30px;
+		margin: 0px;
+		position: relative;
+	}
+	
 	margin: 0px auto;
 	max-width: 600px;
 	border-bottom: 5px solid $primary-color;
 	background-color: $bg-color;
 	padding: 30px 0px;
-	margin-bottom: 30px;
+	margin-bottom: 60px;
 
 	.author {
-		padding: 8px 0px;
+		margin-top: 15px;
 
-		span {
-			color: $bg-color;
-			font-size: 0.8em;
+		.name {
+			
+			font-size: 1.0em;
+			font-weight: 400;
+		}
+		
+		.time {
+			font-size: 0.7em;
+		}
+	}
+
+	.row:nth-child(even) {
+		.author {
+			float: left;
+			border-left: 5px solid $lightgrey;
+		}
+	}
+
+	.row:nth-child(odd) {
+		.author {
+			float: right;
+			border-right: 5px solid $lightgrey;
 		}
 	}
 
 	.comment {
 		font-style: italic;
+		padding: 10px 20px 0px 20px;
+	}
+
+	.comment:before, .comment:after {
+		content: '"';
+	}
+
+	#more-comments {
+		position: relative;
+		bottom: -80px;
 	}
 }
 
