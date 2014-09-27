@@ -344,95 +344,94 @@ input[type=password]:focus {
 /* -----------------------------------------
    Compare Styles
 ----------------------------------------- */
-/* line 425, app.scss */
-.container {
-  max-width: 800px;
-  margin: 0px auto; }
+/* line 427, app.scss */
+.container .row {
+  max-width: 800px; }
 
-/* line 430, app.scss */
+/* line 432, app.scss */
 .box {
   font-weight: 300; }
-  /* line 432, app.scss */
+  /* line 434, app.scss */
   .box .text,
   .box .value {
     float: left;
     padding: 15px; }
-  /* line 438, app.scss */
+  /* line 440, app.scss */
   .box .text {
     border-left: 5px solid #32aebd; }
-  /* line 442, app.scss */
+  /* line 444, app.scss */
   .box .value {
     background-color: white; }
 
-/* line 447, app.scss */
+/* line 449, app.scss */
 .sort {
   margin-bottom: 30px; }
-  /* line 449, app.scss */
+  /* line 451, app.scss */
   .sort .sortbuttons {
     background-color: #afafaf;
     padding: 10px 20px; }
-    /* line 453, app.scss */
+    /* line 455, app.scss */
     .sort .sortbuttons a {
       color: white; }
-  /* line 458, app.scss */
+  /* line 460, app.scss */
   .sort :hover {
     background-color: #565656; }
 
-/* line 464, app.scss */
+/* line 466, app.scss */
 .item .rating,
 .item .name,
 .item .price,
 .item .marker {
   padding: 10px 20px; }
-/* line 471, app.scss */
+/* line 473, app.scss */
 .item .rating {
   text-align: center;
   font-weight: bold;
   letter-spacing: 2px;
   font-size: 1.3em; }
-/* line 478, app.scss */
+/* line 480, app.scss */
 .item .name {
   text-transform: uppercase; }
-/* line 482, app.scss */
+/* line 484, app.scss */
 .item .price {
   text-align: right; }
-/* line 486, app.scss */
+/* line 488, app.scss */
 .item .marker {
   text-align: right; }
 
-/* line 491, app.scss */
+/* line 493, app.scss */
 .collapsed {
   background-color: white;
   color: #293c4e;
   padding: 20px;
   margin-bottom: 60px;
   border-bottom: 5px solid #32aebd; }
-  /* line 498, app.scss */
+  /* line 500, app.scss */
   .collapsed .buttons {
     position: absolute;
     padding-top: 25px;
     margin-left: -35px; }
-  /* line 504, app.scss */
+  /* line 506, app.scss */
   .collapsed button {
     font-size: 12px;
     width: 120px;
     padding: 10px 10px; }
 
-/* line 511, app.scss */
+/* line 513, app.scss */
 a.show {
   color: white; }
-  /* line 514, app.scss */
+  /* line 516, app.scss */
   a.show :hover {
     color: #32aebd; }
 
 /* -----------------------------------------
    Backend Styles
 ----------------------------------------- */
-/* line 525, app.scss */
+/* line 527, app.scss */
 aside #thumb {
   width: 100%;
   z-index: 2; }
-/* line 530, app.scss */
+/* line 532, app.scss */
 aside #overlay-name {
   background-color: black;
   opacity: 0.7;
@@ -444,17 +443,17 @@ aside #overlay-name {
   z-index: 3;
   font-weight: 300;
   letter-spacing: 1px; }
-/* line 543, app.scss */
+/* line 545, app.scss */
 aside #logo-dark {
   width: 70px;
   padding-top: 30px; }
 
-/* line 549, app.scss */
+/* line 551, app.scss */
 .tab-bar {
   border-bottom: 5px solid #32aebd;
   background-color: #293c4e;
   height: 50px; }
-  /* line 554, app.scss */
+  /* line 556, app.scss */
   .tab-bar h1 {
     font-weight: 300;
     letter-spacing: 1px;
@@ -463,24 +462,24 @@ aside #logo-dark {
 /* -----------------------------------------
    Briefing Styles
 ----------------------------------------- */
-/* line 566, app.scss */
+/* line 568, app.scss */
 #form-pagination .row {
   width: 550px; }
 
-/* line 572, app.scss */
+/* line 574, app.scss */
 #briefing-form .row {
   width: 500px; }
-/* line 576, app.scss */
+/* line 578, app.scss */
 #briefing-form h3 {
   text-transform: uppercase;
   color: #32aebd; }
 
-/* line 583, app.scss */
+/* line 585, app.scss */
 .joyride-content-wrapper p {
   color: white;
   padding: 10px 0px;
   font-size: 1em;
   font-weight: 300; }
-/* line 590, app.scss */
+/* line 592, app.scss */
 .joyride-content-wrapper h4 {
   font-weight: 300; }
