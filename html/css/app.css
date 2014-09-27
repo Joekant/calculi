@@ -494,16 +494,16 @@ aside #logo-dark {
 /* line 604, ../scss/app.scss */
 #container-profile .row {
   max-width: 800px; }
-
-/* line 609, ../scss/app.scss */
-.button {
+/* line 608, ../scss/app.scss */
+#container-profile .button {
   margin-top: 120px; }
 
 /* line 615, ../scss/app.scss */
 #profile-head {
   border-top: 5px solid #32aebd;
+  padding: 0px 40px;
   /*border-bottom:5px solid $primary-color;*/ }
-  /* line 620, ../scss/app.scss */
+  /* line 621, ../scss/app.scss */
   #profile-head h1 {
     padding-top: 20px;
     color: #f7f7f7;
@@ -511,51 +511,109 @@ aside #logo-dark {
     letter-spacing: 1px;
     font-weight: 200;
     font-size: 2em; }
-  /* line 629, ../scss/app.scss */
+  /* line 630, ../scss/app.scss */
   #profile-head #website {
     font-style: italic;
-    color: #f7f7f7; }
-  /* line 634, ../scss/app.scss */
+    color: #f7f7f7;
+    padding-bottom: 20px; }
+  /* line 636, ../scss/app.scss */
   #profile-head #description {
     text-align: justify;
     font-style: italic;
-    padding: 0px 30px 0px 25px; }
-  /* line 640, ../scss/app.scss */
+    padding: 0px 30px -10px 25px; }
+  /* line 642, ../scss/app.scss */
   #profile-head img {
-    margin: 10px 30px;
+    margin: 10px;
     width: 150px;
     border: 2px solid #f7f7f7; }
+    @media only screen and (max-width: 40em) {
+      /* line 642, ../scss/app.scss */
+      #profile-head img {
+        display: block;
+        margin: 0px auto;
+        margin-bottom: 20px; } }
+  /* line 654, ../scss/app.scss */
+  #profile-head ul {
+    margin: 0px; }
+    /* line 657, ../scss/app.scss */
+    #profile-head ul li {
+      display: inline-block;
+      padding: 15px 20px 20px 0px; }
 
-/* line 647, ../scss/app.scss */
+/* line 664, ../scss/app.scss */
 #profile-body {
   background-color: #f7f7f7;
   padding: 30px; }
-  /* line 651, ../scss/app.scss */
+  /* line 668, ../scss/app.scss */
   #profile-body h2 {
     font-size: 1.3em;
     text-transform: uppercase;
     font-weight: 300; }
+  /* line 674, ../scss/app.scss */
+  #profile-body ul {
+    margin: 0px; }
+    /* line 677, ../scss/app.scss */
+    #profile-body ul li {
+      padding: 7px 15px; }
+  /* line 682, ../scss/app.scss */
+  #profile-body #categories {
+    position: absolute;
+    left: 5px; }
+  /* line 687, ../scss/app.scss */
+  #profile-body #points {
+    float: left;
+    position: relative;
+    left: -86px; }
+    /* line 691, ../scss/app.scss */
+    #profile-body #points li {
+      color: white;
+      text-align: center;
+      font-weight: 400;
+      font-size: 1.3em;
+      padding: 3px 16px; }
+  /* line 701, ../scss/app.scss */
+  #profile-body #references span {
+    margin-right: 20px;
+    padding: 5px;
+    background-color: #afafaf;
+    color: white; }
+  /* line 708, ../scss/app.scss */
+  #profile-body #references li {
+    line-height: 2em; }
 
-/* line 658, ../scss/app.scss */
+/* line 714, ../scss/app.scss */
 #profile-statistics {
   /*border-top:5px solid $primary-color;*/
   border-bottom: 5px solid #32aebd;
   padding: 5px 0px 5px 15px; }
-  /* line 663, ../scss/app.scss */
+  /* line 719, ../scss/app.scss */
   #profile-statistics h3 {
     color: #f7f7f7;
-    font-size: 1.3em; }
-  /* line 668, ../scss/app.scss */
+    font-size: 1.2em;
+    line-height: 1em;
+    font-weight: 400; }
+  /* line 726, ../scss/app.scss */
   #profile-statistics h5 {
     color: #f7f7f7;
     font-size: 0.8em;
-    font-weight: 300; }
+    font-weight: 300;
+    line-height: 1em; }
 
-/* line 675, ../scss/app.scss */
+/* line 734, ../scss/app.scss */
 #profile-comments {
   margin: 0px auto;
   max-width: 600px;
-  border-bottom: 5px solid #293c4e;
+  border-bottom: 5px solid #32aebd;
   background-color: #f7f7f7;
-  padding: 30px;
+  padding: 30px 0px;
   margin-bottom: 30px; }
+  /* line 742, ../scss/app.scss */
+  #profile-comments .author {
+    padding: 8px 0px; }
+    /* line 745, ../scss/app.scss */
+    #profile-comments .author span {
+      color: #f7f7f7;
+      font-size: 0.8em; }
+  /* line 751, ../scss/app.scss */
+  #profile-comments .comment {
+    font-style: italic; }
