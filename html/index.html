@@ -6,6 +6,7 @@
     <title>Calculi - Landingpage</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link href='http://fonts.googleapis.com/css?family=Lato:100,200,300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/app.css" />
@@ -13,7 +14,7 @@
   </head>
   <body>
 
-  <header class="fixed">
+  <header>
   <div class="row">
     <nav class="top-bar" data-topbar role="navigation">
       <ul class="title-area">
@@ -24,16 +25,19 @@
       </ul>
       <section class="top-bar-section">
         <ul class="right">
-          <li class="active"><a href="#">Start</a></li>
-          <li><a href="#">Registrieren</a></li>
-          <li><a href="#">Login</a></li>
-          <li class="has-dropdown">
+          <li class="active"><a href="index.html">Start</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="briefing.html">Briefing</a></li>
+          <li><a href="backend.html">Backend</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="compare.html">Compare</a></li>
+         <!--  <li class="has-dropdown">
             <a href="#">Dropdown</a>
             <ul class="dropdown">
               <li><a href="#">Link</a></li>
               <li><a href="#">Link</a></li>
             </ul>
-          </li>
+          </li> -->
         </ul>
       </section>
     </nav>
@@ -42,14 +46,14 @@
 
     <main> 
       <div class="row">
-        <div class="large-12 columns full-padding text-center">
+        <div class="large-12 columns half-padding text-center">
           <h1 id="headline">Schnell den passenden Webdesigner finden</h1>
           <h2 class="subline">Calculi verbindet Angebot & Nachfrage</h2>
         </div>
       </div>
 
         <br class="end" />
-      <div class="main-slider">
+      <div class="main-slider dark-bg">
         <div class="row">
           <div class="medium-5 columns">
             <h2>KUNDEN</h2>
@@ -63,7 +67,7 @@
             </ul>
           </div><!-- END .large-6 -->
           <div class="medium-5 columns">
-            <h2>WEBWORKER</h2>
+            <h2>WEBDESIGNER</h2>
             <p>
               Lege kostenlos dein persönliches Profil an und bewirb dich mit deinen individuellen Kostenvoranschlägen regelmäßig bei Projektausschreibungen verschiedener Kunden.</p>
            
@@ -91,7 +95,7 @@
       <br class="end" />
         
       <div id="main-services" class="text-center">
-      <h3 class="half-padding">So funktioniert's...</h3>
+      <h3 class="half-padding freestyle">So funktioniert's...</h3>
         <div class="row">
           <div class="large-3 columns">
             <h4>1. Briefing</h4>
@@ -115,12 +119,27 @@
       </div>
 
 
+      <div id="main-user-number" class="dark-bg margin-top ">
+        <div class="row">
+          <div class="large-4 columns">
+            <h2>12</h2>
+            <h5 class="subheader text-center">Ausgeschreibungen</h5>
+          </div>
+          <div class="large-4 columns">
+            <h2>60</h2>
+            <h5 class="subheader text-center">Registrierte Webworkers</h5>
+          </div>
+          <div class="large-4 columns">
+            <h2>8</h2>
+            <h5 class="subheader text-center">Abgeschlossene Projekte</h5>
+          </div>
+        </div>
+      </div>
 
-
-      <!-- <div class="row margin-top">
+      <div class="row margin-top">
         <div class="large-6 columns">
-          <h2 class="primary-color-font">HEADLINE</h2>
-          <h3 class="orange-font">SUBLINE</h3>
+          <h2 class="primary-color-font">Was macht Calculi?</h2>
+          <h3 class="freestyle">Die Funktionen im Überblick</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -128,14 +147,19 @@
           <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
           proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+          <br />
+          <a href=""><em>... mehr erfahren</em></a>
 
         </div>
         <div class="large-6 columns">
           <img src="img/poster.png" id="poster-img" alt=""/>
         </div>
-      </div> -->
-        
-    <div class="row margin-top">
+      </div>
+
+    <div class="row ">
       <div class="large-4 columns">
         <ul class="pricing-table">
           <li class="title">Bronze</li>

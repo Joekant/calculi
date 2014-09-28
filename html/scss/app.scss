@@ -26,7 +26,6 @@ $p_color:#272727;
 $primary-color:#32aebd;
 $secondary-color:#293c4e;
 
-
 /* -----------------------------------------
    Shared Properties
 ----------------------------------------- */
@@ -56,7 +55,8 @@ $em-base : 17 !default;
 
 /*Global Variables*/
 $font-family : Lato;
-$font-weight : 300;
+$freestyle-font: 'Shadows Into Light Two';
+$font-weight : 400;
 
 html, body {
 	background: url("../img/bg_pattern.png") repeat;
@@ -70,6 +70,18 @@ h1, h2, h3, h4, h5, h6, p, label,a,span {
 	color: $darkgrey;
 	font-family: $font-family;
 	font-weight: $font-weight;
+}
+
+h1, h2 {
+	font-weight: 300;
+}
+
+.freestyle {
+	color:$orange;
+	font-weight:200;
+	font-family: $freestyle-font;
+	letter-spacing: 2px;
+	font-size: 1.5em;
 }
 
 p {
@@ -106,7 +118,7 @@ a:hover {
 }
 
 .dark-bg {
-	background-color: $secondary-color;
+	background: url("../img/bg_slider.png") repeat;
 	color: $bg-color;
 }
 
@@ -277,11 +289,21 @@ input[type=password]:focus,
 }
 
 /* -----------------------------------------
+   Table Styles
+----------------------------------------- */
+
+th {
+	background-color: $secondary-color;
+	color: $bg-color;
+	text-transform: uppercase;
+}
+
+/* -----------------------------------------
    Frontpage Styles
 ----------------------------------------- */
 
 #headline {
-	margin-top: 50px;
+	margin-top: 80px;
 	font-size: 2.3em;
 	text-transform: uppercase;
 	font-weight: 300;
@@ -298,7 +320,6 @@ input[type=password]:focus,
 } 
 
 .main-slider {
-	background-color:$secondary-color;
 	border-top:5px solid $primary-color;
 	border-bottom:5px solid $primary-color;
 	padding-top:20px;
@@ -574,6 +595,11 @@ aside {
 	}
 }
 
+.main-section {
+	padding: 30px;
+	max-width: 100%;
+}
+
 /* -----------------------------------------
    Briefing Styles
 ----------------------------------------- */
@@ -637,6 +663,7 @@ aside {
 		text-align: justify;
 		font-style: italic;
 		padding: 0px 30px -10px 25px;
+		font-weight: 300;
 	}
 
 	img {
@@ -682,6 +709,7 @@ aside {
 	#categories {
 		position: absolute;
 		left: 5px;
+		color: $darkgrey;
 	}
 
 	#points {
@@ -777,6 +805,7 @@ aside {
 	.comment {
 		font-style: italic;
 		padding: 10px 20px 0px 20px;
+		color: $darkgrey;
 	}
 
 	.comment:before, .comment:after {

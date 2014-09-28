@@ -227,7 +227,8 @@ input[type=password]:focus {
 ----------------------------------------- */
 /* line 283, app.scss */
 #headline {
-  margin-top: 50px;
+  margin-top: 70px;
+  padding-top: 30px;
   font-size: 2.3em;
   text-transform: uppercase;
   font-weight: 300;
