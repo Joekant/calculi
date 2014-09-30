@@ -538,16 +538,16 @@ aside #logo-dark {
 ----------------------------------------- */
 /* line 647, ../scss/app.scss */
 #form-pagination .row {
-  max-width: 760px; }
+  max-width: 550px; }
 
 /* line 653, ../scss/app.scss */
 #briefing-form .row {
-  max-width: 700px; }
+  max-width: 650px; }
 /* line 657, ../scss/app.scss */
 #briefing-form h2 {
   text-transform: uppercase;
   color: #32aebd;
-  font-size: 1.6em;
+  font-size: 1.8em;
   font-weight: 400;
   text-align: center;
   padding-top: 30px; }
@@ -564,19 +564,25 @@ aside #logo-dark {
 /* line 679, ../scss/app.scss */
 #briefing-form label {
   font-size: 1em;
-  padding-top: 15px; }
+  padding-top: 15px;
+  font-weight: 600; }
+/* line 685, ../scss/app.scss */
+#briefing-form .add-comment {
+  float: right;
+  font-size: 1em;
+  color: #ff6c60; }
 
-/* line 686, ../scss/app.scss */
+/* line 692, ../scss/app.scss */
 #form-instruction {
   padding-left: 20px; }
-  /* line 689, ../scss/app.scss */
+  /* line 695, ../scss/app.scss */
   #form-instruction ul {
     margin-left: 30px; }
-    /* line 692, ../scss/app.scss */
+    /* line 698, ../scss/app.scss */
     #form-instruction ul li {
       list-style: disc;
       font-style: italic; }
-      /* line 694, ../scss/app.scss */
+      /* line 700, ../scss/app.scss */
       #form-instruction ul li span {
         color: #565656;
         font-weight: 400; }
@@ -584,19 +590,19 @@ aside #logo-dark {
 /* -----------------------------------------
    Profile Styles
 ----------------------------------------- */
-/* line 709, ../scss/app.scss */
+/* line 715, ../scss/app.scss */
 #container-profile .row {
   max-width: 800px; }
-/* line 713, ../scss/app.scss */
+/* line 719, ../scss/app.scss */
 #container-profile .button {
   margin-top: 120px; }
 
-/* line 720, ../scss/app.scss */
+/* line 726, ../scss/app.scss */
 #profile-head {
   border-top: 5px solid #32aebd;
   padding: 0px 40px;
   /*border-bottom:5px solid $primary-color;*/ }
-  /* line 726, ../scss/app.scss */
+  /* line 732, ../scss/app.scss */
   #profile-head h1 {
     padding-top: 20px;
     color: #f7f7f7;
@@ -604,97 +610,97 @@ aside #logo-dark {
     letter-spacing: 1px;
     font-weight: 200;
     font-size: 2em; }
-  /* line 735, ../scss/app.scss */
+  /* line 741, ../scss/app.scss */
   #profile-head #website {
     font-style: italic;
     color: #f7f7f7;
     padding-bottom: 20px; }
-  /* line 741, ../scss/app.scss */
+  /* line 747, ../scss/app.scss */
   #profile-head #description {
     text-align: justify;
     font-style: italic;
     padding: 0px 30px -10px 25px;
     font-weight: 300; }
-  /* line 748, ../scss/app.scss */
+  /* line 754, ../scss/app.scss */
   #profile-head img {
     margin-top: 10px;
     width: 150px;
     border: 2px solid #f7f7f7; }
     @media only screen and (max-width: 40em) {
-      /* line 748, ../scss/app.scss */
+      /* line 754, ../scss/app.scss */
       #profile-head img {
         display: block;
         margin: 0px auto;
         margin-bottom: 20px; } }
-  /* line 760, ../scss/app.scss */
+  /* line 766, ../scss/app.scss */
   #profile-head ul {
     margin: 0px; }
-    /* line 763, ../scss/app.scss */
+    /* line 769, ../scss/app.scss */
     #profile-head ul li {
       display: inline-block;
       padding: 15px 20px 20px 0px; }
 
-/* line 770, ../scss/app.scss */
+/* line 776, ../scss/app.scss */
 #profile-body {
   background-color: #f7f7f7;
   padding: 30px; }
-  /* line 774, ../scss/app.scss */
+  /* line 780, ../scss/app.scss */
   #profile-body h2 {
     font-size: 1.3em;
     text-transform: uppercase;
     font-weight: 300; }
-  /* line 780, ../scss/app.scss */
+  /* line 786, ../scss/app.scss */
   #profile-body ul {
     margin: 0px; }
-    /* line 783, ../scss/app.scss */
+    /* line 789, ../scss/app.scss */
     #profile-body ul li {
       padding: 7px 15px; }
-  /* line 788, ../scss/app.scss */
+  /* line 794, ../scss/app.scss */
   #profile-body #categories {
     position: absolute;
     left: 5px;
     color: #565656; }
-  /* line 794, ../scss/app.scss */
+  /* line 800, ../scss/app.scss */
   #profile-body #points {
     float: left;
     position: relative;
     left: -86px; }
-    /* line 798, ../scss/app.scss */
+    /* line 804, ../scss/app.scss */
     #profile-body #points li {
       color: white;
       text-align: center;
       font-weight: 400;
       font-size: 1.3em;
       padding: 3px 16px; }
-  /* line 808, ../scss/app.scss */
+  /* line 814, ../scss/app.scss */
   #profile-body #references span {
     margin-right: 20px;
     padding: 5px 8px;
     background-color: #afafaf;
     color: white; }
-  /* line 815, ../scss/app.scss */
+  /* line 821, ../scss/app.scss */
   #profile-body #references li {
     line-height: 2em; }
 
-/* line 821, ../scss/app.scss */
+/* line 827, ../scss/app.scss */
 #profile-statistics {
   /*border-top:5px solid $primary-color;*/
   border-bottom: 5px solid #32aebd;
   padding: 5px 0px 5px 15px; }
-  /* line 826, ../scss/app.scss */
+  /* line 832, ../scss/app.scss */
   #profile-statistics h3 {
     color: #f7f7f7;
     font-size: 1.2em;
     line-height: 1em;
     font-weight: 400; }
-  /* line 833, ../scss/app.scss */
+  /* line 839, ../scss/app.scss */
   #profile-statistics h5 {
     color: #f7f7f7;
     font-size: 0.8em;
     font-weight: 300;
     line-height: 1em; }
 
-/* line 841, ../scss/app.scss */
+/* line 847, ../scss/app.scss */
 #profile-comments {
   margin: 0px auto;
   max-width: 600px;
@@ -702,38 +708,38 @@ aside #logo-dark {
   background-color: #f7f7f7;
   padding: 30px 0px;
   margin-bottom: 60px; }
-  /* line 843, ../scss/app.scss */
+  /* line 849, ../scss/app.scss */
   #profile-comments .row {
     padding-top: 30px;
     margin: 0px;
     position: relative; }
-  /* line 856, ../scss/app.scss */
+  /* line 862, ../scss/app.scss */
   #profile-comments .author {
     margin-top: 15px; }
-    /* line 859, ../scss/app.scss */
+    /* line 865, ../scss/app.scss */
     #profile-comments .author .name {
       font-size: 1.0em;
       font-weight: 400; }
-    /* line 865, ../scss/app.scss */
+    /* line 871, ../scss/app.scss */
     #profile-comments .author .time {
       font-size: 0.7em; }
-  /* line 871, ../scss/app.scss */
+  /* line 877, ../scss/app.scss */
   #profile-comments .row:nth-child(even) .author {
     float: left;
     border-left: 5px solid #afafaf; }
-  /* line 878, ../scss/app.scss */
+  /* line 884, ../scss/app.scss */
   #profile-comments .row:nth-child(odd) .author {
     float: right;
     border-right: 5px solid #afafaf; }
-  /* line 884, ../scss/app.scss */
+  /* line 890, ../scss/app.scss */
   #profile-comments .comment {
     font-style: italic;
     padding: 10px 20px 0px 20px;
     color: #565656; }
-  /* line 890, ../scss/app.scss */
+  /* line 896, ../scss/app.scss */
   #profile-comments .comment:before, #profile-comments .comment:after {
     content: '"'; }
-  /* line 894, ../scss/app.scss */
+  /* line 900, ../scss/app.scss */
   #profile-comments #more-comments {
     position: relative;
     bottom: -80px; }

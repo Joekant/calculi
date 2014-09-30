@@ -645,19 +645,19 @@ aside {
 
 #form-pagination {
 	.row {
-		max-width: 760px;
+		max-width: 550px;
 	}
 }
 
 #briefing-form {
 	.row {
-		max-width: 700px;
+		max-width: 650px;
 	}
 
 	h2 {
 		text-transform: uppercase;
 		color: $primary-color;
-		font-size: 1.6em;
+		font-size: 1.8em;
 		font-weight: 400;
 		text-align: center;
 		padding-top: 30px;
@@ -679,7 +679,13 @@ aside {
 	label {
 		font-size: 1em;	
 		padding-top: 15px;
+		font-weight: 600;
+	}
 
+	.add-comment {
+		float: right;
+		font-size: 1em;
+		color: $orange;
 	}
 }
 
