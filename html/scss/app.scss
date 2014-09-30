@@ -71,13 +71,23 @@ html, body {
 	color: $darkgrey;
 }
 
+<<<<<<< HEAD
 .bullethead {
+=======
+#bullethead {
+>>>>>>> FETCH_HEAD
 		color: $orange;
 		font-size: 1.2em;
 		font-weight: 300;
 	}
 
 	ul {
+<<<<<<< HEAD
+=======
+		padding-left: 20px;
+		color: $primary-color;
+		
+>>>>>>> FETCH_HEAD
 		li {
 			list-style: none;
 			span {
@@ -380,11 +390,14 @@ th {
 		font-weight: 300;
 	}
 
+<<<<<<< HEAD
 	ul {
 		padding-left: 20px;
 		color: $primary-color;
 	}
 
+=======
+>>>>>>> FETCH_HEAD
 	li {
 		list-style: disc;
 		color: $orange;
@@ -701,8 +714,12 @@ aside {
 	padding-left: 20px;
 	
 		ul {
+<<<<<<< HEAD
 		margin-left: 30px;
 		color: $primary-color;
+=======
+		margin-left: 30px;		
+>>>>>>> FETCH_HEAD
 		
 		li {
 			list-style: disc;
