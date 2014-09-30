@@ -62,9 +62,27 @@ html, body {
 	background: url("../img/bg_pattern.png") repeat;
 	font-family: $font-family;
 	font-weight: $font-weight;
+	color: $darkgrey;
 }
 
-ul li { list-style: none}
+#bullethead {
+		color: $orange;
+		font-size: 1.2em;
+		font-weight: 300;
+	}
+
+	ul {
+		padding-left: 20px;
+		color: $primary-color;
+		
+		li {
+			list-style: none;
+			span {
+				color: $bg-color;
+				font-weight: 300;
+			}
+		}
+	}
 
 h1, h2, h3, h4, h5, h6, p, label,a,span {
 	color: $darkgrey;
@@ -264,28 +282,49 @@ footer {
 ----------------------------------------- */
 
 input[type=text],
+textarea[type=text],
 input[type=email],
-input[type=password] {
+input[type=password],
+select {
 	padding: 10px;
 	border: none;
 	background: url("../img/bg_pattern.png") repeat;
 	border-bottom: 2px solid $darkgrey;
 	box-shadow: none;
 	color: $darkgrey;
-	letter-spacing: 2px;
-	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 input[type=text]:focus,
 input[type=email]:focus,
 input[type=password]:focus,
- {
-	color: $primary-color;
+textarea[type=text]:focus,
+select
+ {	
 	padding: 10px;
 	border: none;
 	background: url("../img/bg_pattern.png") repeat;
 	border-bottom: 2px solid $primary-color;
 	box-shadow: none;
+}
+
+textarea[type=text] {
+	border: 2px solid $darkgrey;
+	margin-top: 10px;
+}
+
+textarea[type=text]:focus {
+	border: 2px solid $primary-color;	
+}
+
+select {
+	margin-top: 10px;
+	border: 2px solid $darkgrey;	
+	padding: 0px;
+}
+
+select:focus {
+	border: 2px solid $primary-color;	
 }
 
 /* -----------------------------------------
@@ -338,23 +377,9 @@ th {
 		font-weight: 300;
 	}
 
-	#bullethead {
+	li {
+		list-style: disc;
 		color: $orange;
-		font-size: 1.2em;
-		font-weight: 300;
-	}
-
-	ul {
-		padding-left: 20px;
-		color: $primary-color;
-		
-		li {
-			list-style: disc;
-			span {
-				color: $bg-color;
-				font-weight: 300;
-			}
-		}
 	}
 }
 
@@ -399,6 +424,11 @@ th {
 	}
 }
 
+#poster-img {
+	position: relative;
+	top: -60px;
+}
+
 /* -----------------------------------------
    Login Styles
 ----------------------------------------- */
@@ -432,12 +462,21 @@ th {
 			float: right;
 		}
 	}
-}
 
-#poster-img {
-	position: relative;
-	top: -60px;
-}
+	input[type=text],
+	input[type=email],
+	input[type=password] {
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+
+	input[type=text]:focus,
+	input[type=email]:focus,
+	input[type=password]:focus {
+		color: $primary-color;
+	}
+	}
+
 
 /* -----------------------------------------
    Compare Styles
@@ -606,18 +645,58 @@ aside {
 
 #form-pagination {
 	.row {
-		max-width: 550px;
+		max-width: 760px;
 	}
 }
 
 #briefing-form {
 	.row {
-		max-width: 500px;
+		max-width: 700px;
 	}
 
-	h3 {
+	h2 {
 		text-transform: uppercase;
 		color: $primary-color;
+		font-size: 1.6em;
+		font-weight: 400;
+		text-align: center;
+		padding-top: 30px;
+	}
+
+	.freestyle {
+		color: $orange;
+		text-transform: uppercase;
+		margin-top: 30px;
+
+	}	
+
+	h3 {
+		font-size: 1.3em;
+		padding: 20px 0px;
+		text-align: center;
+	}
+
+	label {
+		font-size: 1em;	
+		padding-top: 15px;
+
+	}
+}
+
+#form-instruction {
+	padding-left: 20px;
+	
+		ul {
+		margin-left: 30px;		
+		
+		li {
+			list-style: disc;
+			span {
+				color: $darkgrey;
+				font-weight: 400;
+			}
+		font-style: italic;
+		}
 	}
 }
 
