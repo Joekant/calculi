@@ -124,7 +124,7 @@
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
-      // $(document).foundation('joyride', 'start');
+      $(document).foundation('joyride', 'start');
     </script>
 
   </body>
