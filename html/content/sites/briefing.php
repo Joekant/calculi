@@ -1,54 +1,5 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculi - Briefing</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,200,300,400,700' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/app.css" />
-    <script src="js/vendor/modernizr.js"></script>
-  </head>
-  <body>
-
-    <header>
-
-      <div class="row">
-        <nav class="top-bar" data-topbar role="navigation">
-          
-          <ul class="title-area">
-            <li class="name">
-              <a href="#"><img src="img/logo.png" class="logo" alt="caluli_logo" /></a>
-            </li>
-            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-          </ul>
-
-      <section class="top-bar-section">
-        <ul class="right">
-          <li><a href="index.html">Start</a></li>
-          <li><a href="login.html">Login</a></li>
-          <li class="active"><a href="briefing.html">Briefing</a></li>
-          <li><a href="backend.html">Backend</a></li>
-          <li><a href="profile.html">Profile</a></li>
-          <li><a href="compare.html">Compare</a></li>
-         <!--  <li class="has-dropdown">
-            <a href="#">Dropdown</a>
-            <ul class="dropdown">
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-            </ul>
-          </li> -->
-        </ul>
-      </section>
-        </nav>
-      </div>
-    </header>
-
-    
-      <div class="row">
+<main>
+<div class="row">
         <div class="large-12 columns half-padding text-center">
           <h1 id="headline">Ausschreibung erstellen</h1>
           <h2 class="subline">in 5 Minuten zur passenden Website</h2>
@@ -63,12 +14,12 @@
       <div class="row padding-bottom" id="form-instruction">
        <details>
         <summary>
-        Tipps zum Formular
+        <i class="fa fa-question fa-fw"></i> Tipps zum Formular
         </summary>
             <ul>
               <li><span>Unterwellte Worte besitzen Tooltipps</span></li>
               <li><span>Mit * gekennzeichnete Angaben sind zwingend notwendig</span></li>
-              <li><span>Über das Symbol können Sie jede Frage mit einem individuellen Kommentar versehen</span></li>
+              <li><span>Über das Symbol <i class="fa fa-comment fa-fw"></i> können Sie Bereiche um ein individuelles Kommentar ergänzen</span></li>
               <li><span>Mit der Navigation am oberen Seitenrand können Sie zu den einzelnen Abschnitten wechseln</span></li>  
             </ul>
         </details>
@@ -105,17 +56,27 @@
           <!-- Step -->
           <div class="row">
             <a name="1"></a>
-            <h2 data-magellan-destination="1">Allgemeines<span class="add-comment">+</span></h2> 
+            <h2 data-magellan-destination="1">Allgemeines<span class="add-comment"><a href="" data-reveal-id="myModal"><i class="fa fa-comment fa-fw"></i></a></span></h2> 
             <h3 class="subline">Grundlegendes zum Unternehmen</h3>
             
-            <div class="medium-5 columns">
+            <div class="medium-6 columns">
               <label for="email">Firma</label>
               <input type="text" id="remail" placeholder="Firma GmbH">
             </div>
 
-            <div class="medium-5 columns">
+            <div class="medium-6 columns">
               <label for="email">Branche</label>
               <input type="text" id="remail" placeholder="Baugewerbe">
+            </div>
+
+            <div class="medium-6 columns">
+              <label for="email">Land</label>
+              <input type="text" id="remail" placeholder="Österreich">
+            </div>
+
+            <div class="medium-4 columns">
+              <label for="email">Ort</label>
+              <input type="text" id="remail" placeholder="Wien">
             </div>
 
             <div class="medium-2 columns">
@@ -136,9 +97,9 @@
  <!-- Step -->
           <div class="row">
             <a name="2"></a>
-            <h2 data-magellan-destination="2">Inhalt<span class="add-comment">+</span></h2>
+            <h2 data-magellan-destination="2">Inhalt<span class="add-comment"><a href="" data-reveal-id="myModal"><i class="fa fa-comment fa-fw"></i></a></span></h2> 
             <h3 class="subline">Der strukturelle Aufbau</h3>
-             <label for="email">Welche Unterseiten soll die Seite voraussichtklich besitzen?</label><br >
+             <label for="email">Welche <span data-tooltip aria-haspopup="true" class="has-tip formtipp" title="Naja, was könnte wohl mit 'Unterseite' gemeint sein?">Unterseiten</span> soll die Seite voraussichtlich besitzen?</label><br >
             <div class="medium-4 columns">
               <input id="checkbox1" type="checkbox" checked disabled> Startseite<br />
               <input id="checkbox1" type="checkbox" checked disabled> Impressum<br />
@@ -185,7 +146,7 @@
           <!-- Step -->
           <div class="row">
             <a name="3"></a>
-            <h2 data-magellan-destination="3">Design<span class="add-comment">+</span></h2>
+            <h2 data-magellan-destination="3">Design<span class="add-comment"><a href="" data-reveal-id="myModal"><i class="fa fa-comment fa-fw"></i></a></span></h2> 
             <h3 class="subline">Das grafische Konzept</h3>
 
             <label for="email">Welche Aufgabe soll der Designer bezüglich der grafischen Gestaltung übernehmen?</label><br >
@@ -222,7 +183,7 @@
           <!-- Step -->
           <div class="row">
             <a name="4"></a>
-            <h2 data-magellan-destination="4">Funktionen<span class="add-comment">+</span></h2>
+            <h2 data-magellan-destination="4">Funktionen<span class="add-comment"><a href="" data-reveal-id="myModal"><i class="fa fa-comment fa-fw"></i></a></span></h2> 
             <h3 class="subline">Was die Seite können soll</h3>
             
             <div class="medium-4 columns">
@@ -254,7 +215,7 @@
 
           <div class="row">
    
-            <h3 class="subline">Erweitertes Nutzererlebnis</h3>
+            <h3 class="subline">Erweitertes Nutzererlebnis</h3> 
             
             <div class="medium-10 columns">
               <strong>Barrierefreiheit</strong><br />Wird die Seiter voraussichtlich häufig von Personen mit ausgeprägter Sehschwäche genutzt und muss daher erweiterten Anforderungen an eine Barrierefreie Nutzung entsprechen?
@@ -284,7 +245,7 @@
 
           <div class="row">
             <a name="5"></a>
-            <h2 data-magellan-destination="5">Service<span class="add-comment">+</span></h2>
+            <h2 data-magellan-destination="5">Service<span class="add-comment"><a href="" data-reveal-id="myModal"><i class="fa fa-comment fa-fw"></i></a></span></h2> 
             <h3 class="subline">Diverse Dienstleistungen</h3>
             
             <div class="medium-10 columns">
@@ -370,41 +331,16 @@
             <div class="large-12 columns text-center padding-top">
                 <button type="submit" class="button">Absenden</button>
             </div>
-         
-       
         </form>
       </div>
     </main>
+
+
+<div id="myModal" class="reveal-modal" data-reveal>
+  <h2>Kommentar hinzufügen</h2>
+  <p class="lead">Bereich: Allgemeines</p>
+  <textarea type="text" id="remail" rows="3" placeholder="Ich möchte noch ergänzen, dass mir wichtig ist..."></textarea>
+  <a href="" class="button">Hinzufügen</a>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
     
-    <footer class="half-padding dark-bg">
-      <div class="row">
-        <div class="medium-4 columns" id="link">
-          <a href="">Impressum</a>
-          <a href="">Datenschutz</a>
-          <a href="">AGB</a>
-        </div>
-
-        <div class="medium-4 columns" id="logo">
-          <img src="img/logo_invert.png" alt="logo_invert"/>
-        </div>
-
-        <div class="medium-4 columns" id="social">
-          <a href="">Facebook</a>
-          <a href="">Twitter</a>
-          <a href="">Google+</a>
-        </div>
-
-      </div>
-      <div id="copyright">
-        © Copyright 2014 calculi
-      </div>
-
-    </footer>
-    
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-  </body>
-</html>

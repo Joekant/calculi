@@ -1,49 +1,3 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculi - Profil</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,200,300,400,700' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/app.css" />
-    <script src="js/vendor/modernizr.js"></script>
-  </head>
-  <body>
- 
-    <header>
-      <div class="row">
-        <nav class="top-bar" data-topbar role="navigation">
-          <ul class="title-area">
-            <li class="name">
-              <a href="#"><img src="img/logo.png" class="logo" alt="caluli_logo" /></a>
-            </li>
-           <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-          </ul>
-          <section class="top-bar-section">
-            <ul class="right">
-              <li><a href="index.html">Start</a></li>
-              <li><a href="login.html">Login</a></li>
-              <li><a href="briefing.html">Briefing</a></li>
-              <li><a href="backend.html">Backend</a></li>
-              <li class="active"><a href="profile.html">Profile</a></li>
-              <li><a href="compare.html">Compare</a></li>
-             <!--  <li class="has-dropdown">
-                <a href="#">Dropdown</a>
-                <ul class="dropdown">
-                  <li><a href="#">Link</a></li>
-                  <li><a href="#">Link</a></li>
-                </ul>
-              </li> -->
-            </ul>
-          </section>
-        </nav>
-      </div>
-    </header>
-
     <div id="container-profile"> 
       <div class="row">
         <div class="row">
@@ -54,7 +8,7 @@
         <div id="profile-head" class="dark-bg">
           <div class="text-center">
             <h1>Jon Doe</h1>
-            <div id="website">www.jondoe.at</div>
+            <div id="website"><a href="">www.jondoe.at</a></div>
           </div>
 
           <div class="row">
@@ -68,10 +22,11 @@
           </div>
 
          <ul class="text-center">
-           <li>X</li>
-           <li>X</li>          
-           <li>X</li>
-           <li>X</li>
+          <li><a href=""><i class="fa fa-facebook fa-fw"></i></a></li>
+          <li><a href=""><i class="fa fa-google-plus fa-fw"></i></a></li>
+          <li><a href=""><i class="fa fa-twitter fa-fw"></i></a></li>
+          <li><a href=""><i class="fa fa-xing fa-fw"></i></a></li>
+          <li><a href=""><i class="fa fa-dribbble fa-fw"></i></a></li>
          </ul>
 
         </div>
@@ -186,13 +141,4 @@
 
         </div>
       </div>
-
-    </div>
-
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-  </body>
-</html>
+        </div>

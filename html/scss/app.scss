@@ -6,7 +6,13 @@
 :: Colors
 :: Shared Properties
 :: General Styles
-:: Frontpage Styles
+:: Form Styles
+:: Landingpage
+:: Login
+:: Compare
+:: Backend
+:: Briefing
+:: Profile
 */
 
 
@@ -65,16 +71,13 @@ html, body {
 	color: $darkgrey;
 }
 
-#bullethead {
+.bullethead {
 		color: $orange;
 		font-size: 1.2em;
 		font-weight: 300;
 	}
 
 	ul {
-		padding-left: 20px;
-		color: $primary-color;
-		
 		li {
 			list-style: none;
 			span {
@@ -96,7 +99,7 @@ h1, h2 {
 
 .freestyle {
 	color:$orange;
-	font-weight:200;
+	font-weight:300;
 	font-family: $freestyle-font;
 	letter-spacing: 2px;
 	font-size: 1.5em;
@@ -119,6 +122,10 @@ a:hover {
 	letter-spacing: 1.1px;
 }
 
+.button:hover {
+	background-color: $secondary-color;
+}
+
 /* -----------------------------------------
    General Styles
 ----------------------------------------- */
@@ -137,6 +144,10 @@ a:hover {
 
 .dark-bg {
 	background: url("../img/bg_slider.png") repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	color: $bg-color;
 }
 
@@ -377,6 +388,12 @@ th {
 		font-weight: 300;
 	}
 
+
+	ul {
+		padding-left: 20px;
+		color: $primary-color;
+	}
+
 	li {
 		list-style: disc;
 		color: $orange;
@@ -386,7 +403,9 @@ th {
 #main-services {
 	h4 {
 		color:$primary-color;
-		font-weight:300;
+		font-size: 1.3em;
+		padding: 10px;
+
 	}
 
 	h3 {
@@ -394,6 +413,15 @@ th {
 		font-weight:300;
 		font-style: italic;
 	}	
+
+	i {
+		font-size: 3em;
+		color: $primary-color;
+	:hover {
+		color: $orange;
+	}
+
+	}
 }
 
 #main-user-number {
@@ -509,16 +537,13 @@ th {
 
 .sort {
 margin-bottom: 30px;
-	.sortbuttons {
+	a.sortbuttons {
 		background-color: $lightgrey;
 		padding: 10px 20px;
-			
-		a {
-			color: white;
-		}
+		color: white;
 	}
 
-	:hover {
+	a.sortbuttons:hover {
 		background-color: $darkgrey;
 	}
 }
@@ -571,13 +596,7 @@ margin-bottom: 30px;
 	}
 }
 
-a.show {
-	color: white;
 
-	:hover {
-		color: $primary-color;
-	}
-}
 
 /* -----------------------------------------
    Backend Styles
@@ -684,18 +703,31 @@ aside {
 
 	.add-comment {
 		float: right;
-		font-size: 1em;
-		color: $orange;
+		font-size: 0.8em;
+		opacity: 0.8;
+	}
+
+	.formtipp {
+		border-bottom: 1px dashed $orange;
+		font-weight: 600;
+		color: $darkgrey;
 	}
 }
 
 #form-instruction {
 	padding-left: 20px;
 	
+	i {
+		font-size: 1.2em;
+	}
+
 		ul {
+		margin-left: 30px;
+		color: $primary-color;
 		margin-left: 30px;		
 		
 		li {
+			padding-top: 10px;
 			list-style: disc;
 			span {
 				color: $darkgrey;
@@ -704,6 +736,14 @@ aside {
 		font-style: italic;
 		}
 	}
+
+
+	summary::-webkit-details-marker {
+	  display: none;
+	}
+
+
+
 }
 
 
@@ -724,10 +764,8 @@ aside {
 }
 
 #profile-head {
-	
 	border-top:5px solid $primary-color;
 	padding: 0px 40px;
-	/*border-bottom:5px solid $primary-color;*/
 
 	h1 {
 		padding-top: 20px;
@@ -740,15 +778,23 @@ aside {
 
 	#website {
 		font-style: italic;
-		color: $bg-color;
 		padding-bottom: 20px;
 	}
 
 	#description {
 		text-align: justify;
 		font-style: italic;
-		padding: 0px 30px -10px 25px;
+		padding: 0px 30px 0px 25px;
 		font-weight: 300;
+	}
+
+	a {
+		color: $bg-color;
+		font-weight: 300;
+	}
+
+	a:hover {
+		color: $primary-color;
 	}
 
 	img {
@@ -768,7 +814,7 @@ aside {
 
 		li {
 			display: inline-block;
-			padding: 15px 20px 20px 0px;
+			padding: 15px 15px 15px 0px;
 		}
 	}
 }
