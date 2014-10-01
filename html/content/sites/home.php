@@ -15,9 +15,9 @@
 
             <p><span class="bullethead">Calculi hilft dir</span></p>
             <ul>
-              <li><span>verschiedene Angebote zu vergleichen</span></li>
-              <li><span>den optimalen Webdesigner zu finden</span></li>
-              <li><span>ein klares Anforderungsprofil zu definieren</span></li>
+              <li><i class="fa fa-chevron-right fa-fw"></i> <span>verschiedene Angebote zu vergleichen</span></li>
+              <li><i class="fa fa-chevron-right fa-fw"></i> <span>den optimalen Webdesigner zu finden</span></li>
+              <li><i class="fa fa-chevron-right fa-fw"></i> <span>ein klares Anforderungsprofil zu definieren</span></li>
             </ul>
           </div><!-- END .large-6 -->
           <div class="medium-5 columns">
@@ -27,11 +27,11 @@
            
              <p><span class="bullethead">Calculi hilft dir</span></p>
             <ul>
-              <li><span>neue Kunden zu akquirieren</span></li>
-              <li><span>aussagekräftige Referenzen zu sammeln</span></li>
-              <li><span>deine Reputation zu steigern</span>
-              <li><span>den Projektumfang abzuschätzen</span></li>
-              <li><span>unkompliziert Rechnungen zu erstellen</span></li>
+              <li><i class="fa fa-chevron-right fa-fw"></i> <span>neue Kunden zu akquirieren</span></li>
+              <li><i class="fa fa-chevron-right fa-fw"></i> <span>aussagekräftige Referenzen zu sammeln</span></li>
+              <li><i class="fa fa-chevron-right fa-fw"></i> <span>deine Reputation zu steigern</span>
+              <li><i class="fa fa-chevron-right fa-fw"></i> <span>den Projektumfang abzuschätzen</span></li>
+              <li><i class="fa fa-chevron-right fa-fw"></i> <span>unkompliziert Rechnungen zu erstellen</span></li>
             </ul>
           </div> <!-- END .large-6 -->
         
@@ -117,7 +117,7 @@
         </div>
       </div>
 
-    <div class="row ">
+<!--     <div class="row ">
       <div class="large-4 columns">
         <ul class="pricing-table">
           <li class="title">Bronze</li>
@@ -151,7 +151,7 @@
           <li class="cta-button"><a class="button" href="#">wählen</a></li>
         </ul>    
       </div>    
-    </div>
+    </div> -->
 
     <div class="row text-center full-padding" >
       <div class="large-3 columns">

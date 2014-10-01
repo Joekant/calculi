@@ -218,18 +218,53 @@ a:hover {
 	width: 150px
 }
 
-header {		
-	 background-color: transparent;
-	
-	.top-bar {
-		background-color: transparent;
-		
-		.logo {
-			padding-top: 13px;
-			width: 200px
+.expanded {
+background-color: transparent;	
+}
+
+.top-bar {
+	background-color: transparent;
+	max-width: 900px;
+	margin: 0px auto;
+
+	.top-bar-section {
+		ul.right {
+			li.active {
+				a {
+					background-color: $primary-color;
+
+				}
+				:hover {
+					background-color: $primary-color;
+				}
+			}
+			li {
+				a {
+					background-color: $secondary-color;
+				}
+				:hover {
+					background-color: $secondary-color;
+					color: $primary-color;
+				}
+			}
 		}
+
+		ul.title-area {
+			li.toggle-topbar {
+				a {
+					color: $secondary-color;
+				}
+			}
+		}
+
+	}
+
+	.logo {
+		padding-top: 13px;
+		width: 200px
 	}
 }
+
 
 main {
 	width:100%;
@@ -390,13 +425,15 @@ th {
 
 
 	ul {
-		padding-left: 20px;
+
 		color: $primary-color;
 	}
 
 	li {
-		list-style: disc;
+		padding-bottom:5px;
+		list-style: none;
 		color: $orange;
+		padding-left: -40px;
 	}
 }
 
