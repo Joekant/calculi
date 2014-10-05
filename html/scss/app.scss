@@ -107,6 +107,8 @@ p {
 	text-align: justify;
 }
 
+
+
 a:hover {
 	color: $primary-color;
 }
@@ -370,6 +372,10 @@ select:focus {
 	border: 2px solid $primary-color;	
 }
 
+span.range-slider-handle {
+	background: $primary-color;
+}
+
 /* -----------------------------------------
    Table Styles
 ----------------------------------------- */
@@ -384,7 +390,8 @@ table {
 		border: 0px;
 	
 		th {
-			color: $primary-color;
+			color: $secondary-color;
+			font-size: 1.0em;
 		}
 	}
 }
@@ -789,9 +796,11 @@ aside {
 	summary::-webkit-details-marker {
 	  display: none;
 	}
+}
 
 
-
+#code {
+	font-size: 2em;
 }
 
 
@@ -804,10 +813,8 @@ aside {
 		max-width: 800px;
 	}
 
-	.button {
-		
+	.button {	
 		margin-top: 120px;
-
 	}	
 }
 
@@ -997,3 +1004,57 @@ aside {
 	}
 }
 
+/* -----------------------------------------
+   Profile List Styles
+----------------------------------------- */
+
+.profile {
+	margin-right: 10px;
+	overflow: hidden;
+}
+
+.profile-head {
+	h2.overlay-name {
+
+		background-color: black;
+		opacity: 0.7;
+		color: white;
+		z-index: 3;
+		font-size: 1.6em;
+		margin: 0px;
+	}
+
+	img {
+		border-top:5px solid $primary-color;
+		position: relative;
+		top: 36px;
+		width: 500px
+	}
+
+}
+
+.profile-body {
+	background-color: $bg-color;
+	padding: 15px;
+
+}
+
+.profile-rating {
+background-color: $bg-color;
+
+
+	ul {
+		margin: 0px;
+		li {	
+			margin: 0px;
+			padding: 7px 0px 7px 20px;
+			width: 20%;
+			text-align: center;
+			font-size: 0.8em;
+		}
+	}
+}
+	
+.inline-list > li {
+	margin-left: 0px;
+}
