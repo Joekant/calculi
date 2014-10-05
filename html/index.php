@@ -15,15 +15,14 @@
   </head>
   <body>
     <?php
-      ini_set('session.use_only_cookies', 0);
-      ini_set('session.use_trans_sid', 1);
+      // ini_set('session.use_only_cookies', 0);
+      // ini_set('session.use_trans_sid', 1);
 
       error_reporting(E_ERROR | E_WARNING | E_PARSE);
       // session_start();
-
       // include('dbconnect.php');
       include('php/functions.php');
-      include('php/logic/logic_index.php');
+	  include('php/logic/logic_index.php');
     ?>
 
     <script src="js/vendor/jquery.js"></script>
