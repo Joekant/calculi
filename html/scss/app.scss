@@ -374,10 +374,24 @@ select:focus {
    Table Styles
 ----------------------------------------- */
 
-th {
-	background-color: $secondary-color;
-	color: $bg-color;
-	text-transform: uppercase;
+table {
+	background: url("../img/bg_pattern.png") repeat;
+	border: 0px;
+
+	tr {
+		color: $orange;
+		text-transform: uppercase;
+		border: 0px;
+	
+		th {
+			color: $primary-color;
+		}
+	}
+}
+
+td {
+	background: url("../img/bg_pattern.png") repeat;
+	border-bottom: 1px solid $lightgrey;
 }
 
 /* -----------------------------------------

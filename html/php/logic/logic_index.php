@@ -11,6 +11,7 @@
       return array(
           array("home", "index.php?page=home"),
           array("profile", "index.php?page=profile"),
+          array("list", "index.php?page=list"),
           array("briefing", "index.php?page=briefing"),
           array("compare", "index.php?page=compare"),
           array("login", "index.php?page=login"),
@@ -35,6 +36,9 @@
       $content = $page;
       $footerv = "normal";
   } elseif($page == "briefing") {        
+      $content = $page;
+      $footerv = "sleek";
+  } elseif($page == "list") {        
       $content = $page;
       $footerv = "sleek";
   } elseif($page == "login") {        
