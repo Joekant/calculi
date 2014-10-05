@@ -1,51 +1,4 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculi - Landingpage</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,200,300,400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/app.css" />
-    <script src="js/vendor/modernizr.js"></script>
-  </head>
-  <body>
-
-  <header>
-  <div class="row">
-    <nav class="top-bar" data-topbar role="navigation">
-      <ul class="title-area">
-        <li class="name">
-          <a href="#"><img src="img/logo.png" class="logo" alt="caluli_logo" /></a>
-        </li>
-       <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-      </ul>
-      <section class="top-bar-section">
-        <ul class="right">
-          <li class="active"><a href="index.html">Start</a></li>
-          <li><a href="login.html">Login</a></li>
-          <li><a href="briefing.html">Briefing</a></li>
-          <li><a href="backend.html">Backend</a></li>
-          <li><a href="profile.html">Profile</a></li>
-          <li><a href="compare.html">Compare</a></li>
-         <!--  <li class="has-dropdown">
-            <a href="#">Dropdown</a>
-            <ul class="dropdown">
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-            </ul>
-          </li> -->
-        </ul>
-      </section>
-    </nav>
-  </div>
-  </header>
-
-    <main> 
+<main> 
       <div class="row">
         <div class="large-12 columns half-padding text-center">
           <h1 id="headline">Schnell den passenden Webdesigner finden</h1>
@@ -62,9 +15,9 @@
 
             <p><span class="bullethead">Calculi hilft dir</span></p>
             <ul>
-              <li><span>verschiedene Angebote zu vergleichen</span></li>
-              <li><span>den optimalen Webdesigner zu finden</span></li>
-              <li><span>ein klares Anforderungsprofil zu definieren</span></li>
+              <li><i class="fa fa-chevron-right fa-fw"></i> <span>verschiedene Angebote zu vergleichen</span></li>
+              <li><i class="fa fa-chevron-right fa-fw"></i> <span>den optimalen Webdesigner zu finden</span></li>
+              <li><i class="fa fa-chevron-right fa-fw"></i> <span>ein klares Anforderungsprofil zu definieren</span></li>
             </ul>
           </div><!-- END .large-6 -->
           <div class="medium-5 columns">
@@ -74,11 +27,11 @@
            
              <p><span class="bullethead">Calculi hilft dir</span></p>
             <ul>
-              <li><span>neue Kunden zu akquirieren</span></li>
-              <li><span>aussagekräftige Referenzen zu sammeln</span></li>
-              <li><span>deine Reputation zu steigern</span>
-              <li><span>den Projektumfang abzuschätzen</span></li>
-              <li><span>unkompliziert Rechnungen zu erstellen</span></li>
+              <li><i class="fa fa-chevron-right fa-fw"></i> <span>neue Kunden zu akquirieren</span></li>
+              <li><i class="fa fa-chevron-right fa-fw"></i> <span>aussagekräftige Referenzen zu sammeln</span></li>
+              <li><i class="fa fa-chevron-right fa-fw"></i> <span>deine Reputation zu steigern</span>
+              <li><i class="fa fa-chevron-right fa-fw"></i> <span>den Projektumfang abzuschätzen</span></li>
+              <li><i class="fa fa-chevron-right fa-fw"></i> <span>unkompliziert Rechnungen zu erstellen</span></li>
             </ul>
           </div> <!-- END .large-6 -->
         
@@ -99,19 +52,23 @@
       <h3 class="half-padding freestyle">So funktioniert's...</h3>
         <div class="row">
           <div class="large-3 columns">
+            <i class="fa fa-pencil fa-fw"></i>
             <h4>1. Briefing</h4>
             <p>Kunde verfasst online ein detailliertes Auftragsbriefing für das gewünschte Projekt.</p>
           </div>
           
           <div class="large-3 columns">
+           <i class="fa fa-user fa-fw"></i>
             <h4>2. Bewerbung</h4>
             <p>Webworker bewerben sich mit Kostenvoranschlägen und Referenzen für den Auftrag.</p>
           </div>
           
           <div class="large-3 columns">
+            <i class="fa fa-search fa-fw"></i>
             <h4>3. Auswahl</h4>
             <p> Kunde wählt einen passenden Webworker aus und lässt das Projekt vom diesem realisieren.</p>
           </div>
+          <i class="fa fa-star fa-fw"></i>
           <div class="large-3 columns">
             <h4>4. Bewertung</h4>
             <p>Nach positiver Abnahme des Projekts bewertet der Kunde die Arbeit den Webworker.</p>
@@ -160,7 +117,7 @@
         </div>
       </div>
 
-    <div class="row ">
+<!--     <div class="row ">
       <div class="large-4 columns">
         <ul class="pricing-table">
           <li class="title">Bronze</li>
@@ -194,7 +151,7 @@
           <li class="cta-button"><a class="button" href="#">wählen</a></li>
         </ul>    
       </div>    
-    </div>
+    </div> -->
 
     <div class="row text-center full-padding" >
       <div class="large-3 columns">
@@ -220,39 +177,3 @@
       <a class="button" href="#">Kostenlos registrieren</a>
     </div>
   </main>
-    
-    <footer class="half-padding dark-bg">
-      <div id="testimonial" class="padding-top text-center" >  
-        <div class="row">
-          <div class="large-12 columns">"Über Calculi habe ich schnell und einfach den geeigneten Webdesigner für meine neue Firmenwebsite gefunden. Ich kann Calculi jedem empfehlen, der nicht auf einen kompetenten Ansprechpartner in seinem persönlichem Umfeld zurückgreifen kann.“<br />
-          <span id="author">Edvard Grieg, CEO Classical GmbH</span></div>
-        </div>
-      </div>
-
-      <div class="row padding-top">
-        <div class="medium-4 columns" id="link">
-          <a href="">Impressum</a>
-          <a href="">Datenschutz</a>
-          <a href="">AGB</a>
-        </div>
-        <div class="medium-4 columns" id="logo">
-          <img src="img/logo_invert.png" alt="logo_invert"/>
-        </div>
-        <div class="medium-4 columns" id="social">
-          <a href="">Facebook</a>
-          <a href="">Twitter</a>
-          <a href="">Google+</a>
-        </div>
-      </div>
-      <div id="copyright">
-        © Copyright 2014 calculi
-      </div>
-    </footer>
-    
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-  </body>
-</html>
