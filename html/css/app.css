@@ -830,33 +830,40 @@ aside #logo-dark {
   margin-right: 10px;
   overflow: hidden; }
 
-/* line 1017, ../scss/app.scss */
-.profile-head h2.overlay-name {
-  background-color: black;
-  opacity: 0.7;
-  color: white;
-  z-index: 3;
-  font-size: 1.6em;
-  margin: 0px; }
-/* line 1027, ../scss/app.scss */
-.profile-head img {
-  border-top: 5px solid #32aebd;
-  position: relative;
-  top: 36px;
-  width: 500px; }
+/* line 1016, ../scss/app.scss */
+.profile-head {
+  overflow: hidden; }
+  /* line 1018, ../scss/app.scss */
+  .profile-head .overlay-name {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0px;
+    padding: 4px 0px; }
+  /* line 1024, ../scss/app.scss */
+  .profile-head h2 {
+    color: white;
+    opacity: 0.99;
+    font-size: 1.1em;
+    font-family: "Shadows Into Light Two";
+    letter-spacing: 3px; }
+  /* line 1032, ../scss/app.scss */
+  .profile-head img {
+    position: relative;
+    top: 38px;
+    border-top: 5px solid #32aebd;
+    width: 293px; }
 
-/* line 1036, ../scss/app.scss */
+/* line 1040, ../scss/app.scss */
 .profile-body {
   background-color: #f7f7f7;
   padding: 15px; }
 
-/* line 1042, ../scss/app.scss */
+/* line 1045, ../scss/app.scss */
 .profile-rating {
   background-color: #f7f7f7; }
-  /* line 1046, ../scss/app.scss */
+  /* line 1049, ../scss/app.scss */
   .profile-rating ul {
     margin: 0px; }
-    /* line 1048, ../scss/app.scss */
+    /* line 1051, ../scss/app.scss */
     .profile-rating ul li {
       margin: 0px;
       padding: 7px 0px 7px 20px;
@@ -864,6 +871,39 @@ aside #logo-dark {
       text-align: center;
       font-size: 0.8em; }
 
-/* line 1058, ../scss/app.scss */
+/* line 1061, ../scss/app.scss */
 .inline-list > li {
   margin-left: 0px; }
+
+/* line 1065, ../scss/app.scss */
+.overlay {
+  position: absolute;
+  top: 43px;
+  height: 255px;
+  width: 293px;
+  background: rgba(0, 0, 0, 0.5);
+  /* background: url("../img/overlay.png"); */
+  text-align: center;
+  opacity: 0;
+  z-index: 100;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease; }
+
+/* line 1079, ../scss/app.scss */
+.profile-head:hover .overlay {
+  opacity: 0.9; }
+
+/* line 1083, ../scss/app.scss */
+.plus {
+  position: relative;
+  top: 48%;
+  color: white;
+  opacity: 0.99;
+  font-size: 2em; }
+  /* line 1090, ../scss/app.scss */
+  .plus a {
+    color: white;
+    opacity: 0.99; }
+  /* line 1095, ../scss/app.scss */
+  .plus a:hover {
+    color: #32aebd; }

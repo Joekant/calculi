@@ -1014,29 +1014,32 @@ aside {
 }
 
 .profile-head {
-	h2.overlay-name {
-
-		background-color: black;
-		opacity: 0.7;
-		color: white;
-		z-index: 3;
-		font-size: 1.6em;
+	overflow:hidden;
+	.overlay-name {
+		background:rgba(0,0,0,.50);
 		margin: 0px;
+		padding: 4px 0px;
+	}
+
+	h2 {
+		color: white;
+		opacity: 0.99;
+		font-size: 1.1em;
+		font-family: $freestyle-font;
+		letter-spacing: 3px;
 	}
 
 	img {
-		border-top:5px solid $primary-color;
 		position: relative;
-		top: 36px;
-		width: 500px
+		top: 38px;	
+		border-top:5px solid $primary-color;
+		width: 293px;
 	}
-
 }
 
 .profile-body {
 	background-color: $bg-color;
 	padding: 15px;
-
 }
 
 .profile-rating {
@@ -1058,3 +1061,39 @@ background-color: $bg-color;
 .inline-list > li {
 	margin-left: 0px;
 }
+
+.overlay {  
+	position: absolute;
+	top: 43px;
+	height: 255px;
+	width: 293px;
+	background:rgba(0,0,0,.50); 
+	/* background: url("../img/overlay.png"); */
+	text-align:center;
+	opacity:0;
+	z-index: 100;
+	-webkit-transition: opacity .25s ease;
+	-moz-transition: opacity .25s ease;
+}
+
+.profile-head:hover .overlay {
+	opacity:0.9;
+}
+
+.plus {  
+	position: relative;
+	top: 48%;
+	color: white;
+	opacity: 0.99;
+	font-size:2em;
+
+	a {
+		color: white;
+		opacity: 0.99;
+	}
+
+	a:hover {
+		color: $primary-color;
+	}
+
+	}

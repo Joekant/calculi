@@ -1,23 +1,48 @@
  <div class="row">
   <div class="large-12 columns half-padding text-center">
-    <h1 id="headline">Webdesigner im Überblick</h1>
-    <h2 class="subline">in 5 Minuten zur passenden Website</h2>
+    <h1 id="headline">Unsere Experten</h1>
+    <h2 class="subline">Suche & finde den perfekten Partner</h2>
+  </div>
+</div>
+
+<div class="row">
+  <div class="medium-4 columns">
+    <label for="email">Name</label>
+    <input type="text" id="remail" placeholder="Max Mustermann">
+  </div>
+
+  <div class="medium-4 columns">
+    <label for="email">Ort</label>
+    <input type="text" id="remail" placeholder="Wien">
+  </div>
+
+  <div class="medium-4 columns">
+    <label for="email">Bewertung</label>
+    
+<div class="range-slider" data-slider data-options="step: 20;">
+  <span class="range-slider-handle" role="slider" tabindex="0"></span>
+  <span class="range-slider-active-segment"></span>
+  <input type="hidden">
+</div>
+
   </div>
 </div>
 
 <div class="row" data-equalizer>
 
 <?php 
+  $designer = ['Philipp Doblhoff', 'Joel Cantillo', 'Julian Haidner', 'Clemens Bauer', 'Philipp Schneeberger', 'Lukas Weichselbaumer', 'Chanel de Castro', 'Calin Teodorescu', 'Ahmet Öztürk', 'Kaitlin Rathwell'];
   for($i=0;$i<9;$i++) {
 ?>
 
-
-
-  <div class="large-4 columns">
-   <div class="profile padding-bottom">
+  <div class="medium-4 columns">
+   <div class="profile">
     <div class="profile-head">
-     <img src="img/thumb.jpeg" alt="">
-     <h2 class="overlay-name text-center">Jon Doe</h2>
+      <a href="" class="overlay">
+        <span class="plus"><i class="fa fa-search fa-fw"></i></span> 
+      </a>
+      <img src="img/thumb.jpeg" alt="">
+     <h2 class="overlay-name profile-name text-center"><?php echo $designer[$i]; ?></h2>
    </div>
    <div class="profile-body" data-equalizer-watch>
     Ich arbeite seit 2004 als professioneller Webdesigner und habe in der Vergangenheit bereits zahlreiche Kundenprojekte erfolgreich abgewickelt. 
@@ -50,3 +75,4 @@
   </ul>
 
 </div>
+<div class="full-padding"></div>
