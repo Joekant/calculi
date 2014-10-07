@@ -15,9 +15,9 @@
 
             <p><span class="bullethead">Calculi hilft dir</span></p>
             <ul>
-              <li><i class="fa fa-chevron-right fa-fw"></i> <span>verschiedene Angebote zu vergleichen</span></li>
-              <li><i class="fa fa-chevron-right fa-fw"></i> <span>den optimalen Webdesigner zu finden</span></li>
-              <li><i class="fa fa-chevron-right fa-fw"></i> <span>ein klares Anforderungsprofil zu definieren</span></li>
+              <li><i class="fa fa-check  fa-fw"></i> <span>verschiedene Angebote zu vergleichen</span></li>
+              <li><i class="fa fa-check  fa-fw"></i> <span>den optimalen Webdesigner zu finden</span></li>
+              <li><i class="fa fa-check  fa-fw"></i> <span>ein klares Anforderungsprofil zu definieren</span></li>
             </ul>
           </div><!-- END .large-6 -->
           <div class="medium-5 columns">
@@ -27,11 +27,11 @@
            
              <p><span class="bullethead">Calculi hilft dir</span></p>
             <ul>
-              <li><i class="fa fa-chevron-right fa-fw"></i> <span>neue Kunden zu akquirieren</span></li>
-              <li><i class="fa fa-chevron-right fa-fw"></i> <span>aussagekräftige Referenzen zu sammeln</span></li>
-              <li><i class="fa fa-chevron-right fa-fw"></i> <span>deine Reputation zu steigern</span>
-              <li><i class="fa fa-chevron-right fa-fw"></i> <span>den Projektumfang abzuschätzen</span></li>
-              <li><i class="fa fa-chevron-right fa-fw"></i> <span>unkompliziert Rechnungen zu erstellen</span></li>
+              <li><i class="fa fa-check  fa-fw"></i> <span>neue Kunden zu akquirieren</span></li>
+              <li><i class="fa fa-check  fa-fw"></i> <span>aussagekräftige Referenzen zu sammeln</span></li>
+              <li><i class="fa fa-check  fa-fw"></i> <span>deine Reputation zu steigern</span>
+              <li><i class="fa fa-check  fa-fw"></i> <span>den Projektumfang abzuschätzen</span></li>
+              <li><i class="fa fa-check  fa-fw"></i> <span>unkompliziert Rechnungen zu erstellen</span></li>
             </ul>
           </div> <!-- END .large-6 -->
         
@@ -40,10 +40,10 @@
       
       <div class="row">
         <div class="medium-5 columns">
-          <a class="button expand" href="index.php?page=briefing">Briefing erstellen</a>
+          <a class="button expand" href="index.php?page=briefing">Auftrag starten <i class="fa fa-chevron-right fa-fw"></i> </a>
         </div>
         <div style="float:right;" class="medium-5 columns">
-          <a class="button expand" href="index.php?page=login">Profil anlegen</a>
+          <a class="button expand" href="index.php?page=register">Profil anlegen <i class="fa fa-chevron-right fa-fw"></i> </a>
         </div>
       </div>
       <br class="end" />
@@ -81,15 +81,15 @@
         <div class="row">
           <div class="large-4 columns">
             <h2>12</h2>
-            <h5 class="subheader text-center">Ausschreibungen</h5>
+            <h5 class="subheader text-center">aktive Ausschreibungen</h5>
           </div>
           <div class="large-4 columns">
             <h2>60</h2>
-            <h5 class="subheader text-center">Registrierte Webworkers</h5>
+            <h5 class="subheader text-center">registrierte Webworkers</h5>
           </div>
           <div class="large-4 columns">
             <h2>8</h2>
-            <h5 class="subheader text-center">Abgeschlossene Projekte</h5>
+            <h5 class="subheader text-center">abgeschlossene Projekte</h5>
           </div>
         </div>
       </div>

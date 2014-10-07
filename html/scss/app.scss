@@ -522,6 +522,30 @@ td {
 
 #login {
 
+.tabs {
+
+dd {
+	width: 150px;
+}
+
+	.active {
+
+		a {
+			background-color: $primary-color;
+			color:white;
+			opacity: 1;
+		}
+	}
+
+	a {
+		background-color: $lightgrey;
+		color:white;
+		opacity: 0.9;
+	}
+
+	padding-bottom: 20px;
+}
+
 	.row {
 		max-width: 300px;
 	}
@@ -670,15 +694,18 @@ a.show {
 ----------------------------------------- */
 
 .icon-bar {
+
 	background-color: $secondary-color;
 	border-bottom: 5px solid $primary-color;
+
+	a label {
+		padding-top: 5px;
+	}	
 
 	a.active {
 		background-color: $primary-color;
 	}
 }
-
-
 
 #backend-nav{
 	.top-bar {
@@ -737,8 +764,24 @@ a.show {
 }
 
 .main-section {
-padding: 20px 20px 40px 40px;
+	padding: 20px 20px 40px 40px;
+	margin: 0px auto;
 }
+
+ul.footer {
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+
+	li {
+		display: inline;
+		padding-left: 20px;
+	}
+}
+
 
 /* -----------------------------------------
    Briefing Styles
@@ -1017,7 +1060,7 @@ padding: 20px 20px 40px 40px;
 
 	.comment {
 		font-style: italic;
-		padding: 10px 20px 0px 20px;
+		padding: 15px 20px 0px 30px;
 		color: $darkgrey;
 	}
 
@@ -1029,8 +1072,8 @@ padding: 20px 20px 40px 40px;
 		font-size: 2em;
 		color: $lightgrey;
 	}
-
-	:hover {
+	
+	#more-comments:hover {
 		color: $primary-color;
 	}
 }

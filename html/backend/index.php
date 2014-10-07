@@ -22,12 +22,7 @@
       // session_start();
       // include('dbconnect.php');
       include('../php/functions.php');
-	    include('/php/logic/logic_index.php');
-
-      include('content/header.php');
-      include("content/sites/$content.php");
-      // include("content/footer.php");
-
+	    include('php/logic/logic_index.php');
     ?>
 
     <script src="../js/vendor/jquery.js"></script>

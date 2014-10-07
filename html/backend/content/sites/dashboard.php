@@ -1,8 +1,6 @@
-
   <div class="main-section">
-    <h1>Dashboard</h1>
+  
   </div>
-
 
   <!-- Tour -->
   <ol class="joyride-list" data-joyride>

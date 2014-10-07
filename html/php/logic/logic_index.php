@@ -11,8 +11,8 @@
       return array(
           array("start", "index.php?page=home"),
           array("designer", "index.php?page=designer"),
-          array("Ausschreibungen", "index.php?page=list"),
-          array("register", "index.php?page=register"),
+
+          array("registrieren", "index.php?page=register"),
           array("login", "index.php?page=login"),
       );
   }
@@ -45,9 +45,6 @@
       $footer = "0";
       $header = "0";
   } elseif($page == "briefing") {        
-      $content = $page;
-      $footerv = "sleek";
-  } elseif($page == "list") {        
       $content = $page;
       $footerv = "sleek";
   } elseif($page == "login") {        
