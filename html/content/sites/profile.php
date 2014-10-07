@@ -131,11 +131,14 @@
           Lorem  Ipsum dolor sit amet
         </div>
       </div> 
-
       <div class="row text-center">
-        <a href="" class="button text-center" id="more-comments">X</a>
-      </div>
+        <a href="" class="text-center" id="more-comments"><i class="fa fa-arrow-circle-down fa-fw"></i></a>
+      </div> 
+ 
 
     </div>
+
+
+
   </div>
 </div>

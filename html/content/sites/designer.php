@@ -31,14 +31,15 @@
 <div class="row" data-equalizer>
 
 <?php 
-  $designer = ['Philipp Doblhoff', 'Joel Cantillo', 'Julian Haidner', 'Clemens Bauer', 'Philipp Schneeberger', 'Lukas Weichselbaumer', 'Chanel de Castro', 'Calin Teodorescu', 'Ahmet Öztürk', 'Kaitlin Rathwell'];
+  $designer = array('Joel Cantillo', 'Julian Haidner', 'Clemens Bauer', 'Philipp Schneeberger', 'Lukas Weichselbaumer', 'Chanel de Castro', 'Calin Teodorescu', 'Ahmet Öztürk', 'Kaitlin Rathwell');
   for($i=0;$i<9;$i++) {
 ?>
+
 
   <div class="medium-4 columns">
    <div class="profile">
     <div class="profile-head">
-      <a href="" class="overlay">
+      <a href="index.php?page=profile" class="overlay">
         <span class="plus"><i class="fa fa-search fa-fw"></i></span> 
       </a>
       <img src="img/thumb.jpeg" alt="">

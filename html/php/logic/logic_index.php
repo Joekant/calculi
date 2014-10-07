@@ -9,12 +9,10 @@
 
   function header_navigation() {
       return array(
-          array("home", "index.php?page=home"),
-          array("profile", "index.php?page=profile"),
+          array("start", "index.php?page=home"),
           array("designer", "index.php?page=designer"),
-          array("list", "index.php?page=list"),
-          array("briefing", "index.php?page=briefing"),
-          array("compare", "index.php?page=compare"),
+          array("Ausschreibungen", "index.php?page=list"),
+          array("register", "index.php?page=register"),
           array("login", "index.php?page=login"),
       );
   }
@@ -42,6 +40,10 @@
   } elseif($page == "briefing_s") {        
       $content = $page;
       $footerv = "normal";
+  } elseif($page == "register") {        
+      $content = $page;
+      $footer = "0";
+      $header = "0";
   } elseif($page == "briefing") {        
       $content = $page;
       $footerv = "sleek";

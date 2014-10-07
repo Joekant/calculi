@@ -40,7 +40,7 @@
   </div> 
 
   <div id="briefing-form">     
-    <form data-abide action="index.php?page=briefing_s" type="POST">
+    <form action="index.php?page=briefing_s" method="POST">
 
       <!-- Step -->
       <div class="row">

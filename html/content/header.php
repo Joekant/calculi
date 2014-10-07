@@ -1,6 +1,6 @@
 <header>
 
-  <nav class="top-bar" data-topbar role="navigation">
+  <nav class="top-bar" id="frontpage-topbar" data-topbar role="navigation">
     <ul class="title-area">
       <li class="name">
         <a href="#"><img src="img/logo.png" class="logo" alt="caluli_logo" /></a>

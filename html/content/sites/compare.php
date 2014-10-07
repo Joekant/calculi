@@ -32,35 +32,17 @@
         <a href="" class="sortbuttons"><i class="fa fa-star fa-fw"></i></a><a href="" class="sortbuttons"><i class="fa fa-clock-o fa-fw"></i></a><a href="" class="sortbuttons"><i class="fa fa-euro fa-fw"></i></a><a href="" class="sortbuttons"><i class="fa fa-bookmark fa-fw"></i></a>
       </div>
 
-      <div class="item dark-bg yellow-border half-margin">
-       <div class="row">
-        <div class="medium-1 columns rating yellow-bg">80</div>
-        <div class="small-6 columns name">Jon Doe</div>
-        <div class="small-4 columns price">3700 €</div>
-        <div class="small-1 columns marker"><a href=""><i class="fa fa-bookmark fa-fw"></i></a></div>
-      </div>
-    </div>
 
-    <div class="item dark-bg orange-border half-margin">
-     <div class="row">
-      <div class="medium-1 columns rating orange-bg">72</div>
-      <div class="small-6 columns name">Matt Damon</div>
-      <div class="small-4 columns price">2100 €</div>
-      <div class="small-1 columns marker"><a href=""><i class="fa fa-bookmark fa-fw"></i></a></div>
-    </div>
-  </div>
-
-
+<!-- EINTRAG -->
   <a class="show" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">
     <div class="item dark-bg green-border half-margin">
      <div class="row">
       <div class="medium-1 columns green-bg rating">93</div>
-      <div class="small-6 columns name">Bruce Lee</div>
+      <div class="small-6 columns name">Philipp Doblhoff</div>
       <div class="small-4 columns price">1800 €</div>
       <div class="small-1 columns marker"><i class="fa fa-bookmark fa-fw"></i></div>
     </div>
   </a>
-
   <div id="spoiler" style="display:none">
     <div class="collapsed">
       Lorem Ipsum...
@@ -73,24 +55,58 @@
      </div>
    </div>
  </div>
-</div>
+ </div>
+<!-- EINTRAG -->
+  <a class="show" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">
+    <div class="item dark-bg yellow-border half-margin">
+     <div class="row">
+      <div class="medium-1 columns yellow-bg rating">80</div>
+      <div class="small-6 columns name">Joel Cantillo</div>
+      <div class="small-4 columns price">2200 €</div>
+      <div class="small-1 columns marker"><i class="fa fa-bookmark fa-fw"></i></div>
+    </div>
+  </a>
+  <div id="spoiler" style="display:none">
+    <div class="collapsed">
+      Lorem Ipsum...
+      <div class="buttons">
+        <div class="row">
+         <div class="small-4 columns"><button>Profil</button></div>
+         <div class="small-4 columns"><button>Kalkulation</button></div>
+         <div class="small-4 columns"><button class="green">Auswählen</button></div>
+       </div>
+     </div>
+   </div>
+ </div>
+ </div>
 
-<div class="item dark-bg red-border half-margin">
- <div class="row">
-  <div class="medium-1 columns red-bg rating">50</div>
-  <div class="small-6 columns name">Indiana Jones</div>
-  <div class="small-4 columns price">4500 €</div>
-  <div class="small-1 columns marker"><a href=""><i class="fa fa-bookmark fa-fw"></i></a></div>
-</div>
-</div>
+<!-- EINTRAG -->
+  <a class="show" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">
+    <div class="item dark-bg red-border half-margin">
+     <div class="row">
+      <div class="medium-1 columns red-bg rating">54</div>
+      <div class="small-6 columns name">Bruce Lee</div>
+      <div class="small-4 columns price">2600 €</div>
+      <div class="small-1 columns marker"><i class="fa fa-bookmark fa-fw"></i></div>
+    </div>
+  </a>
+  <div id="spoiler" style="display:none">
+    <div class="collapsed">
+      Lorem Ipsum...
+      <div class="buttons">
+        <div class="row">
+         <div class="small-4 columns"><button>Profil</button></div>
+         <div class="small-4 columns"><button>Kalkulation</button></div>
+         <div class="small-4 columns"><button class="green">Auswählen</button></div>
+       </div>
+     </div>
+   </div>
+ </div>
+ </div>
 
-<div class="item dark-bg green-border half-margin">
- <div class="row">
-  <div class="medium-1 columns green-bg rating">98</div>
-  <div class="small-6 columns name">Bruce Willis</div>
-  <div class="small-4 columns price">1340 €</div>
-  <div class="small-1 columns marker"><a href=""><i class="fa fa-bookmark fa-fw"></i></a></div>
-</div>
+
+
+
 </div>
 
 <div class="text-center half-padding">

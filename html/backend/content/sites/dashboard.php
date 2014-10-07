@@ -1,7 +1,6 @@
-  
+
   <div class="main-section">
     <h1>Dashboard</h1>
-
   </div>
 
 
@@ -29,7 +28,7 @@
     </li>
   </ol>
 
+  
   <script>
- 
-    // $(document).foundation('joyride', 'start');
+  // $(document).foundation('joyride', 'start');
   </script>

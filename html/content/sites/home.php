@@ -40,10 +40,10 @@
       
       <div class="row">
         <div class="medium-5 columns">
-          <a class="button expand" href="#">Briefing erstellen</a>
+          <a class="button expand" href="index.php?page=briefing">Briefing erstellen</a>
         </div>
         <div style="float:right;" class="medium-5 columns">
-          <a class="button expand" href="#">Profil anlegen</a>
+          <a class="button expand" href="index.php?page=login">Profil anlegen</a>
         </div>
       </div>
       <br class="end" />
@@ -81,7 +81,7 @@
         <div class="row">
           <div class="large-4 columns">
             <h2>12</h2>
-            <h5 class="subheader text-center">Ausgeschreibungen</h5>
+            <h5 class="subheader text-center">Ausschreibungen</h5>
           </div>
           <div class="large-4 columns">
             <h2>60</h2>
