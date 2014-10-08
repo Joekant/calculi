@@ -28,6 +28,34 @@
   </div>
 </div>
 
+
+    <div class="row half-bottom">
+     <details class="padding-top">
+      <summary>
+        <i class="fa fa-question fa-fw"></i> Bewertungslegende anzeigen
+      </summary>
+      <div class="medium-3 columns">
+        <ul class="legende padding-top">
+          <li class="green-bg">gute Bewertung</i></li>
+          <li class="yellow-bg">mittlere Bewertung</li>
+          <li class="red-bg">schlechte Bewertung</li>
+
+        </ul>
+      </div>
+      <div class="medium-9 columns">
+        <ul class="padding-top">
+          <li><i class="fa fa-comment fa-fw"></i> Kommunikation</li>
+          <li><i class="fa fa-clock-o fa-fw"></i> Geschwindigkeit</li>
+          <li><i class="fa fa-pencil fa-fw"></i> Dokumentation</li>
+          <li><i class="fa fa-star fa-fw"></i> Qualität</li>
+          <li><i class="fa fa-gear fa-fw"></i> Technik</li>
+        </ul>
+      </div>
+    </details>
+  </div>
+
+</div>
+
 <div class="row" data-equalizer>
 
 <?php 
