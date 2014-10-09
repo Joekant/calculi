@@ -87,17 +87,9 @@ h1, h2 {
 	font-size: 1.5em;
 }
 
-
-
-
 p {
 	text-align: justify;
 }
-
-
-
-
-
 
 a:hover {
 	color: $primary-color;
@@ -114,6 +106,50 @@ a:hover {
 
 .button:hover {
 	background-color: $secondary-color;
+}
+
+
+.tabs {
+padding-bottom: 20px;
+text-align: center;
+
+
+dd {
+	width: 150px;
+}
+	dd.active {
+		a {
+			background-color: $primary-color;
+			color:white;
+			opacity: 1;
+		}
+	}
+
+	dd  {
+		a {
+		background-color:white;
+
+	-webkit-transition: background-color .7s ease, color .7s ease;
+	-moz-transition: background-color .7s ease, color .7s ease;
+
+		}
+
+		a:hover {
+			background-color: $primary-color;
+			color: white;
+
+		}
+	}
+}
+
+a:hover {
+	-webkit-transition: background-color .7s ease, color .7s ease;
+	-moz-transition: background-color .7s ease, color .7s ease;
+}
+
+a.active {
+	-webkit-transition: background-color .7s ease;
+	-moz-transition: background-color .7s ease;		
 }
 
 /* -----------------------------------------
@@ -331,6 +367,8 @@ select {
 	border-bottom: 2px solid $darkgrey;
 	box-shadow: none;
 	color: $darkgrey;
+	-webkit-transition: color .9s ease;
+	-moz-transition: color .9s ease;
 	letter-spacing: 1px;
 }
 
@@ -345,6 +383,8 @@ select
 	background: url("../img/bg_pattern.png") repeat;
 	border-bottom: 2px solid $primary-color;
 	box-shadow: none;
+
+
 }
 
 textarea[type=text] {
@@ -362,6 +402,7 @@ select {
 	padding: 0px;
 }
 
+
 select:focus {
 	border: 2px solid $primary-color;	
 }
@@ -369,6 +410,87 @@ select:focus {
 span.range-slider-handle {
 	background: $primary-color;
 }
+
+#dropzone {
+
+    margin-top: 10px;
+    border: 2px solid $darkgrey;
+    height: 201px;
+    width: 250px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+
+    #upload-pic {
+    	position: absolute;
+		top: 12px;	
+    	height: 190px;
+    	width: 246px;
+    	height: 196px;
+    	opacity: 1;
+
+
+    }
+}
+#dropzone.in {
+    width: 600px;
+    height: 200px;
+    line-height: 200px;
+    font-size: larger;
+}
+#dropzone:hover {
+    border: 2px solid $primary-color;
+    color: white;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    cursor: hand;
+}
+#dropzonefade {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    opacity: 1;
+}
+
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+  top: 30%;
+  opacity: 0.7;
+  font-size: 1em;
+
+  i {
+  	  font-size: 3em;
+  }
+}
+
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  width: 200px;
+  height: 200px;
+  opacity: 0;
+  -ms-filter: 'alpha(opacity=0)';
+  direction: ltr;
+  cursor: pointer;
+}
+
+/* Fixes for IE < 8 */
+@media screen\9 {
+  .fileinput-button input {
+    filter: alpha(opacity=0);
+    font-size: 100%;
+    height: 100%;
+  }
+}
+
 
 /* -----------------------------------------
    Table Styles
@@ -528,30 +650,6 @@ td {
 
 #login {
 
-.tabs {
-
-dd {
-	width: 150px;
-}
-
-	.active {
-
-		a {
-			background-color: $primary-color;
-			color:white;
-			opacity: 1;
-		}
-	}
-
-	a {
-		background-color: $lightgrey;
-		color:white;
-		opacity: 0.9;
-	}
-
-	padding-bottom: 20px;
-}
-
 	.row {
 		max-width: 300px;
 	}
@@ -692,103 +790,6 @@ a.show {
 		color: $primary-color;
 	}
 }
-
-
-
-/* -----------------------------------------
-   Backend Styles
------------------------------------------ */
-
-.icon-bar {
-
-	background-color: $secondary-color;
-	border-bottom: 5px solid $primary-color;
-
-	a label {
-		padding-top: 5px;
-	}	
-
-	a.active {
-		background-color: $primary-color;
-	}
-}
-
-#backend-nav{
-	.top-bar {
-		background-color: $secondary-color;		
-	}
-}
-
-
-#thumb {
-	width: 100%;
-	z-index: 2;
-}	
-
-#overlay-name {
-	background-color: black;
-	opacity: 0.7;
-	color: white;
-	position: relative;
-	bottom: 40px;
-	padding: 8px;
-	text-align: center;
-	z-index: 3;
-	font-weight: 300;
-	letter-spacing: 1px;
-}
-
-#logo-dark {
-	width: 70px;
-	padding-top: 30px;
-}
-
-
-.tab-bar {
-	border-bottom: 5px solid $primary-color;
-	background-color: $secondary-color;
-	height: 50px;
-
-	h1 {
-		font-weight: 300;
-		letter-spacing: 1px;
-		text-transform: uppercase;
-	}
-}
-
-.joyride-content-wrapper {
-	p {
-		color: white;
-		padding: 10px 0px;
-		font-size: 1em;
-		font-weight: 300;
-	}
-
-	h4 {
-		font-weight: 300;
-	}
-}
-
-.main-section {
-	padding: 20px 20px 40px 40px;
-	margin: 0px auto;
-}
-
-ul.footer {
-	position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 50px;
-    width: 100%;
-    margin: 0;
-    text-align: center;
-
-	li {
-		display: inline;
-		padding-left: 20px;
-	}
-}
-
 
 /* -----------------------------------------
    Briefing Styles
@@ -980,10 +981,19 @@ ul.footer {
 			opacity: 0.7;
 		}
 
-		li.sum-points {
-			padding: 36px 0px 30px 25px;
+		li#sum-points {
+			padding: 43px 0px 15px 25px;
 			font-weight: 600;
 			font-size: 1.3em;
+			line-height: 20px;
+
+			#vote-count {
+				font-style: italic;
+				color: $darkgrey;
+				font-size: 0.6em;
+				font-weight: 400;
+				padding-left: -5px;
+			}
 		}
 	}
 
@@ -1008,10 +1018,6 @@ ul.footer {
 }	
 
 
-
-
-
-
 #qualification {
 	ul {
 		margin: 0px;
@@ -1024,13 +1030,13 @@ ul.footer {
 
 #skills {
 	li {
-		margin-right: 10px;
-		margin-bottom: 10px;
-		padding: 1px 4px;
+		margin-right: 5px;
+		margin-bottom: 5px;
+		padding: 0px 2px;
 		background-color: $lightgrey;
 		color: white;
 		text-transform: uppercase;
-		font-size: 0.8em;
+		font-size: 0.7em;
 	}
 
 	.inline-list {
@@ -1226,8 +1232,6 @@ ul.footer {
    Profile List Styles
 ----------------------------------------- */
 
-
-
 .profile {
 	margin-right: 10px;
 	overflow: hidden;
@@ -1327,3 +1331,119 @@ background-color: $bg-color;
 	}
 
 	}
+
+
+
+/* -----------------------------------------
+   Backend Styles
+----------------------------------------- */
+
+.icon-bar {
+	background-color: $secondary-color;
+	border-bottom: 5px solid $primary-color;
+
+	a label {
+		padding-top: 5px;
+		font-size: 1em;
+	}	
+
+	a.active {
+		background-color: $primary-color;
+	}
+}
+
+#backend-nav{
+	.top-bar {
+		background-color: $secondary-color;		
+	}
+}
+
+#logo-dark {
+	width: 70px;
+	padding-top: 30px;
+}
+
+
+.tab-bar {
+	border-bottom: 5px solid $primary-color;
+	background-color: $secondary-color;
+	height: 50px;
+
+	h1 {
+		font-weight: 300;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+}
+
+.joyride-content-wrapper {
+	p {
+		color: white;
+		padding: 10px 0px;
+		font-size: 1em;
+		font-weight: 300;
+	}
+
+	h4 {
+		font-weight: 300;
+	}
+}
+
+.main-section {
+	padding: 20px 20px 40px 40px;
+	margin: 0px auto;
+}
+
+ul.footer {
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+
+	li {
+		display: inline;
+		padding-left: 20px;
+	}
+}
+
+/* -----------------------------------------
+   Backend Styles - Profile
+----------------------------------------- */
+
+#profile-progress {
+	max-width: 400px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+.progress {
+	margin-top: 10px;
+	border: 1px solid $primary-color;
+}
+
+#profile-navigation {
+	dd {
+	width: 80px;
+
+	}
+}
+
+.tabs-content {
+	h1 {
+		font-size: 2.2em;
+		line-height: 1px;
+		padding-bottom: 40px;
+		color: $primary-color;
+		font-weight: 300;
+	}
+
+	.content {
+
+		margin-left: -30px;	
+	}
+}
+
+

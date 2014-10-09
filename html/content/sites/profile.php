@@ -76,7 +76,7 @@
               <li><i class="fa fa-gear fa-fw"></i> Technik</li>
               <li><i class="fa fa-pencil fa-fw"></i> Dokumentation</li>
               <li><i class="fa fa-question fa-fw"></i> Support</li>
-              <li class="sum-points">Gesamt</li>
+              <li id="sum-points">Gesamt<br /> <span id="vote-count">(4 Stimmen)</span></li>
             </ul>
           </div>
         </div>
@@ -105,7 +105,7 @@
             <li>Illustrator</li>
           </ul>
 
-          <h2>Stärken</h2>
+          <h2 class="padding-top">Stärken</h2>
           <ul class="inline-list">
             <li>Organisation</li>
             <li>Pünktlichkeit</li>
