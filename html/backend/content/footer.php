@@ -1,9 +1,5 @@
-
-
-	<ul class="footer">
-		<li><a href="">kontakt</a></li>
-		<li><a href="">hilfe</a></li>
-		<li><a href="">feedback</a></li>
-		<li><a href="">impressum</a></li>
-	</ul>
+<ul class="footer">
+	<li><a href="#" data-reveal-id="helpmodal"><i class="fa fa-question fa-fw"></i></a></li>
+	<li><a href="#" data-reveal-id="feedbackmodal"><i class="fa fa-comment fa-fw"></i></a></li>
+</ul>
 

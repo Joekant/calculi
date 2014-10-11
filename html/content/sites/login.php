@@ -6,7 +6,7 @@
   
 
 
-<dl class="tabs" data-tab>
+<dl class="tabs" data-tab data-options="deep_linking:true">
   <dd class="active"><a href="#webworker">Webworker</a></dd>
   <dd><a href="#kunde">Kunde</a></dd>
 </dl>

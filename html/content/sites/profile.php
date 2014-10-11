@@ -28,26 +28,26 @@
       </ul>
 
 
-    <div id="profile-statistics" class="text-center">
-      <div class="row text-center">
-        <div class="medium-3 columns">
-          <h3>12</h3>
-          <h5>Registrierungsdatum</h5>
-        </div>
-        <div class="medium-3 columns">
-          <h3>60</h3>
-          <h5>letzte Aktivität</h5>
-        </div>
-        <div class="medium-3 columns">
-          <h3>8</h3>
-          <h5>abgeschlossene Projekte</h5>
-        </div>
-        <div class="medium-3 columns">
-          <h3>8</h3>
-          <h5>Ø Antwortzeit</h5>
+      <div id="profile-statistics" class="text-center">
+        <div class="row text-center">
+          <div class="medium-3 columns">
+            <h3>12</h3>
+            <h5>Registrierungsdatum</h5>
+          </div>
+          <div class="medium-3 columns">
+            <h3>60</h3>
+            <h5>letzte Aktivität</h5>
+          </div>
+          <div class="medium-3 columns">
+            <h3>8</h3>
+            <h5>abgeschlossene Projekte</h5>
+          </div>
+          <div class="medium-3 columns">
+            <h3>8</h3>
+            <h5>Ø Antwortzeit</h5>
+          </div>
         </div>
       </div>
-    </div>
 
     </div>
 
@@ -84,13 +84,13 @@
 
         <div class="medium-5 columns" id="qualification">
           <h2>Ausbildung</h2>
-            <ul>
-              <li><strong>SAE Technologie Institute, Wien</strong><br />Webdesign & Development <em>(2014)</em></li>
-              <li><strong>SAE Technologie Institute, Wien</strong><br />Webdesign & Development <em>(2014)</em></li>
-              <li><strong>SAE Technologie Institute, Wien</strong><br />Webdesign & Development <em>(2014)</em></li>
-              <li><strong>SAE Technologie Institute, Wien</strong><br />Webdesign & Development <em>(2014)</em></li>
-              <li><strong>SAE Technologie Institute, Wien</strong><br />Webdesign & Development <em>(2014)</em></li>
-         </ul>
+          <ul>
+            <li><strong>SAE Technologie Institute, Wien</strong><br />Webdesign & Development <em>(2014)</em></li>
+            <li><strong>SAE Technologie Institute, Wien</strong><br />Webdesign & Development <em>(2014)</em></li>
+            <li><strong>SAE Technologie Institute, Wien</strong><br />Webdesign & Development <em>(2014)</em></li>
+            <li><strong>SAE Technologie Institute, Wien</strong><br />Webdesign & Development <em>(2014)</em></li>
+            <li><strong>SAE Technologie Institute, Wien</strong><br />Webdesign & Development <em>(2014)</em></li>
+          </ul>
         </div>
 
         <div class="medium-4 columns" id="skills" >
@@ -104,7 +104,7 @@
             <li>InDesign</li>
             <li>Illustrator</li>
           </ul>
-
+          
           <h2 class="padding-top">Stärken</h2>
           <ul class="inline-list">
             <li>Organisation</li>
@@ -116,30 +116,30 @@
       </div>
     </div> 
 
-  <div id="profile-references">
-      
+    <div id="profile-references">
+
 <!--     <div id="references-head" class="dark-bg text-center">
       <h2>Referenzen</h2>
     </div> -->
     <div class="row text-center">
 
-<?php
+      <?php
 
-for($i=1; $i<7; $i++) {
+      for($i=1; $i<7; $i++) {
 
-$pictures = array('people', 'nightlife', 'nature', 'city', 'fashion', 'food');
+        $pictures = array('people', 'nightlife', 'nature', 'city', 'fashion', 'food');
 
-?>
-    <div class="medium-4 columns reference-item">
-      <a href="index.php?page=profile" class="overlay">
+        ?>
+        <div class="medium-4 columns reference-item">
+          <a href="index.php?page=profile" class="overlay">
 
-        <div class="plus text-center">
-          <h3>Projektname</h3>
-          <!-- <span class="link">www.dfgfdg.at</span> -->
-          <span class="time">2014</span>
-          <div class="description">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. tempor invidunt ut labore et dolore magna aliquyam erat.
-          </div>
+            <div class="plus text-center">
+              <h3>Projektname</h3>
+              <!-- <span class="link">www.dfgfdg.at</span> -->
+              <span class="time">2014</span>
+              <div class="description">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. tempor invidunt ut labore et dolore magna aliquyam erat.
+              </div>
 <!--             <div class="tasks">
               <ul class="inline-list">
                 <li>Design</li>
@@ -153,59 +153,59 @@ $pictures = array('people', 'nightlife', 'nature', 'city', 'fashion', 'food');
         </a>
         <img src="http://lorempixel.com/300/300/<?php echo $pictures[$i] ?>/" alt="">
       </div>
-<?php } ?>
+      <?php } ?>
 
     </div>
   </div> 
-    <div id="profile-comments">
-<h2 class="text-center">Kundenstimmen</h2>
-      <div class="row">
-        <div class="medium-2 columns author text-center">
-          <span class="name">Autor</span><br />
-          <span class="time">1.1.2013</span>
-        </div>
-        <div class="medium-10 columns comment">
-          Ich arbeite seit 2004 als professioneller Webdesigner und habe in der Vergangenheit bereits zahlreiche Kundenprojekte erfolgreich abgewickelt. Ich habe mich auf dier Anforderungen und Bedürfnisse von NeugründerInnen & JungunternehmerInnen spezialisiert. Ihre Website gestalte ich entsprechend der modernsten Standards. Benutzerfreundlichkeit, Browserkompatibilität, Suchmaschinenoptimierung und weitgehende Barrierefreiheit sind für mich stehts selbstverständlich.
-        </div>
+  <div id="profile-comments">
+    <h2 class="text-center">Kundenstimmen</h2>
+    <div class="row">
+      <div class="medium-2 columns author text-center">
+        <span class="name">Autor</span><br />
+        <span class="time">1.1.2013</span>
       </div>
-      
-      <div class="row">
-        <div class="medium-2 columns author text-center">
-          <span class="name">Autor</span><br />
-          <span class="time">1.1.2013</span>
-        </div>
-        <div class="medium-10 columns comment">
-          Lorem  Ipsum dolor sit amet
-        </div>
+      <div class="medium-10 columns comment">
+        Ich arbeite seit 2004 als professioneller Webdesigner und habe in der Vergangenheit bereits zahlreiche Kundenprojekte erfolgreich abgewickelt. Ich habe mich auf dier Anforderungen und Bedürfnisse von NeugründerInnen & JungunternehmerInnen spezialisiert. Ihre Website gestalte ich entsprechend der modernsten Standards. Benutzerfreundlichkeit, Browserkompatibilität, Suchmaschinenoptimierung und weitgehende Barrierefreiheit sind für mich stehts selbstverständlich.
       </div>
-
-      <div class="row">
-        <div class="medium-2 columns author text-center">
-          <span class="name">Autor</span><br />
-          <span class="time">1.1.2013</span>
-        </div>
-        <div class="medium-10 columns comment">
-          Lorem  Ipsum dolor sit amet
-        </div>
+    </div>
+    
+    <div class="row">
+      <div class="medium-2 columns author text-center">
+        <span class="name">Autor</span><br />
+        <span class="time">1.1.2013</span>
       </div>
-
-      <div class="row">
-        <div class="medium-2 columns author text-center">
-          <span class="name">Autor</span><br />
-          <span class="time">1.1.2013</span>
-        </div>
-        <div class="medium-10 columns comment">
-          Lorem  Ipsum dolor sit amet
-        </div>
-      </div> 
-      <div class="row text-center">
-        <a href="" class="text-center" id="more-comments"><i class="fa fa-arrow-circle-down fa-fw"></i></a>
-      </div> 
- 
-
+      <div class="medium-10 columns comment">
+        Lorem  Ipsum dolor sit amet
+      </div>
     </div>
 
+    <div class="row">
+      <div class="medium-2 columns author text-center">
+        <span class="name">Autor</span><br />
+        <span class="time">1.1.2013</span>
+      </div>
+      <div class="medium-10 columns comment">
+        Lorem  Ipsum dolor sit amet
+      </div>
+    </div>
 
+    <div class="row">
+      <div class="medium-2 columns author text-center">
+        <span class="name">Autor</span><br />
+        <span class="time">1.1.2013</span>
+      </div>
+      <div class="medium-10 columns comment">
+        Lorem  Ipsum dolor sit amet
+      </div>
+    </div> 
+    <div class="row text-center">
+      <a href="" class="text-center" id="more-comments"><i class="fa fa-arrow-circle-down fa-fw"></i></a>
+    </div> 
+    
 
   </div>
+
+
+
+</div>
 </div>

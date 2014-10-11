@@ -29,35 +29,38 @@
       </div>
 
       <div class="sort padding-top">
-        <a href="" class="sortbuttons"><i class="fa fa-star fa-fw"></i></a><a href="" class="sortbuttons"><i class="fa fa-clock-o fa-fw"></i></a><a href="" class="sortbuttons"><i class="fa fa-euro fa-fw"></i></a><a href="" class="sortbuttons"><i class="fa fa-bookmark fa-fw"></i></a>
+        <a href="" class="sortbuttons"><i class="fa fa-star fa-fw"></i></a>
+        <a href="" class="sortbuttons"><i class="fa fa-clock-o fa-fw"></i></a>
+        <a href="" class="sortbuttons"><i class="fa fa-euro fa-fw"></i></a>
+        <a href="" class="sortbuttons"><i class="fa fa-bookmark fa-fw"></i></a>
       </div>
 
 
-<!-- EINTRAG -->
-  <a class="show" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">
-    <div class="item dark-bg green-border half-margin">
-     <div class="row">
-      <div class="medium-1 columns green-bg rating">93</div>
-      <div class="small-6 columns name">Philipp Doblhoff</div>
-      <div class="small-4 columns price">1800 €</div>
-      <div class="small-1 columns marker"><i class="fa fa-bookmark fa-fw"></i></div>
-    </div>
-  </a>
-  <div id="spoiler" style="display:none">
-    <div class="collapsed">
-      Lorem Ipsum...
-      <div class="buttons">
-        <div class="row">
-         <div class="small-4 columns"><button>Profil</button></div>
-         <div class="small-4 columns"><button>Kalkulation</button></div>
-         <div class="small-4 columns"><button class="green">Auswählen</button></div>
+      <!-- EINTRAG -->
+      <a class="show" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">
+        <div class="item dark-bg green-border half-margin">
+         <div class="row">
+          <div class="medium-1 columns green-bg rating">93</div>
+          <div class="small-6 columns name">Philipp Doblhoff</div>
+          <div class="small-4 columns price">1800 €</div>
+          <div class="small-1 columns marker"><i class="fa fa-bookmark fa-fw"></i></div>
+        </div>
+      </a>
+      <div id="spoiler" style="display:none">
+        <div class="collapsed">
+          Lorem Ipsum...
+          <div class="buttons">
+            <div class="row">
+             <div class="small-4 columns"><button>Profil</button></div>
+             <div class="small-4 columns"><button>Kalkulation</button></div>
+             <div class="small-4 columns"><button class="green">Auswählen</button></div>
+           </div>
+         </div>
        </div>
      </div>
    </div>
- </div>
- </div>
-<!-- EINTRAG -->
-  <a class="show" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">
+   <!-- EINTRAG -->
+   <a class="show" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">
     <div class="item dark-bg yellow-border half-margin">
      <div class="row">
       <div class="medium-1 columns yellow-bg rating">80</div>
@@ -78,31 +81,31 @@
      </div>
    </div>
  </div>
- </div>
+</div>
 
 <!-- EINTRAG -->
-  <a class="show" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">
-    <div class="item dark-bg red-border half-margin">
-     <div class="row">
-      <div class="medium-1 columns red-bg rating">54</div>
-      <div class="small-6 columns name">Bruce Lee</div>
-      <div class="small-4 columns price">2600 €</div>
-      <div class="small-1 columns marker"><i class="fa fa-bookmark fa-fw"></i></div>
-    </div>
-  </a>
-  <div id="spoiler" style="display:none">
-    <div class="collapsed">
-      Lorem Ipsum...
-      <div class="buttons">
-        <div class="row">
-         <div class="small-4 columns"><button>Profil</button></div>
-         <div class="small-4 columns"><button>Kalkulation</button></div>
-         <div class="small-4 columns"><button class="green">Auswählen</button></div>
-       </div>
+<a class="show" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">
+  <div class="item dark-bg red-border half-margin">
+   <div class="row">
+    <div class="medium-1 columns red-bg rating">54</div>
+    <div class="small-6 columns name">Bruce Lee</div>
+    <div class="small-4 columns price">2600 €</div>
+    <div class="small-1 columns marker"><i class="fa fa-bookmark fa-fw"></i></div>
+  </div>
+</a>
+<div id="spoiler" style="display:none">
+  <div class="collapsed">
+    Lorem Ipsum...
+    <div class="buttons">
+      <div class="row">
+       <div class="small-4 columns"><button>Profil</button></div>
+       <div class="small-4 columns"><button>Kalkulation</button></div>
+       <div class="small-4 columns"><button class="green">Auswählen</button></div>
      </div>
    </div>
  </div>
- </div>
+</div>
+</div>
 
 
 
