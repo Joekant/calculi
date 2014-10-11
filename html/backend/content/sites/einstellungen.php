@@ -88,8 +88,7 @@
 							<label for="email">Passwort bestätigen</label>
 							<input type="password" id="remail" placeholder="">
 							<a href="" class="button green-bg padding-top"><i class="fa fa-save fa-fw"></i> Speichern</a>
-						</div>
-						
+						</div>				
 					</div>
 				</div>
 				<div class="content" id="panel5">

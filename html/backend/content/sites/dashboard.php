@@ -1,5 +1,5 @@
   <div class="main-section">
-    <h1 class="text-center">Hey Joel!</h1>
+    <h1 class="text-center">Hey Philipp!</h1>
     <div class="counter-area-6">
       <div class="row text-center">
         <div class="medium-6 columns">
@@ -14,7 +14,6 @@
             <i class="fa fa-legal fa-fw"></i><br /><span class="counter-value">4</span><br />4500 €
           </div>
         </div>
-
         <div class="medium-6 columns">
           <h2>Bewerbungen</h2>
           <div class="label green-bg counter">
@@ -28,7 +27,6 @@
             <i class="fa fa-clock-o fa-fw"></i><br /><span class="counter-value">4</span><br />4500 €
           </div>
         </div>
-
       </div>
     </div>
   </div>
@@ -72,3 +70,10 @@
       <p>Jetzt wo du alles gesehen hast, wünscht dir Calculi viel Erfolg bei deinen Bewerbungen.</p>
     </li>
   </ol>
+
+  <div class="row text-center">
+    <a href="index.php?page=<?php echo $page; ?>&popup&popup_message=Erfolgsmeldung&popup_icon=check&popup_color=green" class="button green-bg"><i class="fa fa-check fa-fw"></i> Success</a>
+    <a href="index.php?page=<?php echo $page; ?>&popup&popup_message=Warnmeldung&popup_icon=warning&popup_color=yellow" class="button yellow-bg"><i class="fa fa-warning fa-fw"></i> Warning</a>
+    <a href="index.php?page=<?php echo $page; ?>&popup&popup_message=Errormeldung&popup_icon=times&popup_color=orange" class="button orange-bg"><i class="fa fa-times fa-fw"></i> Error</a>
+    <a href="index.php?page=<?php echo $page; ?>&popup&popup_message=Infomeldung&popup_icon=info&popup_color=primary" class="button primary-bg"><i class="fa fa-info fa-fw"></i> Info</a>
+  </div>

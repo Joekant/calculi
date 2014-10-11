@@ -64,7 +64,7 @@
 						</div>
 					</div>
 					<div class="text-right">
-						<a href="" class="button green-bg"><i class="fa fa-save fa-fw"></i> Speichern</a>
+						<a href="index.php?page=<?php echo $page; ?>&popup&popup_message=Änderungen gespeichert&popup_icon=check&popup_color=green" class="button green-bg"><i class="fa fa-save fa-fw"></i> Speichern</a>
 					</div>
 				</div>
 				<div class="content" id="panel2">

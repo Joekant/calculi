@@ -1,15 +1,63 @@
-<header>
- <div class="icon-bar dark-bg large-horizontal six-up">
-  <?php
-  foreach(header_navigation() as $navigation_item) {
-    $css_class = active_css_class($navigation_item[0]);
-    ?>
-    <a href="<?php echo $navigation_item[1]; ?>" id="<?php echo $navigation_item[0]; ?>" class="item <?php echo $css_class; ?>">
-      <i class="fa fa-<?php echo $navigation_item[2]; ?> fa-fw"></i>
-      <label><?php echo ucfirst($navigation_item[0]); ?></label>
-    </a>
+<header class="show-for-large-up">
+  <div class="icon-bar dark-bg large-horizontal six-up">
     <?php
-  }
-  ?>  
-</div>
+    foreach(header_navigation() as $navigation_item) {
+      $css_class = active_css_class($navigation_item[0]);
+      ?>
+      <a href="<?php echo $navigation_item[1]; ?>" id="<?php echo $navigation_item[0]; ?>" class="item <?php echo $css_class; ?>">
+        <i class="fa fa-<?php echo $navigation_item[2]; ?> fa-fw"></i>
+        <label><?php echo ucfirst($navigation_item[0]); ?></label>
+      </a>
+      <?php
+    }
+    ?>  
+  </div>
 </header>
+
+<header class="show-for-small-only-up hide-for-large-up">
+  <nav class="top-bar" id="frontpage-topbar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+    </ul class="right">
+    <section class="top-bar-section">
+      <ul class="right">
+        <?php
+        foreach(header_navigation() as $navigation_item) {
+          $css_class = active_css_class($navigation_item[0]);
+          ?>
+          <li class='<?= $css_class ?>'>
+            <a href='<?= $navigation_item[1] ?>'>
+              <?= ucfirst($navigation_item[0]) ?>
+            </a>
+          </li>
+          <?php
+        }
+        ?>
+      </ul>
+    </section>
+  </nav>
+</header>
+
+<?php 
+$icon = $_GET['popup_icon'];
+$message = $_GET['popup_message'];
+$color = $_GET['popup_color'];
+?>
+
+<div class="popup-message <?php echo $color; ?>-bg" id="popup">
+  <i class="fa fa-<?php echo $icon; ?> fa-fw"></i><?php echo $message; ?>
+</div>
+
+<?php 
+// PopUp-Message (set class to active to initialize transition)
+if (isset($_GET['popup'])) {
+  echo '
+  <script>
+    var popup_container = document.getElementById("popup");
+    popup_container.className = popup_container.className + " active";
+  </script>
+  ';
+} 
+?>

@@ -32,7 +32,7 @@
 
   <script>
     $(document).foundation();
-    $(document).foundation('joyride', 'start');
+    // $(document).foundation('joyride', 'start');
   </script>
 
 </body>

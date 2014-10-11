@@ -1,4 +1,4 @@
-    <footer class="half-padding dark-bg">
+    <footer class="frontend-footer alf-padding dark-bg">
       <div class="row padding-top">
         <div class="medium-4 columns" id="link">
           <a href="">Impressum</a>

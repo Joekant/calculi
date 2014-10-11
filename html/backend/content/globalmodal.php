@@ -38,7 +38,7 @@ else {
 </div>	
 
 <div id="feedbackmodal" class="reveal-modal" data-reveal>
-	<h2><i class="fa fa-comment fa-fw"></i> Feedback zu Seite "<?php echo ucfirst($page); ?>"</h2>
+	<h2><i class="fa fa-comment fa-fw"></i> Feedback zur Seite "<?php echo ucfirst($page); ?>"</h2>
 	Wir sind stet's bemüht Calculi zu verbessern. Sag uns deine Meinung!
 	<form action="index.php?page=briefing_s" method="POST">
 		<textarea type="text" id="remail" rows="3" placeholder="Auf dieser Seite ist mir aufgefallen, dass..."></textarea>

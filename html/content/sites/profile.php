@@ -2,7 +2,7 @@
   <div class="row">
     <div class="row">
       <div class="medium-4 columns">
-        <a href="" class="button expand">Anfrage stellen</a>
+        <a href="index.php?page=briefing" class="button expand">Anfrage stellen</a>
       </div>
     </div>
     <div id="profile-head" class="dark-bg">
