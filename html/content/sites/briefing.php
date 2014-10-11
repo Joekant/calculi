@@ -25,14 +25,17 @@
   <div class="row padding-bottom">
     <div class="small-12 columns">
       <div data-magellan-expedition="fixed">
+       
         <dl class="sub-nav">
-          <dd data-magellan-arrival="1">
-            <a href="#1">Allgemein</a></dd>
+        
+            <dd data-magellan-arrival="1"><a href="#1">Inhalt</a></dd>
             <dd data-magellan-arrival="2"><a href="#2">Inhalt</a></dd>
             <dd data-magellan-arrival="3"><a href="#3">Design</a></dd>
             <dd data-magellan-arrival="4"><a href="#4">Funktionen</a></dd>
             <dd data-magellan-arrival="5"><a href="#5">Service</a></dd>
+            
           </dl>
+         
         </div>
       </div>
     </div>

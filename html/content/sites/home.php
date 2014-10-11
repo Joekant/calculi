@@ -94,29 +94,54 @@
       </div>
     </div>
 
-    <div class="row margin-top">
-      <div class="large-6 columns ">
-        <h2 class="primary-color-font small-only-text-center">Was macht Calculi?</h2>
-        <h3 class="freestyle small-only-text-center">Die Funktionen im Überblick</h3>
-        <p class=" small-only-text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.</p>
-          <p class=" small-only-text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-            <p class=" small-only-text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-              <br />
-              <a href="" class=" small-only-text-center"><em>... mehr erfahren</em></a>
+    <div class="row margin-top" >
+      <div class="large-8 columns small-text-center medium-text-center large-text-left ">
+        <h2 class="primary-color-font">Ich brauche eine Website</h2>
+        <h3 class="freestyle">und suche den Experten</h3>
+        <p class="">Du betreibst ein Unternehmen, startest eine 
+          Aktion oder möchtest deine persönlichen Leistungen im Internet professionell präsentieren, 
+          kennst aber niemanden, der das für dich erledigen kann?</p>
+          <p >
+            Du hast zwar schon große Agenturen im Internet gefunden, bist aber von deren Preispolitik etwas eingeschüchtert?
+          </p>
 
-            </div>
-            <div class="large-6 columns show-for-large-up" >
-              <img src="img/poster.png" id="poster-img" alt="" class=/>
-            </div>
+          <p>Dann starte jetzt kostenlos eine neue Ausschreibung und vergleiche zahlreiche Angebote!</p>
+
+          <a class="small button" href="index.php?page=briefing">Auftrag starten <i class="fa fa-chevron-right fa-fw"></i> </a>
+        </div>
+        <div class="large-4 columns show-for-large-up" >
+          <a href="index.php?page=briefing"><img src="img/poster.png" id="poster-img" alt=""/></a>
+        </div>
+      </div>
+
+      <div class="testimonial dark-bg text-center half-padding ">
+        <div class="row">
+          <div class="large-12 columns">"Über Calculi habe ich schnell und einfach den geeigneten 
+            Webdesigner für meine neue Firmenwebsite gefunden. Ich kann Calculi jedem empfehlen, der 
+            nicht auf einen kompetenten Ansprechpartner in seinem persönlichem Umfeld zurückgreifen kann.“<br />
+            <span id="author">Edvard Grieg, CEO Classical GmbH</span>
           </div>
+        </div>
+      </div>
 
+      <div class="row margin-top">
+        <div class="medium-7 columns">
+          <div class="show-for-large-up"><img src="img/imac.png" alt=""></div>
+        </div>
+
+        <div class="large-5 columns  medium-text-center small-text-center large-text-right">
+          <h2 class="primary-color-font">Ich bin Webdesigner</h2>
+          <h3 class="freestyle">und suche Kunden</h3>
+          <p class=" ">Du gestaltest und realisierst Hauptberuflich oder nebenbei leidenschaftlich 
+            gerne Websites und bist stet's auf der Suche nach neuen Kundenprojekten?
+          </p><p>Dann lege jetzt kostenlos bei Calculi dein persönliches Profil an, bewirb dich auf Ausschreibungen 
+          und erweitere kontinuierlich dein Portfolio!</p>
+          <a class="small button" href="index.php?page=register">Profil anlegen<i class="fa fa-chevron-right fa-fw"></i> </a>
+
+
+        </div>
+      </div>
+    </div>
 <!--     <div class="row ">
       <div class="large-4 columns">
         <ul class="pricing-table">
@@ -153,27 +178,28 @@
       </div>    
     </div> -->
 
-    <div class="row text-center full-padding" >
-      <div class="large-3 columns">
-        <h5>LOGO</h5>
+    <div class="logos row text-center full-padding" >
+      <h3 class="freestyle text-center">bekannt aus</h3>
+      <div class="large-4 columns">
+        <a href=""><img src="img/logos_t3n.png" alt=""/></a>
       </div>
 
-      <div class="large-3 columns">
-        <h5>LOGO</h5>
+      <div class="large-4 columns">
+        <a href=""><img src="img/logos_sm.png" alt=""/></a>
       </div>
 
-      <div class="large-3 columns">
-        <h5>LOGO</h5>
-      </div>
+      <div class="large-4 columns">
+       <a href=""> <img src="img/logos_fz.png" alt=""/></a>
+     </div>
 
-      <div class="large-3 columns">
-        <h5>LOGO</h5>
-      </div>
-
-      <br class="end" />
+     <br class="end" />
+   </div>
+   <div class="footerbuttons">
+     <div class="medium-6 columns text-center">
+      <a class="small button" href="index.php?page=briefing">Auftrag starten <i class="fa fa-chevron-right fa-fw"></i> </a>
     </div>
-
-    <div class="large-12 columns text-center">
-      <a class="button" href="#">Kostenlos registrieren</a>
+    <div class="medium-6 columns text-center">
+      <a class="small button" href="index.php?page=register">Profil anlegen <i class="fa fa-chevron-right fa-fw"></i> </a>
     </div>
-  </main>
+  </div>
+</main>
