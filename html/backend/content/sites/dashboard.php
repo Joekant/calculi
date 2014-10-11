@@ -31,7 +31,14 @@
     </div>
   </div>
 
+  <div class="row text-center">
+    <a href="index.php?page=<?php echo $page; ?>&popup&popup_message=Erfolgsmeldung&popup_icon=check&popup_color=green" class="button green-bg"><i class="fa fa-check fa-fw"></i> Success</a>
+    <a href="index.php?page=<?php echo $page; ?>&popup&popup_message=Warnmeldung&popup_icon=warning&popup_color=yellow" class="button yellow-bg"><i class="fa fa-warning fa-fw"></i> Warning</a>
+    <a href="index.php?page=<?php echo $page; ?>&popup&popup_message=Errormeldung&popup_icon=times&popup_color=orange" class="button orange-bg"><i class="fa fa-times fa-fw"></i> Error</a>
+    <a href="index.php?page=<?php echo $page; ?>&popup&popup_message=Infomeldung&popup_icon=info&popup_color=primary" class="button primary-bg"><i class="fa fa-info fa-fw"></i> Info</a>
+  </div>
   <!-- Tour -->
+
   <ol class="joyride-list" data-joyride>
     <li data-text="Los" data-options="prev_button:false">
       <h4>Willkommen bei Calculi!</h4>
@@ -69,11 +76,4 @@
       <h4>Geschafft!</h4>
       <p>Jetzt wo du alles gesehen hast, wünscht dir Calculi viel Erfolg bei deinen Bewerbungen.</p>
     </li>
-  </ol>
-
-  <div class="row text-center">
-    <a href="index.php?page=<?php echo $page; ?>&popup&popup_message=Erfolgsmeldung&popup_icon=check&popup_color=green" class="button green-bg"><i class="fa fa-check fa-fw"></i> Success</a>
-    <a href="index.php?page=<?php echo $page; ?>&popup&popup_message=Warnmeldung&popup_icon=warning&popup_color=yellow" class="button yellow-bg"><i class="fa fa-warning fa-fw"></i> Warning</a>
-    <a href="index.php?page=<?php echo $page; ?>&popup&popup_message=Errormeldung&popup_icon=times&popup_color=orange" class="button orange-bg"><i class="fa fa-times fa-fw"></i> Error</a>
-    <a href="index.php?page=<?php echo $page; ?>&popup&popup_message=Infomeldung&popup_icon=info&popup_color=primary" class="button primary-bg"><i class="fa fa-info fa-fw"></i> Info</a>
-  </div>
+  </ol> 

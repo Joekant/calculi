@@ -2,9 +2,9 @@
 
       <div class="row padding-top">
         <div class="medium-4 columns" id="link">
-          <a href="index.php?page=impressum">Impressum</a>
-          <a href="">Datenschutz</a>
-          <a href="">AGB</a>
+          <a href="index.php?page=press">Presse</a>
+          <a href="index.php?page=team">Team</a>
+          <a href="index.php?page=impress">Impressum</a>
         </div>
         <div class="medium-4 columns" id="logo">
           <img src="img/logo_invert.png" alt="logo_invert"/>
