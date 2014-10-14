@@ -20,53 +20,44 @@ function header_navigation() {
   // Include current Subpage
 $page = isset($_GET['page']) ? $_GET['page'] : "home";
 $header = "1";
+$footerv = "normal";
 
 if($page == "home") {
   $content = $page;
-  $footerv = "normal";
 } elseif($page == "profile") {        
   $content = $page;
-  $footerv = "normal";
 } elseif($page == "designer") {        
   $content = $page;
-  $footerv = "normal";
 } elseif($page == "impress") {        
   $content = $page;
-  $footerv = "normal";
 } elseif($page == "compare") {        
   $content = $page;
-  $footerv = "normal";
 } elseif($page == "briefing_s") {        
   $content = $page;
-  $footerv = "normal";
 } elseif($page == "register") {        
   $content = $page;
   $footer = "0";
   $header = "0";
 } elseif($page == "briefing") {        
   $content = $page;
-  $footerv = "normal";
 } elseif($page == "team") {        
   $content = $page;
-  $footerv = "normal";
 } elseif($page == "press") {        
   $content = $page;
-  $footerv = "normal";
 } elseif($page == "login") {        
   $content = $page;
   $footer = "0";
   $header = "0";
 }
 
-   // Include Header
+// Include Header
 if ($header=="1") {
   include('content/header.php');
 }
 
-   // Include Content
+// Include Content
 include("content/sites/$content.php");
-
-  // Include chosen Footer
+// Include chosen Footer
 if ($footerv) {
   include("content/footer_$footerv.php");
 }

@@ -1,13 +1,47 @@
 <div id="login">
-    <div class="row text-center">
-      <a href="index.php"><img src="img/logo_symbol.png" class="logo half-padding" alt="logo"></a>
+  <div class="row text-center">
+    <a href="index.php"><img src="img/logo_symbol.png" class="logo half-padding" alt="logo"></a>
     <h1 class="padding-bottom">Registrieren</h1>
-    <form class="loginform" action="backend/index.php" method="POST">
-      <input type="text" placeholder="E-mail" />
-      <input type="submit" class="button expand padding-top" id="loginbutton" value="Los">
-    </form>
+    
+
+    <dl class="tabs" data-tab data-options="deep_linking:true">
+      <dd class="active"><a href="#webworker">Webworker</a></dd>
+      <dd><a href="#kunde">Kunde</a></dd>
+    </dl>
+    <div class="tabs-content">
+      <div class="content active" id="webworker">
+
+        <?php if(isset($_GET['complete'])) {
+          echo '
+          <div class="panel text-center green-border">
+            <h5> <i class="fa fa-check fa-fw"></i> Registrierung erfolgreich</h5>
+            <p>Bitte überprüfe deinen Posteingang</p>
+          </div> 
+          '; 
+        }
+        else {
+          echo '
+          <form class="loginform" action="index.php?page=register&complete" method="POST">
+            <input type="text" placeholder="E-mail" />
+            <input type="submit" class="button expand padding-top" id="loginbutton" value="Los">
+          </form>
+          '; 
+        }
+        ?>
+
+      </div>
+      <div class="content" id="kunde">
+        Als Kunde wirst du beim ersten Auftrag automatisch registriert.<br />
+        <a href="index.php?page=briefing" class="button expand padding-top">Auftrag starten </a>
+      </div>
+
+    </div>
+
+
+
+
     <div id="loginlinks" >
-      <a href="index.php" id="helplink">zurück</a>
+      <a href="index.php?page=login" id="helplink"><i class="fa fa-lock fa-fw"></i></a>
     </div>
   </div>
 </div>

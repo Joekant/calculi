@@ -1,0 +1,445 @@
+/* -----------------------------------------
+   Shared Properties
+----------------------------------------- */
+.end {
+	clear: both; 
+}
+
+@mixin rounded( $radius ) {
+	border-radius: $radius;
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+}
+
+@mixin placeholder() {
+	font-family: $font-family;
+	font-weight: 300;
+	margin:0;
+	padding:0;
+}
+
+@function emCalc($pxWidth) {
+	@return $pxWidth / $em-base * 1em;
+}
+
+html, body {
+	font-family: $font-family;
+	font-weight: $font-weight;
+	color: $darkgrey;
+	background: url("../img/bg_pattern.png") repeat;
+}
+
+h1, h2, h3, h4, h5, h6, p, label,a,span {
+	color: $darkgrey;
+	font-family: $font-family;
+	font-weight: $font-weight;
+}
+
+h1, h2 {
+	font-weight: 300;
+}
+
+a:hover {
+	color: $primary-color;
+	-webkit-transition: background-color .7s ease, color .7s ease;
+	-moz-transition: background-color .7s ease, color .7s ease;
+}
+
+a.active {
+	-webkit-transition: background-color .7s ease;
+	-moz-transition: background-color .7s ease;		
+}
+
+main {
+	margin-top: 50px;
+	width:100%;
+	min-height: 100%;
+	position: relative;  
+	z-index: 10;
+	background-color: white;
+	background: url("../img/bg_pattern.png") repeat;
+	border-bottom: 5px solid $primary-color;
+	
+	@media only screen and (max-width: 40em) { 
+		margin-top: -10px;
+	}
+}
+
+.freestyle {
+	color:$orange;
+	font-weight:300;
+	font-family: $freestyle-font;
+	letter-spacing: 2px;
+	font-size: 1.5em;
+}
+
+.button {
+	background-color:$primary-color;
+	color:white;
+	margin:0;
+	padding:15px 40px;
+	text-transform: uppercase;
+	letter-spacing: 1.1px;
+}
+
+.button:hover {
+	background-color: $secondary-color;
+}
+
+
+.tabs {
+	padding-bottom: 20px;
+	text-align: center;
+
+	dd {
+		width: 150px;
+	}
+	dd.active {
+		a {
+			background-color: $primary-color;
+			color:white;
+			opacity: 1;
+		}
+	}
+
+	dd  {
+		a {
+			background-color:white;
+			-webkit-transition: background-color .7s ease, color .7s ease;
+			-moz-transition: background-color .7s ease, color .7s ease;
+
+		}
+
+		a:hover {
+			background-color: $primary-color;
+			color: white;
+
+		}
+	}
+}
+
+.panel {
+	background-color: white;
+}
+
+/* -----------------------------------------
+   FONTS / PADDINGS / BORDERS
+----------------------------------------- */
+
+.orange-font {
+	color:$orange;
+}
+
+.green-font {
+	color:$green;
+}
+
+.primary-font {
+	color:$primary-color;
+}
+
+.dark-bg {
+	background: url("../img/bg_slider.png") repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: $bg-color;
+}
+
+.primary-bg {
+	background-color: $primary-color;
+	color: white;
+}
+
+.green-bg {
+	background-color: $green;
+	color: white;
+}
+
+.red-bg {
+	background-color: $red;
+	color: white;
+}
+
+.orange-bg {
+	background-color: $orange;
+	color: white;
+}
+
+.yellow-bg {
+	background-color: $yellow;
+	color: white;
+}
+
+.grey-bg {
+	background-color: $lightgrey;
+	color: white;
+}
+
+.red-border {
+	border-top: 4px solid $red;
+}
+
+.green-border {
+	border-top: 4px solid $green;
+}
+
+.orange-border {
+	border-top: 4px solid $orange;
+}
+
+.yellow-border {
+	border-top: 4px solid $yellow;
+}
+
+.full-padding {
+	padding-top:60px;
+	padding-bottom:60px;
+}
+
+.half-padding {
+	padding-top:30px;
+	padding-bottom:30px;	
+}
+
+.half-margin {
+	margin-top:30px;
+	margin-bottom:30px;	
+}
+
+.margin-top {
+	margin-top:60px;
+}
+
+.padding-top {
+	margin-top:30px;
+}
+
+.padding-bottom {
+	margin-bottom:30px;
+}
+
+/* -----------------------------------------
+  NAVIGATION TOP-BAR
+----------------------------------------- */
+
+.logo {
+	width: 150px
+}
+
+.expanded {
+	background-color: transparent;	
+}
+
+.top-bar {
+	background-color: transparent;
+	
+	margin: 0px auto;
+
+	.top-bar-section {
+		ul.right {
+			border-bottom: 5px solid $primary-color;	
+			li.active {
+				a {
+					background-color: $primary-color;
+
+				}
+				:hover {
+					background-color: $primary-color;
+				}
+			}
+			li {
+				a {
+					background-color: $secondary-color;
+				}
+				:hover {
+					background-color: $secondary-color;
+					color: $primary-color;
+				}
+			}
+		}
+
+		ul.title-area {
+			li.toggle-topbar {
+				a {
+					color: $secondary-color;
+				}
+			}
+		}
+
+	}
+
+	.logo {
+		padding-top: 13px;
+		width: 200px
+	}
+}
+
+/* -----------------------------------------
+   Form Styles
+----------------------------------------- */
+
+input[type=text],
+textarea[type=text],
+input[type=email],
+input[type=password],
+select {
+	padding: 10px;
+	border: none;
+	background: url("../img/bg_pattern.png") repeat;
+	border-bottom: 2px solid $darkgrey;
+	box-shadow: none;
+	color: $darkgrey;
+	-webkit-transition: color .9s ease;
+	-moz-transition: color .9s ease;
+	letter-spacing: 1px;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+textarea[type=text]:focus,
+select
+{	
+	padding: 10px;
+	border: none;
+	background: url("../img/bg_pattern.png") repeat;
+	border-bottom: 2px solid $primary-color;
+	box-shadow: none;
+}
+
+.reveal-modal {
+	input[type=text],
+	textarea[type=text],
+	input[type=email],
+	input[type=password], {
+		background: transparent;
+	}
+}
+
+textarea[type=text] {
+	border: 2px solid $darkgrey;
+	margin-top: 10px;
+}
+
+textarea[type=text]:focus {
+	border: 2px solid $primary-color;	
+}
+
+select {
+	margin-top: 10px;
+	border: 2px solid $darkgrey;	
+	padding: 0px;
+}
+
+select:focus {
+	border: 2px solid $primary-color;	
+}
+
+span.range-slider-handle {
+	background: $primary-color;
+}
+
+#dropzone {
+	margin-top: 10px;
+	border: 2px solid $darkgrey;
+	height: 201px;
+	width: 250px;
+	line-height: 50px;
+	text-align: center;
+	font-weight: bold;
+
+	#upload-pic {
+		position: absolute;
+		top: 12px;	
+		height: 190px;
+		width: 246px;
+		height: 196px;
+		opacity: 1;
+	}
+}
+#dropzone.in {
+	width: 600px;
+	height: 200px;
+	line-height: 200px;
+	font-size: larger;
+}
+#dropzone:hover {
+	border: 2px solid $primary-color;
+	color: white;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	cursor: hand;
+}
+#dropzonefade {
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	opacity: 1;
+}
+
+.fileinput-button {
+	position: relative;
+	overflow: hidden;
+	top: 30%;
+	opacity: 0.7;
+	font-size: 1em;
+
+	i {
+		font-size: 3em;
+	}
+}
+
+.fileinput-button input {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	width: 200px;
+	height: 200px;
+	opacity: 0;
+	-ms-filter: 'alpha(opacity=0)';
+	direction: ltr;
+	cursor: pointer;
+}
+
+/* Fixes for IE < 8 */
+@media screen\9 {
+	.fileinput-button input {
+		filter: alpha(opacity=0);
+		font-size: 100%;
+		height: 100%;
+	}
+}
+
+/* -----------------------------------------
+   Table Styles
+----------------------------------------- */
+
+table {
+	background: url("../img/bg_pattern.png") repeat;
+	border: 0px;
+
+	tr {
+		color: $orange;
+		text-transform: uppercase;
+		border: 0px;
+		
+		th {
+			color: $secondary-color;
+			font-size: 1.0em;
+		}
+	}
+}
+
+td {
+	background: url("../img/bg_pattern.png") repeat;
+	border-bottom: 1px solid $lightgrey;
+}
+

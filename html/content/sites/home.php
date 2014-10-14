@@ -1,147 +1,191 @@
 <main> 
+
+<!-- 
+#######################################
+HEADLINE
+#######################################
+-->
+
+<div class="row">
+  <div class="large-12 columns half-padding text-center">
+    <h1 id="headline">Schnell den passenden Webdesigner finden</h1>
+    <h2 class="subline">Calculi verbindet Angebot & Nachfrage</h2>
+  </div>
+</div>
+<br class="end" />
+
+
+<!-- 
+#######################################
+SLIDER
+#######################################
+-->
+
+<div class="main-slider dark-bg">
   <div class="row">
-    <div class="large-12 columns half-padding text-center">
-      <h1 id="headline">Schnell den passenden Webdesigner finden</h1>
-      <h2 class="subline">Calculi verbindet Angebot & Nachfrage</h2>
+    <div class="medium-5 columns">
+      <h2>KUNDEN</h2>
+      <p>Definiere im online Konfigurator Schritt-für-Schritt die gewünschten Leistungen und übermittel automatisch ein detailliertes Briefing an alle im System registrierten Webworker.</p>
+      <p><span class="bullethead">Calculi hilft dir</span></p>
+      <ul>
+        <li><i class="fa fa-check  fa-fw"></i> <span>verschiedene Angebote zu vergleichen</span></li>
+        <li><i class="fa fa-check  fa-fw"></i> <span>den optimalen Webdesigner zu finden</span></li>
+        <li><i class="fa fa-check  fa-fw"></i> <span>ein klares Anforderungsprofil zu definieren</span></li>
+      </ul>
+    </div>
+    <div class="medium-5 columns">
+      <h2>WEBDESIGNER</h2>
+      <p>
+        Lege kostenlos dein persönliches Profil an und bewirb dich mit deinen individuellen Kostenvoranschlägen regelmäßig bei Projektausschreibungen verschiedener Kunden.</p>
+        <p><span class="bullethead">Calculi hilft dir</span></p>
+        <ul>
+          <li><i class="fa fa-check  fa-fw"></i> <span>neue Kunden zu akquirieren</span></li>
+          <li><i class="fa fa-check  fa-fw"></i> <span>aussagekräftige Referenzen zu sammeln</span></li>
+          <li><i class="fa fa-check  fa-fw"></i> <span>deine Reputation zu steigern</span>
+            <li><i class="fa fa-check  fa-fw"></i> <span>den Projektumfang abzuschätzen</span></li>
+            <li><i class="fa fa-check  fa-fw"></i> <span>unkompliziert Rechnungen zu erstellen</span></li>
+          </ul>
+        </div> 
+      </div>
+    </div> 
+
+    <div class="row">
+      <div class="medium-5 columns">
+        <a class="button expand" href="index.php?page=briefing">Auftrag starten <i class="fa fa-chevron-right fa-fw"></i> </a>
+      </div>
+      <div style="float:right;" class="medium-5 columns">
+        <a class="button expand" href="index.php?page=register">Profil anlegen <i class="fa fa-chevron-right fa-fw"></i> </a>
+      </div>
+    </div>
+    <br class="end" />
+
+<!-- 
+#######################################
+INSTRUCTION
+#######################################
+-->
+
+<div id="main-services" class="text-center">
+  <h3 class="half-padding freestyle">So funktioniert's...</h3>
+  <div class="row">
+    <div class="large-3 columns">
+      <i class="fa fa-pencil fa-fw"></i>
+      <h4>1. Briefing</h4>
+      <p class="text-center">Kunde verfasst online ein detailliertes Auftragsbriefing für das gewünschte Projekt.</p>
+    </div>
+    <div class="large-3 columns">
+     <i class="fa fa-user fa-fw"></i>
+     <h4>2. Bewerbung</h4>
+     <p class="text-center">Webworker bewerben sich mit Kostenvoranschlägen und Referenzen für den Auftrag.</p>
+   </div>
+   <div class="large-3 columns">
+    <i class="fa fa-search fa-fw"></i>
+    <h4>3. Auswahl</h4>
+    <p class="text-center"> Kunde wählt einen passenden Webworker aus und lässt das Projekt vom diesem realisieren.</p>
+  </div>
+  <div class="large-3 columns">
+    <i class="fa fa-star fa-fw"></i>
+    <h4>4. Bewertung</h4>
+    <p class="text-center">Nach positiver Abnahme des Projekts bewertet der Kunde die Arbeit den Webworker.</p>
+  </div>
+</div>
+</div>
+
+<!-- 
+#######################################
+COUNTER
+#######################################
+-->
+
+<div id="main-user-number" class="margin-top dark-bg">
+  <div class="row">
+
+    <div class="large-4 columns ">
+      <h2>12</h2>
+      <h5 class="subheader text-center">aktive Ausschreibungen</h5>
+    </div>
+    <div class="large-4 columns">
+      <h2>60</h2>
+      <h5 class="subheader text-center">registrierte Webworkers</h5>
+    </div>
+    <div class="large-4 columns">
+      <h2>8</h2>
+      <h5 class="subheader text-center">abgeschlossene Projekte</h5>
+    </div>
+  </div>
+</div>
+
+<!-- 
+#######################################
+CLIENT
+#######################################
+-->
+
+<div class="row margin-top" >
+  <div class="large-8 columns small-text-center medium-text-center large-text-left ">
+    <h2 class="primary-color-font">Ich brauche eine Website</h2>
+    <h3 class="freestyle">und suche den Experten</h3>
+    <p class="">Du betreibst ein Unternehmen, startest eine 
+      Aktion oder möchtest deine persönlichen Leistungen im Internet professionell präsentieren, 
+      kennst aber niemanden, der das für dich erledigen kann?</p>
+      <p >
+        Du hast zwar schon große Agenturen im Internet gefunden, bist aber von deren Preispolitik etwas eingeschüchtert?
+      </p>
+
+      <p>Dann starte jetzt kostenlos eine neue Ausschreibung und vergleiche zahlreiche Angebote!</p>
+
+      <a class="small button" href="index.php?page=briefing">Auftrag starten <i class="fa fa-chevron-right fa-fw"></i> </a>
+    </div>
+    <div class="large-4 columns show-for-large-up" >
+      <a href="index.php?page=briefing"><img src="img/poster.png" id="poster-img" alt=""/></a>
     </div>
   </div>
 
-  <br class="end" />
-  <div class="main-slider dark-bg">
-    <div class="row">
-      <div class="medium-5 columns">
-        <h2>KUNDEN</h2>
-        <p>Definiere im online Konfigurator Schritt-für-Schritt die gewünschten Leistungen und übermittel automatisch ein detailliertes Briefing an alle im System registrierten Webworker.</p>
 
-        <p><span class="bullethead">Calculi hilft dir</span></p>
-        <ul>
-          <li><i class="fa fa-check  fa-fw"></i> <span>verschiedene Angebote zu vergleichen</span></li>
-          <li><i class="fa fa-check  fa-fw"></i> <span>den optimalen Webdesigner zu finden</span></li>
-          <li><i class="fa fa-check  fa-fw"></i> <span>ein klares Anforderungsprofil zu definieren</span></li>
-        </ul>
-      </div><!-- END .large-6 -->
-      <div class="medium-5 columns">
-        <h2>WEBDESIGNER</h2>
-        <p>
-          Lege kostenlos dein persönliches Profil an und bewirb dich mit deinen individuellen Kostenvoranschlägen regelmäßig bei Projektausschreibungen verschiedener Kunden.</p>
+<!-- 
+#######################################
+TESTIMONIAL
+#######################################
+-->
 
-          <p><span class="bullethead">Calculi hilft dir</span></p>
-          <ul>
-            <li><i class="fa fa-check  fa-fw"></i> <span>neue Kunden zu akquirieren</span></li>
-            <li><i class="fa fa-check  fa-fw"></i> <span>aussagekräftige Referenzen zu sammeln</span></li>
-            <li><i class="fa fa-check  fa-fw"></i> <span>deine Reputation zu steigern</span>
-              <li><i class="fa fa-check  fa-fw"></i> <span>den Projektumfang abzuschätzen</span></li>
-              <li><i class="fa fa-check  fa-fw"></i> <span>unkompliziert Rechnungen zu erstellen</span></li>
-            </ul>
-          </div> <!-- END .large-6 -->
-
-        </div> <!-- END .row -->
-      </div> <!-- END .main-slider -->
-      
-      <div class="row">
-        <div class="medium-5 columns">
-          <a class="button expand" href="index.php?page=briefing">Auftrag starten <i class="fa fa-chevron-right fa-fw"></i> </a>
-        </div>
-        <div style="float:right;" class="medium-5 columns">
-          <a class="button expand" href="index.php?page=register">Profil anlegen <i class="fa fa-chevron-right fa-fw"></i> </a>
-        </div>
-      </div>
-      <br class="end" />
-
-      <div id="main-services" class="text-center">
-        <h3 class="half-padding freestyle">So funktioniert's...</h3>
-        <div class="row">
-          <div class="large-3 columns">
-            <i class="fa fa-pencil fa-fw"></i>
-            <h4>1. Briefing</h4>
-            <p class="text-center">Kunde verfasst online ein detailliertes Auftragsbriefing für das gewünschte Projekt.</p>
-          </div>
-          
-          <div class="large-3 columns">
-           <i class="fa fa-user fa-fw"></i>
-           <h4>2. Bewerbung</h4>
-           <p class="text-center">Webworker bewerben sich mit Kostenvoranschlägen und Referenzen für den Auftrag.</p>
-         </div>
-
-         <div class="large-3 columns">
-          <i class="fa fa-search fa-fw"></i>
-          <h4>3. Auswahl</h4>
-          <p class="text-center"> Kunde wählt einen passenden Webworker aus und lässt das Projekt vom diesem realisieren.</p>
-        </div>
-        <i class="fa fa-star fa-fw"></i>
-        <div class="large-3 columns">
-          <h4>4. Bewertung</h4>
-          <p class="text-center">Nach positiver Abnahme des Projekts bewertet der Kunde die Arbeit den Webworker.</p>
-        </div>
-      </div>
+<div id="testimonial" class=" dark-bg text-center half-padding">
+  <div class="row">
+    <div class="large-12 columns">"Über Calculi habe ich schnell und einfach den geeigneten 
+      Webdesigner für meine neue Firmenwebsite gefunden. Ich kann Calculi jedem empfehlen, der 
+      nicht auf einen kompetenten Ansprechpartner in seinem persönlichem Umfeld zurückgreifen kann.“<br />
+      <span id="author">Rudolf Stonawski, CEO Clevercontour GmbH </span>
     </div>
+  </div>
+</div>
 
+<!-- 
+#######################################
+WEBDESIGNER
+#######################################
+-->
 
-    <div id="main-user-number" class="dark-bg margin-top ">
-      <div class="row">
-        <div class="large-4 columns">
-          <h2>12</h2>
-          <h5 class="subheader text-center">aktive Ausschreibungen</h5>
-        </div>
-        <div class="large-4 columns">
-          <h2>60</h2>
-          <h5 class="subheader text-center">registrierte Webworkers</h5>
-        </div>
-        <div class="large-4 columns">
-          <h2>8</h2>
-          <h5 class="subheader text-center">abgeschlossene Projekte</h5>
-        </div>
-      </div>
-    </div>
+<div class="row margin-top">
+  <div class="medium-7 columns">
+    <div class="show-for-large-up"><img src="img/imac.png" alt=""></div>
+  </div>
+  <div class="large-5 columns medium-text-center small-text-center large-text-right">
+    <h2 class="primary-color-font">Ich bin Webdesigner</h2>
+    <h3 class="freestyle">und suche Kunden</h3>
+    <p class=" ">Du gestaltest und realisierst Hauptberuflich oder nebenbei leidenschaftlich 
+      gerne Websites und bist stet's auf der Suche nach neuen Kundenprojekten?
+    </p><p>Dann lege jetzt kostenlos bei Calculi dein persönliches Profil an, bewirb dich auf Ausschreibungen 
+    und erweitere kontinuierlich dein Portfolio!</p>
+    <a class="small button" href="index.php?page=register">Profil anlegen<i class="fa fa-chevron-right fa-fw"></i> </a>
+  </div>
+</div>
+</div>
 
-    <div class="row margin-top" >
-      <div class="large-8 columns small-text-center medium-text-center large-text-left ">
-        <h2 class="primary-color-font">Ich brauche eine Website</h2>
-        <h3 class="freestyle">und suche den Experten</h3>
-        <p class="">Du betreibst ein Unternehmen, startest eine 
-          Aktion oder möchtest deine persönlichen Leistungen im Internet professionell präsentieren, 
-          kennst aber niemanden, der das für dich erledigen kann?</p>
-          <p >
-            Du hast zwar schon große Agenturen im Internet gefunden, bist aber von deren Preispolitik etwas eingeschüchtert?
-          </p>
+<!-- 
+#######################################
+PRICING-TABLE
+#######################################
+-->
 
-          <p>Dann starte jetzt kostenlos eine neue Ausschreibung und vergleiche zahlreiche Angebote!</p>
-
-          <a class="small button" href="index.php?page=briefing">Auftrag starten <i class="fa fa-chevron-right fa-fw"></i> </a>
-        </div>
-        <div class="large-4 columns show-for-large-up" >
-          <a href="index.php?page=briefing"><img src="img/poster.png" id="poster-img" alt=""/></a>
-        </div>
-      </div>
-
-      <div class="testimonial dark-bg text-center half-padding ">
-        <div class="row">
-          <div class="large-12 columns">"Über Calculi habe ich schnell und einfach den geeigneten 
-            Webdesigner für meine neue Firmenwebsite gefunden. Ich kann Calculi jedem empfehlen, der 
-            nicht auf einen kompetenten Ansprechpartner in seinem persönlichem Umfeld zurückgreifen kann.“<br />
-            <span id="author">Edvard Grieg, CEO Classical GmbH</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="row margin-top">
-        <div class="medium-7 columns">
-          <div class="show-for-large-up"><img src="img/imac.png" alt=""></div>
-        </div>
-
-        <div class="large-5 columns  medium-text-center small-text-center large-text-right">
-          <h2 class="primary-color-font">Ich bin Webdesigner</h2>
-          <h3 class="freestyle">und suche Kunden</h3>
-          <p class=" ">Du gestaltest und realisierst Hauptberuflich oder nebenbei leidenschaftlich 
-            gerne Websites und bist stet's auf der Suche nach neuen Kundenprojekten?
-          </p><p>Dann lege jetzt kostenlos bei Calculi dein persönliches Profil an, bewirb dich auf Ausschreibungen 
-          und erweitere kontinuierlich dein Portfolio!</p>
-          <a class="small button" href="index.php?page=register">Profil anlegen<i class="fa fa-chevron-right fa-fw"></i> </a>
-
-
-        </div>
-      </div>
-    </div>
 <!--     <div class="row ">
       <div class="large-4 columns">
         <ul class="pricing-table">
@@ -178,28 +222,39 @@
       </div>    
     </div> -->
 
-    <div class="logos row text-center full-padding" >
-      <h3 class="freestyle text-center">bekannt aus</h3>
-      <div class="large-4 columns">
-        <a href=""><img src="img/logos_t3n.png" alt=""/></a>
-      </div>
+<!-- 
+#######################################
+LOGOS
+#######################################
+-->
 
-      <div class="large-4 columns">
-        <a href=""><img src="img/logos_sm.png" alt=""/></a>
-      </div>
-
-      <div class="large-4 columns">
-       <a href=""> <img src="img/logos_fz.png" alt=""/></a>
-     </div>
-
-     <br class="end" />
-   </div>
-   <div class="footerbuttons">
-     <div class="medium-6 columns text-center">
-      <a class="small button" href="index.php?page=briefing">Auftrag starten <i class="fa fa-chevron-right fa-fw"></i> </a>
-    </div>
-    <div class="medium-6 columns text-center">
-      <a class="small button" href="index.php?page=register">Profil anlegen <i class="fa fa-chevron-right fa-fw"></i> </a>
-    </div>
+<div class="logos row text-center full-padding" >
+  <h3 class="freestyle text-center">bekannt aus</h3>
+  <div class="medium-4 columns">
+    <a href=""><img src="img/logos_t3n.png" alt=""/></a>
   </div>
+  <div class="medium-4 columns">
+    <a href=""><img src="img/logos_sm.png" alt=""/></a>
+  </div>
+  <div class="medium-4 columns">
+   <a href=""> <img src="img/logos_fz.png" alt=""/></a>
+ </div>
+ <br class="end" />
+</div>
+
+<!-- 
+#######################################
+BUTTONS
+#######################################
+-->
+
+<div class="footerbuttons">
+ <div class="medium-6 columns text-center">
+  <a class="small button" href="index.php?page=briefing">Auftrag starten <i class="fa fa-chevron-right fa-fw"></i> </a>
+</div>
+<div class="medium-6 columns text-center">
+  <a class="small button" href="index.php?page=register">Profil anlegen <i class="fa fa-chevron-right fa-fw"></i> </a>
+</div>
+</div>
+
 </main>

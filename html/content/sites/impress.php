@@ -26,7 +26,4 @@
 		Dieses Impressum gilt auch für die offiziellen Profile in den diversen sozialen Netzwerken.
 	</div>
 
-	
-
-
 </main>

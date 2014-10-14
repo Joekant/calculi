@@ -1,122 +1,123 @@
-<div id="container-profile"> 
-  <div class="row">
+<main>
+  <div id="container-profile"> 
     <div class="row">
-      <div class="medium-4 columns">
-        <a href="index.php?page=briefing" class="button expand">Anfrage stellen</a>
-      </div>
-    </div>
-    <div id="profile-head" class="dark-bg">
-      <div class="text-center">
-        <h1>Jon Doe</h1>
-        <div id="website"><a href="">www.jondoe.at</a></div>
-      </div>
       <div class="row">
-        <div class="medium-3 columns picture">
-          <img src="img/thumb.jpeg" alt="">
-        </div>
-        <div id="description" class="medium-9 columns">
-          Ich arbeite seit 2004 als professioneller Webdesigner und habe in der Vergangenheit bereits zahlreiche Kundenprojekte erfolgreich abgewickelt. Ich habe mich auf dier Anforderungen und Bedürfnisse von NeugründerInnen & JungunternehmerInnen spezialisiert. Ihre Website gestalte ich entsprechend der modernsten Standards. Benutzerfreundlichkeit, Browserkompatibilität, Suchmaschinenoptimierung und weitgehende Barrierefreiheit sind für mich  stehts selbstverständlich. 
-
+        <div class="medium-4 columns">
+          <a href="index.php?page=briefing" class="button expand">Anfrage stellen</a>
         </div>
       </div>
-      <ul class="text-center">
-        <li><a href=""><i class="fa fa-facebook fa-fw"></i></a></li>
-        <li><a href=""><i class="fa fa-google-plus fa-fw"></i></a></li>
-        <li><a href=""><i class="fa fa-twitter fa-fw"></i></a></li>
-        <li><a href=""><i class="fa fa-xing fa-fw"></i></a></li>
-        <li><a href=""><i class="fa fa-dribbble fa-fw"></i></a></li>
-      </ul>
+      <div id="profile-head" class="dark-bg">
+        <div class="text-center">
+          <h1>Jon Doe</h1>
+          <div id="website"><a href="">www.jondoe.at</a></div>
+        </div>
+        <div class="row">
+          <div class="medium-3 columns picture">
+            <img src="img/thumb.jpeg" alt="">
+          </div>
+          <div id="description" class="medium-9 columns">
+            Ich arbeite seit 2004 als professioneller Webdesigner und habe in der Vergangenheit bereits zahlreiche Kundenprojekte erfolgreich abgewickelt. Ich habe mich auf dier Anforderungen und Bedürfnisse von NeugründerInnen & JungunternehmerInnen spezialisiert. Ihre Website gestalte ich entsprechend der modernsten Standards. Benutzerfreundlichkeit, Browserkompatibilität, Suchmaschinenoptimierung und weitgehende Barrierefreiheit sind für mich  stehts selbstverständlich. 
 
-
-      <div id="profile-statistics" class="text-center">
-        <div class="row text-center">
-          <div class="medium-3 columns">
-            <h3>12</h3>
-            <h5>Registrierungsdatum</h5>
-          </div>
-          <div class="medium-3 columns">
-            <h3>60</h3>
-            <h5>letzte Aktivität</h5>
-          </div>
-          <div class="medium-3 columns">
-            <h3>8</h3>
-            <h5>abgeschlossene Projekte</h5>
-          </div>
-          <div class="medium-3 columns">
-            <h3>8</h3>
-            <h5>Ø Antwortzeit</h5>
           </div>
         </div>
+        <ul class="text-center">
+          <li><a href=""><i class="fa fa-facebook fa-fw"></i></a></li>
+          <li><a href=""><i class="fa fa-google-plus fa-fw"></i></a></li>
+          <li><a href=""><i class="fa fa-twitter fa-fw"></i></a></li>
+          <li><a href=""><i class="fa fa-xing fa-fw"></i></a></li>
+          <li><a href=""><i class="fa fa-dribbble fa-fw"></i></a></li>
+        </ul>
+
+
+        <div id="profile-statistics" class="text-center">
+          <div class="row text-center">
+            <div class="medium-3 columns">
+              <h3>12</h3>
+              <h5>Registrierungsdatum</h5>
+            </div>
+            <div class="medium-3 columns">
+              <h3>60</h3>
+              <h5>letzte Aktivität</h5>
+            </div>
+            <div class="medium-3 columns">
+              <h3>8</h3>
+              <h5>abgeschlossene Projekte</h5>
+            </div>
+            <div class="medium-3 columns">
+              <h3>8</h3>
+              <h5>Ø Antwortzeit</h5>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-    </div>
-
-    <div id="profile-body">
-      <div class="row">
-        <div class="medium-3 columns" id="ratings">
-          <h2>Bewertung</h2>
-          <div id="points">
-            <ul>
-              <li class="green-bg">9</li>
-              <li class="red-bg">3</li>
-              <li class="orange-bg">6</li>
-              <li class="yellow-bg">7</li>
-              <li class="green-bg">10</li>
-              <li class="green-bg">10</li>
-              <li class="orange-bg">6</li>
-              <li class="yellow-bg sum-points">7</li>
-            </ul>
+      <div id="profile-body">
+        <div class="row">
+          <div class="medium-3 columns" id="ratings">
+            <h2>Bewertung</h2>
+            <div id="points">
+              <ul>
+                <li class="green-bg">9</li>
+                <li class="red-bg">3</li>
+                <li class="orange-bg">6</li>
+                <li class="yellow-bg">7</li>
+                <li class="green-bg">10</li>
+                <li class="green-bg">10</li>
+                <li class="orange-bg">6</li>
+                <li class="yellow-bg sum-points">7</li>
+              </ul>
+            </div>
+            <div id="categories">
+              <ul>
+                <li><i class="fa fa-comment fa-fw"></i> Kommunikation</li>
+                <li><i class="fa fa-clock-o fa-fw"></i> Geschwindikgiet</li>
+                <li><i class="fa fa-star fa-fw"></i> Qualität</li>
+                <li><i class="fa fa-heart fa-fw"></i> Design</li>
+                <li><i class="fa fa-gear fa-fw"></i> Technik</li>
+                <li><i class="fa fa-pencil fa-fw"></i> Dokumentation</li>
+                <li><i class="fa fa-question fa-fw"></i> Support</li>
+                <li id="sum-points">Gesamt<br /> <span id="vote-count">(4 Stimmen)</span></li>
+              </ul>
+            </div>
           </div>
-          <div id="categories">
-            <ul>
-              <li><i class="fa fa-comment fa-fw"></i> Kommunikation</li>
-              <li><i class="fa fa-clock-o fa-fw"></i> Geschwindikgiet</li>
-              <li><i class="fa fa-star fa-fw"></i> Qualität</li>
-              <li><i class="fa fa-heart fa-fw"></i> Design</li>
-              <li><i class="fa fa-gear fa-fw"></i> Technik</li>
-              <li><i class="fa fa-pencil fa-fw"></i> Dokumentation</li>
-              <li><i class="fa fa-question fa-fw"></i> Support</li>
-              <li id="sum-points">Gesamt<br /> <span id="vote-count">(4 Stimmen)</span></li>
-            </ul>
-          </div>
-        </div>
-        
-
-        <div class="medium-5 columns" id="qualification">
-          <h2>Ausbildung</h2>
-          <ul>
-            <li><strong>SAE Technologie Institute, Wien</strong><br />Webdesign & Development <em>(2014)</em></li>
-            <li><strong>SAE Technologie Institute, Wien</strong><br />Webdesign & Development <em>(2014)</em></li>
-            <li><strong>SAE Technologie Institute, Wien</strong><br />Webdesign & Development <em>(2014)</em></li>
-            <li><strong>SAE Technologie Institute, Wien</strong><br />Webdesign & Development <em>(2014)</em></li>
-            <li><strong>SAE Technologie Institute, Wien</strong><br />Webdesign & Development <em>(2014)</em></li>
-          </ul>
-        </div>
-
-        <div class="medium-4 columns" id="skills" >
-          <h2>Kompetenzen</h2>
-          <ul class="inline-list">
-            <li>PHP</li>
-            <li>SQL</li>
-            <li>JavaScript</li>
-            <li>jQuery</li>
-            <li>Photoshop</li>
-            <li>InDesign</li>
-            <li>Illustrator</li>
-          </ul>
           
-          <h2 class="padding-top">Stärken</h2>
-          <ul class="inline-list">
-            <li>Organisation</li>
-            <li>Pünktlichkeit</li>
-            <li>Teamfähig</li>
-            <li>Diszipliniert</li>
-          </ul>
-        </div>
-      </div>
-    </div> 
 
-    <div id="profile-references">
+          <div class="medium-5 columns" id="qualification">
+            <h2>Ausbildung</h2>
+            <ul>
+              <li><strong>SAE Technologie Institute, Wien</strong><br />Webdesign & Development <em>(2014)</em></li>
+              <li><strong>SAE Technologie Institute, Wien</strong><br />Webdesign & Development <em>(2014)</em></li>
+              <li><strong>SAE Technologie Institute, Wien</strong><br />Webdesign & Development <em>(2014)</em></li>
+              <li><strong>SAE Technologie Institute, Wien</strong><br />Webdesign & Development <em>(2014)</em></li>
+              <li><strong>SAE Technologie Institute, Wien</strong><br />Webdesign & Development <em>(2014)</em></li>
+            </ul>
+          </div>
+
+          <div class="medium-4 columns" id="skills" >
+            <h2>Kompetenzen</h2>
+            <ul class="inline-list">
+              <li>PHP</li>
+              <li>SQL</li>
+              <li>JavaScript</li>
+              <li>jQuery</li>
+              <li>Photoshop</li>
+              <li>InDesign</li>
+              <li>Illustrator</li>
+            </ul>
+            
+            <h2 class="padding-top">Stärken</h2>
+            <ul class="inline-list">
+              <li>Organisation</li>
+              <li>Pünktlichkeit</li>
+              <li>Teamfähig</li>
+              <li>Diszipliniert</li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+      <div id="profile-references">
 
 <!--     <div id="references-head" class="dark-bg text-center">
       <h2>Referenzen</h2>
@@ -209,3 +210,4 @@
 
 </div>
 </div>
+</main>

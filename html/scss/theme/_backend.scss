@@ -1,0 +1,308 @@
+/* -----------------------------------------
+   Backend Styles
+----------------------------------------- */
+header {
+	z-index: 100;
+}
+
+.popup-message {
+	position: relative;
+	overflow: hidden;
+	top: -200px;
+	opacity: 0;
+	z-index: 1;
+
+	margin-top: 0px;
+	margin-bottom: -40px;
+	text-align: center;
+	padding: 10px 0px 15px 0px;
+	font-size: 1.2em;
+	letter-spacing: 1px;
+	i {
+		font-size: 1.2em;
+		margin-right: 20px;
+	}
+
+	a {
+		padding-left: 40px;
+		color: white;
+		font-style: italic;
+		font-size: 0.7em;
+	}
+}
+
+.popup-message.active {
+	// Problem mit Transition bei mittels JS vergebener active-classe
+	// Test mit :hover / top: 50
+	z-index: 1;
+	opacity: 1;
+	top: 0;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+
+.main-section {
+	padding: 50px 20px 0px 40px;
+	margin: 0px auto;
+	z-index: 100;
+}
+
+header.show-for-small-only-up {
+	margin: 0px auto; 
+	text-align: center;
+	background-color: $secondary-color;
+	border-bottom: 5px solid $primary-color;
+}
+
+header.show-for-large-up {
+	margin-bottom: -6px;
+	
+}
+
+.icon-bar {
+	border-bottom: 5px solid $primary-color;
+
+	a label {
+		padding-top: 5px;
+		font-size: 1em;
+	}	
+
+	a.active {
+		background-color: $primary-color;
+	}
+	a:hover {
+
+	}
+}
+
+.tab-bar {
+	border-bottom: 5px solid $primary-color;
+	background-color: $secondary-color;
+	height: 50px;
+
+	h1 {
+		font-weight: 300;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+}
+
+.joyride-content-wrapper {
+	p {
+		color: white;
+		padding: 10px 0px;
+		font-size: 1em;
+		font-weight: 300;
+	}
+
+	h4 {
+		font-weight: 300;
+	}
+}
+
+.be-footer {
+	position: relative;
+	left: 0;
+	height: 10px;
+	width: 100%;
+	padding: 50px 0px;
+	margin: 0;
+	text-align: center;
+	opacity: 0.7;
+	font-size: 0.9em;
+	opacity: 0.8;
+
+	.love {
+		opacity: 0.5;
+		padding-bottom: 20px;
+	}
+
+	ul {
+		li {
+			display: inline;
+			padding-right: 20px;
+
+			i {
+				font-size: 1.5em;
+			}
+		}
+	}
+}
+
+.counter-area-2 {
+	.row {
+		max-width: 350px;
+	}
+}
+
+.counter-area-3 {
+	.row {
+		max-width: 500px;
+	}
+}
+
+.counter-area-6 {
+	.row {
+		max-width: 900px;
+	}
+}
+
+.counter {
+	width: 120px;
+	padding: 15px;
+	font-size: 0.9em;
+	margin-left: -3px;
+
+	.counter-value {
+		display:inline-block;
+		color: white;
+		font-size: 1.35em;
+		font-weight: 500;
+		padding-bottom: 7px;
+	}
+
+	i {
+		padding-bottom: 7px;
+		font-size: 1.7em;
+	}
+
+}
+
+
+/* -----------------------------------------
+   Backend Styles - Dashboard
+----------------------------------------- */
+
+#welcome-message {
+	border-left: 5px solid $primary-color;
+	margin: 0px auto;
+	max-width: 600px;
+}
+
+/* -----------------------------------------
+   Backend Styles - Profile
+----------------------------------------- */
+
+#profile-progress {
+	padding-top: 0px;
+	max-width: 400px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+.progress {
+	margin-top: 10px;
+	border: 1px solid $primary-color;
+}
+
+#profile-navigation {
+	margin-left: -30px;
+	dd {
+		width: 80px;
+		margin: 0px auto;
+	}
+}
+
+.icon-submenu {
+	.tabs-content {
+		h1 {
+			font-size: 2.2em;
+			line-height: 1px;
+			padding-bottom: 40px;
+			color: $primary-color;
+			font-weight: 300;
+		}
+
+		.content {
+			margin-left: -30px;	
+			margin-top: -30px;
+		}
+	}
+}
+
+#education-list {
+	td {
+		line-height: 3em;
+	}
+}
+
+.content {
+	.reference-item {
+		height: 268px;
+	}
+}
+
+/* -----------------------------------------
+   Backend Styles - Projekte
+----------------------------------------- */
+
+.view-switch {
+	font-size: 1.7em;
+
+	a {
+		padding: 10px;
+		opacity: 0.6;
+	}
+
+	a.active {
+		color: $primary-color;
+	}
+}
+
+#boxed-style {
+	.project {
+		margin-bottom: 50px;
+		
+		.project-name {
+			background-color: $primary-color;
+
+			h2 {
+				color: white;
+				font-size: 1.4em;
+				text-align: center;
+				padding: 5px;
+				margin: 0px;
+			}
+		}
+
+		.closed-header {
+			background-color: $lightgrey;
+			opacity: 0.7;
+		}	
+
+		.project-content {
+			background-color: white;
+			padding: 20px;
+			min-height: 110px;
+		}
+
+		.closed-content {
+			color: $lightgrey;
+			opacity: 0.7;
+		}	
+
+		.project-actions {
+			border-top: 5px solid $primary-color;
+
+			.button-group {
+				li {
+					margin-left: 0px;
+					margin-right: -4px;
+
+					.button {
+						padding: 10px;
+						font-size: 0.8em;
+					}
+				}
+			}	
+		}
+
+		.closed-footer {
+			border-top: 5px solid $lightgrey;
+			opacity: 0.6;
+		}	
+	}
+}

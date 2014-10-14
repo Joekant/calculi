@@ -44,10 +44,19 @@
 $icon = $_GET['popup_icon'];
 $message = $_GET['popup_message'];
 $color = $_GET['popup_color'];
+
+if(isset($_GET["popup_link"])) {
+  $link = '<a href="'.$_GET["popup_link"].'">('.$_GET["popup_linktext"].')</a>';
+}
+
 ?>
 
 <div class="popup-message <?php echo $color; ?>-bg" id="popup">
-  <i class="fa fa-<?php echo $icon; ?> fa-fw"></i><?php echo $message; ?>
+  <i class="fa fa-<?php echo $icon; ?> fa-fw"></i>
+  <?php 
+  echo $message, $link; 
+  
+  ?>
 </div>
 
 <?php 

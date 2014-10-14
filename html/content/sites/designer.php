@@ -1,3 +1,4 @@
+<main>
  <div class="row">
   <div class="large-12 columns half-padding text-center">
     <h1 id="headline">Unsere Experten</h1>
@@ -18,7 +19,7 @@
 
   <div class="medium-4 columns">
     <label for="email">Bewertung</label>
-    
+
     <div class="range-slider" data-slider data-options="step: 20;">
       <span class="range-slider-handle" role="slider" tabindex="0"></span>
       <span class="range-slider-active-segment"></span>
@@ -105,3 +106,4 @@
 
 </div>
 <div class="full-padding"></div>
+</main>

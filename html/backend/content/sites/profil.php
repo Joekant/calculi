@@ -59,11 +59,31 @@
 								<input type="text" id="remail" placeholder="Disziplin, Pünktlichkeit...">
 							</div>
 						</div>
+
 						<div class="medium-12 columns">
 							<textarea type="text" id="remail" rows="5" placeholder="Ich arbeite seit 2004 als ..."></textarea>
 						</div>
+
+						<div class="medium-3 columns">
+							<label for="email" class="text-center"><i class="fa fa-facebook fa-fw"></i></label>
+							<input type="text" id="remail" placeholder="http://facebook.com/...">
+						</div>
+						<div class="medium-3 columns">
+							<label for="email" class="text-center"><i class="fa fa-google-plus fa-fw"></i></label>
+							<input type="text" id="remail" placeholder="http://google.com/...">
+						</div>
+						<div class="medium-3 columns">
+							<label for="email" class="text-center"><i class="fa fa-twitter fa-fw"></i></label>
+							<input type="text" id="remail" placeholder="http://twitter.com/...">
+						</div>
+						<div class="medium-3 columns">
+							<label for="email" class="text-center"><i class="fa fa-xing fa-fw"></i></label>
+							<input type="text" id="remail" placeholder="http://xing.com/...">
+						</div>
+
+
 					</div>
-					<div class="text-right">
+					<div class="text-right padding-top">
 						<a href="index.php?page=<?php echo $page; ?>&popup&popup_message=Änderungen gespeichert&popup_icon=check&popup_color=green" class="button green-bg"><i class="fa fa-save fa-fw"></i> Speichern</a>
 					</div>
 				</div>

@@ -1,7 +1,7 @@
 <div class="main-section">
 	<div class="row full-padding">		
 
-		<div class="medium-2 columns">
+		<div class="medium-2 columns" >
 			<div id="profile-navigation">
 				<dl class="tabs vertical"  data-tab>
 
