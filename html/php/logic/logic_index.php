@@ -20,7 +20,7 @@ function header_navigation() {
   // Include current Subpage
 $page = isset($_GET['page']) ? $_GET['page'] : "home";
 $header = "1";
-$footerv = "normal";
+$footerv = "1";
 
 if($page == "home") {
   $content = $page;
@@ -36,7 +36,7 @@ if($page == "home") {
   $content = $page;
 } elseif($page == "register") {        
   $content = $page;
-  $footer = "0";
+  $footerv = "0";
   $header = "0";
 } elseif($page == "briefing") {        
   $content = $page;
@@ -46,7 +46,7 @@ if($page == "home") {
   $content = $page;
 } elseif($page == "login") {        
   $content = $page;
-  $footer = "0";
+  $footerv = "0";
   $header = "0";
 }
 
@@ -58,7 +58,7 @@ if ($header=="1") {
 // Include Content
 include("content/sites/$content.php");
 // Include chosen Footer
-if ($footerv = "1") {
+if ($footerv=="1") {
   include("content/footer_$footerv.php");
 }
 ?>

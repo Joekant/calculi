@@ -1,15 +1,14 @@
 <div class="main-section">
 	<div class="row full-padding">		
-
 		<div class="medium-2 columns" >
 			<div id="profile-navigation">
 				<dl class="tabs vertical"  data-tab>
-
 					<dd class="active"><a href="#panel1"><i class="fa fa-info fa-fw"></i></a></dd>
 					<dd ><a href="#panel4"><i class="fa fa-credit-card fa-fw"></i></a></dd>
 					<dd><a href="#panel2"><i class="fa fa-bell fa-fw"></i></a></dd>
 					<dd><a href="#panel3"><i class="fa fa-lock fa-fw"></i><br /></a></dd>
 					<dd><a href="#panel5"><i class="fa fa-cloud-download fa-fw"></i><br /></a></dd>
+					<dd><a href="#panel6"><i class="fa fa-frown-o fa-fw"></i><br /></a></dd>
 				</dl>
 			</div>	 
 		</div>	
@@ -28,9 +27,6 @@
 							14.05.2014<br />
 							maxmustermann@gmail.com<br />
 						</div>
-					</div>
-					<div class="text-center half-padding">
-						<a href="" class="button red-bg"><i class="fa fa-ban fa-fw"></i> Konto löschen</a>
 					</div>
 				</div>
 				<div class="content" id="panel2">
@@ -94,7 +90,9 @@
 				<div class="content" id="panel5">
 					<h1>Export</h1>
 					<div class="row">
-						<a href="" class="button green-bg padding-top"><i class="fa fa-cloud-download fa-fw"></i> Exportdatei herunterladen</a>
+						<div class="large-12 columns">
+							<a href="" class="button green-bg padding-top"><i class="fa fa-cloud-download fa-fw"></i> Exportdatei herunterladen</a>
+						</div>
 					</div>
 				</div>
 				<div class="content" id="panel4">
@@ -111,10 +109,19 @@
 							<input type="text" pattern="number" id="remail" placeholder="">
 							<a href="" class="button green-bg padding-top"><i class="fa fa-save fa-fw"></i> Speichern</a>
 						</div>
-						
+					</div>
+				</div>
+				<div class="content" id="panel6">
+					<h1>Konto deaktivieren</h1>
+					<div class="row">
+						<div class="large-12 columns">
+							<a href="" class="button small red-bg"><i class="fa fa-ban fa-fw"></i> Konto löschen</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+
