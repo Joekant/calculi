@@ -58,7 +58,7 @@ if ($header=="1") {
 // Include Content
 include("content/sites/$content.php");
 // Include chosen Footer
-if ($footerv) {
+if ($footerv = "1") {
   include("content/footer_$footerv.php");
 }
 ?>
