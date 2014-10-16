@@ -114,121 +114,122 @@ main {
 
 /* line 138, ../scss/theme/_general.scss */
 .dark-bg {
-  background: url("../img/bg_slider.png") repeat;
+  background: url("../img/bg_slider.png");
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   color: #f7f7f7; }
 
-/* line 147, ../scss/theme/_general.scss */
+/* line 148, ../scss/theme/_general.scss */
 .primary-bg {
   background-color: #32aebd;
   color: white; }
 
-/* line 152, ../scss/theme/_general.scss */
+/* line 153, ../scss/theme/_general.scss */
 .green-bg {
   background-color: #37d074;
   color: white; }
 
-/* line 157, ../scss/theme/_general.scss */
+/* line 158, ../scss/theme/_general.scss */
 .red-bg {
   background-color: #e85458;
   color: white; }
 
-/* line 162, ../scss/theme/_general.scss */
+/* line 163, ../scss/theme/_general.scss */
 .orange-bg {
   background-color: #ff6c60;
   color: white; }
 
-/* line 167, ../scss/theme/_general.scss */
+/* line 168, ../scss/theme/_general.scss */
 .yellow-bg {
   background-color: #e8cb59;
   color: white; }
 
-/* line 172, ../scss/theme/_general.scss */
+/* line 173, ../scss/theme/_general.scss */
 .grey-bg {
   background-color: #afafaf;
   color: white; }
 
-/* line 177, ../scss/theme/_general.scss */
+/* line 178, ../scss/theme/_general.scss */
 .red-border {
   border-top: 4px solid #e85458; }
 
-/* line 181, ../scss/theme/_general.scss */
+/* line 182, ../scss/theme/_general.scss */
 .green-border {
   border-top: 4px solid #37d074; }
 
-/* line 185, ../scss/theme/_general.scss */
+/* line 186, ../scss/theme/_general.scss */
 .orange-border {
   border-top: 4px solid #ff6c60; }
 
-/* line 189, ../scss/theme/_general.scss */
+/* line 190, ../scss/theme/_general.scss */
 .yellow-border {
   border-top: 4px solid #e8cb59; }
 
-/* line 193, ../scss/theme/_general.scss */
+/* line 194, ../scss/theme/_general.scss */
 .full-padding {
   padding-top: 60px;
   padding-bottom: 60px; }
 
-/* line 198, ../scss/theme/_general.scss */
+/* line 199, ../scss/theme/_general.scss */
 .half-padding {
   padding-top: 30px;
   padding-bottom: 30px; }
 
-/* line 203, ../scss/theme/_general.scss */
+/* line 204, ../scss/theme/_general.scss */
 .half-margin {
   margin-top: 30px;
   margin-bottom: 30px; }
 
-/* line 208, ../scss/theme/_general.scss */
+/* line 209, ../scss/theme/_general.scss */
 .margin-top {
   margin-top: 60px; }
 
-/* line 212, ../scss/theme/_general.scss */
+/* line 213, ../scss/theme/_general.scss */
 .padding-top {
   margin-top: 30px; }
 
-/* line 216, ../scss/theme/_general.scss */
+/* line 217, ../scss/theme/_general.scss */
 .padding-bottom {
   margin-bottom: 30px; }
 
 /* -----------------------------------------
   NAVIGATION TOP-BAR
 ----------------------------------------- */
-/* line 224, ../scss/theme/_general.scss */
+/* line 225, ../scss/theme/_general.scss */
 .logo {
   width: 150px; }
 
-/* line 228, ../scss/theme/_general.scss */
+/* line 229, ../scss/theme/_general.scss */
 .expanded {
   background-color: transparent; }
 
-/* line 232, ../scss/theme/_general.scss */
+/* line 233, ../scss/theme/_general.scss */
 .top-bar {
   background-color: transparent;
   margin: 0px auto; }
-  /* line 238, ../scss/theme/_general.scss */
+  /* line 239, ../scss/theme/_general.scss */
   .top-bar .top-bar-section ul.right {
     border-bottom: 5px solid #32aebd; }
-    /* line 241, ../scss/theme/_general.scss */
+    /* line 242, ../scss/theme/_general.scss */
     .top-bar .top-bar-section ul.right li.active a {
       background-color: #32aebd; }
-    /* line 245, ../scss/theme/_general.scss */
+    /* line 246, ../scss/theme/_general.scss */
     .top-bar .top-bar-section ul.right li.active :hover {
       background-color: #32aebd; }
-    /* line 250, ../scss/theme/_general.scss */
+    /* line 251, ../scss/theme/_general.scss */
     .top-bar .top-bar-section ul.right li a {
       background-color: #293c4e; }
-    /* line 253, ../scss/theme/_general.scss */
+    /* line 254, ../scss/theme/_general.scss */
     .top-bar .top-bar-section ul.right li :hover {
       background-color: #293c4e;
       color: #32aebd; }
-  /* line 262, ../scss/theme/_general.scss */
+  /* line 263, ../scss/theme/_general.scss */
   .top-bar .top-bar-section ul.title-area li.toggle-topbar a {
     color: #293c4e; }
-  /* line 270, ../scss/theme/_general.scss */
+  /* line 271, ../scss/theme/_general.scss */
   .top-bar .logo {
     padding-top: 13px;
     width: 200px; }
@@ -236,7 +237,7 @@ main {
 /* -----------------------------------------
    Form Styles
 ----------------------------------------- */
-/* line 280, ../scss/theme/_general.scss */
+/* line 281, ../scss/theme/_general.scss */
 input[type=text],
 textarea[type=text],
 input[type=email],
@@ -252,7 +253,7 @@ select {
   -moz-transition: color .9s ease;
   letter-spacing: 1px; }
 
-/* line 296, ../scss/theme/_general.scss */
+/* line 297, ../scss/theme/_general.scss */
 input[type=text]:focus,
 input[type=email]:focus,
 input[type=password]:focus,
@@ -264,37 +265,37 @@ select {
   border-bottom: 2px solid #32aebd;
   box-shadow: none; }
 
-/* line 310, ../scss/theme/_general.scss */
+/* line 311, ../scss/theme/_general.scss */
 .reveal-modal input[type=text],
 .reveal-modal textarea[type=text],
 .reveal-modal input[type=email],
 .reveal-modal input[type=password] {
   background: transparent; }
 
-/* line 318, ../scss/theme/_general.scss */
+/* line 319, ../scss/theme/_general.scss */
 textarea[type=text] {
   border: 2px solid #565656;
   margin-top: 10px; }
 
-/* line 323, ../scss/theme/_general.scss */
+/* line 324, ../scss/theme/_general.scss */
 textarea[type=text]:focus {
   border: 2px solid #32aebd; }
 
-/* line 327, ../scss/theme/_general.scss */
+/* line 328, ../scss/theme/_general.scss */
 select {
   margin-top: 10px;
   border: 2px solid #565656;
   padding: 0px; }
 
-/* line 333, ../scss/theme/_general.scss */
+/* line 334, ../scss/theme/_general.scss */
 select:focus {
   border: 2px solid #32aebd; }
 
-/* line 337, ../scss/theme/_general.scss */
+/* line 338, ../scss/theme/_general.scss */
 span.range-slider-handle {
   background: #32aebd; }
 
-/* line 341, ../scss/theme/_general.scss */
+/* line 342, ../scss/theme/_general.scss */
 #dropzone {
   margin-top: 10px;
   border: 2px solid #565656;
@@ -303,7 +304,7 @@ span.range-slider-handle {
   line-height: 50px;
   text-align: center;
   font-weight: bold; }
-  /* line 350, ../scss/theme/_general.scss */
+  /* line 351, ../scss/theme/_general.scss */
   #dropzone #upload-pic {
     position: absolute;
     top: 12px;
@@ -312,14 +313,14 @@ span.range-slider-handle {
     height: 196px;
     opacity: 1; }
 
-/* line 359, ../scss/theme/_general.scss */
+/* line 360, ../scss/theme/_general.scss */
 #dropzone.in {
   width: 600px;
   height: 200px;
   line-height: 200px;
   font-size: larger; }
 
-/* line 365, ../scss/theme/_general.scss */
+/* line 366, ../scss/theme/_general.scss */
 #dropzone:hover {
   border: 2px solid #32aebd;
   color: white;
@@ -330,7 +331,7 @@ span.range-slider-handle {
   transition: all 0.3s ease-out;
   cursor: hand; }
 
-/* line 375, ../scss/theme/_general.scss */
+/* line 376, ../scss/theme/_general.scss */
 #dropzonefade {
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -339,18 +340,18 @@ span.range-slider-handle {
   transition: all 0.3s ease-out;
   opacity: 1; }
 
-/* line 384, ../scss/theme/_general.scss */
+/* line 385, ../scss/theme/_general.scss */
 .fileinput-button {
   position: relative;
   overflow: hidden;
   top: 30%;
   opacity: 0.7;
   font-size: 1em; }
-  /* line 391, ../scss/theme/_general.scss */
+  /* line 392, ../scss/theme/_general.scss */
   .fileinput-button i {
     font-size: 3em; }
 
-/* line 396, ../scss/theme/_general.scss */
+/* line 397, ../scss/theme/_general.scss */
 .fileinput-button input {
   position: absolute;
   top: 0;
@@ -365,7 +366,7 @@ span.range-slider-handle {
 
 /* Fixes for IE < 8 */
 @media screen\9 {
-  /* line 411, ../scss/theme/_general.scss */
+  /* line 412, ../scss/theme/_general.scss */
   .fileinput-button input {
     filter: alpha(opacity=0);
     font-size: 100%;
@@ -373,21 +374,21 @@ span.range-slider-handle {
 /* -----------------------------------------
    Table Styles
 ----------------------------------------- */
-/* line 422, ../scss/theme/_general.scss */
+/* line 423, ../scss/theme/_general.scss */
 table {
   background: url("../img/bg_pattern.png") repeat;
   border: 0px; }
-  /* line 426, ../scss/theme/_general.scss */
+  /* line 427, ../scss/theme/_general.scss */
   table tr {
     color: #ff6c60;
     text-transform: uppercase;
     border: 0px; }
-    /* line 431, ../scss/theme/_general.scss */
+    /* line 432, ../scss/theme/_general.scss */
     table tr th {
       color: #293c4e;
       font-size: 1.0em; }
 
-/* line 438, ../scss/theme/_general.scss */
+/* line 439, ../scss/theme/_general.scss */
 td {
   background: url("../img/bg_pattern.png") repeat;
   border-bottom: 1px solid #afafaf; }
@@ -1228,10 +1229,10 @@ header {
 
 /* line 8, ../scss/theme/_backend.scss */
 .popup-message {
-  position: relative;
+  position: absolute;
   overflow: hidden;
-  top: -200px;
   opacity: 0;
+  top: -200px;
   z-index: 1;
   margin-top: 0px;
   margin-bottom: -40px;
@@ -1239,18 +1240,18 @@ header {
   padding: 10px 0px 15px 0px;
   font-size: 1.2em;
   letter-spacing: 1px; }
-  /* line 21, ../scss/theme/_backend.scss */
+  /* line 20, ../scss/theme/_backend.scss */
   .popup-message i {
     font-size: 1.2em;
     margin-right: 20px; }
-  /* line 26, ../scss/theme/_backend.scss */
+  /* line 25, ../scss/theme/_backend.scss */
   .popup-message a {
     padding-left: 40px;
     color: white;
     font-style: italic;
     font-size: 0.7em; }
 
-/* line 34, ../scss/theme/_backend.scss */
+/* line 33, ../scss/theme/_backend.scss */
 .popup-message.active {
   z-index: 1;
   opacity: 1;
@@ -1261,56 +1262,58 @@ header {
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out; }
 
-/* line 47, ../scss/theme/_backend.scss */
+/* line 46, ../scss/theme/_backend.scss */
 .main-section {
   padding: 50px 20px 0px 40px;
   margin: 0px auto;
   z-index: 100; }
 
-/* line 53, ../scss/theme/_backend.scss */
+/* line 52, ../scss/theme/_backend.scss */
 header.show-for-small-only-up {
   margin: 0px auto;
   text-align: center;
   background-color: #293c4e;
   border-bottom: 5px solid #32aebd; }
 
-/* line 60, ../scss/theme/_backend.scss */
+/* line 59, ../scss/theme/_backend.scss */
 header.show-for-large-up {
   margin-bottom: -6px; }
 
-/* line 65, ../scss/theme/_backend.scss */
+/* line 64, ../scss/theme/_backend.scss */
 .icon-bar {
+  position: relative;
+  z-index: 50;
   border-bottom: 5px solid #32aebd; }
-  /* line 68, ../scss/theme/_backend.scss */
+  /* line 69, ../scss/theme/_backend.scss */
   .icon-bar a label {
     padding-top: 5px;
     font-size: 1em; }
-  /* line 73, ../scss/theme/_backend.scss */
+  /* line 74, ../scss/theme/_backend.scss */
   .icon-bar a.active {
     background-color: #32aebd; }
 
-/* line 81, ../scss/theme/_backend.scss */
+/* line 82, ../scss/theme/_backend.scss */
 .tab-bar {
   border-bottom: 5px solid #32aebd;
   background-color: #293c4e;
   height: 50px; }
-  /* line 86, ../scss/theme/_backend.scss */
+  /* line 87, ../scss/theme/_backend.scss */
   .tab-bar h1 {
     font-weight: 300;
     letter-spacing: 1px;
     text-transform: uppercase; }
 
-/* line 94, ../scss/theme/_backend.scss */
+/* line 95, ../scss/theme/_backend.scss */
 .joyride-content-wrapper p {
   color: white;
   padding: 10px 0px;
   font-size: 1em;
   font-weight: 300; }
-/* line 101, ../scss/theme/_backend.scss */
+/* line 102, ../scss/theme/_backend.scss */
 .joyride-content-wrapper h4 {
   font-weight: 300; }
 
-/* line 106, ../scss/theme/_backend.scss */
+/* line 107, ../scss/theme/_backend.scss */
 .be-footer {
   position: relative;
   left: 0;
@@ -1322,44 +1325,44 @@ header.show-for-large-up {
   opacity: 0.7;
   font-size: 0.9em;
   opacity: 0.8; }
-  /* line 118, ../scss/theme/_backend.scss */
+  /* line 119, ../scss/theme/_backend.scss */
   .be-footer .love {
     opacity: 0.5;
     padding-bottom: 20px; }
-  /* line 124, ../scss/theme/_backend.scss */
+  /* line 125, ../scss/theme/_backend.scss */
   .be-footer ul li {
     display: inline;
     padding-right: 20px; }
-    /* line 128, ../scss/theme/_backend.scss */
+    /* line 129, ../scss/theme/_backend.scss */
     .be-footer ul li i {
       font-size: 1.5em; }
 
-/* line 136, ../scss/theme/_backend.scss */
+/* line 137, ../scss/theme/_backend.scss */
 .counter-area-2 .row {
   max-width: 350px; }
 
-/* line 142, ../scss/theme/_backend.scss */
+/* line 143, ../scss/theme/_backend.scss */
 .counter-area-3 .row {
   max-width: 500px; }
 
-/* line 148, ../scss/theme/_backend.scss */
+/* line 149, ../scss/theme/_backend.scss */
 .counter-area-6 .row {
   max-width: 900px; }
 
-/* line 153, ../scss/theme/_backend.scss */
+/* line 154, ../scss/theme/_backend.scss */
 .counter {
   width: 120px;
   padding: 15px;
   font-size: 0.9em;
   margin-left: -3px; }
-  /* line 159, ../scss/theme/_backend.scss */
+  /* line 160, ../scss/theme/_backend.scss */
   .counter .counter-value {
     display: inline-block;
     color: white;
     font-size: 1.35em;
     font-weight: 500;
     padding-bottom: 7px; }
-  /* line 167, ../scss/theme/_backend.scss */
+  /* line 168, ../scss/theme/_backend.scss */
   .counter i {
     padding-bottom: 7px;
     font-size: 1.7em; }
@@ -1367,7 +1370,7 @@ header.show-for-large-up {
 /* -----------------------------------------
    Backend Styles - Dashboard
 ----------------------------------------- */
-/* line 179, ../scss/theme/_backend.scss */
+/* line 180, ../scss/theme/_backend.scss */
 #welcome-message {
   border-left: 5px solid #32aebd;
   margin: 0px auto;
@@ -1376,98 +1379,98 @@ header.show-for-large-up {
 /* -----------------------------------------
    Backend Styles - Profile
 ----------------------------------------- */
-/* line 189, ../scss/theme/_backend.scss */
+/* line 190, ../scss/theme/_backend.scss */
 #profile-progress {
   padding-top: 0px;
   max-width: 400px;
   margin: 0px auto;
   text-align: center; }
 
-/* line 196, ../scss/theme/_backend.scss */
+/* line 197, ../scss/theme/_backend.scss */
 .progress {
   margin-top: 10px;
   border: 1px solid #32aebd; }
 
-/* line 201, ../scss/theme/_backend.scss */
+/* line 202, ../scss/theme/_backend.scss */
 #profile-navigation {
   margin-left: -30px; }
-  /* line 203, ../scss/theme/_backend.scss */
+  /* line 204, ../scss/theme/_backend.scss */
   #profile-navigation dd {
     width: 80px;
     margin: 0px auto; }
 
-/* line 211, ../scss/theme/_backend.scss */
+/* line 212, ../scss/theme/_backend.scss */
 .icon-submenu .tabs-content h1 {
   font-size: 2.2em;
   line-height: 1px;
   padding-bottom: 40px;
   color: #32aebd;
   font-weight: 300; }
-/* line 219, ../scss/theme/_backend.scss */
+/* line 220, ../scss/theme/_backend.scss */
 .icon-submenu .tabs-content .content {
   margin-left: -30px;
   margin-top: -30px; }
 
-/* line 227, ../scss/theme/_backend.scss */
+/* line 228, ../scss/theme/_backend.scss */
 #education-list td {
   line-height: 3em; }
 
-/* line 233, ../scss/theme/_backend.scss */
+/* line 234, ../scss/theme/_backend.scss */
 .content .reference-item {
   height: 268px; }
 
 /* -----------------------------------------
    Backend Styles - Projekte
 ----------------------------------------- */
-/* line 242, ../scss/theme/_backend.scss */
+/* line 243, ../scss/theme/_backend.scss */
 .view-switch {
   font-size: 1.7em; }
-  /* line 245, ../scss/theme/_backend.scss */
+  /* line 246, ../scss/theme/_backend.scss */
   .view-switch a {
     padding: 10px;
     opacity: 0.6; }
-  /* line 250, ../scss/theme/_backend.scss */
+  /* line 251, ../scss/theme/_backend.scss */
   .view-switch a.active {
     color: #32aebd; }
 
-/* line 256, ../scss/theme/_backend.scss */
+/* line 257, ../scss/theme/_backend.scss */
 #boxed-style .project {
   margin-bottom: 50px; }
-  /* line 259, ../scss/theme/_backend.scss */
+  /* line 260, ../scss/theme/_backend.scss */
   #boxed-style .project .project-name {
     background-color: #32aebd; }
-    /* line 262, ../scss/theme/_backend.scss */
+    /* line 263, ../scss/theme/_backend.scss */
     #boxed-style .project .project-name h2 {
       color: white;
       font-size: 1.4em;
       text-align: center;
       padding: 5px;
       margin: 0px; }
-  /* line 271, ../scss/theme/_backend.scss */
+  /* line 272, ../scss/theme/_backend.scss */
   #boxed-style .project .closed-header {
     background-color: #afafaf;
     opacity: 0.7; }
-  /* line 276, ../scss/theme/_backend.scss */
+  /* line 277, ../scss/theme/_backend.scss */
   #boxed-style .project .project-content {
     background-color: white;
     padding: 20px;
     min-height: 110px; }
-  /* line 282, ../scss/theme/_backend.scss */
+  /* line 283, ../scss/theme/_backend.scss */
   #boxed-style .project .closed-content {
     color: #afafaf;
     opacity: 0.7; }
-  /* line 287, ../scss/theme/_backend.scss */
+  /* line 288, ../scss/theme/_backend.scss */
   #boxed-style .project .project-actions {
     border-top: 5px solid #32aebd; }
-    /* line 291, ../scss/theme/_backend.scss */
+    /* line 292, ../scss/theme/_backend.scss */
     #boxed-style .project .project-actions .button-group li {
       margin-left: 0px;
       margin-right: -4px; }
-      /* line 295, ../scss/theme/_backend.scss */
+      /* line 296, ../scss/theme/_backend.scss */
       #boxed-style .project .project-actions .button-group li .button {
         padding: 10px;
         font-size: 0.8em; }
-  /* line 303, ../scss/theme/_backend.scss */
+  /* line 304, ../scss/theme/_backend.scss */
   #boxed-style .project .closed-footer {
     border-top: 5px solid #afafaf;
     opacity: 0.6; }
