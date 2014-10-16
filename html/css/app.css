@@ -1,5 +1,6 @@
-/* CYAN */
-/* BLUE */
+/* CYAN r(50)g(174)b(189) */
+/* BLUE r(41)g(60)b(78) */
+/* r(255)g(108)b(96) */
 /* GREY */
 /* -----------------------------------------
    Shared Properties
@@ -43,15 +44,13 @@ main {
   min-height: 100%;
   position: relative;
   z-index: 10;
-  background-color: white;
-  background: url("../img/bg_pattern.png") repeat;
   border-bottom: 5px solid #32aebd; }
   @media only screen and (max-width: 40em) {
     /* line 53, ../scss/theme/_general.scss */
     main {
       margin-top: -10px; } }
 
-/* line 68, ../scss/theme/_general.scss */
+/* line 65, ../scss/theme/_general.scss */
 .freestyle {
   color: #ff6c60;
   font-weight: 300;
@@ -59,7 +58,7 @@ main {
   letter-spacing: 2px;
   font-size: 1.5em; }
 
-/* line 76, ../scss/theme/_general.scss */
+/* line 73, ../scss/theme/_general.scss */
 .button {
   background-color: #32aebd;
   color: white;
@@ -68,52 +67,52 @@ main {
   text-transform: uppercase;
   letter-spacing: 1.1px; }
 
-/* line 85, ../scss/theme/_general.scss */
+/* line 82, ../scss/theme/_general.scss */
 .button:hover {
   background-color: #293c4e; }
 
-/* line 90, ../scss/theme/_general.scss */
+/* line 87, ../scss/theme/_general.scss */
 .tabs {
   padding-bottom: 20px;
   text-align: center; }
-  /* line 94, ../scss/theme/_general.scss */
+  /* line 91, ../scss/theme/_general.scss */
   .tabs dd {
     width: 150px; }
-  /* line 98, ../scss/theme/_general.scss */
+  /* line 95, ../scss/theme/_general.scss */
   .tabs dd.active a {
     background-color: #32aebd;
     color: white;
     opacity: 1; }
-  /* line 106, ../scss/theme/_general.scss */
+  /* line 103, ../scss/theme/_general.scss */
   .tabs dd a {
     background-color: white;
     -webkit-transition: background-color .7s ease, color .7s ease;
     -moz-transition: background-color .7s ease, color .7s ease; }
-  /* line 113, ../scss/theme/_general.scss */
+  /* line 110, ../scss/theme/_general.scss */
   .tabs dd a:hover {
     background-color: #32aebd;
     color: white; }
 
-/* line 121, ../scss/theme/_general.scss */
+/* line 118, ../scss/theme/_general.scss */
 .panel {
   background-color: white; }
 
 /* -----------------------------------------
    FONTS / PADDINGS / BORDERS
 ----------------------------------------- */
-/* line 129, ../scss/theme/_general.scss */
+/* line 126, ../scss/theme/_general.scss */
 .orange-font {
   color: #ff6c60; }
 
-/* line 133, ../scss/theme/_general.scss */
+/* line 130, ../scss/theme/_general.scss */
 .green-font {
   color: #37d074; }
 
-/* line 137, ../scss/theme/_general.scss */
+/* line 134, ../scss/theme/_general.scss */
 .primary-font {
   color: #32aebd; }
 
-/* line 141, ../scss/theme/_general.scss */
+/* line 138, ../scss/theme/_general.scss */
 .dark-bg {
   background: url("../img/bg_slider.png") repeat;
   -webkit-background-size: cover;
@@ -122,114 +121,114 @@ main {
   background-size: cover;
   color: #f7f7f7; }
 
-/* line 150, ../scss/theme/_general.scss */
+/* line 147, ../scss/theme/_general.scss */
 .primary-bg {
   background-color: #32aebd;
   color: white; }
 
-/* line 155, ../scss/theme/_general.scss */
+/* line 152, ../scss/theme/_general.scss */
 .green-bg {
   background-color: #37d074;
   color: white; }
 
-/* line 160, ../scss/theme/_general.scss */
+/* line 157, ../scss/theme/_general.scss */
 .red-bg {
   background-color: #e85458;
   color: white; }
 
-/* line 165, ../scss/theme/_general.scss */
+/* line 162, ../scss/theme/_general.scss */
 .orange-bg {
   background-color: #ff6c60;
   color: white; }
 
-/* line 170, ../scss/theme/_general.scss */
+/* line 167, ../scss/theme/_general.scss */
 .yellow-bg {
   background-color: #e8cb59;
   color: white; }
 
-/* line 175, ../scss/theme/_general.scss */
+/* line 172, ../scss/theme/_general.scss */
 .grey-bg {
   background-color: #afafaf;
   color: white; }
 
-/* line 180, ../scss/theme/_general.scss */
+/* line 177, ../scss/theme/_general.scss */
 .red-border {
   border-top: 4px solid #e85458; }
 
-/* line 184, ../scss/theme/_general.scss */
+/* line 181, ../scss/theme/_general.scss */
 .green-border {
   border-top: 4px solid #37d074; }
 
-/* line 188, ../scss/theme/_general.scss */
+/* line 185, ../scss/theme/_general.scss */
 .orange-border {
   border-top: 4px solid #ff6c60; }
 
-/* line 192, ../scss/theme/_general.scss */
+/* line 189, ../scss/theme/_general.scss */
 .yellow-border {
   border-top: 4px solid #e8cb59; }
 
-/* line 196, ../scss/theme/_general.scss */
+/* line 193, ../scss/theme/_general.scss */
 .full-padding {
   padding-top: 60px;
   padding-bottom: 60px; }
 
-/* line 201, ../scss/theme/_general.scss */
+/* line 198, ../scss/theme/_general.scss */
 .half-padding {
   padding-top: 30px;
   padding-bottom: 30px; }
 
-/* line 206, ../scss/theme/_general.scss */
+/* line 203, ../scss/theme/_general.scss */
 .half-margin {
   margin-top: 30px;
   margin-bottom: 30px; }
 
-/* line 211, ../scss/theme/_general.scss */
+/* line 208, ../scss/theme/_general.scss */
 .margin-top {
   margin-top: 60px; }
 
-/* line 215, ../scss/theme/_general.scss */
+/* line 212, ../scss/theme/_general.scss */
 .padding-top {
   margin-top: 30px; }
 
-/* line 219, ../scss/theme/_general.scss */
+/* line 216, ../scss/theme/_general.scss */
 .padding-bottom {
   margin-bottom: 30px; }
 
 /* -----------------------------------------
   NAVIGATION TOP-BAR
 ----------------------------------------- */
-/* line 227, ../scss/theme/_general.scss */
+/* line 224, ../scss/theme/_general.scss */
 .logo {
   width: 150px; }
 
-/* line 231, ../scss/theme/_general.scss */
+/* line 228, ../scss/theme/_general.scss */
 .expanded {
   background-color: transparent; }
 
-/* line 235, ../scss/theme/_general.scss */
+/* line 232, ../scss/theme/_general.scss */
 .top-bar {
   background-color: transparent;
   margin: 0px auto; }
-  /* line 241, ../scss/theme/_general.scss */
+  /* line 238, ../scss/theme/_general.scss */
   .top-bar .top-bar-section ul.right {
     border-bottom: 5px solid #32aebd; }
-    /* line 244, ../scss/theme/_general.scss */
+    /* line 241, ../scss/theme/_general.scss */
     .top-bar .top-bar-section ul.right li.active a {
       background-color: #32aebd; }
-    /* line 248, ../scss/theme/_general.scss */
+    /* line 245, ../scss/theme/_general.scss */
     .top-bar .top-bar-section ul.right li.active :hover {
       background-color: #32aebd; }
-    /* line 253, ../scss/theme/_general.scss */
+    /* line 250, ../scss/theme/_general.scss */
     .top-bar .top-bar-section ul.right li a {
       background-color: #293c4e; }
-    /* line 256, ../scss/theme/_general.scss */
+    /* line 253, ../scss/theme/_general.scss */
     .top-bar .top-bar-section ul.right li :hover {
       background-color: #293c4e;
       color: #32aebd; }
-  /* line 265, ../scss/theme/_general.scss */
+  /* line 262, ../scss/theme/_general.scss */
   .top-bar .top-bar-section ul.title-area li.toggle-topbar a {
     color: #293c4e; }
-  /* line 273, ../scss/theme/_general.scss */
+  /* line 270, ../scss/theme/_general.scss */
   .top-bar .logo {
     padding-top: 13px;
     width: 200px; }
@@ -237,7 +236,7 @@ main {
 /* -----------------------------------------
    Form Styles
 ----------------------------------------- */
-/* line 283, ../scss/theme/_general.scss */
+/* line 280, ../scss/theme/_general.scss */
 input[type=text],
 textarea[type=text],
 input[type=email],
@@ -253,7 +252,7 @@ select {
   -moz-transition: color .9s ease;
   letter-spacing: 1px; }
 
-/* line 299, ../scss/theme/_general.scss */
+/* line 296, ../scss/theme/_general.scss */
 input[type=text]:focus,
 input[type=email]:focus,
 input[type=password]:focus,
@@ -265,37 +264,37 @@ select {
   border-bottom: 2px solid #32aebd;
   box-shadow: none; }
 
-/* line 313, ../scss/theme/_general.scss */
+/* line 310, ../scss/theme/_general.scss */
 .reveal-modal input[type=text],
 .reveal-modal textarea[type=text],
 .reveal-modal input[type=email],
 .reveal-modal input[type=password] {
   background: transparent; }
 
-/* line 321, ../scss/theme/_general.scss */
+/* line 318, ../scss/theme/_general.scss */
 textarea[type=text] {
   border: 2px solid #565656;
   margin-top: 10px; }
 
-/* line 326, ../scss/theme/_general.scss */
+/* line 323, ../scss/theme/_general.scss */
 textarea[type=text]:focus {
   border: 2px solid #32aebd; }
 
-/* line 330, ../scss/theme/_general.scss */
+/* line 327, ../scss/theme/_general.scss */
 select {
   margin-top: 10px;
   border: 2px solid #565656;
   padding: 0px; }
 
-/* line 336, ../scss/theme/_general.scss */
+/* line 333, ../scss/theme/_general.scss */
 select:focus {
   border: 2px solid #32aebd; }
 
-/* line 340, ../scss/theme/_general.scss */
+/* line 337, ../scss/theme/_general.scss */
 span.range-slider-handle {
   background: #32aebd; }
 
-/* line 344, ../scss/theme/_general.scss */
+/* line 341, ../scss/theme/_general.scss */
 #dropzone {
   margin-top: 10px;
   border: 2px solid #565656;
@@ -304,7 +303,7 @@ span.range-slider-handle {
   line-height: 50px;
   text-align: center;
   font-weight: bold; }
-  /* line 353, ../scss/theme/_general.scss */
+  /* line 350, ../scss/theme/_general.scss */
   #dropzone #upload-pic {
     position: absolute;
     top: 12px;
@@ -313,14 +312,14 @@ span.range-slider-handle {
     height: 196px;
     opacity: 1; }
 
-/* line 362, ../scss/theme/_general.scss */
+/* line 359, ../scss/theme/_general.scss */
 #dropzone.in {
   width: 600px;
   height: 200px;
   line-height: 200px;
   font-size: larger; }
 
-/* line 368, ../scss/theme/_general.scss */
+/* line 365, ../scss/theme/_general.scss */
 #dropzone:hover {
   border: 2px solid #32aebd;
   color: white;
@@ -331,7 +330,7 @@ span.range-slider-handle {
   transition: all 0.3s ease-out;
   cursor: hand; }
 
-/* line 378, ../scss/theme/_general.scss */
+/* line 375, ../scss/theme/_general.scss */
 #dropzonefade {
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -340,18 +339,18 @@ span.range-slider-handle {
   transition: all 0.3s ease-out;
   opacity: 1; }
 
-/* line 387, ../scss/theme/_general.scss */
+/* line 384, ../scss/theme/_general.scss */
 .fileinput-button {
   position: relative;
   overflow: hidden;
   top: 30%;
   opacity: 0.7;
   font-size: 1em; }
-  /* line 394, ../scss/theme/_general.scss */
+  /* line 391, ../scss/theme/_general.scss */
   .fileinput-button i {
     font-size: 3em; }
 
-/* line 399, ../scss/theme/_general.scss */
+/* line 396, ../scss/theme/_general.scss */
 .fileinput-button input {
   position: absolute;
   top: 0;
@@ -366,7 +365,7 @@ span.range-slider-handle {
 
 /* Fixes for IE < 8 */
 @media screen\9 {
-  /* line 414, ../scss/theme/_general.scss */
+  /* line 411, ../scss/theme/_general.scss */
   .fileinput-button input {
     filter: alpha(opacity=0);
     font-size: 100%;
@@ -374,21 +373,21 @@ span.range-slider-handle {
 /* -----------------------------------------
    Table Styles
 ----------------------------------------- */
-/* line 425, ../scss/theme/_general.scss */
+/* line 422, ../scss/theme/_general.scss */
 table {
   background: url("../img/bg_pattern.png") repeat;
   border: 0px; }
-  /* line 429, ../scss/theme/_general.scss */
+  /* line 426, ../scss/theme/_general.scss */
   table tr {
     color: #ff6c60;
     text-transform: uppercase;
     border: 0px; }
-    /* line 434, ../scss/theme/_general.scss */
+    /* line 431, ../scss/theme/_general.scss */
     table tr th {
       color: #293c4e;
       font-size: 1.0em; }
 
-/* line 441, ../scss/theme/_general.scss */
+/* line 438, ../scss/theme/_general.scss */
 td {
   background: url("../img/bg_pattern.png") repeat;
   border-bottom: 1px solid #afafaf; }

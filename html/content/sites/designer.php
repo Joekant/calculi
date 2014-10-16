@@ -71,7 +71,7 @@
         <a href="index.php?page=profile" class="overlay">
           <span class="plus"><i class="fa fa-search fa-fw"></i></span> 
         </a>
-        <img src="img/thumb.jpeg" alt="">
+        <img src="http://lorempixel.com/300/300/people/" alt="">
         <h2 class="overlay-name profile-name text-center"><?php echo $designer[$i]; ?></h2>
       </div>
       <div class="profile-body" data-equalizer-watch>

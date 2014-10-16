@@ -248,12 +248,14 @@ BUTTONS
 -->
 
 <div class="footerbuttons">
- <div class="medium-6 columns text-center">
-  <a class="small button" href="index.php?page=briefing">Auftrag starten <i class="fa fa-chevron-right fa-fw"></i> </a>
-</div>
-<div class="medium-6 columns text-center">
-  <a class="small button" href="index.php?page=register">Profil anlegen <i class="fa fa-chevron-right fa-fw"></i> </a>
-</div>
+  <div class="row">
+    <div class="medium-4 columns text-center">
+      <a class="small button" href="index.php?page=briefing">Auftrag starten <i class="fa fa-chevron-right fa-fw"></i> </a>
+    </div>
+    <div class="medium-4 columns text-center">
+      <a class="small button" href="index.php?page=register">Profil anlegen <i class="fa fa-chevron-right fa-fw"></i> </a>
+    </div>
+  </div>
 </div>
 
 </main>
