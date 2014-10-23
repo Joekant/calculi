@@ -426,6 +426,27 @@ h3 {
 	.row {
 		max-width: 600px;
 	}
+
+	.sub-nav {
+		display: inline-block;
+	}
+	.progress {
+		width: 500px;
+		text-align: center;
+		margin: 0px auto;
+		margin-bottom: 10px;
+		padding: -30px;
+		
+
+	}
+}
+
+.EffortCount {
+	position: absolute;
+	color: $secondary-color;
+	left: 0;
+	right: 0;
+	top: 10px;
 }
 
 #briefing-form {

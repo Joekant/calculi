@@ -16,8 +16,15 @@
    </div>
 
    <div class="row">
-    <div class="small-12 columns">
+     <div class="small-12 columns text-center">
       <div data-magellan-expedition="fixed">
+
+        <div class="progress">
+          <div class="EffortCount"> 
+
+          </div>
+          <span class="meter TotalEffortDiv"></span>
+        </div> 
         <dl class="sub-nav">         
           <dd data-magellan-arrival="1"><a href="#1">Allgemeines</a></dd>
           <dd data-magellan-arrival="2"><a href="#2">Inhalt</a></dd>
@@ -155,9 +162,9 @@
   <div class="row">
    <div class="large-6 columns">
     <label for="c_text">Wie soll der Text erstellt werden?<span class="required">*</span></label><br >
-    <input name="c_text_rdy" id="c_text_rdy" type="checkbox" checked> Designer erhält fertigen Text<br />
-    <input name="c_text_update" id="c_text_update" type="checkbox"> Designer bereitet vorhandenen Text auf<br />
-    <input name="c_text_create" id="c_text_create" type="checkbox"> Designer erstellt individuellen Text<br />
+    <input name="c_text_rdy" id="c_text_rdy" type="checkbox" class="has-effort" data-effort="10" checked> Designer erhält fertigen Text<br />
+    <input name="c_text_update" id="c_text_update" type="checkbox" class="has-effort" data-effort="30"> Designer bereitet vorhandenen Text auf<br />
+    <input name="c_text_create" id="c_text_create" type="checkbox" class="has-effort" data-effort="50"> Designer erstellt individuellen Text<br />
   </div>
   <div class="large-6 columns">
     <label for="c_grafik">Wie sollen die Grafiken erstellt werden?<span class="required">*</span></label><br >
@@ -336,11 +343,37 @@
 </div>
 </main>
 
+<script>
+// Count Effort
+// Select Elements with class "has-effort"
+var $EffortInputs = $('.has-effort') 
 
-<div id="myModal" class="reveal-modal" data-reveal>
-  <h2>Kommentar hinzufügen</h2>
-  <p class="lead">Bereich: Allgemeines</p>
-  <textarea type="text" id="remail" rows="3" value="Ich möchte noch ergänzen, dass mir wichtig ist..."></textarea>
-  <a href="" class="button">Hinzufügen</a>
-  <a class="close-reveal-modal">&#215;</a>
-</div>
+// At status Update
+$EffortInputs.change(function() {
+
+  var totalEffort = 0
+
+// Run through all elements
+$EffortInputs.each(function() {  
+  if ($(this).is(':checked')) {
+    var selectedEffort = $(this).data('effort')
+    console.log(selectedEffort)
+    totalEffort += selectedEffort
+  }
+})
+
+// Prevent Overskill ;)
+if(totalEffort > 100) {
+  totalEffort = 100;
+}
+
+// increase process-bar
+$('.TotalEffortDiv').animate( {"width": totalEffort + "%"},1000 );
+
+// show effort-value
+$('.EffortCount').text('Aufwand (~' + totalEffort + '%)')
+})
+
+// initialize Counter
+$EffortInputs.first().change()
+</script>

@@ -278,6 +278,15 @@ main {
    Form Styles
 ----------------------------------------- */
 
+.EffortCount {
+	position: absolute;
+	color: $secondary-color;
+	left: 0;
+	right: 0;
+	top: 10px;
+}
+
+
 input[type=text],
 textarea[type=text],
 input[type=email],
