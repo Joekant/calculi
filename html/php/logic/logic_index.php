@@ -10,7 +10,7 @@ function active_css_class($page_value) {
 function header_navigation() {
   return array(
     array("start", "index.php?page=home"),
-    array("designer", "index.php?page=designer"),
+    array("Fragen", "index.php?page=faq"),
     array("registrieren", "index.php?page=register"),
     array("login", "index.php?page=login"),
     );
@@ -43,6 +43,8 @@ if($page == "home") {
 } elseif($page == "team") {        
   $content = $page;
 } elseif($page == "press") {        
+  $content = $page;
+} elseif($page == "faq") {        
   $content = $page;
 } elseif($page == "login") {        
   $content = $page;

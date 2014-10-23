@@ -35,4 +35,26 @@
 					<a href=""><i class="fa fa-envelope fa-fw"></i></a>
 				</div>
 			</div>
-		</main>
+			<div class="row text-center half-padding">
+
+
+				<h1 id="headline" class="padding-top">Verstärkung gesucht</h1>  
+
+				<h2 class="subline half-padding">Zur Verstärkung unseres Teams suchen wir ab sofort eine/n <strong>Webdeveloper</strong>.</h2>
+				<div class="large-4 columns">
+					<h3>Anforderung</h3>
+					<p>Du bist kreativ, hast Spaß an der Arbeit im Team und bringst gerne Deine eigenen Ideen ein? Das sind schon einmal wichtige Voraussetzungen!</p><p>Außerdem solltest Du HTML5, CSS3, PHP und MySQL sprechen können und ein Gespür für die ansprechende und benutzerfreundliche Gestaltung von User-Interfaces besitzen.</p>
+				</div>
+				<div class="large-4 columns">
+					<h3>Wir bieten</h3>
+					<p>  Wir bieten Dir eine interessante und vielseitige Tätigkeit sowie ein entspanntes und innovatives Arbeitsklima bei freier Zeiteinteilung. Arbeite wann Du willst und wo Du willst. Ideal um erste Berufserfahrungen zu sammeln.</p>
+					<p>Gehalt ist abhängig von Qualifikation und verhandelter Beschäftigungszeit.</p>
+				</div>
+				<div class="large-4 columns">
+				</div>
+				<h3>Interesse?</h3>
+				<p>Dann sende uns Deine aussagekräftigen Bewerbungsunterlagen inklusive Lebenslauf an bewerbung@calculi.at.</p>
+			</div>
+
+		</div>
+	</main>
