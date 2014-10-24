@@ -325,7 +325,7 @@
 </div>
 <div class="row">
   <h3 class="subline padding-top">Ergänzende Bemerkungen</h3>
-  <label for="t_comment"> Hier können Sie ergänzende Anmerkungen zu dem gesamten Projekt beifügen.</label>
+  <label for="t_comment"> Hier können Sie ergänzende Anmerkungen zum gesamten Briefing beifügen.</label>
   <textarea type="text" id="t_comment" name="t_comment" rows="3" >Mir ist besonders wichtig, dass...</textarea>
 
   <input id="c_notifications" name="c_notifications" type="checkbox" value="yes" checked> 

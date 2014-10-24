@@ -1,7 +1,7 @@
 <div class="main-section">
 	<div class="row padding-top">
 		<div class="medium-12 columns">
-			<div class="view-switch right show-on-medium-up-only">
+			<div class="view-switch right show-for-medium-up">
 				<a href="#" class="active" id="link-boxed"><i class="fa fa-th fa-fw"></i></a>
 				<a href="#" id="link-list"><i class="fa fa-list-ul fa-fw"></i></a>
 			</div>

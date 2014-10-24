@@ -223,7 +223,13 @@ main {
 ----------------------------------------- */
 
 .logo {
-	width: 150px
+	width: 150px;
+
+	@media only screen and (max-width: 40em) { 
+		width: 80px;
+		padding: 20px 0px;
+	}
+
 }
 
 .expanded {
@@ -270,7 +276,7 @@ main {
 
 	.logo {
 		padding-top: 13px;
-		width: 200px
+		width: 200px;
 	}
 }
 

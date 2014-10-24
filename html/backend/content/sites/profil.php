@@ -34,22 +34,26 @@
 							</div>
 						</div>
 						<div class="medium-8 columns">
-							<div class="medium-6 columns">
+							<div class="medium-5 columns">
 								<label for="email">Name</label>
 								<input type="text" id="remail" placeholder="Max Mustermann">
 							</div>
-							<div class="medium-6 columns">
+							<div class="medium-5 columns">
+								<label for="email">Website</label>
+								<input type="text" id="remail" placeholder="http://website.at">
+							</div>
+							<div class="medium-2 columns">
 								<label for="email">Alter</label>
 								<input type="text" id="remail" placeholder="24">
 							</div>
 							<div class="medium-6 columns">
-								<label for="email">Ort</label>
+								<label for="email">Land</label>
 								<input type="text" id="remail" placeholder="Wien">
 							</div>
 							<div class="medium-6 columns">
-								<label for="email">Website</label>
-								<input type="text" id="remail" placeholder="http://mustermann.at">
-							</div>
+								<label for="email">Bundesland</label>
+								<input type="text" id="remail" placeholder="Wien">
+							</div>							
 							<div class="medium-6 columns">
 								<label for="email">Kompetenzen</label>
 								<input type="text" id="remail" placeholder="PHP, SQL, Photoshop...">

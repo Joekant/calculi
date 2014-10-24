@@ -119,9 +119,6 @@
 
         // Set chart options
         var options1 = {
-
-          'width':500,
-          'height':300,
           'colors': ['#32aebd', '#293c4e', '#ff6c60'],
           'backgroundColor': 'transparent'
 
@@ -142,8 +139,6 @@
         // Set chart options
         var options2 = {
 
-          'width':500,
-          'height':300,
           'colors': ['#32aebd', '#293c4e', '#ff6c60'],
           'backgroundColor': 'transparent'
 
