@@ -152,7 +152,7 @@ TESTIMONIAL
     <div class="large-12 columns">"Über Calculi habe ich schnell und einfach den geeigneten 
       Webdesigner für meine neue Firmenwebsite gefunden. Ich kann Calculi jedem empfehlen, der 
       nicht auf einen kompetenten Ansprechpartner in seinem persönlichem Umfeld zurückgreifen kann.“<br />
-      <span id="author">Rudolf Stonawski, CEO Clevercontour GmbH </span>
+      <span id="author">Jon Travolter, CEO Clevercontour GmbH </span>
     </div>
   </div>
 </div>

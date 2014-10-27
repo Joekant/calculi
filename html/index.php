@@ -20,13 +20,12 @@
       // ini_set('session.use_trans_sid', 1);
 
   error_reporting(E_ERROR | E_WARNING | E_PARSE);
-      // session_start();
-      // include('dbconnect.php');
+  // session_start();
+  // include('dbconnect.php');
   include('php/functions.php');
   include('php/logic/logic_index.php');
   ?>
 
-  
   <script src="js/foundation.min.js"></script>
   <script src="js/parallax/_main.js"></script>
   <script>

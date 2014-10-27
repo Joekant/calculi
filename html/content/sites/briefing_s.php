@@ -1,45 +1,206 @@
+<!-- requires logic/logic_briefing.php -->
 <main>
-	<div id="briefing-form"> 
+	<div id="briefing-form" class="padding-bottom"> 
 		<div class="row text-center">			
 			<h1 id="headline"></h1>
-			<div class="panel text-center green-border padding-bottom">
+			<div class="panel text-center green-border">
 				<h5>Briefing erfolgreich!</h5>
-				<p>Nachdem du den <strong>Aktivierungslink</strong> in deinem E-mail Postfach bestätigst,
-					wird die Ausschreibung von uns geprüft und an alle passenden Webworker übermittelt.</p>
-				</div>      
-				<p>Um die Bewerber vergleichen zu können, musst du dich mit diesem Passwort <a href="index.php?page=login#kunde">anmelden</a><p>
+				<p>
+					Nachdem du den <strong>Aktivierungslink</strong> in deinem E-mail Postfach bestätigst,
+					wird die Ausschreibung von uns geprüft und an alle passenden Webworker übermittelt.
+				</p>
+				<p>
+					Um die Bewerber vergleichen zu können, musst du dich mit diesem Passwort <a href="index.php?page=login#kunde">anmelden</a>
 					<span class="label secondary code padding-bottom">4gR6atg</span>
 					<br class="half-padding" /><a  href="index.php?page=login#kunde">jetzt anmleden</a>
-					<form>
-						<label for="email">Feedback zum Formular?</label>
-						<textarea type="text" id="remail" rows="3" placeholder="Unser Unternehmen befasst sich mit der..."></textarea>
-						<button type="submit" class="button">Absenden</button>
-					</form>
-				</div>
-				<div class="row">
-					<table>
+				</p>
+			</div>   
+			<form>
+				<label for="email">Feedback zum Formular?</label>
+				<textarea type="text" id="remail" rows="3" placeholder="Unser Unternehmen befasst sich mit der..."></textarea>
+				<button type="submit" class="button">Absenden</button>
+			</form>
+		</div>
+		<div class="form-step dark-bg primary-full-border">
+			<h2>Zusammenfassung</h2> 
+		</div>
+		<div class="row briefing-summary">
+			<h2>Allgemeines</h2>
+			<table>
+				<tr>
+					<td width="250">Name</td>
+					<td><?php echo $i_name; ?></td>
+				</tr>
+				<tr>
+					<td>E-mail </td>
+					<td><?php echo $i_email; ?></td>
+				</tr>
+				<tr>
+					<td>Unternehmen </td>
+					<td><?php echo $i_company; ?></td>
+				</tr>
+				<tr>
+					<td>Website</td>
+					<td><?php echo $i_website; ?></td>
+				</tr>
+				<tr>
+					<td>Land</td>
+					<td><?php echo $s_country; ?></td>
+				</tr>
+				<tr>
+					<td>Ort</td>
+					<td><?php echo $s_state; ?></td>
+				</tr>
+				<tr>
+					<td>Beschreibung</td>
+					<td><?php echo $t_description; ?></td>
+				</tr>
+				<tr>
+					<td>Branche</td>
+					<td><?php echo $s_branche; ?></td>
+				</tr>
+				<tr>
+					<td>Mitarbeiter</td>
+					<td><?php echo $s_employees; ?></td>
+				</tr>
+			</table>
 
-						<?php 	
-						while( list( $field, $value ) = each( $_POST )) {
-							
-							if ($value == "yes") {
-								$value = '<i class="green-font fa fa-check fa-fw"></i>';
+			<h2>Inhalt</h2>	
+			<table>
+				<tr>
+					<td width="250">Unterseiten</td>
+					<td>
+						<ul>
+							<li><i class="green-font fa fa-plus  fa-fw"></i> Startseite</li>
+							<li><i class="green-font fa fa-plus  fa-fw"></i> Impressum</li>
+							<?php 
+									// duplicating array in new Variable, because otherwiese it works only once - don't know why ;)
+							$subpages = $briefing;
+
+									// Run through array and output all function fields (containing "c_function_")
+							while (list( $field, $value ) = each( $subpages )) {
+								if(preg_match('/c_pages_/',$field)) {
+									echo '<li><i class="green-font fa fa-plus  fa-fw"></i> '.$value.'</li>';
+								}
 							}
-							elseif  ($value == "no") {
-								$value = '<i class="orange-font fa fa-remove fa-fw"></i>';
+							?>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td width="250">Texterstellung</td>
+					<td><?php echo $r_text; ?></td>
+				</tr>
+				<tr>
+					<td>Grafikerstellung</td>
+					<td><?php echo $r_grafik; ?></td>
+				</tr>
+			</table>
+
+			<h2>Funktionalität</h2>	
+
+			<table>
+				<tr>
+					<td width="250">Selbst Inhalte warten</td>
+					<td><?php echo $r_cms; ?></td>
+				</tr>
+				<tr>
+					<td width="250">Mobile Version</td>
+					<td><?php echo $r_cms; ?></td>
+				</tr>
+				<tr>
+					<td width="250">Barrierefreiheit</td>
+					<td><?php echo $r_accessibility; ?></td>
+				</tr>
+				<tr>
+					<td width="250">Gewünschte Funktionen</td>
+					<td>
+						<ul>
+							<?php 
+									// duplicating array in new Variable, because otherwiese it works only once - don't know why ;)
+							$functions = $briefing;
+
+									// Run through array and output all function fields (containing "c_function_")
+							while (list( $field, $value ) = each( $functions )) {
+								if(preg_match('/c_function_/',$field)) {
+									echo '<li><i class="green-font fa fa-plus  fa-fw"></i> '.$value.'</li>';
+								}
 							}
+							?>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>Externe Plattformen</td>
+					<td>
+						<ul>
+							<?php 
 
-							$$field = $value;
+							$plattforms = $briefing;
+									// Run through array and output all function fields (containing "c_function_")
+							while (list( $field, $value ) = each( $plattforms )) {
+								if(preg_match('/c_ext_/',$field)) {
+									echo '<li><i class="green-font fa fa-plus  fa-fw"></i> '.$value.'</li>';
+								}
+							}
+							?>
+						</ul>
+					</td>
+				</tr>
+			</table>
 
-							echo "<tr><td><strong>" . $field . "</td></strong> <td> " . $value . "</td></tr>";
-						}
+			<h2>Design</h2>	
 
-						?>
-						
-					</table>
-				</div>
-			</main>
+			<table>
+				<tr>
+					<td width="250">Realisierung</td>
+					<td><?php echo $r_design; ?></td>
+				</tr>
+				<tr>
+					<td>Eigenschaften</td>
+					<td><?php echo $t_mood; ?></td>
+				</tr>
+				<tr>
+					<td>Positive Referenzen</td>
+					<td><?php echo $t_reference_positive; ?></td>
+				</tr>
+				<tr>
+					<td>Negative Referenzen</td>
+					<td><?php echo $t_reference_negative; ?></td>
+				</tr>
+			</table>
 
+			<h2>Service</h2>	
 
-
-
+			<table>
+				<tr>
+					<td width="250">Server</td>
+					<td><?php echo $r_service_server; ?></td>
+				</tr>
+				<tr>
+					<td>Domain</td>
+					<td><?php echo $r_service_domain; ?></td>
+				</tr>		
+				<tr>
+					<td>E-mail Adressen</td>
+					<td><?php echo $r_service_mail; ?></td>
+				</tr>	
+				<tr>
+					<td>Statistiken</td>
+					<td><?php echo $r_service_statistics; ?></td>
+				</tr>	
+				<tr>
+					<td>Mitarbeiterschulung</td>
+					<td><?php echo $r_service_instructions; ?></td>
+				</tr>
+				<tr>
+					<td>Online Marketing</td>
+					<td><?php echo $r_service_advertising; ?></td>
+				</tr>
+				<table>
+					<h2>Kommentar</h2>
+					<?php echo $t_comment; ?>
+				</table>
+			</div>
+		</div>
+	</main>

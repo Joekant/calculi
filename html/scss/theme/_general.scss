@@ -119,6 +119,13 @@ main {
 	background-color: white;
 }
 
+.briefing-summary h2 {
+	padding-top: 25px;
+	padding-bottom: 30px;
+	color: $primary-color;
+	text-align: center;
+}
+
 /* -----------------------------------------
    FONTS / PADDINGS / BORDERS
 ----------------------------------------- */
@@ -453,12 +460,26 @@ table {
 
 	tr {
 		color: $orange;
-		text-transform: uppercase;
 		border: 0px;
+
+		td:first-child {
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 0.9em;
+		}
 		
 		th {
 			color: $secondary-color;
-			font-size: 1.0em;
+			font-size: 0.95em;
+		}
+
+		td {
+			font-size: 1em;
+			ul {
+				font-size: 1em;
+				line-height: 2em;
+				margin: 0;
+			}
 		}
 	}
 }

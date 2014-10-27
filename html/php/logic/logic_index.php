@@ -1,12 +1,13 @@
 <?php
 
-  // Create Navigation
+  // generate menu-item active-class
 function active_css_class($page_value) {
   if($_GET['page'] == $page_value || (empty($_GET['page']) && $page_value == "home") ) {
     return "active";
   }
 }
 
+// generate menu
 function header_navigation() {
   return array(
     array("start", "index.php?page=home"),
@@ -16,11 +17,12 @@ function header_navigation() {
     );
 }
 
-
-  // Include current Subpage
+// Include current Subpage
 $page = isset($_GET['page']) ? $_GET['page'] : "home";
 $header = "1";
 $footerv = "1";
+$jsfiles = [];
+$phpfiles = [];
 
 if($page == "home") {
   $content = $page;
@@ -32,14 +34,16 @@ if($page == "home") {
   $content = $page;
 } elseif($page == "compare") {        
   $content = $page;
-} elseif($page == "briefing_s") {        
+} elseif($page == "briefing_s") {  
   $content = $page;
+  array_push($phpfiles, "logic_briefing.php");     
 } elseif($page == "register") {        
   $content = $page;
   $footerv = "0";
   $header = "0";
-} elseif($page == "briefing") {        
+} elseif($page == "briefing") {  
   $content = $page;
+  array_push($jsfiles, "briefing-effort-count.js");
 } elseif($page == "team") {        
   $content = $page;
 } elseif($page == "press") {        
@@ -57,9 +61,24 @@ if ($header=="1") {
   include('content/header.php');
 }
 
-// Include Content
+// Include necessary PHP - Files
+if ($phpfile != "0") { 
+  foreach ($phpfiles as $phpfile) {
+    include("php/logic/$phpfile"); 
+  }
+}
+
+// Include Subpage
 include("content/sites/$content.php");
-// Include chosen Footer
+
+// Include necessary JS - Files
+if ($jsfile != "0") { 
+  foreach ($jsfiles as $jsfile) {
+   include("js/$jsfile"); 
+ }
+}
+
+// Include Footer
 if ($footerv=="1") {
   include("content/footer_$footerv.php");
 }

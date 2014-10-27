@@ -1,21 +1,21 @@
 <div class="main-section">
 	<div class="row">		
-		<div class="row half-padding" id="profile-progress">
+		<div class="row half-padding show-for-medium-up" id="profile-progress">
 			Profil zu 30% vollständig
 			<div class="progress">
 				<span class="meter" style="width:30%"></span>
 			</div> 
 		</div>
-		<div class="medium-2 columns">
+		<div class="medium-2 columns show-for-medium-up">
 			<div id="profile-navigation">
-				<dl class="tabs vertical"  data-tab>
+				<dl class="tabs vertical" data-tab data-options="deep_linking:true">
 					<dd class="active"><a href="#panel1"><i class="fa fa-user fa-fw"></i></a></dd>
-
 					<dd><a href="#panel2"><i class="fa fa-mortar-board fa-fw"></i></a></dd>
 					<dd><a href="#panel3"><i class="fa fa-windows fa-fw"></i><br /></a></dd>
 				</dl>
 			</div>	 
-		</div>	
+		</div>
+
 		<div class="icon-submenu medium-10 columns">		
 			<div class="tabs-content">
 				<div class="content active" id="panel1">
