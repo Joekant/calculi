@@ -250,7 +250,7 @@ footer.frontend-footer {
 	#loginlinks {	
 		text-transform: lowercase;
 		font-size: 1.8em;
-		padding-top: 30px;
+		
 		opacity: 0.6;
 
 		a {
@@ -384,7 +384,6 @@ a.show {
    Briefing Styles
 ----------------------------------------- */
 
-
 .form-step {
 	border-top: 5px solid $primary-color;
 	border-bottom: 5px solid $primary-color;
@@ -414,11 +413,14 @@ h3 {
 	text-align: center;
 }
 
+#briefing-selection {
+	button {
+		width: 260px;
+	}
+}
 
 
 #briefing-form {
-
-
 	.sub-nav {
 		display: inline-block;
 	}
@@ -973,6 +975,7 @@ footer.frontend-footer {
 	}
 
 	#social {
+		font-size: 1.6em;
 		margin-top: 35px;
 		text-transform: lowercase;	
 	}
@@ -985,7 +988,7 @@ footer.frontend-footer {
 
 	a {
 		margin-left: 20px;
-		color: $bg-color;
+		color: white;
 	}
 
 	a:hover {
@@ -1001,22 +1004,6 @@ footer.frontend-footer {
 		font-size: 0.8em;
 		margin-top: 15px;
 		text-transform: lowercase;
-	}
-}
-
-#testimonial {
-	border-bottom: 5px solid $primary-color;
-	border-top: 5px solid $primary-color;
-	font-style: italic;
-	font-size: 1.1em;
-	letter-spacing: 1px;
-	font-weight: 300;
-	line-height: 1.4em;
-
-
-	#author {
-		color: $primary-color;
-		font-size: 0.8em;
 	}
 }
 

@@ -9,11 +9,10 @@ function active_css_class($page_value) {
 
 function header_navigation() {
   return array(
-    array("Übersicht", "index.php?page=dashboard", "dashboard"),
-    array("ausschreibungen", "index.php?page=ausschreibungen", "pencil"),
-    array("bewerber", "index.php?page=bewerber", "users"),
-    array("aufträge", "index.php?page=auftraege", "wrench"),
-    array("einstellungen", "index.php?page=einstellungen", "cogs"),
+    array("Übersicht", "dashboard", "dashboard"),
+    array("ausschreibungen", "ausschreibungen", "pencil"),
+    array("Aufträge", "projekte", "wrench"),
+    array("einstellungen", "einstellungen", "cogs"),
     );
 }
 
@@ -26,9 +25,7 @@ if($page == "dashboard") {
   $content = $page;
 } elseif($page == "ausschreibungen") {        
   $content = $page;
-} elseif($page == "bewerber") {        
-  $content = $page;
-} elseif($page == "auftraege") {        
+} elseif($page == "projekte") {        
   $content = $page;
 } elseif($page == "einstellungen") {        
   $content = $page;

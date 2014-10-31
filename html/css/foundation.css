@@ -5807,13 +5807,13 @@ blockquote p {
 /* Tooltips */
 /* line 38, ../scss/foundation/components/_tooltips.scss */
 .has-tip {
-  border-bottom: dotted 1px #cccccc;
+  /*border-bottom: $has-tip-border-bottom;*/
   cursor: help;
   font-weight: bold;
   color: #333333; }
   /* line 44, ../scss/foundation/components/_tooltips.scss */
   .has-tip:hover, .has-tip:focus {
-    border-bottom: dotted 1px #164e55;
+    /*border-bottom: $has-tip-border-bottom-hover;*/
     color: #32aebd; }
   /* line 50, ../scss/foundation/components/_tooltips.scss */
   .has-tip.tip-left, .has-tip.tip-right {

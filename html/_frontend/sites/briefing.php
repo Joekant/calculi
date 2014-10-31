@@ -1,5 +1,4 @@
-<!-- requires js/briefing-effort-count.js -->
-
+<!-- requires briefing-effort-count.js -->
 <main>
   <div class="row">
     <div class="large-12 columns half-padding text-center">
@@ -7,36 +6,35 @@
       <h2 class="subline">in 5 Minuten zum fertigen Briefing</h2>
     </div>
   </div>
-
   <div class="row" id="briefing-selection">
     <div class="large-12 columns half-padding text-center">
-      <a href="" id="stranger"><button>Ich bin neu hier</button></a><a href="index.php?page=login#kunde" id="client"><button>Ich habe ein Konto</button></a>
+      <a href="" id="stranger"><button>Ich bin neu hier</button></a>
+      <a href="" id="client"><button>Ich bin bereits registriert</button></a>
 
     </div>
   </div>
 
-  <div id="briefing-form">  
+  <div id="briefing-form" class="hide">  
     <!-- Sticky Pagination -->
 
-    <div class="row padding-bottom" id="form-instruction">
+    <div class="row" id="form-instruction">
       <ul>
-       <li><span>Mit <span class="required">*</span> gekennzeichnete Angaben sind zwingend notwendig</span></li>
+       <li><span>Mit <span class="required">*</span> gekennzeichnete Angaben sind verpfichtend</span></li>
        <li><span>Unterwellte Worte besitzen Tooltipps</span></li>
        <li><span>Mit der Navigation am oberen Seitenrand können Sie zu den einzelnen Abschnitten wechseln</span></li>  
      </ul>
    </div>
 
-   <div class="row">
+<!--    <div class="row">
      <div class="small-12 columns text-center">
-      <div data-magellan-expedition="fixed">
+       <div data-magellan-expedition="fixed" id="form-pagination">
 
-        <!-- Effort Count -->
+       
         <div class="progress">
           <div class="EffortCount"> 
           </div>
           <span class="meter TotalEffortDiv"></span>
         </div> 
-
         <dl class="sub-nav">         
           <dd data-magellan-arrival="1"><a href="#1">Allgemeines</a></dd>
           <dd data-magellan-arrival="2"><a href="#2">Inhalt</a></dd>
@@ -47,9 +45,7 @@
       </div>
     </div>
   </div>
-  <br class="end" />
-
-
+  <br class="end" /> -->
 
   <form data-abide action="index.php?page=briefing_s" method="POST">
 
@@ -325,11 +321,37 @@
 </div>
 </form>
 </div>
+
+<div id="login" class="hide">
+  <div class="row">
+    <form class="loginform" action="../_client" method="POST">
+      <input type="email" placeholder="E-mail" />
+      <input type="password" placeholder="Passwort" />
+      <input type="submit" class="button expand padding-top" id="loginbutton" value="Login">
+    </form>
+
+    <div id="loginlinks" class="padding-top" >
+     <a href="" data-reveal-id="help" id="helplink"><span data-tooltip aria-haspopup="true" class="has-tip" title="Passwort widerherstellen"><i class="fa fa-question fa-fw"></i></span></a>
+   </div>
+ </div>
+</div>
 </main>
 
 <script>
   $("#stranger").click(function(){
     $("#briefing-selection").slideUp("slow")
+    $("#briefing-form").slideDown("slow")
+    event.preventDefault()
+  }); 
+  $("#client").click(function(){
+    $("#briefing-selection").slideUp("slow")
+    $("#login").slideDown("slow")
     event.preventDefault()
   }); 
 </script>
+
+
+
+
+
+

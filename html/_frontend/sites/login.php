@@ -13,9 +13,9 @@
           <input type="password" placeholder="Passwort" />
           <input type="submit" class="button expand padding-top" id="loginbutton" value="Login">
         </form>
-        <div id="loginlinks" >
-          <a href="index.php?page=register" id="reglink"><i class="fa fa-plus fa-fw"></i></a>
-          <a href="" data-reveal-id="help" id="helplink"><i class="fa fa-question fa-fw"></i></a>
+        <div id="loginlinks" class="padding-top" >
+          <a href="index.php?page=register" id="reglink"><span data-tooltip aria-haspopup="true" class="has-tip" title="zur Registrierung"><i class="fa fa-plus fa-fw"></i></span></a>
+          <a href="" data-reveal-id="help" id="helplink"><span data-tooltip aria-haspopup="true" class="has-tip" title="Passwort widerherstellen"><i class="fa fa-question fa-fw"></i></span></a>
         </div>
       </div>
       <div class="content" id="kunde">
@@ -24,8 +24,8 @@
           <input type="password" placeholder="Passwort" />
           <input type="submit" class="button expand padding-top" id="loginbutton" value="Login">
         </form>
-        <div id="loginlinks" >
-         <a href="" data-reveal-id="help" id="helplink"><i class="fa fa-question fa-fw"></i></a>
+        <div id="loginlinks" class="padding-top" >
+         <a href="" data-reveal-id="help" id="helplink"><span data-tooltip aria-haspopup="true" class="has-tip" title="Passwort widerherstellen"><i class="fa fa-question fa-fw"></i></span></a>
        </div>
      </div>
    </div>
@@ -34,7 +34,7 @@
 
 <div id="help" class="reveal-modal" data-reveal>
   <h2>Passwort vergessen?</h2>
-  <p>Kein Problem. Wir schicken dir gerne ein neues zu!</p>
+  <p>Kein Problem. Wir schicken dir gerne ein Neues zu!</p>
   <div class="row">
     <div class="medium-4 columns">
       <label for="email">E-mail Adresse</label>

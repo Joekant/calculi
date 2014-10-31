@@ -105,7 +105,7 @@ COUNTER
     </div>
     <div class="large-4 columns">
       <h2>60</h2>
-      <h5 class="subheader text-center">registrierte Webworkers</h5>
+      <h5 class="subheader text-center">registrierte Webworker</h5>
     </div>
     <div class="large-4 columns">
       <h2>8</h2>

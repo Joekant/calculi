@@ -12,6 +12,7 @@
   <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
   <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
   <script src="../js/vendor/modernizr.js"></script>
+  <script src="../js/vendor/jquery.js"></script>
 </head>
 <body>
   <?php

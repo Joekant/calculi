@@ -3,7 +3,7 @@
 
 
 <div class="main-section">
-  <h1 class="text-center">Hey Philipp!</h1>
+  <h1 class="text-center">Hallo Worker!</h1>
   <div class="panel callout text-center padding-top" id="welcome-message">
     <h5>Willkommen bei Calculi</h5>
     <p>Möchtest du vielleicht mit einer kurzen Tour durch das Programm starten?</p>

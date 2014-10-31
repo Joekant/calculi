@@ -2,9 +2,9 @@
   <div class="icon-bar dark-bg large-horizontal six-up">
     <?php
     foreach(header_navigation() as $navigation_item) {
-      $css_class = active_css_class($navigation_item[0]);
+      $css_class = active_css_class($navigation_item[1]);
       ?>
-      <a href="<?php echo $navigation_item[1]; ?>" id="<?php echo $navigation_item[0]; ?>" class="item <?php echo $css_class; ?>">
+      <a href="index.php?page=<?php echo $navigation_item[1]; ?>" id="<?php echo $navigation_item[0]; ?>" class="item <?php echo $css_class; ?>">
         <i class="fa fa-<?php echo $navigation_item[2]; ?> fa-fw"></i>
         <label><?php echo ucfirst($navigation_item[0]); ?></label>
       </a>
@@ -13,7 +13,6 @@
     ?>  
   </div>
 </header>
-
 <header class="show-for-small-only-up hide-for-large-up">
   <nav class="top-bar" id="frontpage-topbar" data-topbar role="navigation">
     <ul class="title-area">

@@ -151,26 +151,17 @@
 		</div>
 		<script>
 		// View-Switch (boxed/list)
-		// Declare Links
-		var linkboxed = document.getElementById('link-boxed')
-		var linklist = document.getElementById('link-list')
-		
-		// Declare container
-		var liststyle = document.getElementById('list-style')
-		var boxstyle = document.getElementById('boxed-style')
+		$("#link-boxed").click(function(){
+			$("#list-style").slideUp("slow")
+			$("#boxed-style").slideDown("slow")
+			$("#link-boxed").addClass('active')
+			$("#link-list").removeClass('active')
+		}); 
 
-		linkboxed.addEventListener('click', function() {
-			boxstyle.setAttribute('class', '')
-			liststyle.setAttribute('class', 'hide')
-			linkboxed.setAttribute('class', 'active')
-			linklist.removeAttribute('class')
-
-		})
-
-		linklist.addEventListener('click', function() {
-			boxstyle.setAttribute('class', 'hide')
-			liststyle.setAttribute('class', '')
-			linklist.setAttribute('class', 'active')
-			linkboxed.removeAttribute('class')
-		})
+		$("#link-list").click(function(){
+			$("#list-style").slideDown("slow")
+			$("#boxed-style").slideUp("slow")
+			$("#link-list").addClass('active')
+			$("#link-boxed").removeClass('active')
+		}); 
 	</script>

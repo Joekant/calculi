@@ -12,9 +12,9 @@
       </div>
     </div>
     <div class="medium-4 columns" id="social">
-      <a href="">Facebook</a>
-      <a href="">Twitter</a>
-      <a href="">Google+</a>
+      <a href=""><i class="fa fa-facebook"></i></a>
+      <a href=""><i class="fa fa-google-plus"></i></a>
+      <a href=""><i class="fa fa-twitter"></i></a>
     </div>
   </div>
 </footer> 

@@ -9,12 +9,12 @@ function active_css_class($page_value) {
 
 function header_navigation() {
   return array(
-    array("dashboard", "index.php?page=dashboard", "dashboard"),
-    array("profil", "index.php?page=profil", "user"),
-    array("ausschreibungen", "index.php?page=ausschreibungen", "pencil"),
-    array("bewerbungen", "index.php?page=bewerbungen", "heart"),
-    array("aufträge", "index.php?page=projekte", "wrench"),
-    array("einstellungen", "index.php?page=einstellungen", "cogs"),
+    array("Übersicht", "dashboard", "dashboard"),
+    array("profil", "profil", "user"),
+    array("ausschreibungen", "ausschreibungen", "pencil"),
+    array("bewerbungen", "bewerbungen", "heart"),
+    array("Aufträge", "projekte", "wrench"),
+    array("einstellungen", "einstellungen", "cogs"),
     );
 }
 

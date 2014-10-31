@@ -24,6 +24,6 @@
       </ul>
     </section>
   </nav>
-  <div class="show-for-small-only text-center"><img src="img/logo.png" class="logo" id="logo_small" alt="caluli_logo" /></div>
+  <div class="show-for-small-only text-center"><img src="../img/logo.png" class="logo" id="logo_small" alt="caluli_logo" /></div>
 </header>
 

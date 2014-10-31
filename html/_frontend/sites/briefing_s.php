@@ -6,18 +6,18 @@
 			<div class="panel text-center green-border">
 				<h5>Briefing erfolgreich!</h5>
 				<p>
-					Nachdem du den <strong>Aktivierungslink</strong> in deinem E-mail Postfach bestätigst,
-					wird die Ausschreibung von uns geprüft und an alle passenden Webworker übermittelt.
+					Nachdem du den <strong>Aktivierungslink</strong> in deinem E-mail Postfach bestätigt hast wird dein Konto aktiviert, 
+					sodass du kannst dich mit E-mail und  Passwort anmelden kannst um die Kostenvoranschläge der Bewerber zu vergleichen.
 				</p>
-				<p>
+<!-- 				<p>
 					Um die Bewerber vergleichen zu können, musst du dich mit diesem Passwort <a href="index.php?page=login#kunde">anmelden</a>
 					<span class="label secondary code padding-bottom">4gR6atg</span>
 					<br class="half-padding" /><a  href="index.php?page=login#kunde">jetzt anmleden</a>
-				</p>
+				</p> -->
 			</div>   
 			<form>
 				<label for="email">Feedback zum Formular?</label>
-				<textarea type="text" id="remail" rows="3" placeholder="Unser Unternehmen befasst sich mit der..."></textarea>
+				<textarea type="text" id="remail" rows="3" placeholder="Mir hat am Formular gefehlt, dass..."></textarea>
 				<button type="submit" class="button">Absenden</button>
 			</form>
 		</div>
