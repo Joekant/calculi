@@ -414,10 +414,10 @@ h3 {
 	text-align: center;
 }
 
-#form-pagination {
-	.row {
-		max-width: 600px;
-	}
+
+
+#briefing-form {
+
 
 	.sub-nav {
 		display: inline-block;
@@ -431,9 +431,7 @@ h3 {
 		
 
 	}
-}
 
-#briefing-form {
 	.row {
 		max-width: 700px;
 		padding-left: 10px;
@@ -468,6 +466,16 @@ h3 {
 		font-weight: 600;
 		color: $darkgrey;
 	}
+}
+
+dl.briefing-tabs {
+	display: inline-block;	
+
+}
+
+dd.briefing-tabs {
+
+	width: 200px;
 }
 
 #form-instruction {

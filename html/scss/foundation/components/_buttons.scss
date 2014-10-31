@@ -37,7 +37,7 @@ $button-function-factor: -20% !default;
 $button-border-width: 0px !default;
 $button-border-style: solid !default;
 $button-bg-color: $primary-color !default;
-$button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor) !default;
+$button-bg-hover: $secondary-color !default;
 $button-border-color: $button-bg-hover !default;
 $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor) !default;
 $secondary-button-border-color: $secondary-button-bg-hover !default;
@@ -109,8 +109,8 @@ $button-disabled-cursor: $cursor-default-value !default;
   @if $full-width {
     // We still need to check if $padding is set.
     @if $padding {
-    padding-top: $padding;
-    padding-bottom: $padding + rem-calc(1);
+      padding-top: $padding;
+      padding-bottom: $padding + rem-calc(1);
     } @else if $padding == false {
       padding-top:0;
       padding-bottom:0;

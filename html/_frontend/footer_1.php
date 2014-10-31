@@ -6,7 +6,7 @@
       <a href="index.php?page=impress">Impressum</a>
     </div>
     <div class="medium-4 columns" id="logo">
-      <img src="img/logo_invert.png" alt="logo_invert"/>
+      <img src="../img/logo_invert.png" alt="logo_invert"/>
       <div id="copyright">
         © Copyright 2014 calculi
       </div>

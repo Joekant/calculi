@@ -58,28 +58,28 @@ if($page == "home") {
 
 // Include Header
 if ($header=="1") {
-  include('content/header.php');
+  include('header.php');
 }
 
 // Include necessary PHP - Files
 if ($phpfile != "0") { 
   foreach ($phpfiles as $phpfile) {
-    include("php/logic/$phpfile"); 
+    include("../php/logic/_frontend/$phpfile"); 
   }
 }
 
 // Include Subpage
-include("content/sites/$content.php");
+include("sites/$content.php");
 
 // Include necessary JS - Files
 if ($jsfile != "0") { 
   foreach ($jsfiles as $jsfile) {
-   include("js/$jsfile"); 
+   include("../js/$jsfile"); 
  }
 }
 
 // Include Footer
 if ($footerv=="1") {
-  include("content/footer_$footerv.php");
+  include("footer_$footerv.php");
 }
 ?>

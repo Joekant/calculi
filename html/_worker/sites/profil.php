@@ -8,7 +8,7 @@
 		</div>
 		<div class="medium-2 columns show-for-medium-up">
 			<div id="profile-navigation">
-				<dl class="tabs vertical" data-tab data-options="deep_linking:true">
+				<dl class="tabs vertical" data-tab>
 					<dd class="active"><a href="#panel1"><i class="fa fa-user fa-fw"></i></a></dd>
 					<dd><a href="#panel2"><i class="fa fa-mortar-board fa-fw"></i></a></dd>
 					<dd><a href="#panel3"><i class="fa fa-windows fa-fw"></i><br /></a></dd>

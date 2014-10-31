@@ -1,12 +1,12 @@
 <div id="login">
   <div class="row text-center">
-    <a href="index.php"><img src="img/logo_symbol.png" class="logo half-padding" alt="logo"></a>
+    <a href="index.php"><img src="../img/logo_symbol.png" class="logo half-padding" alt="logo"></a>
     <h1 class="padding-bottom">Registrieren</h1>
     
 
     <dl class="tabs" data-tab data-options="deep_linking:true">
-      <dd class="active"><a href="#webworker">Webworker</a></dd>
-      <dd><a href="#kunde">Kunde</a></dd>
+      <dd class="active logintabs"><a href="#webworker">Webworker</a></dd>
+      <dd class="logintabs"><a href="#kunde">Kunde</a></dd>
     </dl>
     <div class="tabs-content">
       <div class="content active" id="webworker">

@@ -21,8 +21,8 @@
   error_reporting(E_ERROR | E_WARNING | E_PARSE);
       // session_start();
       // include('dbconnect.php');
-  include('php/logic/logic_index.php');
-  include('content/globalmodal.php');
+  include('../php/logic/_client/logic_index.php');
+  include('globalmodal.php');
   ?>
 
   <script src="../js/vendor/jquery.js"></script>

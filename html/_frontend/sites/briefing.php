@@ -7,8 +7,17 @@
       <h2 class="subline">in 5 Minuten zum fertigen Briefing</h2>
     </div>
   </div>
-  <!-- Sticky Pagination -->
-  <div id="form-pagination">
+
+  <div class="row" id="briefing-selection">
+    <div class="large-12 columns half-padding text-center">
+      <a href="" id="stranger"><button>Ich bin neu hier</button></a><a href="index.php?page=login#kunde" id="client"><button>Ich habe ein Konto</button></a>
+
+    </div>
+  </div>
+
+  <div id="briefing-form">  
+    <!-- Sticky Pagination -->
+
     <div class="row padding-bottom" id="form-instruction">
       <ul>
        <li><span>Mit <span class="required">*</span> gekennzeichnete Angaben sind zwingend notwendig</span></li>
@@ -39,9 +48,9 @@
     </div>
   </div>
   <br class="end" />
-</div> 
 
-<div id="briefing-form">     
+
+
   <form data-abide action="index.php?page=briefing_s" method="POST">
 
     <!-- Step -->
@@ -317,3 +326,10 @@
 </form>
 </div>
 </main>
+
+<script>
+  $("#stranger").click(function(){
+    $("#briefing-selection").slideUp("slow")
+    event.preventDefault()
+  }); 
+</script>

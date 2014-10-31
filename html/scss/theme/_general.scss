@@ -88,9 +88,11 @@ main {
 	padding-bottom: 20px;
 	text-align: center;
 
-	dd {
+	dd.logintabs {
 		width: 150px;
 	}
+
+
 	dd.active {
 		a {
 			background-color: $primary-color;
