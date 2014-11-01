@@ -122,7 +122,7 @@ CLIENT
 
 <div class="row margin-top" >
   <div class="large-8 columns small-text-center medium-text-center large-text-left">
-    <h2 class="primary-color-font small-text-center medium-text-center large-text-left">Ich brauche eine Website</h2>
+    <h2 class="primary-color-font small-text-center medium-text-center large-text-left ">Ich brauche eine Website</h2>
     <h3 class="freestyle small-text-center medium-text-center large-text-left">und suche den Experten</h3>
     <p class="">Du betreibst ein Unternehmen, startest eine 
       Aktion oder möchtest deine persönlichen Leistungen im Internet professionell präsentieren, 
@@ -143,16 +143,16 @@ CLIENT
 
 <!-- 
 #######################################
-TESTIMONIAL
+TESTIMONIAL CLIENT
 #######################################
 -->
 
-<div id="testimonial" class=" dark-bg text-center half-padding">
+<div id="testimonial" class=" dark-bg text-center full-padding">
   <div class="row">
     <div class="large-12 columns">"Über Calculi habe ich schnell und einfach den geeigneten 
       Webdesigner für meine neue Firmenwebsite gefunden. Ich kann Calculi jedem empfehlen, der 
       nicht auf einen kompetenten Ansprechpartner in seinem persönlichem Umfeld zurückgreifen kann.“<br />
-      <span id="author">Jon Travolter, CEO Clevercontour GmbH </span>
+      <span id="author">Jon Travolter, CEO Tando GmbH </span>
     </div>
   </div>
 </div>
@@ -165,7 +165,7 @@ WEBDESIGNER
 
 <div class="row margin-top">
   <div class="medium-7 columns">
-    <div class="show-for-large-up"><img src="../img/frontend/imac.png" alt=""></div>
+    <div class="show-for-large-up padding-bottom"><img src="../img/frontend/imac.png" alt=""></div>
   </div>
   <div class="large-5 columns medium-text-center small-text-center large-text-right">
     <h2 class="primary-color-font medium-text-center small-text-center large-text-right">Ich bin Webdesigner</h2>
@@ -177,49 +177,58 @@ WEBDESIGNER
     <a class="small button" href="index.php?page=register">Profil anlegen<i class="fa fa-chevron-right fa-fw"></i> </a>
   </div>
 </div>
+
+<!-- 
+#######################################
+TESTIMONIAL - WORKER
+#######################################
+-->
+
+<div id="testimonial" class=" dark-bg text-center half-padding">
+  <div class="row">
+    <div class="large-12 columns">"Mit Hilfe von Calculi konnte ich ohne nennenswerten Aufwand zahlreiche 
+      neue Kunden akquirieren und mein persönliches Portfolio um einige interessante Projekte erweitern." <br />
+      <span id="author">Jon Travolter, Selbstständiger Webworker</span>
+    </div>
+  </div>
 </div>
+
 
 <!-- 
 #######################################
 PRICING-TABLE
 #######################################
 -->
+<div class="row text-center full-padding">
+  <h2 class="primary-color-font">Die Kosten</h2>
+  <h3 class="freestyle">Gratis für Webworker & Günstig für Kunden</h3>
+</div>
 
-<!--     <div class="row ">
-      <div class="large-4 columns">
-        <ul class="pricing-table">
-          <li class="title">Bronze</li>
-          <li class="price">5€</li>
-          <li class="description">Placeholder für Beschreibung</li>
-          <li class="bullet-item">1 Feature</li>
-          <li class="bullet-item">2 Feature</li>
-          <li class="bullet-item">3 Feature</li>
-          <li class="cta-button"><a class="button" href="#">wählen</a></li>
-        </ul>    
-      </div>
-     <div class="large-4 columns">
-        <ul class="pricing-table">
-          <li class="title">Silber</li>
-          <li class="price">10€</li>
-          <li class="description">Placeholder für Beschreibung</li>
-          <li class="bullet-item">1 Feature</li>
-          <li class="bullet-item">2 Feature</li>
-          <li class="bullet-item">3 Feature</li>
-          <li class="cta-button"><a class="button" href="#">wählen</a></li>
-        </ul>    
-      </div>
-     <div class="large-4 columns">
-        <ul class="pricing-table">
-          <li class="title">Gold</li>
-          <li class="price">20€</li>
-          <li class="description">Placeholder für Beschreibung</li>
-          <li class="bullet-item">1 Feature</li>
-          <li class="bullet-item">2 Feature</li>
-          <li class="bullet-item">3 Feature</li>
-          <li class="cta-button"><a class="button" href="#">wählen</a></li>
-        </ul>    
-      </div>    
-    </div> -->
+<div class="row">
+  <div class="large-6 columns">
+    <ul class="pricing-table">
+      <li class="title">Profil anlegen</li>
+      <li class="price">0 €</li>
+      <li class="description">Placeholder für Beschreibung</li>
+      <li class="bullet-item">1 Feature</li>
+      <li class="bullet-item">2 Feature</li>
+      <li class="bullet-item">3 Feature</li>
+      <li class="cta-button"><a class="button small" href="#">Profil anlegen <i class="fa fa-chevron-right fa-fw"></i></a> </li>
+    </ul>    
+  </div>
+
+  <div class="large-6 columns">
+    <ul class="pricing-table">
+      <li class="title">Ausschreibung erstellen</li>
+      <li class="price">9.99€</li>
+      <li class="description">Placeholder für Beschreibung</li>
+      <li class="bullet-item">1 Feature</li>
+      <li class="bullet-item">2 Feature</li>
+      <li class="bullet-item">3 Feature</li>
+      <li class="cta-button"><a class="button small" href="#">Auftrag starten <i class="fa fa-chevron-right fa-fw"></i></a></li>
+    </ul>    
+  </div>   
+</div> 
 
 <!-- 
 #######################################
@@ -227,7 +236,7 @@ LOGOS
 #######################################
 -->
 
-<div class="logos row text-center full-padding" >
+<div class="logos row text-center half-padding" >
   <h3 class="freestyle text-center">bekannt aus</h3>
   <div class="medium-4 columns">
     <a href=""><img src="../img/frontend/logos_t3n.png" alt=""/></a>
@@ -247,7 +256,7 @@ BUTTONS
 #######################################
 -->
 
-<div class="footerbuttons">
+<!-- <div class="footerbuttons">
   <div class="row">
     <div class="medium-4 columns text-center">
       <a class="small button" href="index.php?page=briefing">Auftrag starten <i class="fa fa-chevron-right fa-fw"></i> </a>
@@ -256,6 +265,6 @@ BUTTONS
       <a class="small button" href="index.php?page=register">Profil anlegen <i class="fa fa-chevron-right fa-fw"></i> </a>
     </div>
   </div>
-</div>
+</div> -->
 
 </main>

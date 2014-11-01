@@ -21,8 +21,8 @@ function header_navigation() {
 $page = isset($_GET['page']) ? $_GET['page'] : "home";
 $header = "1";
 $footerv = "1";
-$jsfiles = [];
-$phpfiles = [];
+$jsfiles = array();
+$phpfiles = array();
 
 if($page == "home") {
   $content = $page;

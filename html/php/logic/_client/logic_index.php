@@ -18,8 +18,8 @@ function header_navigation() {
 
 // Include current Subpage
 $page = isset($_GET['page']) ? $_GET['page'] : "dashboard";
-$jsfiles = [];
-$phpfiles = [];
+$jsfiles = array();
+$phpfiles = array();
 
 if($page == "dashboard") {
   $content = $page;
