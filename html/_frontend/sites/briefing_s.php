@@ -7,7 +7,7 @@
 				<h5>Briefing erfolgreich!</h5>
 				<p>
 					Nachdem du den <strong>Aktivierungslink</strong> in deinem E-mail Postfach bestätigt hast wird dein Konto aktiviert, 
-					sodass du kannst dich mit E-mail und  Passwort anmelden kannst um die Kostenvoranschläge der Bewerber zu vergleichen.
+					sodass du dich mit E-mail und Passwort anmelden kannst und die Kostenvoranschläge der Bewerber vergleichen.
 				</p>
 <!-- 				<p>
 					Um die Bewerber vergleichen zu können, musst du dich mit diesem Passwort <a href="index.php?page=login#kunde">anmelden</a>

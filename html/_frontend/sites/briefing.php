@@ -1,29 +1,32 @@
 <!-- requires briefing-effort-count.js -->
 <main>
   <div class="row">
-    <div class="large-12 columns half-padding text-center">
+    <div class="large-12 columns text-center">
       <h1 id="headline">Ausschreibung erstellen</h1>
-      <h2 class="subline">in 5 Minuten zum fertigen Briefing</h2>
-    </div>
-  </div>
-  <div class="row" id="briefing-selection">
-    <div class="large-12 columns half-padding text-center">
-      <a href="" id="stranger"><button>Ich bin neu hier</button></a>
-      <a href="" id="client"><button>Ich bin bereits registriert</button></a>
 
     </div>
   </div>
+  <div class="row text-center" id="briefing-selection">
+   <h2 class="subline">bitte wählen</h2>
+   <div class="large-12 columns half-padding text-center">
+    <a href="" id="stranger"><button>Ich bin neu hier</button></a>
+    <a href="" id="client"><button>Ich bin bereits registriert</button></a>
 
-  <div id="briefing-form" class="hide">  
-    <!-- Sticky Pagination -->
+  </div>
+</div>
 
-    <div class="row" id="form-instruction">
-      <ul>
-       <li><span>Mit <span class="required">*</span> gekennzeichnete Angaben sind verpfichtend</span></li>
-       <li><span>Unterwellte Worte besitzen Tooltipps</span></li>
-       <li><span>Mit der Navigation am oberen Seitenrand können Sie zu den einzelnen Abschnitten wechseln</span></li>  
-     </ul>
-   </div>
+<div id="briefing-form" class="hide">  
+
+  <!-- Sticky Pagination -->
+
+  <div class="row" id="form-instruction">
+    <h2 class="subline text-center padding-bottom">Nach dem Absenden des Formulars wird automatisch ein kostenloses Konto für dich eingerichtet, in dem du deine Ausschreibungen verwalten kannst </h2>
+    <ul>
+     <li><span>Mit <span class="required">*</span> gekennzeichnete Angaben sind verpfichtend</span></li>
+     <li><span>Unterwellte Worte besitzen Tooltipps</span></li>
+     <li><span>Mit der Navigation am oberen Seitenrand können Sie zu den einzelnen Abschnitten wechseln</span></li>  
+   </ul>
+ </div>
 
 <!--    <div class="row">
      <div class="small-12 columns text-center">
@@ -324,6 +327,7 @@
 
 <div id="login" class="hide">
   <div class="row">
+    <h2 class="subline padding-bottom text-center">bitte melde dich an</h2>
     <form class="loginform" action="../_client" method="POST">
       <input type="email" placeholder="E-mail" />
       <input type="password" placeholder="Passwort" />

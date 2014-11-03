@@ -147,12 +147,11 @@ TESTIMONIAL CLIENT
 #######################################
 -->
 
-<div id="testimonial" class=" dark-bg text-center full-padding">
+<div id="testimonial" class=" dark-bg text-center half-padding ">
   <div class="row">
     <div class="large-12 columns">"Über Calculi habe ich schnell und einfach den geeigneten 
-      Webdesigner für meine neue Firmenwebsite gefunden. Ich kann Calculi jedem empfehlen, der 
-      nicht auf einen kompetenten Ansprechpartner in seinem persönlichem Umfeld zurückgreifen kann.“<br />
-      <span id="author">Jon Travolter, CEO Tando GmbH </span>
+      Webdesigner für meine neue Firmenwebsite gefunden. Ich kann Calculi jedem empfehlen, der persönlich keinen guten Webworker kennt.“ 
+      <span id="author">- Jon Travolter, CEO Tando GmbH </span>
     </div>
   </div>
 </div>
@@ -187,8 +186,8 @@ TESTIMONIAL - WORKER
 <div id="testimonial" class=" dark-bg text-center half-padding">
   <div class="row">
     <div class="large-12 columns">"Mit Hilfe von Calculi konnte ich ohne nennenswerten Aufwand zahlreiche 
-      neue Kunden akquirieren und mein persönliches Portfolio um einige interessante Projekte erweitern." <br />
-      <span id="author">Jon Travolter, Selbstständiger Webworker</span>
+      neue Kunden akquirieren und mein persönliches Portfolio um einige aussagekräftige Referenzen erweitern." 
+      <span id="author">- Jon Travolter, Selbstständiger Webworker</span>
     </div>
   </div>
 </div>
@@ -207,24 +206,28 @@ PRICING-TABLE
 <div class="row">
   <div class="large-6 columns">
     <ul class="pricing-table">
-      <li class="title">Profil anlegen</li>
+      <li class="title">Webworker</li>
       <li class="price">0 €</li>
-      <li class="description">Placeholder für Beschreibung</li>
-      <li class="bullet-item">1 Feature</li>
-      <li class="bullet-item">2 Feature</li>
-      <li class="bullet-item">3 Feature</li>
+      <li class="description">Leg kostenlos dein persönliches Profil an</li>
+      <li class="bullet-item">bewirb dich auf Ausschreibungen</li>
+      <li class="bullet-item">verwalte deine Referenzen</li>
+      <li class="bullet-item">steiger deine Reputation</li>
+      <li class="bullet-item">analysiere deine Erfolgsstatistiken</li>
+      <li class="bullet-item">erstelle automatisch Rechnungen</li>
       <li class="cta-button"><a class="button small" href="#">Profil anlegen <i class="fa fa-chevron-right fa-fw"></i></a> </li>
     </ul>    
   </div>
 
   <div class="large-6 columns">
     <ul class="pricing-table">
-      <li class="title">Ausschreibung erstellen</li>
-      <li class="price">9.99€</li>
-      <li class="description">Placeholder für Beschreibung</li>
-      <li class="bullet-item">1 Feature</li>
-      <li class="bullet-item">2 Feature</li>
-      <li class="bullet-item">3 Feature</li>
+      <li class="title">Kunden</li>
+      <li class="price">9.99 €</li>
+      <li class="description">Starte eine Ausschreibung für deine Website</li>
+      <li class="bullet-item">erstelle ein ausführliches Pflichtenheft</li> 
+      <li class="bullet-item">erhalte exklusiv individuelle Angebote</li>
+      <li class="bullet-item">vergleiche Preise, Bewertungen & Referenzen</li>
+      <li class="bullet-item">dokumentiere den gesamten Auftrag</li>
+      <li class="bullet-item">finde den idealen Webworker</li>
       <li class="cta-button"><a class="button small" href="#">Auftrag starten <i class="fa fa-chevron-right fa-fw"></i></a></li>
     </ul>    
   </div>   

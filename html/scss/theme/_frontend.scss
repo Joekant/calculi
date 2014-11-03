@@ -54,8 +54,8 @@ ul {
 } 
 
 .main-slider {
-	border-top:5px solid $primary-color;
-	border-bottom:5px solid $primary-color;
+	border-top:4px solid $primary-color;
+	border-bottom:4px solid $primary-color;
 
 	h2 {
 		color:$primary_color;
@@ -125,8 +125,8 @@ ul {
 }
 
 #testimonial {
-	border-bottom: 5px solid $primary-color;
-	border-top: 5px solid $primary-color;
+	border-bottom: 4px solid $primary-color;
+	border-top: 4px solid $primary-color;
 	font-style: italic;
 	font-size: 1.1em;
 	letter-spacing: 1px;
@@ -136,12 +136,13 @@ ul {
 	#author {
 		color: $primary-color;
 		font-size: 0.8em;
+		font-style: normal;
 	}
 }
 
 #main-user-number {
-	border-top:5px solid $primary-color;
-	border-bottom:5px solid $primary-color;
+	border-top:4px solid $primary-color;
+	border-bottom:4px solid $primary-color;
 	text-align: center;
 	padding: 20px;
 
@@ -162,12 +163,29 @@ ul {
 .pricing-table {
 	.title {
 		background-color: $secondary-color;
-		border-top:5px solid $primary-color;
+		border-top:4px solid $primary-color;
 		text-transform: uppercase;
+		font-size: 1.2em;
 	}
 	a.button {
 		width: 230px;
 	}
+
+	.price {
+		color: $secondary-color;
+		font-size: 1.4em;
+		font-weight: 600;
+	}
+
+	li.description {
+		font-size: 1.1em;
+
+		color: $primary-color;
+		font-style: italic;
+	}
+
+
+
 }
 
 #poster-img {
@@ -213,7 +231,7 @@ footer.frontend-footer {
 		padding-bottom: 20px;	
 	}
 
-	a {
+	a.links {
 		margin-left: 20px;
 		color: $bg-color;
 	}
@@ -230,6 +248,7 @@ footer.frontend-footer {
 	#copyright {
 		font-size: 0.8em;
 		margin-top: 15px;
+		margin-left: 20px;
 		text-transform: lowercase;
 	}
 }
@@ -305,7 +324,7 @@ footer.frontend-footer {
 	}
 
 	.text {
-		border-left: 5px solid $primary-color;
+		border-left: 4px solid $primary-color;
 	}
 	
 	.value {
@@ -360,7 +379,7 @@ footer.frontend-footer {
 	color: $secondary-color;
 	padding: 20px;
 	margin-bottom: 60px;
-	border-bottom: 5px solid $primary-color;
+	border-bottom: 4px solid $primary-color;
 
 	.buttons {
 		position: absolute;
@@ -388,8 +407,8 @@ a.show {
 ----------------------------------------- */
 
 .form-step {
-	border-top: 5px solid $primary-color;
-	border-bottom: 5px solid $primary-color;
+	border-top: 4px solid $primary-color;
+	border-bottom: 4px solid $primary-color;
 	text-align: center;
 	color: white;
 	margin: 50px 0px 30px 0px;
@@ -535,8 +554,8 @@ dd.briefing-tabs {
 }
 
 #profile-head {
-	border-top:5px solid $primary-color;
-	border-bottom:5px solid $primary-color;
+	border-top:4px solid $primary-color;
+	border-bottom:4px solid $primary-color;
 	padding: 0px 40px;
 
 	h1 {
@@ -693,8 +712,8 @@ dd.briefing-tabs {
 }
 
 #profile-references {
-	border-top: 5px solid $primary-color;
-	border-bottom: 5px solid $primary-color;
+	border-top: 4px solid $primary-color;
+	border-bottom: 4px solid $primary-color;
 	background-color: $bg-color;
 
 	.row {
@@ -704,7 +723,7 @@ dd.briefing-tabs {
 
 	#references-head {
 
-		border-top: 5px solid $primary-color;
+		border-top: 4px solid $primary-color;
 		
 		h2 {
 			color: white;
@@ -813,7 +832,7 @@ dd.briefing-tabs {
 	
 	margin: 0px auto;
 	max-width: 600px;
-	border-bottom: 5px solid $primary-color;
+	border-bottom: 4px solid $primary-color;
 	background-color: $bg-color;
 	padding: 30px 0px;
 	margin-bottom: 60px;
@@ -894,7 +913,7 @@ dd.briefing-tabs {
 	img {
 		position: relative;
 		top: 38px;	
-		border-top:5px solid $primary-color;
+		border-top:4px solid $primary-color;
 		width: 293px;
 	}
 }
