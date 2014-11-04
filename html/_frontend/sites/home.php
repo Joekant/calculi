@@ -50,10 +50,10 @@ SLIDER
 
     <div class="row">
       <div class="medium-5 columns">
-        <a class="button expand" href="index.php?page=briefing">Auftrag starten <i class="fa fa-chevron-right fa-fw"></i> </a>
+        <a class="button expand" href="index.php?page=briefing_select">Auftrag starten <i class="fa fa-chevron-right fa-fw"></i> </a>
       </div>
       <div style="float:right;" class="medium-5 columns">
-        <a class="button expand" href="index.php?page=register">Profil anlegen <i class="fa fa-chevron-right fa-fw"></i> </a>
+        <a class="button expand" href="index.php?page=register#webworker">Profil anlegen <i class="fa fa-chevron-right fa-fw"></i> </a>
       </div>
     </div>
     <br class="end" />
@@ -136,7 +136,7 @@ CLIENT
       <a class="small button" href="index.php?page=briefing">Auftrag starten <i class="fa fa-chevron-right fa-fw"></i> </a>
     </div>
     <div class="large-4 columns show-for-large-up" >
-      <a href="index.php?page=briefing"><img src="../img/frontend/poster.png" id="poster-img" alt=""/></a>
+      <a href="index.php?page=briefing_select"><img src="../img/frontend/poster.png" id="poster-img" alt=""/></a>
     </div>
   </div>
 
@@ -173,7 +173,7 @@ WEBDESIGNER
       gerne Websites und bist stet's auf der Suche nach neuen Kundenprojekten?
     </p><p>Dann lege jetzt kostenlos bei Calculi dein persönliches Profil an, bewirb dich auf Ausschreibungen 
     und erweitere kontinuierlich dein Portfolio!</p>
-    <a class="small button" href="index.php?page=register">Profil anlegen<i class="fa fa-chevron-right fa-fw"></i> </a>
+    <a class="small button" href="index.php?page=register#webworker">Profil anlegen<i class="fa fa-chevron-right fa-fw"></i> </a>
   </div>
 </div>
 
@@ -199,7 +199,7 @@ PRICING-TABLE
 #######################################
 -->
 <div class="row text-center full-padding">
-  <h2 class="primary-color-font">Die Kosten</h2>
+  <h2 class="primary-color-font">Der Preis</h2>
   <h3 class="freestyle">Gratis für Webworker & Günstig für Kunden</h3>
 </div>
 
@@ -214,7 +214,7 @@ PRICING-TABLE
       <li class="bullet-item">steiger deine Reputation</li>
       <li class="bullet-item">analysiere deine Erfolgsstatistiken</li>
       <li class="bullet-item">erstelle automatisch Rechnungen</li>
-      <li class="cta-button"><a class="button small" href="#">Profil anlegen <i class="fa fa-chevron-right fa-fw"></i></a> </li>
+      <li class="cta-button"><a class="button small" href="index.php?page=register#webworker">Profil anlegen <i class="fa fa-chevron-right fa-fw"></i></a> </li>
     </ul>    
   </div>
 
@@ -228,7 +228,7 @@ PRICING-TABLE
       <li class="bullet-item">vergleiche Preise, Bewertungen & Referenzen</li>
       <li class="bullet-item">dokumentiere den gesamten Auftrag</li>
       <li class="bullet-item">finde den idealen Webworker</li>
-      <li class="cta-button"><a class="button small" href="#">Auftrag starten <i class="fa fa-chevron-right fa-fw"></i></a></li>
+      <li class="cta-button"><a class="button small" href="index.php?page=briefing_select">Auftrag starten <i class="fa fa-chevron-right fa-fw"></i></a></li>
     </ul>    
   </div>   
 </div> 

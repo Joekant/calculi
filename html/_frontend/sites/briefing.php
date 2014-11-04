@@ -1,38 +1,29 @@
 <!-- requires briefing-effort-count.js -->
 <main>
-  <div class="row">
-    <div class="large-12 columns text-center">
-      <h1 id="headline">Ausschreibung erstellen</h1>
 
-    </div>
-  </div>
-  <div class="row text-center" id="briefing-selection">
-   <h2 class="subline">bitte wählen</h2>
-   <div class="large-12 columns half-padding text-center">
-    <a href="" id="stranger"><button>Ich bin neu hier</button></a>
-    <a href="" id="client"><button>Ich bin bereits registriert</button></a>
 
-  </div>
-</div>
+  <div id="briefing-form">  
 
-<div id="briefing-form" class="hide">  
+    <!-- Sticky Pagination -->
 
-  <!-- Sticky Pagination -->
+    <div class="row" id="form-instruction">
+      <div class="large-12 columns text-center">
+        <h1 id="headline">Ausschreibung erstellen</h1>
+      </div>
 
-  <div class="row" id="form-instruction">
-    <h2 class="subline text-center padding-bottom">Nach dem Absenden des Formulars wird automatisch ein kostenloses Konto für dich eingerichtet, in dem du deine Ausschreibungen verwalten kannst </h2>
-    <ul>
-     <li><span>Mit <span class="required">*</span> gekennzeichnete Angaben sind verpfichtend</span></li>
-     <li><span>Unterwellte Worte besitzen Tooltipps</span></li>
-     <li><span>Mit der Navigation am oberen Seitenrand können Sie zu den einzelnen Abschnitten wechseln</span></li>  
-   </ul>
- </div>
+      <h2 class="subline text-center padding-bottom">Nach dem Absenden des Formulars wird automatisch ein kostenloses Konto für dich eingerichtet, in dem du deine Ausschreibungen verwalten kannst </h2>
+      <ul>
+       <li><span>Mit <span class="required">*</span> gekennzeichnete Angaben sind verpfichtend</span></li>
+       <li><span>Unterwellte Worte besitzen Tooltipps</span></li>
+       <li><span>Mit der Navigation am oberen Seitenrand können Sie zu den einzelnen Abschnitten wechseln</span></li>  
+     </ul>
+   </div>
 
-<!--    <div class="row">
+   <div class="row padding-top">
      <div class="small-12 columns text-center">
        <div data-magellan-expedition="fixed" id="form-pagination">
 
-       
+
         <div class="progress">
           <div class="EffortCount"> 
           </div>
@@ -48,7 +39,7 @@
       </div>
     </div>
   </div>
-  <br class="end" /> -->
+  <br class="end" />
 
   <form data-abide action="index.php?page=briefing_s" method="POST">
 
@@ -82,6 +73,7 @@
       <div class="medium-6 columns">
         <label for="s_country">Land<span class="required">*</span></label>
         <select id="s_country" name="s_country" >
+          <option value="unselected">Land auswählen...</option>
           <option value="Österreich">Österreich</option>
           <option value="Deutschland" >Deutschland</option>
           <option value="Schweiz" >Schweiz</option>
@@ -90,16 +82,9 @@
     </div>
     <div class="medium-6 columns">
       <label for="s_state">Bundesland<span class="required">*</span></label>
-      <select id="s_state" name="s_state" >
-        <option value="Wien">Wien</option>
-        <option value="Niederösterreich">Niederösterreich</option>
-        <option value="Oberösterreich">Oberösterreich</option>
-        <option value="Burgenland">Burgenland</option>
-        <option value="Steiermark">Steiermark</option>
-        <option value="Kärnten">Kärnten</option>
-        <option value="Salzburg">Salzburg</option>
-        <option value="Tirol">Tirol</option>
-        <option value="Vorarlberg">Vorarlberg</option>
+      <select id="s_state" name="s_state" disabled>
+        <option value="">Bitte Land wählen</option>
+        <!--          -->
       </select>
     </div>
   </div>
@@ -325,37 +310,27 @@
 </form>
 </div>
 
-<div id="login" class="hide">
-  <div class="row">
-    <h2 class="subline padding-bottom text-center">bitte melde dich an</h2>
-    <form class="loginform" action="../_client" method="POST">
-      <input type="email" placeholder="E-mail" />
-      <input type="password" placeholder="Passwort" />
-      <input type="submit" class="button expand padding-top" id="loginbutton" value="Login">
-    </form>
-
-    <div id="loginlinks" class="padding-top" >
-     <a href="" data-reveal-id="help" id="helplink"><span data-tooltip aria-haspopup="true" class="has-tip" title="Passwort widerherstellen"><i class="fa fa-question fa-fw"></i></span></a>
-   </div>
- </div>
-</div>
-</main>
-
 <script>
-  $("#stranger").click(function(){
-    $("#briefing-selection").slideUp("slow")
-    $("#briefing-form").slideDown("slow")
-    event.preventDefault()
-  }); 
-  $("#client").click(function(){
-    $("#briefing-selection").slideUp("slow")
-    $("#login").slideDown("slow")
-    event.preventDefault()
-  }); 
+// Generate & Enable state-selection depending on chosen country.
+$('#s_country').change(function() {
+  $("#s_state").prop('disabled', false);
+  var options = '';
+  if($(this).val() == 'unselected') {
+    options = '<option value="unselected">zuerst Land wählen</option>';
+    $("#s_state").prop('disabled', true);
+  }
+  else if($(this).val() == 'Deutschland') {
+    options = '<option value="1">1</option><option value="2">2</option>';
+  }
+  else if ($(this).val() == 'Schweiz'){
+    options = '<option value="3">3</option><option value="4">4</option>';
+  }
+  else if ($(this).val() == 'Österreich'){
+    options = '<option value="Wien">Wien</option><option value="Niederösterreich">Niederösterreich</option><option value="Oberösterreich">Oberösterreich</option><option value="Burgenland">Burgenland</option><option value="Steiermark">Steiermark</option><option value="Kärnten">Kärnten</option><option value="Salzburg">Salzburg</option><option value="Tirol">Tirol</option><option value="Vorarlberg">Vorarlberg</option>';
+  }    
+
+
+  $('#s_state').html(options);
+});
 </script>
-
-
-
-
-
 

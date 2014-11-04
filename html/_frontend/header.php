@@ -3,7 +3,7 @@
   <nav class="top-bar" id="frontpage-topbar" data-topbar role="navigation">
     <ul class="title-area">
       <li class="name">
-        <a href="#" class="show-for-medium-up"><img src="../img/logo_inline.png" class="logo" alt="caluli_logo" /></a>
+        <a href="index.php" class="show-for-medium-up"><img src="../img/logo_inline.png" class="logo" alt="caluli_logo" /></a>
       </li>
       <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
     </ul>

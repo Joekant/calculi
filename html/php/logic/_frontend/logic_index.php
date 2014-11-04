@@ -34,6 +34,8 @@ if($page == "home") {
   $content = $page;
 } elseif($page == "compare") {        
   $content = $page;
+} elseif($page == "briefing_select") {        
+  $content = $page;
 } elseif($page == "briefing_s") {  
   $content = $page;
   array_push($phpfiles, "logic_briefing.php");     
