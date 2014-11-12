@@ -9,9 +9,11 @@
 					Nachdem du den <strong>Aktivierungslink</strong> in deinem E-mail Postfach bestätigt hast wird dein Konto aktiviert, 
 					sodass du dich mit E-mail und Passwort anmelden kannst und die Kostenvoranschläge der Bewerber vergleichen.
 				</p>
-<!-- 				<p>
-					Um die Bewerber vergleichen zu können, musst du dich mit diesem Passwort <a href="index.php?page=login#kunde">anmelden</a>
+				<p>
+					Dein Passwort <br>
 					<span class="label secondary code padding-bottom">4gR6atg</span>
+				</p>
+					<!-- 
 					<br class="half-padding" /><a  href="index.php?page=login#kunde">jetzt anmleden</a>
 				</p> -->
 			</div>   

@@ -69,7 +69,7 @@
         <label for="s_country">Land<span class="required">*</span></label>
         <select id="s_country" name="s_country" >
           <option value="unselected">Land auswählen...</option>
-          <option value="Österreich">Österreich</option>
+          <option value="Österreich" selected>Österreich</option>
           <option value="Deutschland" >Deutschland</option>
           <option value="Schweiz" >Schweiz</option>
         </select>
@@ -78,7 +78,7 @@
     <div class="medium-6 columns">
       <label for="s_state">Bundesland<span class="required">*</span></label>
       <select id="s_state" name="s_state" disabled>
-        <option value="">Bitte Land wählen</option>
+        <option value="">zuerst Land wählen...</option>
         <!--          -->
       </select>
     </div>

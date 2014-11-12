@@ -28,7 +28,7 @@
           $css_class = active_css_class($navigation_item[0]);
           ?>
           <li class='<?= $css_class ?>'>
-            <a href='<?= $navigation_item[1] ?>'>
+            <a href='index.php?page=<?= $navigation_item[1]?>'>
               <?= ucfirst($navigation_item[0]) ?>
             </a>
           </li>

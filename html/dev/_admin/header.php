@@ -1,5 +1,5 @@
 <header class="show-for-large-up">
-  <div class="icon-bar dark-bg large-horizontal six-up">
+  <div class="icon-bar dark-bg large-horizontal five-up">
     <?php
     foreach(header_navigation() as $navigation_item) {
       $css_class = active_css_class($navigation_item[1]);
@@ -27,7 +27,7 @@
           $css_class = active_css_class($navigation_item[0]);
           ?>
           <li class='<?= $css_class ?>'>
-            <a href='index.php?page=<?= $navigation_item[1] ?>'>
+            <a href='index.php?page=<?= $navigation_item[1]?>'>
               <?= ucfirst($navigation_item[0]) ?>
             </a>
           </li>
