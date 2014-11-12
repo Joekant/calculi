@@ -1,11 +1,8 @@
 <!-- requires briefing-effort-count.js -->
 <main>
-
-
   <div id="briefing-form">  
 
     <!-- Sticky Pagination -->
-
     <div class="row" id="form-instruction">
       <div class="large-12 columns text-center">
         <h1 id="headline">Ausschreibung erstellen</h1>
@@ -22,8 +19,6 @@
    <div class="row padding-top">
      <div class="small-12 columns text-center">
        <div data-magellan-expedition="fixed" id="form-pagination">
-
-
         <div class="progress">
           <div class="EffortCount"> 
           </div>
@@ -309,28 +304,3 @@
 </div>
 </form>
 </div>
-
-<script>
-// Generate & Enable state-selection depending on chosen country.
-$('#s_country').change(function() {
-  $("#s_state").prop('disabled', false);
-  var options = '';
-  if($(this).val() == 'unselected') {
-    options = '<option value="unselected">zuerst Land wählen</option>';
-    $("#s_state").prop('disabled', true);
-  }
-  else if($(this).val() == 'Deutschland') {
-    options = '<option value="1">1</option><option value="2">2</option>';
-  }
-  else if ($(this).val() == 'Schweiz'){
-    options = '<option value="3">3</option><option value="4">4</option>';
-  }
-  else if ($(this).val() == 'Österreich'){
-    options = '<option value="Wien">Wien</option><option value="Niederösterreich">Niederösterreich</option><option value="Oberösterreich">Oberösterreich</option><option value="Burgenland">Burgenland</option><option value="Steiermark">Steiermark</option><option value="Kärnten">Kärnten</option><option value="Salzburg">Salzburg</option><option value="Tirol">Tirol</option><option value="Vorarlberg">Vorarlberg</option>';
-  }    
-
-
-  $('#s_state').html(options);
-});
-</script>
-

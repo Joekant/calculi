@@ -11,10 +11,9 @@
   <link rel="stylesheet" href="../css/app.css" />
   <!-- endbuild -->
 
-  <!-- build:js ../scripts/scripts.min.js -->
+  <!-- build:js ../scripts/scripts_top.min.js -->
   <script src="../js/vendor/modernizr.js"></script>
   <script src="../js/vendor/jquery.js"></script>
-  <script src="../js/foundation.min.js"></script>
   <!-- endbuild -->
 
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -34,6 +33,12 @@
   include('globalmodal.php');
   ?>
 
+  <!-- build:js ../scripts/scripts_bottom.min.js -->
+  <script src="../js/foundation.min.js"></script>
+  <script src="../js/vendor/fastclick.js"></script>
+  <script src="../js/vendor/placeholder.js"></script>
+  <script src="../js/vendor/jquery.coockie.js"></script>
+  <!-- endbuild -->
 
   <script>
     $(document).foundation();

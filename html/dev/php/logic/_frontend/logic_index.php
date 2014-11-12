@@ -45,7 +45,7 @@ if($page == "home") {
   $header = "0";
 } elseif($page == "briefing") {  
   $content = $page;
-  array_push($jsfiles, "briefing-effort-count.js");
+  array_push($jsfiles, "briefing-effort-count.js", "country-state-select.js");
 } elseif($page == "team") {        
   $content = $page;
 } elseif($page == "press") {        

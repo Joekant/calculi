@@ -27,6 +27,7 @@ if($page == "dashboard") {
   $content = $page;
 } elseif($page == "profil") {        
   $content = $page;
+  array_push($jsfiles, "country-state-select.js");
 } elseif($page == "ausschreibungen") {        
   $content = $page;
 } elseif($page == "bewerbungen") {        
