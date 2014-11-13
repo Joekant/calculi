@@ -1,57 +1,103 @@
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>  
-
-
-
 <div class="main-section">
-  <h1 class="text-center">Hallo Worker!</h1>
+
+<!--   <h1 class="text-center">Hallo Worker!</h1>
   <div class="panel callout text-center padding-top" id="welcome-message">
     <h5>Willkommen bei Calculi</h5>
     <p>Möchtest du vielleicht mit einer kurzen Tour durch das Programm starten?</p>
     <p>
       <a href="" class="button small green-bg">Ja</a><a href="" class="button small grey-bg">Nein</a>
     </p>
-  </div>      
+  </div>  -->  
+  <div class="row">
+    <h2 class="text-center">Ereignisse</h2> 
+    <div class="notification-area">
+      <table>
+        <tr>
+          <td width="80px">Datum</td>
+          <td>Titel</td>
+          <td>Ereignis</td>
+          <td width="60px"></td>
+        </tr>
+        <tr class="warning">
+          <td>24.11</td>
+          <td>Bewerbung angemommen</td>
+          <td>Kundenaktion</td>
+          <td class="notification-action"><a href=""><i class="fa fa-close"></i></a></td>
+        </tr>
+        <tr class="success">
+          <td>24.11</td>
+          <td>Bewerbung angemommen</td>
+          <td>Kundenaktion</td>
+          <td class="notification-action"><a href=""><i class="fa fa-close"></i></a></td>
+        </tr>
+        <tr class="info">
+          <td>24.11</td>
+          <td>Bewerbung angemommen</td>
+          <td>Kundenaktion</td>
+          <td class="notification-action"><a href=""><i class="fa fa-close"></i></a></td>
+        </tr>
+        <tr class="info">
+          <td>24.11</td>
+          <td>Bewerbung angemommen</td>
+          <td>Kundenaktion</td>
+          <td class="notification-action"><a href=""><i class="fa fa-close"></i></a></td>
+        </tr>
+        <tr class="success">
+          <td>24.11</td>
+          <td>Bewerbung angemommen</td>
+          <td>Kundenaktion</td>
+          <td class="notification-action"><a href=""><i class="fa fa-close"></i></a></td>
+        </tr>
+        <tr class="warning">
+          <td>24.11</td>
+          <td>Bewerbung angemommen</td>
+          <td>Kundenaktion</td>
+          <td class="notification-action"><a href=""><i class="fa fa-close"></i></a></td>
+        </tr>
 
-</div>
-
-
-<div class="row text-center">
-
-  <div class="large-12 columns">
-    <h2>Deine Entwicklung</h2>
-    <div class="padding-bottom" id="chart_line"></div>
+      </table>
+      <span class="right"><a href=""><small>ältere anzeigen</a></small></span>
+    </div> 
   </div>
-</div>
 
-<div class="counter-area-6">
   <div class="row text-center">
-    <div class="medium-6 columns">
-      <h2>Projekte</h2>
-      <div id="chart_projects"></div>
-    </div>
-    <div class="medium-6 columns">
-      <h2>Bewerbungen</h2>
-      <div id="chart_bewerbungen"></div>
+    <div class="large-12 columns">
+      <h2>Statistiken</h2>
+      <div class="padding-bottom" id="chart_line"></div>
     </div>
   </div>
-</div>
 
-
-<div class="row text-center">
-
-  <div class="large-12 columns">
-    <h2>Bewertung</h2>
-    <div class="label green-bg counter padding-top">
-      <i class="fa fa-thumbs-down fa-fw"></i><br /><span class="counter-value">93</span><br />6 Stimmen
+  <div class="counter-area-6">
+    <div class="row text-center">
+      <div class="medium-6 columns">
+        <h2>Projekte</h2>
+        <div id="chart_projects"></div>
+      </div>
+      <div class="medium-6 columns">
+        <h2>Bewerbungen</h2>
+        <div id="chart_bewerbungen"></div>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="row text-center padding-top">
-  <a href="index.php?page=<?php echo $page; ?>&popup&popup_message=Erfolgsmeldung&popup_icon=check&popup_color=green" class="button green-bg"><i class="fa fa-check fa-fw"></i> Success</a>
-  <a href="index.php?page=<?php echo $page; ?>&popup&popup_message=Warnmeldung&popup_icon=warning&popup_color=yellow&popup_linktext=undo&popup_link=revert" class="button yellow-bg"><i class="fa fa-warning fa-fw"></i> Warning</a>
-  <a href="index.php?page=<?php echo $page; ?>&popup&popup_message=Errormeldung&popup_icon=times&popup_color=orange" class="button orange-bg"><i class="fa fa-times fa-fw"></i> Error</a>
-  <a href="index.php?page=<?php echo $page; ?>&popup&popup_message=Infomeldung&popup_icon=info&popup_color=primary" class="button primary-bg"><i class="fa fa-info fa-fw"></i> Info</a>
+
+  <div class="row text-center">
+
+    <div class="large-12 columns">
+      <h2>Bewertung</h2>
+      <div class="label green-bg counter padding-top">
+        <i class="fa fa-thumbs-down fa-fw"></i><br /><span class="counter-value">93</span><br />6 Stimmen
+      </div>
+    </div>
+  </div>
+
+  <div class="row text-center padding-top">
+    <a href="index.php?page=<?php echo $page; ?>&popup&popup_message=Erfolgsmeldung&popup_icon=check&popup_color=green" class="button green-bg"><i class="fa fa-check fa-fw"></i> Success</a>
+    <a href="index.php?page=<?php echo $page; ?>&popup&popup_message=Warnmeldung&popup_icon=warning&popup_color=yellow&popup_linktext=undo&popup_link=revert" class="button yellow-bg"><i class="fa fa-warning fa-fw"></i> Warning</a>
+    <a href="index.php?page=<?php echo $page; ?>&popup&popup_message=Errormeldung&popup_icon=times&popup_color=orange" class="button orange-bg"><i class="fa fa-times fa-fw"></i> Error</a>
+    <a href="index.php?page=<?php echo $page; ?>&popup&popup_message=Infomeldung&popup_icon=info&popup_color=primary" class="button primary-bg"><i class="fa fa-info fa-fw"></i> Info</a>
+  </div>
 </div>
 </div>
 <!-- Tour -->
@@ -94,6 +140,7 @@
     <p>Jetzt wo du alles gesehen hast, wünscht dir Calculi viel Erfolg bei deinen Bewerbungen.</p>
   </li>
 </ol> 
+
 <script type="text/javascript">
 
       // Load the Visualization API and the piechart package.

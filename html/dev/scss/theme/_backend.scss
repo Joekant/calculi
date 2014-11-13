@@ -330,3 +330,47 @@ input.application-price:focus {
 .application-price::after {
 	content:"-";
 }
+
+.application-info {
+	border-color: $lightgrey;
+
+	td {
+		color: $lightgrey;
+	}
+
+}
+
+h2.application-info {
+	color: $lightgrey;
+}
+
+
+/* -----------------------------------------
+   Notification Styles
+----------------------------------------- */
+.notification-area {
+	max-width: 800px;
+	margin: auto;
+
+	tr.success {
+		border-left: 8px solid $green;
+	}
+
+	tr.info {
+		border-left: 8px solid $primary-color;
+	}
+	tr.warning {
+		border-left: 8px solid $red;
+	}
+
+	td.notification-action {
+		a {
+			color: $lightgrey;
+		}
+
+		a:hover {
+			color: $primary-color;
+		}
+		
+	}
+}

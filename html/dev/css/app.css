@@ -437,45 +437,32 @@ span.required {
 table {
   background: url("../img/bg_pattern.png") repeat;
   border: 0px; }
-  /* line 496, ../scss/theme/_general.scss */
+  /* line 495, ../scss/theme/_general.scss */
   table tr {
     color: #ff6c60;
     border: 0px; }
-    /* line 500, ../scss/theme/_general.scss */
-    table tr td:first-child {
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 0.9em; }
-    /* line 506, ../scss/theme/_general.scss */
+    /* line 499, ../scss/theme/_general.scss */
     table tr th {
       color: #293c4e;
       font-size: 0.95em; }
-    /* line 511, ../scss/theme/_general.scss */
+    /* line 504, ../scss/theme/_general.scss */
     table tr td {
       font-size: 1em; }
-      /* line 513, ../scss/theme/_general.scss */
+      /* line 506, ../scss/theme/_general.scss */
       table tr td ul {
         font-size: 1em;
         line-height: 2em;
         margin: 0; }
 
-/* line 522, ../scss/theme/_general.scss */
+/* line 515, ../scss/theme/_general.scss */
 td {
   background: url("../img/bg_pattern.png") repeat;
   border-bottom: 1px solid #afafaf; }
 
-/* line 527, ../scss/theme/_general.scss */
+/* line 520, ../scss/theme/_general.scss */
 .table-border-left {
   border-left: 4px solid #32aebd;
   margin-bottom: 30px; }
-
-/* line 532, ../scss/theme/_general.scss */
-.application-info {
-  border-color: #afafaf; }
-
-/* line 536, ../scss/theme/_general.scss */
-h2.application-info {
-  color: #afafaf; }
 
 /* -----------------------------------------
    Frontpage Styles
@@ -1617,3 +1604,37 @@ input.application-price:focus {
 /* line 330, ../scss/theme/_backend.scss */
 .application-price::after {
   content: "-"; }
+
+/* line 334, ../scss/theme/_backend.scss */
+.application-info {
+  border-color: #afafaf; }
+  /* line 337, ../scss/theme/_backend.scss */
+  .application-info td {
+    color: #afafaf; }
+
+/* line 343, ../scss/theme/_backend.scss */
+h2.application-info {
+  color: #afafaf; }
+
+/* -----------------------------------------
+   Notification Styles
+----------------------------------------- */
+/* line 351, ../scss/theme/_backend.scss */
+.notification-area {
+  max-width: 800px;
+  margin: auto; }
+  /* line 355, ../scss/theme/_backend.scss */
+  .notification-area tr.success {
+    border-left: 8px solid #37d074; }
+  /* line 359, ../scss/theme/_backend.scss */
+  .notification-area tr.info {
+    border-left: 8px solid #32aebd; }
+  /* line 362, ../scss/theme/_backend.scss */
+  .notification-area tr.warning {
+    border-left: 8px solid #e85458; }
+  /* line 367, ../scss/theme/_backend.scss */
+  .notification-area td.notification-action a {
+    color: #afafaf; }
+  /* line 371, ../scss/theme/_backend.scss */
+  .notification-area td.notification-action a:hover {
+    color: #32aebd; }

@@ -492,16 +492,9 @@ table {
 	background: url("../img/bg_pattern.png") repeat;
 	border: 0px;
 
-
 	tr {
 		color: $orange;
 		border: 0px;
-
-		td:first-child {
-			text-transform: uppercase;
-			font-weight: bold;
-			font-size: 0.9em;
-		}
 		
 		th {
 			color: $secondary-color;
@@ -529,10 +522,3 @@ td {
 	margin-bottom: 30px;
 }
 
-.application-info {
-	border-color: $lightgrey;
-}
-
-h2.application-info {
-	color: $lightgrey;
-}
