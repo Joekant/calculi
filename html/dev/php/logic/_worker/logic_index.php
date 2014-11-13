@@ -30,6 +30,9 @@ if($page == "dashboard") {
   array_push($jsfiles, "country-state-select.js");
 } elseif($page == "ausschreibungen") {        
   $content = $page;
+} elseif($page == "ausschreibungen_detail") {        
+  $content = $page;
+  array_push($phpfiles, "logic_briefing.php");
 } elseif($page == "bewerbungen") {        
   $content = $page;
 } elseif($page == "projekte") {        
@@ -43,7 +46,7 @@ include('header.php');
 // Include necessary PHP - Files
 if ($phpfile != "0") { 
   foreach ($phpfiles as $phpfile) {
-    include("../php/logic/_worker/$phpfile"); 
+    include("../php/logic/_frontend/$phpfile"); 
   }
 }
 

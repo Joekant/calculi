@@ -1,5 +1,4 @@
 <header>
-
   <nav class="top-bar" id="frontpage-topbar" data-topbar role="navigation">
     <ul class="title-area">
       <li class="name">

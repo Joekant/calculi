@@ -122,15 +122,32 @@ main {
 }
 
 .briefing-summary h2 {
-	padding-top: 25px;
-	padding-bottom: 30px;
+	padding-right: 20px;
 	color: $primary-color;
-	text-align: center;
+	text-align: right;
+	
+	@media only screen and (max-width: 64em) { 
+		text-align: center;
+	}
+
 }
 
 /* -----------------------------------------
    FONTS / PADDINGS / BORDERS
 ----------------------------------------- */
+#headline {
+	margin-top: 30px;
+	font-size: 2.4em;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 1.1px;
+	color: $orange;
+
+	@media only screen and (max-width: 40em) { 
+		margin-top: 10px;
+		font-size: 1.6em;
+	}
+}
 
 .orange-font {
 	color:$orange;
@@ -142,6 +159,10 @@ main {
 
 .primary-font {
 	color:$primary-color;
+}
+
+.grey-font {
+	color:$lightgrey;
 }
 
 .dark-bg {
@@ -199,6 +220,17 @@ main {
 .yellow-border {
 	border-top: 4px solid $yellow;
 }
+
+.grey-border {
+	border-top: 4px solid $lightgrey;
+}
+
+.primary-border {
+	border-top: 4px solid $primary-color;
+}
+
+
+
 
 .full-padding {
 	padding-top:60px;
@@ -460,6 +492,7 @@ table {
 	background: url("../img/bg_pattern.png") repeat;
 	border: 0px;
 
+
 	tr {
 		color: $orange;
 		border: 0px;
@@ -491,3 +524,15 @@ td {
 	border-bottom: 1px solid $lightgrey;
 }
 
+.table-border-left {
+	border-left: 4px solid $primary-color;
+	margin-bottom: 30px;
+}
+
+.application-info {
+	border-color: $lightgrey;
+}
+
+h2.application-info {
+	color: $lightgrey;
+}

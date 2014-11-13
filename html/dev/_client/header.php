@@ -13,7 +13,6 @@
     ?>  
   </div>
 </header>
-
 <header class="show-for-small-only-up hide-for-large-up">
   <nav class="top-bar" id="frontpage-topbar" data-topbar role="navigation">
     <ul class="title-area">
