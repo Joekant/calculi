@@ -1,3 +1,4 @@
+@charset "IBM437";
 /* CYAN r(50)g(174)b(189) */
 /* BLUE r(41)g(60)b(78) */
 /* r(255)g(108)b(96) */
@@ -98,13 +99,13 @@ main {
   background-color: white; }
 
 /* line 124, ../scss/theme/_general.scss */
-.briefing-summary h2 {
+.briefing-summary h2, .application-summary h2 {
   padding-right: 20px;
   color: #32aebd;
   text-align: right; }
   @media only screen and (max-width: 64em) {
     /* line 124, ../scss/theme/_general.scss */
-    .briefing-summary h2 {
+    .briefing-summary h2, .application-summary h2 {
       text-align: center; } }
 
 /* -----------------------------------------
@@ -430,36 +431,56 @@ span.required {
   font-size: 1.7em;
   line-height: 0px; }
 
+/* line 487, ../scss/theme/_general.scss */
+td input[type=text] {
+  padding: 15px 0px;
+  margin: 0;
+  height: 10px;
+  width: 60px;
+  line-height: 10px;
+  text-align: center;
+  font-size: 18px; }
+
+/* line 497, ../scss/theme/_general.scss */
+td input[type=text]:focus {
+  padding: 15px 0px;
+  margin: 0;
+  height: 10px;
+  width: 60px;
+  line-height: 10px;
+  text-align: center;
+  font-size: 18px; }
+
 /* -----------------------------------------
    Table Styles
 ----------------------------------------- */
-/* line 491, ../scss/theme/_general.scss */
+/* line 511, ../scss/theme/_general.scss */
 table {
   background: url("../img/bg_pattern.png") repeat;
   border: 0px; }
-  /* line 495, ../scss/theme/_general.scss */
+  /* line 515, ../scss/theme/_general.scss */
   table tr {
     color: #ff6c60;
     border: 0px; }
-    /* line 499, ../scss/theme/_general.scss */
+    /* line 519, ../scss/theme/_general.scss */
     table tr th {
       color: #293c4e;
       font-size: 0.95em; }
-    /* line 504, ../scss/theme/_general.scss */
+    /* line 524, ../scss/theme/_general.scss */
     table tr td {
       font-size: 1em; }
-      /* line 506, ../scss/theme/_general.scss */
+      /* line 526, ../scss/theme/_general.scss */
       table tr td ul {
         font-size: 1em;
         line-height: 2em;
         margin: 0; }
 
-/* line 515, ../scss/theme/_general.scss */
+/* line 535, ../scss/theme/_general.scss */
 td {
   background: url("../img/bg_pattern.png") repeat;
   border-bottom: 1px solid #afafaf; }
 
-/* line 520, ../scss/theme/_general.scss */
+/* line 540, ../scss/theme/_general.scss */
 .table-border-left {
   border-left: 4px solid #32aebd;
   margin-bottom: 30px; }
@@ -1588,12 +1609,12 @@ header.show-for-large-up {
    Backend Styles - Application
 ----------------------------------------- */
 /* line 315, ../scss/theme/_backend.scss */
-input.application-price {
-  padding-top: 20px;
-  font-size: 35px;
+.final-application-price, .final-application-effort {
+  display: block;
+  font-size: 20px;
+  color: #32aebd;
   height: 60px;
-  width: 170px;
-  margin: auto;
+  width: 80px;
   text-align: center; }
 
 /* line 325, ../scss/theme/_backend.scss */
@@ -1616,25 +1637,110 @@ input.application-price:focus {
 h2.application-info {
   color: #afafaf; }
 
+/* line 347, ../scss/theme/_backend.scss */
+.application-summary tr > td:first-child {
+  font-weight: bold; }
+
+/* line 351, ../scss/theme/_backend.scss */
+span.section-sum-money, span.section-sum-time {
+  padding-top: 30px;
+  display: block;
+  padding-right: 20px;
+  text-align: right;
+  color: #afafaf;
+  font-size: 1.6em; }
+
+/* line 360, ../scss/theme/_backend.scss */
+span.section-sum-money::after, span.section-sum-time::after {
+  content: " €"; }
+
+/* line 364, ../scss/theme/_backend.scss */
+span.section-sum-time {
+  padding: 20px;
+  font-size: 1.1em; }
+
+/* line 370, ../scss/theme/_backend.scss */
+span.section-sum-time::after {
+  content: " Stunden"; }
+
+/* line 376, ../scss/theme/_backend.scss */
+td.application-table-heading {
+  font-weight: bold;
+  padding-bottom: 50px;
+  font-size: 1em;
+  text-transform: uppercase; }
+
+/* line 383, ../scss/theme/_backend.scss */
+.application-final-result {
+  width: 100%;
+  padding: 10px;
+  margin: 0px; }
+  /* line 389, ../scss/theme/_backend.scss */
+  .application-final-result i {
+    font-size: 2em; }
+  /* line 393, ../scss/theme/_backend.scss */
+  .application-final-result span.counter-value {
+    font-size: 2em;
+    font-weight: bold; }
+  /* line 398, ../scss/theme/_backend.scss */
+  .application-final-result span.counter-value::after {
+    content: " €"; }
+  /* line 402, ../scss/theme/_backend.scss */
+  .application-final-result span.total-effort {
+    font-size: 1.1em;
+    color: white; }
+  /* line 407, ../scss/theme/_backend.scss */
+  .application-final-result span.total-effort::after {
+    content: " Stunden"; }
+
+/* line 412, ../scss/theme/_backend.scss */
+.sticky-application-form {
+  z-index: 1000;
+  padding: 0px;
+  border-top: 5px solid #32aebd;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  background-color: white; }
+  /* line 422, ../scss/theme/_backend.scss */
+  .sticky-application-form .columns {
+    padding: 0px; }
+  /* line 426, ../scss/theme/_backend.scss */
+  .sticky-application-form textarea, .sticky-application-form textarea:focus {
+    padding: 20px 30px 20px 30px;
+    margin: 0px;
+    max-height: 120px;
+    border: 0px;
+    background: transparent;
+    overflow: auto; }
+
+/* line 437, ../scss/theme/_backend.scss */
+.defaultRateContainer input {
+  max-width: 100px;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center; }
+
 /* -----------------------------------------
    Notification Styles
 ----------------------------------------- */
-/* line 351, ../scss/theme/_backend.scss */
+/* line 450, ../scss/theme/_backend.scss */
 .notification-area {
   max-width: 800px;
   margin: auto; }
-  /* line 355, ../scss/theme/_backend.scss */
+  /* line 454, ../scss/theme/_backend.scss */
   .notification-area tr.success {
     border-left: 8px solid #37d074; }
-  /* line 359, ../scss/theme/_backend.scss */
+  /* line 458, ../scss/theme/_backend.scss */
   .notification-area tr.info {
     border-left: 8px solid #32aebd; }
-  /* line 362, ../scss/theme/_backend.scss */
+  /* line 461, ../scss/theme/_backend.scss */
   .notification-area tr.warning {
     border-left: 8px solid #e85458; }
-  /* line 367, ../scss/theme/_backend.scss */
+  /* line 466, ../scss/theme/_backend.scss */
   .notification-area td.notification-action a {
     color: #afafaf; }
-  /* line 371, ../scss/theme/_backend.scss */
+  /* line 470, ../scss/theme/_backend.scss */
   .notification-area td.notification-action a:hover {
     color: #32aebd; }

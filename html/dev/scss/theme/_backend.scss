@@ -312,12 +312,12 @@ header.show-for-large-up {
    Backend Styles - Application
 ----------------------------------------- */
 
-input.application-price {
-	padding-top: 20px;
-	font-size: 35px;
+.final-application-price, .final-application-effort  {
+	display: block;
+	font-size: 20px;
+	color: $primary-color;
 	height: 60px;
-	width: 170px;
-	margin: auto;
+	width: 80px;
 	text-align: center;
 }
 
@@ -343,6 +343,105 @@ input.application-price:focus {
 h2.application-info {
 	color: $lightgrey;
 }
+
+.application-summary tr>td:first-child {
+	font-weight: bold;
+}
+
+span.section-sum-money {
+	padding-top: 30px;
+	display: block;
+	padding-right: 20px;
+	text-align: right;
+	color: $lightgrey;
+	font-size: 1.6em;
+}
+
+span.section-sum-money::after {
+	content:" €";
+}
+
+span.section-sum-time {
+	@extend .section-sum-money;
+	padding: 20px;
+	font-size: 1.1em;
+}
+
+span.section-sum-time::after {
+	content:" Stunden";
+}
+
+
+
+td.application-table-heading {
+	font-weight: bold;
+	padding-bottom: 50px;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+.application-final-result {
+	width: 100%;
+	padding: 10px;
+
+	margin: 0px;
+	
+	i {
+		font-size: 2em;
+	}
+
+	span.counter-value {
+		font-size: 2em;
+		font-weight: bold;
+	}
+
+	span.counter-value::after,  {
+		content:" €";
+	}
+
+	span.total-effort {
+		font-size: 1.1em;
+		color: white;
+	}
+
+	span.total-effort::after,  {
+		content:" Stunden";
+	}	
+}
+
+.sticky-application-form {
+	z-index: 1000;
+	padding: 0px;
+	border-top: 5px solid $primary-color;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	margin: 0;	
+	background-color: white;
+
+	.columns {
+		padding: 0px;
+	}
+
+	textarea, textarea:focus {
+		padding: 20px 30px 20px 30px;
+		margin: 0px;
+		max-height: 120px;
+		border: 0px;
+		background: transparent;
+		overflow: auto;
+	}
+}
+
+.defaultRateContainer {
+	input {
+		max-width: 100px;
+		font-weight: bold;
+		font-size: 30px;
+		text-align: center;
+	}
+}
+
 
 
 /* -----------------------------------------

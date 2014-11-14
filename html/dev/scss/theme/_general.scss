@@ -121,7 +121,7 @@ main {
 	background-color: white;
 }
 
-.briefing-summary h2 {
+.briefing-summary h2, .application-summary h2 {
 	padding-right: 20px;
 	color: $primary-color;
 	text-align: right;
@@ -482,6 +482,26 @@ span.required {
 	color: red;
 	font-size: 1.7em;
 	line-height: 0px;
+}
+
+td input[type=text] {
+	padding: 15px 0px;
+	margin: 0;
+	height: 10px;
+	width: 60px;
+	line-height: 10px;
+	text-align: center;
+	font-size: 18px;
+}
+
+td input[type=text]:focus {
+	padding: 15px 0px;
+	margin: 0;
+	height: 10px;
+	width: 60px;
+	line-height: 10px;
+	text-align: center;
+	font-size: 18px;
 }
 
 /* -----------------------------------------
