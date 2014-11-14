@@ -15,8 +15,8 @@
       <table>
         <tr>
           <td width="80px">Datum</td>
-          <td>Titel</td>
           <td>Ereignis</td>
+          <td>Typ</td>
           <td width="60px"></td>
         </tr>
         <tr class="warning">

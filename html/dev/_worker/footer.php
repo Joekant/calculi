@@ -10,7 +10,7 @@
 
 	</ul>
 	<div class="love">
-		gemacht mit <i class="fa fa-heart-o fa-fw"></i> in Wien
+		gemacht mit <i class="fa fa-heart-o fa-fw"></i> an der SAE
 	</div>
 </footer>
 

@@ -1,12 +1,6 @@
   <div class="main-section">
-
-
     <h1 class="text-center padding-bottom">Bewerbung einreichen</h1>
-
     <div class="row briefing-summary padding-top">
-
-
-
      <div class="large-3 columns">
        <h2 class="application-info">Info</h2>
      </div>
@@ -260,7 +254,7 @@
 <div class="row">
   <div class="panel text-center grey-border">
     <h5><i class="fa fa-info fa-fw"></i></h5>
-    <p>Nach dem Absenden der Bewerbung kann der Auftraggeber dein komplettes Profil einsehen und du kannst die Bewerbung nachträglich nicht mehr ändern (lediglich gänzlich zurückziehen). Akutalisierung des Profils sind hingegen jederzeit möglich.</p>
+    <p>Nach dem Absenden der Bewerbung kann der Auftraggeber dein komplettes Profil einsehen und die Bewerbung nicht mehr geändert werden (lediglich gänzlich zurückgezogen). Aktualisierungen des Profils hingegen sind jederzeit möglich.</p>
     <button type="submit" class="button"><i class="fa fa-check"></i> Bewerbung Absenden</button>
   </div>   
 </div>

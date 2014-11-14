@@ -26,41 +26,28 @@
 		<div class="form-step dark-bg primary-full-border">
 			<h2>Zusammenfassung</h2> 
 		</div>
-		<div class="row briefing-summary">
 
+		<div class="row briefing-summary padding-top">
 			<div class="large-3 columns">
-				<h2>Service</h2>
+				<h2 class="application-info">Info</h2>
 			</div>
-			<div class="large-9 columns table-border-left grey-border">
+			<div class="large-9 columns table-border-left application-info">
 
 				<table>
 					<tr>
-						<td width="250">Server</td>
-						<td><?php echo $r_service_server; ?></td>
+						<td>Startzeit </td>
+						<td>-</td>
 					</tr>
 					<tr>
-						<td>Domain</td>
-						<td><?php echo $r_service_domain; ?></td>
-					</tr>   
-					<tr>
-						<td>E-mail Adressen</td>
-						<td><?php echo $r_service_mail; ?></td>
-					</tr> 
-					<tr>
-						<td>Statistiken</td>
-						<td><?php echo $r_service_statistics; ?></td>
-					</tr> 
-					<tr>
-						<td>Mitarbeiterschulung</td>
-						<td><?php echo $r_service_instructions; ?></td>
+						<td>Endzeit </td>
+						<td>-</td>
 					</tr>
 					<tr>
-						<td>Online Marketing</td>
-						<td><?php echo $r_service_advertising; ?></td>
+						<td>Aufwandsindex </td>
+						<td>-</td>
 					</tr>
 				</table>
-			</div>
-
+			</div> 
 
 			<div class="large-3 columns">
 				<h2>Kunde</h2>

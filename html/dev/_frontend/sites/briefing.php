@@ -36,7 +36,7 @@
   </div>
   <br class="end" />
 
-  <form data-abide action="../_worker/index.php?page=ausschreibungen_detail" method="POST">
+  <form data-abide action="index.php?page=briefing_s" method="POST">
 
     <!-- Step -->
     <div class="form-step dark-bg primary-full-border">
