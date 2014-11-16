@@ -377,6 +377,10 @@ select:focus {
 	input[type=password], {
 		background: transparent;
 	}
+
+	ul li {
+		list-style: disc;
+	}
 }
 
 textarea[type=text] {

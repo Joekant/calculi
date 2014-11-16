@@ -1,6 +1,6 @@
 <?php 	
 // create empty array
-$briefing = [];
+$briefing = array();
 
 // Run through POST-Array and change field names to printable words
 while( list( $field, $value ) = each( $_POST )) {

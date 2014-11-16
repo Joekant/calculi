@@ -34,7 +34,6 @@
       </table>
     </div> 
 
-
     <div class="large-3 columns">
       <h2>Kunde</h2>
     </div>
@@ -85,10 +84,7 @@
 </div>
 <div class="main-section">
   <div class="row briefing-summary">
-    <div class="defaultRateContainer right">
-      <input type="text" class="defaultRate" value="50" placeholder="Stundensatz">
-      <label for="">Basis Stundensatz</label>
-    </div>
+
     <br class="end">
     <div class="large-3 columns">
       <h2>Inhalt</h2>
@@ -193,7 +189,7 @@
   </table>
 
 </div>
-<div class="large-3 columns">
+<div class="large-3 columns section-meta">
   <h2>Design</h2>
   <span class="section-sum-money section-sum-3">0</span><span class="section-sum-time section-time-3">0</span>
 </div>
@@ -265,26 +261,44 @@
   <h2>Kommentar</h2>
 </div>
 <div class="large-9 columns table-border-left">
-
   <table>
-
     <?php echo $t_comment; ?>
   </table>
 </div>
 </div>
 </div> 
 
-</div>
-</div>
-</div>
+<div class="sticky-application-form">
 
-<div class="sticky-application-form ">
-  <div class="large-9 columns">
+  <div class="large-3 columns">
+    <div class="applicationsettings text-center">
+      <div id="settings-time">
+        <div class="small-4 columns">€ Basissatz<input type="text"  value="50" class="defaultRate" placeholder="Stundensatz"></div>
+        <div class="small-4 columns">% Rabatt<input type="text"  name="discount" value="0" placeholder=""></div>
+        <div class="small-4 columns">% Steuer<input type="text" name="mwst" value="20" placeholder=""></div>
+      </div>
+      <div id="settings-pauschal" class="hide">
+        <div class="small-6 columns">€ Kosten<input type="text" name="pauschal-price" value="0" placeholder="Stundensatz"></div>
+        <div class="small-6 columns">% Steuer<input type="text" name="mwst2" value="0" placeholder=""></div>
+      </div>
+
+      <div class="method-change-buttons">
+        <a href="#" id="link-time" class="active"><i class="fa fa-clock-o"></i></a>
+        <a href="#" id="link-pauschal"><i class="fa fa-legal"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="large-6 columns">
     <textarea type="text" id="t_application" rows="5" name="t_application" >Ich möchte mich gerne für diesen Auftrag bewerben, weil...</textarea>
   </div>
   <div class="large-3 columns">
     <div class="label primary-bg counter application-final-result">
-      <span class="counter-value">0</span><br /><span class="total-effort">0</span>
+
+      <span class="counter-value">0</span> (inkl. <span class="mwst-part">0</span> € MwSt.)
+      <div class="total-calculatet"><span class="total-effort">0</span> <span class="average-rate">0</span>
+      </div>
+      <div class="total-pauschal hide">Pauschalpreis</div>
+
     </div>
     <a href="#" class="button green-bg expand big" data-reveal-id="sendApplication"><i class="fa fa-check"></i> Absenden</a>
   </div>
@@ -292,91 +306,182 @@
 
 <div id="sendApplication" class="reveal-modal tiny" data-reveal>
   <h2>Bewerbung absenden</h2>
-  <p class="lead">Wichtiger Hinweis</p>
-  <p>Nach dem Absenden der Bewerbung kann der Auftraggeber dein komplettes Profil einsehen und die Bewerbung nicht mehr geändert werden (lediglich gänzlich zurückgezogen). Aktualisierungen des Profils hingegen sind jederzeit möglich.</p>
+  <p class="lead">Kosten: <strong><span class="counter-value">0</span></strong> €</p>
+  <ul>
+    <li>
+      Nach dem Absenden kann der Auftraggeber dein komplettes Profil einsehen und die Bewerbung nicht mehr geändert werden (lediglich gänzlich zurückgezogen). Aktualisierungen des Profils hingegen sind jederzeit möglich.
+    </li>
+    <li>Die Kalkulation ist nicht transparent. Der Kunde sieht lediglich den finalen Preis</li>
+  </ul>
   <a href="#" class="button small green-bg" data-reveal-id="sendApplication"><i class="fa fa-check"></i> Bewerbung Absenden</a>
   <a href="#" class="button small grey-bg right" data-reveal-id="sendApplication"><i class="fa fa-cancel"></i> zurück</a>
   <a class="close-reveal-modal">&#215;</a>
 </div>
 
-
 <script>
-// Change Default Rates
-var defaultRateInput = $(".defaultRate")
+  // get DOM Elements
+  var error = false
+  var allInputs = $('input');
+  var allBriefingInputs = $(".briefing-summary input")
+  var defaultRateInput = $(".defaultRate")
+  var allRates = $("input.right")
+  var counterValue = $('span.counter-value')
+  var totalEffortSpan = $('span.total-effort')
+  var totalPriceSpan = $('span.section-sum-money');
+  var averageRateSpan = $('span.average-rate');
+  var totalCalculatet = $('div.total-calculatet')
+  var totalPauschal = $('div.total-pauschal')
+  var linkPauschal = $("#link-pauschal")
+  var linkTime =  $("#link-time")
+  var settingsTime = $("#settings-time")
+  var settingsPauschal = $("#settings-pauschal")
+  var pauschalPriceInput = $('input[name="pauschal-price"]');
+  var mwstPartSpan = $('span.mwst-part');
+
+  // View Time / Pauschal Method
+  linkPauschal.click(function(e){
+    settingsTime.slideUp("slow")
+    settingsPauschal.slideDown("slow")
+    linkPauschal.addClass('active')
+    linkTime.removeClass('active')
+    allBriefingInputs.hide("slow")
+    totalCalculatet.slideUp("slow")
+    totalPauschal.slideDown("slow")
+
+    // totalResultMeta.hide("slow")
+    e.preventDefault();
+  }); 
+
+  linkTime.click(function(e){
+    settingsPauschal.slideUp("slow")
+    settingsTime.slideDown("slow")
+    linkTime.addClass('active')
+    linkPauschal.removeClass('active')
+    allBriefingInputs.show("slow")
+    totalCalculatet.slideDown("slow")
+    totalPauschal.slideUp("slow")
+    pauschalPriceInput.val(0)
+    e.preventDefault();
+  }); 
+
+// When input Change
+allInputs.change(function() {
+
+// if Method = Pauschal 
+var pauschalPrice = parseInt(pauschalPriceInput.val())
+
+if (pauschalPrice != 0) {
+  var mwst = ((parseInt($("input[name=mwst2]").val()))/100)+1
+  jQuery({ Counter: counterValue.text() }).animate({ Counter: pauschalPrice*mwst }, {
+    duration: 700,
+    easing: 'swing',
+    step: function () {
+      counterValue.text(Math.round((this.Counter)));
+    }
+  });
+  return
+}
+
+//change default rate
+var defaultRateValue = defaultRateInput.val()
+var defaultRateInt = parseInt(defaultRateValue)
 var allRates = $("input.right")
 
-defaultRateInput.change(function() {
-  var defaultRateValue = defaultRateInput.val()
-  var defaultRateInt = parseInt(defaultRateValue)
-  var allRates = $("input.right")
-  
-  $.each(allRates, function( index, value ) {
-    $(this).attr('value', defaultRateInt)
-  });
-
+$.each(allRates, function( index, value ) {
+  $(this).attr('value',defaultRateInt)
 });
 
+// reset NaN Error
+var error = false
 
-// Display Total
-var counterValue = $('span.counter-value')
-var totalEffortSpan = $('span.total-effort')
+// Check all inputs to INT
+$.each(allInputs, function( index, value ) {
 
-// Get Section
-var totalPriceSpan = $('span.section-sum-money');
+  InputInt = parseInt($(this).val())
 
-$( "input[type=text]" ).change(function() {
-  sectionCount = 1;
-  itemCount = 1;
-  var efforts = 0;
-  var rates = 0;
-  var rowSum = 0;
-  var sectionSum = 0;
-  var sectionEffort = 0
-  var totalSum = 0;
-  var totalEffort = 0;
-
-  // Run through sections
-  for (sectionCount=1;sectionCount<5;sectionCount++) {
-    var sectionEffort = 0
-    var sectionSum = 0
-
-    // run through Elements from sections
-    for (itemCount=1;itemCount<7;itemCount++) {
-      var efforts = $(".effort-"+sectionCount+"-"+itemCount)
-      var rates = $(".rate-"+sectionCount+"-"+itemCount)
-      var rowSum = efforts.val() * rates.val()
-
-      if (isNaN(rowSum)) {
-
-      }
-      else {
-       sectionSum += rowSum
-       sectionEffort += parseInt(efforts.val())       
-     }
-   }
-
-    // Get right Section Sum-Field
-    var sectionSumMoney = $("span.section-sum-"+sectionCount);
-    var sectionSumTime = $("span.section-time-"+sectionCount);
-    
-    // Display Section Sum
-    sectionSumMoney.text(sectionSum);
-    sectionSumTime.text(sectionEffort);
-
-    // Build Total Sum
-    totalSum += sectionSum
-    totalEffort += sectionEffort
-
-    counterValue.text(totalSum)
-    totalEffortSpan.text(totalEffort)
-
+  if (isNaN(InputInt)) {
+    $(this).addClass('error')
+    $(this).val(0)
+    error = true
   }
-  console.log(totalSum)
-
+  else {
+    $(this).removeClass('error')
+  }
 });
 
-// TOTAL EFFORT DISPLAY
+if (error == true) {
+  alert("Nur numerische Werte zulässig")
+}
 
-// SUM UP Section Valued
+// Calculate mwst & Discount Values
+var mwst = ((parseInt($("input[name=mwst]").val()))/100)+1
+var discount = 1-((parseInt($("input[name=discount]").val()))/100)
 
+// Reset temporary variables
+var sectionCount = 1;
+var itemCount = 1;
+var efforts = 0;
+var rates = 0;
+var rowSum = 0;
+var sectionSum = 0;
+var sectionEffort = 0
+var totalSum = 0;
+var totalEffort = 0;
+var totalEffort = 0;
+
+    // Run through sections
+    for (sectionCount=1;sectionCount<5;sectionCount++) {
+      var sectionEffort = 0
+      var sectionSum = 0
+
+      // run through Elements from sections
+      for (itemCount=1;itemCount<7;itemCount++) {
+        var efforts = $(".effort-"+sectionCount+"-"+itemCount)
+        var rates = $(".rate-"+sectionCount+"-"+itemCount)
+        var rowSum = parseInt(efforts.val()) * parseInt(rates.val())
+
+        //check if rowsum is a number (otherweise NaN Error)
+        if (!isNaN(rowSum)) { 
+          sectionSum += rowSum
+          sectionEffort += parseInt(efforts.val())    
+        }
+      }
+
+      // Get right Section Sum-Field
+      var sectionSumMoney = $("span.section-sum-"+sectionCount);
+      var sectionSumTime = $("span.section-time-"+sectionCount);
+
+      // Display Section Sum
+      sectionSumMoney.text(sectionSum);
+      sectionSumTime.text(sectionEffort);
+
+      // Build Total Sum
+      totalSum += sectionSum
+      totalEffort += sectionEffort
+    }
+
+ // add Discount / Fees
+ var totalSumFinal = Math.round((totalSum*discount)*mwst)
+
+// Calculate Average Rate
+var averageRate = parseInt(totalSumFinal/totalEffort)
+var mwstValue = totalSumFinal - totalSum
+console.log(mwstValue)
+
+// Set total Counters
+mwstPartSpan.text(mwstValue)
+averageRateSpan.text(averageRate)
+totalEffortSpan.text(totalEffort)
+counterValue.text(totalSumFinal)
+
+// Round Problem when animating
+// jQuery({ Counter: 0 }).animate({ Counter: totalSumFinal }, {
+//   duration: 500,
+//   easing: 'swing',
+//   step: function () {
+//     counterValue.text(Math.round(this.Counter));
+//   }
+// });
+
+});
 </script>

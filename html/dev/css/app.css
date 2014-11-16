@@ -328,28 +328,31 @@ select:focus {
 .reveal-modal input[type=email],
 .reveal-modal input[type=password] {
   background: transparent; }
+/* line 381, ../scss/theme/_general.scss */
+.reveal-modal ul li {
+  list-style: disc; }
 
-/* line 382, ../scss/theme/_general.scss */
+/* line 386, ../scss/theme/_general.scss */
 textarea[type=text] {
   border: 2px solid #565656;
   margin-top: 10px; }
 
-/* line 387, ../scss/theme/_general.scss */
+/* line 391, ../scss/theme/_general.scss */
 textarea[type=text]:focus {
   border: 2px solid #32aebd; }
 
-/* line 391, ../scss/theme/_general.scss */
+/* line 395, ../scss/theme/_general.scss */
 select {
   margin-top: 10px;
   border: 2px solid #565656;
   padding: 0px;
   padding-left: 10px; }
 
-/* line 400, ../scss/theme/_general.scss */
+/* line 404, ../scss/theme/_general.scss */
 span.range-slider-handle {
   background: #32aebd; }
 
-/* line 404, ../scss/theme/_general.scss */
+/* line 408, ../scss/theme/_general.scss */
 #dropzone {
   margin-top: 10px;
   border: 2px solid #565656;
@@ -358,7 +361,7 @@ span.range-slider-handle {
   line-height: 50px;
   text-align: center;
   font-weight: bold; }
-  /* line 413, ../scss/theme/_general.scss */
+  /* line 417, ../scss/theme/_general.scss */
   #dropzone #upload-pic {
     position: absolute;
     top: 12px;
@@ -367,14 +370,14 @@ span.range-slider-handle {
     height: 196px;
     opacity: 1; }
 
-/* line 422, ../scss/theme/_general.scss */
+/* line 426, ../scss/theme/_general.scss */
 #dropzone.in {
   width: 600px;
   height: 200px;
   line-height: 200px;
   font-size: larger; }
 
-/* line 428, ../scss/theme/_general.scss */
+/* line 432, ../scss/theme/_general.scss */
 #dropzone:hover {
   border: 2px solid #32aebd;
   color: white;
@@ -385,7 +388,7 @@ span.range-slider-handle {
   transition: all 0.3s ease-out;
   cursor: hand; }
 
-/* line 438, ../scss/theme/_general.scss */
+/* line 442, ../scss/theme/_general.scss */
 #dropzonefade {
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -394,18 +397,18 @@ span.range-slider-handle {
   transition: all 0.3s ease-out;
   opacity: 1; }
 
-/* line 447, ../scss/theme/_general.scss */
+/* line 451, ../scss/theme/_general.scss */
 .fileinput-button {
   position: relative;
   overflow: hidden;
   top: 30%;
   opacity: 0.7;
   font-size: 1em; }
-  /* line 454, ../scss/theme/_general.scss */
+  /* line 458, ../scss/theme/_general.scss */
   .fileinput-button i {
     font-size: 3em; }
 
-/* line 459, ../scss/theme/_general.scss */
+/* line 463, ../scss/theme/_general.scss */
 .fileinput-button input {
   position: absolute;
   top: 0;
@@ -420,18 +423,18 @@ span.range-slider-handle {
 
 /* Fixes for IE < 8 */
 @media screen\9 {
-  /* line 474, ../scss/theme/_general.scss */
+  /* line 478, ../scss/theme/_general.scss */
   .fileinput-button input {
     filter: alpha(opacity=0);
     font-size: 100%;
     height: 100%; } }
-/* line 481, ../scss/theme/_general.scss */
+/* line 485, ../scss/theme/_general.scss */
 span.required {
   color: red;
   font-size: 1.7em;
   line-height: 0px; }
 
-/* line 487, ../scss/theme/_general.scss */
+/* line 491, ../scss/theme/_general.scss */
 td input[type=text] {
   padding: 15px 0px;
   margin: 0;
@@ -441,7 +444,7 @@ td input[type=text] {
   text-align: center;
   font-size: 18px; }
 
-/* line 497, ../scss/theme/_general.scss */
+/* line 501, ../scss/theme/_general.scss */
 td input[type=text]:focus {
   padding: 15px 0px;
   margin: 0;
@@ -454,33 +457,33 @@ td input[type=text]:focus {
 /* -----------------------------------------
    Table Styles
 ----------------------------------------- */
-/* line 511, ../scss/theme/_general.scss */
+/* line 515, ../scss/theme/_general.scss */
 table {
   background: url("../img/bg_pattern.png") repeat;
   border: 0px; }
-  /* line 515, ../scss/theme/_general.scss */
+  /* line 519, ../scss/theme/_general.scss */
   table tr {
     color: #ff6c60;
     border: 0px; }
-    /* line 519, ../scss/theme/_general.scss */
+    /* line 523, ../scss/theme/_general.scss */
     table tr th {
       color: #293c4e;
       font-size: 0.95em; }
-    /* line 524, ../scss/theme/_general.scss */
+    /* line 528, ../scss/theme/_general.scss */
     table tr td {
       font-size: 1em; }
-      /* line 526, ../scss/theme/_general.scss */
+      /* line 530, ../scss/theme/_general.scss */
       table tr td ul {
         font-size: 1em;
         line-height: 2em;
         margin: 0; }
 
-/* line 535, ../scss/theme/_general.scss */
+/* line 539, ../scss/theme/_general.scss */
 td {
   background: url("../img/bg_pattern.png") repeat;
   border-bottom: 1px solid #afafaf; }
 
-/* line 540, ../scss/theme/_general.scss */
+/* line 544, ../scss/theme/_general.scss */
 .table-border-left {
   border-left: 4px solid #32aebd;
   margin-bottom: 30px; }
@@ -1663,37 +1666,46 @@ span.section-sum-time {
 span.section-sum-time::after {
   content: " Stunden"; }
 
-/* line 376, ../scss/theme/_backend.scss */
+/* line 374, ../scss/theme/_backend.scss */
 td.application-table-heading {
   font-weight: bold;
   padding-bottom: 50px;
   font-size: 1em;
   text-transform: uppercase; }
 
-/* line 383, ../scss/theme/_backend.scss */
+/* line 381, ../scss/theme/_backend.scss */
 .application-final-result {
+  display: block;
   width: 100%;
-  padding: 10px;
+  height: 100%;
+  padding-top: 10px;
+  font-size: 1.1em;
   margin: 0px; }
-  /* line 389, ../scss/theme/_backend.scss */
-  .application-final-result i {
-    font-size: 2em; }
-  /* line 393, ../scss/theme/_backend.scss */
+  /* line 390, ../scss/theme/_backend.scss */
+  .application-final-result .total-result-meta {
+    height: 20px; }
+  /* line 394, ../scss/theme/_backend.scss */
   .application-final-result span.counter-value {
     font-size: 2em;
     font-weight: bold; }
-  /* line 398, ../scss/theme/_backend.scss */
+  /* line 399, ../scss/theme/_backend.scss */
   .application-final-result span.counter-value::after {
     content: " €"; }
-  /* line 402, ../scss/theme/_backend.scss */
-  .application-final-result span.total-effort {
+  /* line 403, ../scss/theme/_backend.scss */
+  .application-final-result span.total-effort, .application-final-result span.average-rate, .application-final-result span.mwst-part {
     font-size: 1.1em;
     color: white; }
-  /* line 407, ../scss/theme/_backend.scss */
+  /* line 408, ../scss/theme/_backend.scss */
+  .application-final-result span.average-rate::before {
+    content: " (Ø "; }
+  /* line 412, ../scss/theme/_backend.scss */
+  .application-final-result span.average-rate::after {
+    content: " € / Stunde)"; }
+  /* line 416, ../scss/theme/_backend.scss */
   .application-final-result span.total-effort::after {
     content: " Stunden"; }
 
-/* line 412, ../scss/theme/_backend.scss */
+/* line 421, ../scss/theme/_backend.scss */
 .sticky-application-form {
   z-index: 1000;
   padding: 0px;
@@ -1702,45 +1714,97 @@ td.application-table-heading {
   bottom: 0;
   width: 100%;
   margin: 0;
-  background-color: white; }
-  /* line 422, ../scss/theme/_backend.scss */
+  background-color: #293c4e; }
+  @media only screen and (max-width: 60em) {
+    /* line 421, ../scss/theme/_backend.scss */
+    .sticky-application-form {
+      position: relative; } }
+  /* line 435, ../scss/theme/_backend.scss */
   .sticky-application-form .columns {
     padding: 0px; }
-  /* line 426, ../scss/theme/_backend.scss */
+  /* line 439, ../scss/theme/_backend.scss */
   .sticky-application-form textarea, .sticky-application-form textarea:focus {
     padding: 20px 30px 20px 30px;
     margin: 0px;
-    max-height: 120px;
+    max-height: 135px;
     border: 0px;
     background: transparent;
-    overflow: auto; }
+    overflow: auto;
+    background: white; }
 
-/* line 437, ../scss/theme/_backend.scss */
+/* line 451, ../scss/theme/_backend.scss */
 .defaultRateContainer input {
   max-width: 100px;
   font-weight: bold;
   font-size: 30px;
   text-align: center; }
 
+/* line 459, ../scss/theme/_backend.scss */
+.applicationsettings {
+  height: auto;
+  padding: 15px 0px 0px 0px;
+  color: white;
+  background-color: #293c4e;
+  color: white; }
+  /* line 466, ../scss/theme/_backend.scss */
+  .applicationsettings input, .applicationsettings input:focus {
+    margin: auto;
+    width: 70px;
+    background: #293c4e;
+    color: white;
+    border-bottom: 2px solid white;
+    text-align: center; }
+  /* line 475, ../scss/theme/_backend.scss */
+  .applicationsettings input:focus {
+    border-bottom: 2px solid #32aebd; }
+  /* line 479, ../scss/theme/_backend.scss */
+  .applicationsettings .columns {
+    background-color: #293c4e;
+    padding: 0; }
+  /* line 484, ../scss/theme/_backend.scss */
+  .applicationsettings .button {
+    margin-top: 10px;
+    width: 50%;
+    font-size: 0.8em;
+    padding: 8px;
+    text-transform: lowercase; }
+  /* line 493, ../scss/theme/_backend.scss */
+  .applicationsettings .method-change-buttons i {
+    font-size: 1.0em;
+    padding: 20px 7px 0px 7px; }
+  /* line 498, ../scss/theme/_backend.scss */
+  .applicationsettings .method-change-buttons a {
+    color: white;
+    opacity: 0.8; }
+  /* line 503, ../scss/theme/_backend.scss */
+  .applicationsettings .method-change-buttons a.active, .applicationsettings .method-change-buttons a:hover {
+    color: #32aebd; }
+
+/* line 509, ../scss/theme/_backend.scss */
+input.error, input.error:focus {
+  color: white;
+  border-color: red;
+  background: red; }
+
 /* -----------------------------------------
    Notification Styles
 ----------------------------------------- */
-/* line 450, ../scss/theme/_backend.scss */
+/* line 517, ../scss/theme/_backend.scss */
 .notification-area {
   max-width: 800px;
   margin: auto; }
-  /* line 454, ../scss/theme/_backend.scss */
+  /* line 521, ../scss/theme/_backend.scss */
   .notification-area tr.success {
     border-left: 8px solid #37d074; }
-  /* line 458, ../scss/theme/_backend.scss */
+  /* line 525, ../scss/theme/_backend.scss */
   .notification-area tr.info {
     border-left: 8px solid #32aebd; }
-  /* line 461, ../scss/theme/_backend.scss */
+  /* line 528, ../scss/theme/_backend.scss */
   .notification-area tr.warning {
     border-left: 8px solid #e85458; }
-  /* line 466, ../scss/theme/_backend.scss */
+  /* line 533, ../scss/theme/_backend.scss */
   .notification-area td.notification-action a {
     color: #afafaf; }
-  /* line 470, ../scss/theme/_backend.scss */
+  /* line 537, ../scss/theme/_backend.scss */
   .notification-area td.notification-action a:hover {
     color: #32aebd; }
