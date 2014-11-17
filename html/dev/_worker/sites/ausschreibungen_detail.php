@@ -135,22 +135,22 @@
 
     <table>
       <tr>
-       <td  width="30%">Selbst Inhalte warten</td>
-       <td><?php echo $r_cms; ?></td>
+       <td width="30%">Selbst Inhalte warten</td>
+       <td width="49%"><?php echo $r_cms; ?></td>
        <td width="21%"><input type="text" class="left effort-2-1" value="0"><input type="text" class="right rate-2-1" value="50"></td>
      </tr>
      <tr>
-       <td  width="30%">Mobile Version</td>
-       <td  width="49%"><?php echo $r_cms; ?></td>
+       <td >Mobile Version</td>
+       <td><?php echo $r_cms; ?></td>
        <td><input type="text" class="left effort-2-2" value="0"><input type="text" class="right rate-2-2" value="50"></td>
      </tr>
      <tr>
-      <td  width="30%">Barrierefreiheit</td>
-      <td  width="49%"><?php echo $r_accessibility; ?></td>
+      <td>Barrierefreiheit</td>
+      <td><?php echo $r_accessibility; ?></td>
       <td><input type="text" class="left effort-2-3" value="0"><input type="text" class="right rate-2-3" value="50"></td>
     </tr>
     <tr>
-      <td width="250">Funktionen</td>
+      <td>Funktionen</td>
       <td>
         <ul>
           <?php 
@@ -166,7 +166,7 @@
           ?>
         </ul>
       </td>
-      <td width="21%"><input type="text" class="left effort-2-4" value="0"><input type="text" class="right rate-2-4" value="50"></td>
+      <td><input type="text" class="left effort-2-4" value="0"><input type="text" class="right rate-2-4" value="50"></td>
     </tr>
     <tr>
       <td>Externe Plattformen</td>
@@ -191,69 +191,71 @@
 </div>
 <div class="large-3 columns section-meta">
   <h2>Design</h2>
-  <span class="section-sum-money section-sum-3">0</span><span class="section-sum-time section-time-3">0</span>
+  <span class="section-sum-money section-sum-3">0</span>
+  <span class="section-sum-time section-time-3">0</span>
 </div>
 <div class="large-9 columns table-border-left">
 
   <table>
     <tr>
-      <td width="250">Realisierung</td>
-      <td><?php echo $r_design; ?></td>
+      <td width="30%">Realisierung</td>
+      <td width="49%"><?php echo $r_design; ?></td>
       <td width="21%"><input type="text" class="left effort-3-1" value="0"><input type="text" class="right rate-3-1" value="50"></td>
     </tr>
     <tr>
       <td>Eigenschaften</td>
       <td><?php echo $t_mood; ?></td>
-      <td width="21%"><input type="text" class="left effort-3-2" value="0"><input type="text" class="right rate-3-2" value="50"></td>
+      <td><input type="text" class="left effort-3-2" value="0"><input type="text" class="right rate-3-2" value="50"></td>
     </tr>
     <tr>
       <td>Positive Referenzen</td>
       <td><?php echo $t_reference_positive; ?></td>
-      <td width="21%"><input type="text" class="left effort-3-3" value="0"><input type="text" class="right rate-3-3" value="50"></td>
+      <td><input type="text" class="left effort-3-3" value="0"><input type="text" class="right rate-3-3" value="50"></td>
     </tr>
     <tr>
       <td>Negative Referenzen</td>
       <td><?php echo $t_reference_negative; ?></td>
-      <td width="21%"><input type="text" class="left effort-3-4" value="0"><input type="text" class="right rate-3-4" value="50"></td>
+      <td><input type="text" class="left effort-3-4" value="0"><input type="text" class="right rate-3-4" value="50"></td>
     </tr>
   </table>
 </div>
 <div class="large-3 columns">
   <h2>Service</h2>
-  <span class="section-sum-money section-sum-4">0</span><span class="section-sum-time section-time-4">0</span>
+  <span class="section-sum-money section-sum-4">0</span>
+  <span class="section-sum-time section-time-4">0</span>
 </div>
 <div class="large-9 columns table-border-left">
 
   <table>
     <tr>
-      <td width="250">Server</td>
-      <td><?php echo $r_service_server; ?></td>
+      <td width="30%">Server</td>
+      <td width="49%"><?php echo $r_service_server; ?></td>
       <td width="21%"><input type="text" class="left effort-4-1" value="0"><input type="text" class="right rate-4-1" value="50"></td>
     </tr>
     <tr>
       <td>Domain</td>
       <td><?php echo $r_service_domain; ?></td>
-      <td width="21%"><input type="text" class="left effort-4-2" value="0"><input type="text" class="right rate-4-2" value="50"></td>
+      <td><input type="text" class="left effort-4-2" value="0"><input type="text" class="right rate-4-2" value="50"></td>
     </tr>   
     <tr>
       <td>E-mail Adressen</td>
       <td><?php echo $r_service_mail; ?></td>
-      <td width="21%"><input type="text" class="left effort-4-3" value="0"><input type="text" class="right rate-4-3" value="50"></td>
+      <td><input type="text" class="left effort-4-3" value="0"><input type="text" class="right rate-4-3" value="50"></td>
     </tr> 
     <tr>
       <td>Statistiken</td>
       <td><?php echo $r_service_statistics; ?></td>
-      <td width="21%"><input type="text" class="left effort-4-4" value="0"><input type="text" class="right rate-4-4" value="50"></td>
+      <td><input type="text" class="left effort-4-4" value="0"><input type="text" class="right rate-4-4" value="50"></td>
     </tr> 
     <tr>
       <td>Mitarbeiterschulung</td>
       <td><?php echo $r_service_instructions; ?></td>
-      <td width="21%"><input type="text" class="left effort-4-5" value="0"><input type="text" class="right rate-4-5" value="50"></td>
+      <td><input type="text" class="left effort-4-5" value="0"><input type="text" class="right rate-4-5" value="50"></td>
     </tr>
     <tr>
       <td>Online Marketing</td>
       <td><?php echo $r_service_advertising; ?></td>
-      <td width="21%"><input type="text" class="left effort-4-6" value="0"><input type="text" class="right rate-4-6" value="50"></td>
+      <td><input type="text" class="left effort-4-6" value="0"><input type="text" class="right rate-4-6" value="50"></td>
     </tr>
   </table>
 </div>
@@ -269,7 +271,6 @@
 </div> 
 
 <div class="sticky-application-form">
-
   <div class="large-3 columns">
     <div class="applicationsettings text-center">
       <div id="settings-time">
@@ -293,12 +294,10 @@
   </div>
   <div class="large-3 columns">
     <div class="label primary-bg counter application-final-result">
-
       <span class="counter-value">0</span> (inkl. <span class="mwst-part">0</span> € MwSt.)
       <div class="total-calculatet"><span class="total-effort">0</span> <span class="average-rate">0</span>
       </div>
       <div class="total-pauschal hide">Pauschalpreis</div>
-
     </div>
     <a href="#" class="button green-bg expand big" data-reveal-id="sendApplication"><i class="fa fa-check"></i> Absenden</a>
   </div>
@@ -328,6 +327,7 @@
   var counterValue = $('span.counter-value')
   var totalEffortSpan = $('span.total-effort')
   var totalPriceSpan = $('span.section-sum-money');
+  var totalTimeSpan = $('span.section-sum-time');
   var averageRateSpan = $('span.average-rate');
   var totalCalculatet = $('div.total-calculatet')
   var totalPauschal = $('div.total-pauschal')
@@ -338,6 +338,7 @@
   var pauschalPriceInput = $('input[name="pauschal-price"]');
   var mwstPartSpan = $('span.mwst-part');
 
+
   // View Time / Pauschal Method
   linkPauschal.click(function(e){
     settingsTime.slideUp("slow")
@@ -347,8 +348,8 @@
     allBriefingInputs.hide("slow")
     totalCalculatet.slideUp("slow")
     totalPauschal.slideDown("slow")
-
-    // totalResultMeta.hide("slow")
+    totalTimeSpan.slideUp("slow")
+    totalPriceSpan.slideUp("slow")
     e.preventDefault();
   }); 
 
@@ -360,6 +361,8 @@
     allBriefingInputs.show("slow")
     totalCalculatet.slideDown("slow")
     totalPauschal.slideUp("slow")
+    totalTimeSpan.slideDown("slow")
+    totalPriceSpan.slideDown("slow")
     pauschalPriceInput.val(0)
     e.preventDefault();
   }); 
@@ -367,18 +370,17 @@
 // When input Change
 allInputs.change(function() {
 
+
+
 // if Method = Pauschal 
-var pauschalPrice = parseInt(pauschalPriceInput.val())
+var pauschalPrice = parseInt(pauschalPriceInput.val());
 
 if (pauschalPrice != 0) {
-  var mwst = ((parseInt($("input[name=mwst2]").val()))/100)+1
-  jQuery({ Counter: counterValue.text() }).animate({ Counter: pauschalPrice*mwst }, {
-    duration: 700,
-    easing: 'swing',
-    step: function () {
-      counterValue.text(Math.round((this.Counter)));
-    }
-  });
+  var mwst2 = ((parseInt($("input[name=mwst2]").val()))/100)+1
+  pauschalPriceFinal = Math.round(pauschalPrice*mwst2)
+  var mwst2Value = pauschalPriceFinal - pauschalPrice
+  mwstPartSpan.text(mwst2Value)
+  counterValue.text(pauschalPriceFinal)
   return
 }
 
@@ -446,7 +448,6 @@ var totalEffort = 0;
           sectionEffort += parseInt(efforts.val())    
         }
       }
-
       // Get right Section Sum-Field
       var sectionSumMoney = $("span.section-sum-"+sectionCount);
       var sectionSumTime = $("span.section-time-"+sectionCount);
@@ -455,6 +456,15 @@ var totalEffort = 0;
       sectionSumMoney.text(sectionSum);
       sectionSumTime.text(sectionEffort);
 
+
+// Get Section Sum to calculate price spread 
+
+var sectionSumInhalt = parseInt($('span.section-sum-1').text())
+var sectionSumFunktionen = parseInt($('span.section-sum-2').text())
+var sectionSumDesign = parseInt($('span.section-sum-3').text())
+var sectionSumService = parseInt($('span.section-sum-4').text())
+
+
       // Build Total Sum
       totalSum += sectionSum
       totalEffort += sectionEffort
@@ -462,11 +472,11 @@ var totalEffort = 0;
 
  // add Discount / Fees
  var totalSumFinal = Math.round((totalSum*discount)*mwst)
+ var totalSumFinal = Math.round((totalSum*discount)*mwst)
 
 // Calculate Average Rate
 var averageRate = parseInt(totalSumFinal/totalEffort)
-var mwstValue = totalSumFinal - totalSum
-console.log(mwstValue)
+var mwstValue = Math.round((totalSum*discount*mwst) - totalSum*discount)
 
 // Set total Counters
 mwstPartSpan.text(mwstValue)

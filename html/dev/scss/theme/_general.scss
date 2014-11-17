@@ -121,6 +121,12 @@ main {
 	background-color: white;
 }
 
+.briefing-summary {
+	tr>td:first-child {
+		font-weight: bold;
+	}
+}
+
 .briefing-summary h2, .application-summary h2 {
 	padding-right: 20px;
 	color: $primary-color;
@@ -129,7 +135,6 @@ main {
 	@media only screen and (max-width: 64em) { 
 		text-align: center;
 	}
-
 }
 
 /* -----------------------------------------
