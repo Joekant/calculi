@@ -36,7 +36,7 @@
   </div>
   <br class="end" />
 
-  <form data-abide action="../_worker/index.php?page=ausschreibungen_detail" method="POST">
+  <form data-abide action="../_worker/index.php?page=ausschreibungen_detail" method="POST" onsubmit="return checkForm(this);">
 
     <!-- Step -->
     <div class="form-step dark-bg primary-full-border">
@@ -211,12 +211,27 @@
   <h2 data-magellan-destination="3">Design<a name="3"></a></h2> 
 </div>  
 <div class="row">
-  <label for="design">Wie soll das grafische Konzept der Seite erstellt werden?<span class="required">*</span></label><br >
-  <div class="medium-12 columns">             
-    <input id="r_design_rdy" name="r_design" value="r_design_rdy" type="radio"> Designer setzt vorhandenes Design um<br />
-    <input id="r_design_create" name="r_design" value="r_design_create" type="radio" checked> Designer erstellt individuelles Design<br />
-    <input id="r_design_template" name="r_design" value="r_design_template" type="radio"> Designer passt ausgewähltes Template an die Bedürfnisse des Kunden an<br />
+  <div class="columns medium-6">
+
+    <label for="design">Wie soll das grafische Konzept der Seite erstellt werden?<span class="required">*</span></label><br >
+    <div class="medium-12 columns">             
+      <input id="r_design_rdy" name="r_design" value="r_design_rdy" type="radio"> Designer setzt vorhandenes Design um<br />
+      <input id="r_design_create" name="r_design" value="r_design_create" type="radio" checked> Designer erstellt individuelles Design<br />
+      <input id="r_design_template" name="r_design" value="r_design_template" type="radio"> Designer adaptiert gewähltes Template<br />
+    </div>
   </div>
+  <div class="columns medium-6">
+    <label for="design">Wie viele Revisionsdurchläufe sind gewünscht?<span class="required">*</span></label>
+    <div class="medium-12 columns">  
+     <input type="text" class="revision-count" value="0" disabled>
+     <div class="range-slider" id="revision-slider" name="s_revisions" data-slider data-options="start: 1; end: 5;">
+      <span class="range-slider-handle" role="slider" tabindex="0" name="s_revisions"></span>
+      <span class="range-slider-active-segment" name="s_revisions"></span>
+      <input type="hidden" name="s_revisions">
+    </div>
+
+  </div>
+</div>
 </div>
 <div class="row">
  <label for="t_mood">Welche Eigenschaften soll die Seite vermitteln?</label>
@@ -294,7 +309,7 @@
   <input id="c_notifications" name="c_notifications" type="checkbox" value="yes" checked> 
   Ich möchte automatisch per E-mail über neue Bewerber informiert werden <br />     
 
-  <input id="c_agb" name="c_agb" type="checkbox" value="yes" checked> 
+  <input id="c_agb" name="agb" type="checkbox" required> 
   Ich stimme den <a href="">AGB</a> zu
 
   <br class="full-padding">
@@ -304,3 +319,14 @@
 </div>
 </form>
 </div>
+</main>
+<script>
+// Handle Revision-Range-Slider
+var span = $('.revision-count')
+$('[data-slider]').on('change.fndtn.slider', function(){
+ var count = $('#revision-slider').attr('data-slider');
+ span.val(count)
+});
+</script>  
+
+

@@ -77,6 +77,27 @@
         </tr>
       </table>
     </div>
+
+    <div class="large-3 columns">
+      <h2>Stil</h2>
+    </div>
+    <div class="large-9 columns table-border-left">
+      <table>
+        <tr>
+          <td width="250">Eigenschaften</td>
+          <td><?php echo $t_mood; ?></td>
+        </tr>
+        <tr>
+          <td>Positive Referenzen</td>
+          <td><?php echo $t_reference_positive; ?></td>
+        </tr>
+        <tr>
+          <td>Negative Referenzen</td>
+          <td><?php echo $t_reference_negative; ?></td>
+        </tr>
+      </table>
+    </div>
+
   </div>
 </div> 
 <div class="form-step dark-bg primary-full-border">
@@ -203,70 +224,64 @@
       <td width="21%"><input type="text" class="left effort-3-1" value="0"><input type="text" class="right rate-3-1" value="50"></td>
     </tr>
     <tr>
-      <td>Eigenschaften</td>
-      <td><?php echo $t_mood; ?></td>
+      <td>Revisionsdurchläufe</td>
+      <td><?php echo $s_revisions; ?></td>
       <td><input type="text" class="left effort-3-2" value="0"><input type="text" class="right rate-3-2" value="50"></td>
     </tr>
-    <tr>
-      <td>Positive Referenzen</td>
-      <td><?php echo $t_reference_positive; ?></td>
-      <td><input type="text" class="left effort-3-3" value="0"><input type="text" class="right rate-3-3" value="50"></td>
-    </tr>
-    <tr>
-      <td>Negative Referenzen</td>
-      <td><?php echo $t_reference_negative; ?></td>
-      <td><input type="text" class="left effort-3-4" value="0"><input type="text" class="right rate-3-4" value="50"></td>
-    </tr>
-  </table>
-</div>
-<div class="large-3 columns">
-  <h2>Service</h2>
-  <span class="section-sum-money section-sum-4">0</span>
-  <span class="section-sum-time section-time-4">0</span>
-</div>
-<div class="large-9 columns table-border-left">
 
-  <table>
-    <tr>
-      <td width="30%">Server</td>
-      <td width="49%"><?php echo $r_service_server; ?></td>
-      <td width="21%"><input type="text" class="left effort-4-1" value="0"><input type="text" class="right rate-4-1" value="50"></td>
-    </tr>
-    <tr>
-      <td>Domain</td>
-      <td><?php echo $r_service_domain; ?></td>
-      <td><input type="text" class="left effort-4-2" value="0"><input type="text" class="right rate-4-2" value="50"></td>
-    </tr>   
-    <tr>
-      <td>E-mail Adressen</td>
-      <td><?php echo $r_service_mail; ?></td>
-      <td><input type="text" class="left effort-4-3" value="0"><input type="text" class="right rate-4-3" value="50"></td>
-    </tr> 
-    <tr>
-      <td>Statistiken</td>
-      <td><?php echo $r_service_statistics; ?></td>
-      <td><input type="text" class="left effort-4-4" value="0"><input type="text" class="right rate-4-4" value="50"></td>
-    </tr> 
-    <tr>
-      <td>Mitarbeiterschulung</td>
-      <td><?php echo $r_service_instructions; ?></td>
-      <td><input type="text" class="left effort-4-5" value="0"><input type="text" class="right rate-4-5" value="50"></td>
-    </tr>
-    <tr>
-      <td>Online Marketing</td>
-      <td><?php echo $r_service_advertising; ?></td>
-      <td><input type="text" class="left effort-4-6" value="0"><input type="text" class="right rate-4-6" value="50"></td>
-    </tr>
   </table>
 </div>
-<div class="large-3 columns">
-  <h2>Kommentar</h2>
 </div>
-<div class="large-9 columns table-border-left">
-  <table>
-    <?php echo $t_comment; ?>
-  </table>
-</div>
+
+<div class="row briefing-summary">
+  <div class="large-3 columns">
+    <h2>Service</h2>
+    <span class="section-sum-money section-sum-4">0</span>
+    <span class="section-sum-time section-time-4">0</span>
+  </div>
+  <div class="large-9 columns table-border-left">
+
+    <table>
+      <tr>
+        <td width="30%">Server</td>
+        <td width="49%"><?php echo $r_service_server; ?></td>
+        <td width="21%"><input type="text" class="left effort-4-1" value="0"><input type="text" class="right rate-4-1" value="50"></td>
+      </tr>
+      <tr>
+        <td>Domain</td>
+        <td><?php echo $r_service_domain; ?></td>
+        <td><input type="text" class="left effort-4-2" value="0"><input type="text" class="right rate-4-2" value="50"></td>
+      </tr>   
+      <tr>
+        <td>E-mail Adressen</td>
+        <td><?php echo $r_service_mail; ?></td>
+        <td><input type="text" class="left effort-4-3" value="0"><input type="text" class="right rate-4-3" value="50"></td>
+      </tr> 
+      <tr>
+        <td>Statistiken</td>
+        <td><?php echo $r_service_statistics; ?></td>
+        <td><input type="text" class="left effort-4-4" value="0"><input type="text" class="right rate-4-4" value="50"></td>
+      </tr> 
+      <tr>
+        <td>Mitarbeiterschulung</td>
+        <td><?php echo $r_service_instructions; ?></td>
+        <td><input type="text" class="left effort-4-5" value="0"><input type="text" class="right rate-4-5" value="50"></td>
+      </tr>
+      <tr>
+        <td>Online Marketing</td>
+        <td><?php echo $r_service_advertising; ?></td>
+        <td><input type="text" class="left effort-4-6" value="0"><input type="text" class="right rate-4-6" value="50"></td>
+      </tr>
+    </table>
+  </div>
+  <div class="large-3 columns">
+    <h2>Kommentar</h2>
+  </div>
+  <div class="large-9 columns table-border-left">
+    <table>
+      <?php echo $t_comment; ?>
+    </table>
+  </div>
 </div>
 </div> 
 
@@ -312,7 +327,7 @@
     </li>
     <li>Die Kalkulation ist nicht transparent. Der Kunde sieht lediglich den finalen Preis</li>
   </ul>
-  <a href="#" class="button small green-bg" data-reveal-id="sendApplication"><i class="fa fa-check"></i> Bewerbung Absenden</a>
+  <a href="#" class="button small green-bg" data-reveal-id="sendApplication"><i class="fa fa-check"></i> Absenden</a>
   <a href="#" class="button small grey-bg right" data-reveal-id="sendApplication"><i class="fa fa-cancel"></i> zurück</a>
   <a class="close-reveal-modal">&#215;</a>
 </div>
@@ -458,12 +473,10 @@ var totalEffort = 0;
 
 
 // Get Section Sum to calculate price spread 
-
 var sectionSumInhalt = parseInt($('span.section-sum-1').text())
 var sectionSumFunktionen = parseInt($('span.section-sum-2').text())
 var sectionSumDesign = parseInt($('span.section-sum-3').text())
 var sectionSumService = parseInt($('span.section-sum-4').text())
-
 
       // Build Total Sum
       totalSum += sectionSum

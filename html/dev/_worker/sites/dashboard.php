@@ -14,9 +14,9 @@
     <div class="notification-area">
       <table>
         <tr>
-          <td width="80px">Datum</td>
-          <td>Ereignis</td>
-          <td>Typ</td>
+          <td width="80px"></td>
+          <td></td>
+          <td></td>
           <td width="60px"></td>
         </tr>
         <tr class="warning">
