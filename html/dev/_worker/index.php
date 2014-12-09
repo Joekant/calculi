@@ -28,7 +28,7 @@
 
   error_reporting(E_ERROR | E_WARNING | E_PARSE);
       // session_start();
-      // include('dbconnect.php');
+  include('../php/db_connect.php');
   include('../php/logic/_worker/logic_index.php');
   include('globalmodal.php');
   ?>

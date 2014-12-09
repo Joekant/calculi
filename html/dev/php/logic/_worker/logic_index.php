@@ -25,6 +25,8 @@ $phpfiles = array();
 
 if($page == "dashboard") {
   $content = $page;
+  array_push($phpfiles, "dashboard_notifications.php");
+  array_push($jsfiles, "notification_ajax.js");
 } elseif($page == "profil") {        
   $content = $page;
   array_push($jsfiles, "country-state-select.js");
@@ -32,7 +34,7 @@ if($page == "dashboard") {
   $content = $page;
 } elseif($page == "ausschreibungen_detail") {        
   $content = $page;
-  array_push($phpfiles, "logic_briefing.php");
+  array_push($phpfiles, "worker/logic_briefing.php");
 } elseif($page == "bewerbungen") {        
   $content = $page;
 } elseif($page == "projekte") {        
@@ -46,7 +48,7 @@ include('header.php');
 // Include necessary PHP - Files
 if ($phpfile != "0") { 
   foreach ($phpfiles as $phpfile) {
-    include("../php/logic/_frontend/$phpfile"); 
+    include("../php/logic/$phpfile"); 
   }
 }
 

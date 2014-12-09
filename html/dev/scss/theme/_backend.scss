@@ -514,6 +514,14 @@ input.error, input.error:focus {
 /* -----------------------------------------
    Notification Styles
 ----------------------------------------- */
+
+div.notification-info {
+
+	margin: auto;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
 .notification-area {
 	max-width: 800px;
 	margin: auto;

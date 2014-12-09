@@ -1,6 +1,5 @@
-<script type="text/javascript" src="https://www.google.com/jsapi"></script>  
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <div class="main-section">
-
 <!--   <h1 class="text-center">Hallo Worker!</h1>
   <div class="panel callout text-center padding-top" id="welcome-message">
     <h5>Willkommen bei Calculi</h5>
@@ -9,57 +8,37 @@
       <a href="" class="button small green-bg">Ja</a><a href="" class="button small grey-bg">Nein</a>
     </p>
   </div>  -->  
-  <div class="row">
-    <h2 class="text-center">Ereignisse</h2> 
-    <div class="notification-area">
-      <table>
-        <tr>
-          <td width="80px"></td>
-          <td></td>
-          <td></td>
-          <td width="60px"></td>
-        </tr>
-        <tr class="warning">
-          <td>24.11</td>
-          <td>Bewerbung angemommen</td>
-          <td>Kundenaktion</td>
-          <td class="notification-action"><a href=""><i class="fa fa-close"></i></a></td>
-        </tr>
-        <tr class="success">
-          <td>24.11</td>
-          <td>Bewerbung angemommen</td>
-          <td>Kundenaktion</td>
-          <td class="notification-action"><a href=""><i class="fa fa-close"></i></a></td>
-        </tr>
-        <tr class="info">
-          <td>24.11</td>
-          <td>Bewerbung angemommen</td>
-          <td>Kundenaktion</td>
-          <td class="notification-action"><a href=""><i class="fa fa-close"></i></a></td>
-        </tr>
-        <tr class="info">
-          <td>24.11</td>
-          <td>Bewerbung angemommen</td>
-          <td>Kundenaktion</td>
-          <td class="notification-action"><a href=""><i class="fa fa-close"></i></a></td>
-        </tr>
-        <tr class="success">
-          <td>24.11</td>
-          <td>Bewerbung angemommen</td>
-          <td>Kundenaktion</td>
-          <td class="notification-action"><a href=""><i class="fa fa-close"></i></a></td>
-        </tr>
-        <tr class="warning">
-          <td>24.11</td>
-          <td>Bewerbung angemommen</td>
-          <td>Kundenaktion</td>
-          <td class="notification-action"><a href=""><i class="fa fa-close"></i></a></td>
-        </tr>
 
-      </table>
-      <span class="right"><a href=""><small>ältere anzeigen</a></small></span>
-    </div> 
-  </div>
+  <div class="row">
+
+    <?php 
+
+    if ($num_rows != 0) {
+
+      echo '  
+      <h2 class="text-center">Ereignisse</h2> 
+      <div class="notification-info"></div>
+      <div class="notification-area">
+        <table>
+          <tr>
+            <td width="190px"></td>
+            <td></td>
+            <td width="30px"></td>
+          </tr>';
+          while ($row = mysqli_fetch_assoc($notification_result)) {
+            echo '
+            <tr class="'.$row[type].'">
+              <td>'.$row[created_at].'</td>
+              <td>'.$row[content].'</td>
+              <td class="notification-action"><a class="delnot" name="'.$row[notification_id].'" ><i class="fa fa-close"></i></a></td>
+            </tr>';
+          }
+          echo '
+        </table>
+        <span class="right"><a href=""><small>ältere anzeigen</a></small></span>
+      </div> 
+    </div>';
+  } ?>
 
   <div class="row text-center">
     <div class="large-12 columns">

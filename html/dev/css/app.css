@@ -1805,22 +1805,28 @@ input.error, input.error:focus {
 /* -----------------------------------------
    Notification Styles
 ----------------------------------------- */
-/* line 517, ../scss/theme/_backend.scss */
+/* line 518, ../scss/theme/_backend.scss */
+div.notification-info {
+  margin: auto;
+  text-align: center;
+  padding-bottom: 50px; }
+
+/* line 525, ../scss/theme/_backend.scss */
 .notification-area {
   max-width: 800px;
   margin: auto; }
-  /* line 521, ../scss/theme/_backend.scss */
+  /* line 529, ../scss/theme/_backend.scss */
   .notification-area tr.success {
     border-left: 8px solid #37d074; }
-  /* line 525, ../scss/theme/_backend.scss */
+  /* line 533, ../scss/theme/_backend.scss */
   .notification-area tr.info {
     border-left: 8px solid #32aebd; }
-  /* line 528, ../scss/theme/_backend.scss */
+  /* line 536, ../scss/theme/_backend.scss */
   .notification-area tr.warning {
     border-left: 8px solid #e85458; }
-  /* line 533, ../scss/theme/_backend.scss */
+  /* line 541, ../scss/theme/_backend.scss */
   .notification-area td.notification-action a {
     color: #afafaf; }
-  /* line 537, ../scss/theme/_backend.scss */
+  /* line 545, ../scss/theme/_backend.scss */
   .notification-area td.notification-action a:hover {
     color: #32aebd; }
