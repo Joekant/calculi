@@ -10,7 +10,7 @@
   }
 
   else {
-    $notification_result = mysqli_query($db, "SELECT * FROM notifications WHERE user_id = 1 AND status = 0");
+    $notification_result = mysqli_query($db, "SELECT * FROM notifications WHERE user_id = 1 AND status = 0 LIMIT 5");
     $num_rows = mysqli_num_rows($notification_result);
   }
 

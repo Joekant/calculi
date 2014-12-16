@@ -1,104 +1,104 @@
-  <div class="main-section">
-    <h1 class="text-center padding-bottom">Bewerbung einreichen</h1>
-    <div class="row application-summary padding-top">
-     <div class="large-3 columns">
-       <h2 class="application-info">Info</h2>
-     </div>
-     <div class="large-9 columns table-border-left application-info">
+<div class="main-section">
+  <h1 class="text-center padding-bottom">Bewerbung einreichen</h1>
+  <div class="row application-summary padding-top">
+   <div class="large-3 columns">
+     <h2 class="application-info">Info</h2>
+   </div>
+   <div class="large-9 columns table-border-left application-info">
 
-      <table>
-        <tr>
-          <td width="250">Ausschreibungs-ID</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Status</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Startzeit </td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Endzeit </td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Aufwandsindex </td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Anzahl Bewerber </td>
-          <td>-</td>
-        </tr>
-      </table>
-    </div> 
+    <table>
+      <tr>
+        <td width="250">Ausschreibungs-ID</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Status</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Startzeit </td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Endzeit </td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Aufwandsindex </td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Anzahl Bewerber </td>
+        <td>-</td>
+      </tr>
+    </table>
+  </div> 
 
-    <div class="large-3 columns">
-      <h2>Kunde</h2>
-    </div>
-    <div class="large-9 columns table-border-left">
-      <table>
-        <tr>
-          <td width="250">Name</td>
-          <td><?php echo $i_name; ?></td>
-        </tr>
-        <tr>
-          <td>E-mail </td>
-          <td><?php echo $i_email; ?></td>
-        </tr>
-        <tr>
-          <td>Unternehmen </td>
-          <td><?php echo $i_company; ?></td>
-        </tr>
-        <tr>
-          <td>Website</td>
-          <td><?php echo $i_website; ?></td>
-        </tr>
-        <tr>
-          <td>Land</td>
-          <td><?php echo $s_country; ?></td>
-        </tr>
-        <tr>
-          <td>Ort</td>
-          <td><?php echo $s_state; ?></td>
-        </tr>
-        <tr>
-          <td>Beschreibung</td>
-          <td><?php echo $t_description; ?></td>
-        </tr>
-        <tr>
-          <td>Branche</td>
-          <td><?php echo $s_branche; ?></td>
-        </tr>
-        <tr>
-          <td>Mitarbeiter</td>
-          <td><?php echo $s_employees; ?></td>
-        </tr>
-      </table>
-    </div>
-
-    <div class="large-3 columns">
-      <h2>Stil</h2>
-    </div>
-    <div class="large-9 columns table-border-left">
-      <table>
-        <tr>
-          <td width="250">Eigenschaften</td>
-          <td><?php echo $t_mood; ?></td>
-        </tr>
-        <tr>
-          <td>Positive Referenzen</td>
-          <td><?php echo $t_reference_positive; ?></td>
-        </tr>
-        <tr>
-          <td>Negative Referenzen</td>
-          <td><?php echo $t_reference_negative; ?></td>
-        </tr>
-      </table>
-    </div>
-
+  <div class="large-3 columns">
+    <h2>Kunde</h2>
   </div>
+  <div class="large-9 columns table-border-left">
+    <table>
+      <tr>
+        <td width="250">Name</td>
+        <td><?php echo $i_name; ?></td>
+      </tr>
+      <tr>
+        <td>E-mail </td>
+        <td><?php echo $i_email; ?></td>
+      </tr>
+      <tr>
+        <td>Unternehmen </td>
+        <td><?php echo $i_company; ?></td>
+      </tr>
+      <tr>
+        <td>Website</td>
+        <td><?php echo $i_website; ?></td>
+      </tr>
+      <tr>
+        <td>Land</td>
+        <td><?php echo $s_country; ?></td>
+      </tr>
+      <tr>
+        <td>Ort</td>
+        <td><?php echo $s_state; ?></td>
+      </tr>
+      <tr>
+        <td>Beschreibung</td>
+        <td><?php echo $t_description; ?></td>
+      </tr>
+      <tr>
+        <td>Branche</td>
+        <td><?php echo $s_branche; ?></td>
+      </tr>
+      <tr>
+        <td>Mitarbeiter</td>
+        <td><?php echo $s_employees; ?></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="large-3 columns">
+    <h2>Stil</h2>
+  </div>
+  <div class="large-9 columns table-border-left">
+    <table>
+      <tr>
+        <td width="250">Eigenschaften</td>
+        <td><?php echo $t_mood; ?></td>
+      </tr>
+      <tr>
+        <td>Positive Referenzen</td>
+        <td><?php echo $t_reference_positive; ?></td>
+      </tr>
+      <tr>
+        <td>Negative Referenzen</td>
+        <td><?php echo $t_reference_negative; ?></td>
+      </tr>
+    </table>
+  </div>
+
+</div>
 </div> 
 <div class="form-step dark-bg primary-full-border">
   <h2>Anforderungen</h2> 
@@ -111,7 +111,7 @@
       <h2>Inhalt</h2>
       <span class="section-sum-money section-sum-1">0</span><span class="section-sum-time section-time-1">0</span>
     </div>
-    <div class="large-9 columns table-border-left">
+    <div class="large-9 columns table-border-left briefing-section">
       <table>
         <tr>
           <td width="30%">Unterseiten</td>
@@ -152,7 +152,7 @@
     <h2>Funktionen</h2>
     <span class="section-sum-money section-sum-2">0</span><span class="section-sum-time section-time-2">0</span>
   </div>
-  <div class="large-9 columns table-border-left">
+  <div class="large-9 columns table-border-left briefing-section">
 
     <table>
       <tr>
@@ -215,7 +215,7 @@
   <span class="section-sum-money section-sum-3">0</span>
   <span class="section-sum-time section-time-3">0</span>
 </div>
-<div class="large-9 columns table-border-left">
+<div class="large-9 columns table-border-left briefing-section">
 
   <table>
     <tr>
@@ -239,7 +239,7 @@
     <span class="section-sum-money section-sum-4">0</span>
     <span class="section-sum-time section-time-4">0</span>
   </div>
-  <div class="large-9 columns table-border-left">
+  <div class="large-9 columns table-border-left briefing-section">
 
     <table>
       <tr>
@@ -331,180 +331,3 @@
   <a href="#" class="button small grey-bg right" data-reveal-id="sendApplication"><i class="fa fa-cancel"></i> zurück</a>
   <a class="close-reveal-modal">&#215;</a>
 </div>
-
-<script>
-  // get DOM Elements
-  var error = false
-  var allInputs = $('input');
-  var allBriefingInputs = $(".briefing-summary input")
-  var defaultRateInput = $(".defaultRate")
-  var allRates = $("input.right")
-  var counterValue = $('span.counter-value')
-  var totalEffortSpan = $('span.total-effort')
-  var totalPriceSpan = $('span.section-sum-money');
-  var totalTimeSpan = $('span.section-sum-time');
-  var averageRateSpan = $('span.average-rate');
-  var totalCalculatet = $('div.total-calculatet')
-  var totalPauschal = $('div.total-pauschal')
-  var linkPauschal = $("#link-pauschal")
-  var linkTime =  $("#link-time")
-  var settingsTime = $("#settings-time")
-  var settingsPauschal = $("#settings-pauschal")
-  var pauschalPriceInput = $('input[name="pauschal-price"]');
-  var mwstPartSpan = $('span.mwst-part');
-
-
-  // View Time / Pauschal Method
-  linkPauschal.click(function(e){
-    settingsTime.slideUp("slow")
-    settingsPauschal.slideDown("slow")
-    linkPauschal.addClass('active')
-    linkTime.removeClass('active')
-    allBriefingInputs.hide("slow")
-    totalCalculatet.slideUp("slow")
-    totalPauschal.slideDown("slow")
-    totalTimeSpan.slideUp("slow")
-    totalPriceSpan.slideUp("slow")
-    e.preventDefault();
-  }); 
-
-  linkTime.click(function(e){
-    settingsPauschal.slideUp("slow")
-    settingsTime.slideDown("slow")
-    linkTime.addClass('active')
-    linkPauschal.removeClass('active')
-    allBriefingInputs.show("slow")
-    totalCalculatet.slideDown("slow")
-    totalPauschal.slideUp("slow")
-    totalTimeSpan.slideDown("slow")
-    totalPriceSpan.slideDown("slow")
-    pauschalPriceInput.val(0)
-    e.preventDefault();
-  }); 
-
-// When input Change
-allInputs.change(function() {
-
-
-
-// if Method = Pauschal 
-var pauschalPrice = parseInt(pauschalPriceInput.val());
-
-if (pauschalPrice != 0) {
-  var mwst2 = ((parseInt($("input[name=mwst2]").val()))/100)+1
-  pauschalPriceFinal = Math.round(pauschalPrice*mwst2)
-  var mwst2Value = pauschalPriceFinal - pauschalPrice
-  mwstPartSpan.text(mwst2Value)
-  counterValue.text(pauschalPriceFinal)
-  return
-}
-
-//change default rate
-var defaultRateValue = defaultRateInput.val()
-var defaultRateInt = parseInt(defaultRateValue)
-var allRates = $("input.right")
-
-$.each(allRates, function( index, value ) {
-  $(this).attr('value',defaultRateInt)
-});
-
-// reset NaN Error
-var error = false
-
-// Check all inputs to INT
-$.each(allInputs, function( index, value ) {
-
-  InputInt = parseInt($(this).val())
-
-  if (isNaN(InputInt)) {
-    $(this).addClass('error')
-    $(this).val(0)
-    error = true
-  }
-  else {
-    $(this).removeClass('error')
-  }
-});
-
-if (error == true) {
-  alert("Nur numerische Werte zulässig")
-}
-
-// Calculate mwst & Discount Values
-var mwst = ((parseInt($("input[name=mwst]").val()))/100)+1
-var discount = 1-((parseInt($("input[name=discount]").val()))/100)
-
-// Reset temporary variables
-var sectionCount = 1;
-var itemCount = 1;
-var efforts = 0;
-var rates = 0;
-var rowSum = 0;
-var sectionSum = 0;
-var sectionEffort = 0
-var totalSum = 0;
-var totalEffort = 0;
-var totalEffort = 0;
-
-    // Run through sections
-    for (sectionCount=1;sectionCount<5;sectionCount++) {
-      var sectionEffort = 0
-      var sectionSum = 0
-
-      // run through Elements from sections
-      for (itemCount=1;itemCount<7;itemCount++) {
-        var efforts = $(".effort-"+sectionCount+"-"+itemCount)
-        var rates = $(".rate-"+sectionCount+"-"+itemCount)
-        var rowSum = parseInt(efforts.val()) * parseInt(rates.val())
-
-        //check if rowsum is a number (otherweise NaN Error)
-        if (!isNaN(rowSum)) { 
-          sectionSum += rowSum
-          sectionEffort += parseInt(efforts.val())    
-        }
-      }
-      // Get right Section Sum-Field
-      var sectionSumMoney = $("span.section-sum-"+sectionCount);
-      var sectionSumTime = $("span.section-time-"+sectionCount);
-
-      // Display Section Sum
-      sectionSumMoney.text(sectionSum);
-      sectionSumTime.text(sectionEffort);
-
-
-// Get Section Sum to calculate price spread 
-var sectionSumInhalt = parseInt($('span.section-sum-1').text())
-var sectionSumFunktionen = parseInt($('span.section-sum-2').text())
-var sectionSumDesign = parseInt($('span.section-sum-3').text())
-var sectionSumService = parseInt($('span.section-sum-4').text())
-
-      // Build Total Sum
-      totalSum += sectionSum
-      totalEffort += sectionEffort
-    }
-
- // add Discount / Fees
- var totalSumFinal = Math.round((totalSum*discount)*mwst)
- var totalSumFinal = Math.round((totalSum*discount)*mwst)
-
-// Calculate Average Rate
-var averageRate = parseInt(totalSumFinal/totalEffort)
-var mwstValue = Math.round((totalSum*discount*mwst) - totalSum*discount)
-
-// Set total Counters
-mwstPartSpan.text(mwstValue)
-averageRateSpan.text(averageRate)
-totalEffortSpan.text(totalEffort)
-counterValue.text(totalSumFinal)
-
-// Round Problem when animating
-// jQuery({ Counter: 0 }).animate({ Counter: totalSumFinal }, {
-//   duration: 500,
-//   easing: 'swing',
-//   step: function () {
-//     counterValue.text(Math.round(this.Counter));
-//   }
-// });
-
-});
-</script>

@@ -134,31 +134,31 @@
 					<h2>Ausbildung hinzufügen</h2>
 
 					<div class="medium-4 columns">
-						<label for="email">Einrichtung</label>
-						<input type="text" id="remail" placeholder="SAE Institute">
+						<label for="i_institution">Einrichtung</label>
+						<input type="text" name="i_institution" id="i_institution" placeholder="SAE Institute">
 					</div>
 					<div class="medium-4 columns">
-						<label for="email">Kurs</label>
-						<input type="text" id="remail" placeholder="Webdesign & Development">
-					</div>
-
-					<div class="medium-4 columns">
-						<label for="email">Titel</label>
-						<input type="text" id="remail" placeholder="Bachelor">
+						<label for="i_course">Kurs</label>
+						<input type="text" name="i_course" id="i_course" placeholder="Webdesign & Development">
 					</div>
 
 					<div class="medium-4 columns">
-						<label for="email">Ort</label>
-						<input type="text" id="remail" placeholder="Wien">
-					</div>
-					<div class="medium-4 columns">
-						<label for="email">Start</label>
-						<input type="text" id="remail" placeholder="2013">
+						<label for="i_title">Titel</label>
+						<input type="text" name="i_title" id="i_title" placeholder="Bachelor">
 					</div>
 
 					<div class="medium-4 columns">
-						<label for="email">Ende</label>
-						<input type="text" id="remail" placeholder="2016">
+						<label for="i_state">Ort</label>
+						<input type="text" name="i_state" id="i_state" placeholder="Wien">
+					</div>
+					<div class="medium-4 columns">
+						<label for="i_start">Start</label>
+						<input type="text" name="i_start" id="i_start" placeholder="2013">
+					</div>
+
+					<div class="medium-4 columns">
+						<label for="i_end">Ende</label>
+						<input type="text" nmae="i_end" id="i_end" placeholder="2016">
 					</div>	
 
 					<a class="close-reveal-modal">&#215;</a>
@@ -188,30 +188,30 @@
 						<h2>Referenz hinzufügen</h2>
 						<div class="row">
 							<div class="medium-3 columns">
-								<label for="email">Projektname</label>
-								<input type="text" id="remail" placeholder="Calculi">
+								<label for="i_name">Projektname</label>
+								<input type="text" name="i_name" id="i_name" placeholder="Calculi">
 							</div>
 							<div class="medium-3 columns">
-								<label for="email">URL</label>
-								<input type="text" id="remail" placeholder="http://calculi.at">
+								<label for="i_url">URL</label>
+								<input type="text" name="i_url" id="i_url" placeholder="http://calculi.at">
 							</div>
 
 							<div class="medium-2 columns">
-								<label for="email">Datum</label>
-								<input type="text" id="remail" placeholder="2014">
+								<label for="i_date">Datum</label>
+								<input type="text" name="i_date" id="i_date" placeholder="2014">
 							</div>
 							<div class="medium-4 columns">
 								<a class="fileinput-button button padding-top">
 									Thumbnail wählen
 									<!-- The file input field used as target for the file upload widget -->
-									<input id="fileupload" type="file" name="files[]">
+									<input id="fileupload" name="f_thumb" type="file" >
 								</a>
 							</div>
 						</div>
 						<div class="row">
 							<div class="medium-12 columns">
-								<label for="email">Beschreibung</label>
-								<textarea type="text" id="remail" rows="5" placeholder="Das Projekt wurde..."></textarea>
+								<label for="i_description">Beschreibung</label>
+								<textarea type="text" name="i_description" id="i_description" rows="5" placeholder="Das Projekt wurde..."></textarea>
 							</div>
 						</div>
 						<a class="close-reveal-modal">&#215;</a>
