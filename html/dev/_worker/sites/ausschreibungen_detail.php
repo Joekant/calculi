@@ -108,10 +108,10 @@
 
     <br class="end">
     <div class="large-3 columns">
-      <h2>Inhalt</h2>
+      <h2> Inhalt</h2>
       <span class="section-sum-money section-sum-1">0</span><span class="section-sum-time section-time-1">0</span>
     </div>
-    <div class="large-9 columns table-border-left briefing-section">
+    <div class="briefing-section-1 large-9 columns table-border-left">
       <table>
         <tr>
           <td width="30%">Unterseiten</td>
@@ -152,7 +152,7 @@
     <h2>Funktionen</h2>
     <span class="section-sum-money section-sum-2">0</span><span class="section-sum-time section-time-2">0</span>
   </div>
-  <div class="large-9 columns table-border-left briefing-section">
+  <div class="briefing-section-2 large-9 columns table-border-left">
 
     <table>
       <tr>
@@ -215,7 +215,7 @@
   <span class="section-sum-money section-sum-3">0</span>
   <span class="section-sum-time section-time-3">0</span>
 </div>
-<div class="large-9 columns table-border-left briefing-section">
+<div class="briefing-section-3 large-9 columns table-border-left">
 
   <table>
     <tr>
@@ -239,7 +239,7 @@
     <span class="section-sum-money section-sum-4">0</span>
     <span class="section-sum-time section-time-4">0</span>
   </div>
-  <div class="large-9 columns table-border-left briefing-section">
+  <div class="briefing-section-4 large-9 columns table-border-left">
 
     <table>
       <tr>

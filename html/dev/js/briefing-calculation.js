@@ -19,6 +19,10 @@
   var pauschalPriceInput = $('input[name="pauschal-price"]');
   var mwstPartSpan = $('span.mwst-part');
 
+// Count section-amount
+var numberOfSections = $('div[class^="briefing-section"]').length
+console.log(numberOfSections)
+
 
   // View Time / Pauschal Method
   linkPauschal.click(function(e){
@@ -111,64 +115,67 @@ var totalEffort = 0;
 var totalEffort = 0;
 
     // Run through sections
-    for (sectionCount=1;sectionCount<5;sectionCount++) {
+    for (sectionCount=1;sectionCount<(numberOfSections+1);sectionCount++) {
+
       var sectionEffort = 0
       var sectionSum = 0
 
-      // run through Elements from sections
-      for (itemCount=1;itemCount<7;itemCount++) {
-        var efforts = $(".effort-"+sectionCount+"-"+itemCount)
-        var rates = $(".rate-"+sectionCount+"-"+itemCount)
-        var rowSum = parseInt(efforts.val()) * parseInt(rates.val())
+              // get Number of Items in current section
+              var numberOfItemsInSection = $('.briefing-section-'+sectionCount).find(".left").length;
 
-        //check if rowsum is a number (otherweise NaN Error)
-        if (!isNaN(rowSum)) { 
-          sectionSum += rowSum
-          sectionEffort += parseInt(efforts.val())    
-        }
-      }
-      // Get right Section Sum-Field
-      var sectionSumMoney = $("span.section-sum-"+sectionCount);
-      var sectionSumTime = $("span.section-time-"+sectionCount);
+              // run through Items from sections
+              for (itemCount=1;(itemCount<numberOfItemsInSection+1);itemCount++) {
+                var efforts = $(".effort-"+sectionCount+"-"+itemCount)
+                var rates = $(".rate-"+sectionCount+"-"+itemCount)
+                var rowSum = parseInt(efforts.val()) * parseInt(rates.val())
 
-      // Display Section Sum
-      sectionSumMoney.text(sectionSum);
-      sectionSumTime.text(sectionEffort);
+                // check if rowsum is a number (otherweise NaN Error)
+                if (!isNaN(rowSum)) { 
+                  sectionSum += rowSum
+                  sectionEffort += parseInt(efforts.val())    
+                }
+              }
+              // Get right Section Sum-Field
+              var sectionSumMoney = $("span.section-sum-"+sectionCount);
+              var sectionSumTime = $("span.section-time-"+sectionCount);
 
+              // Display Section Sum
+              sectionSumMoney.text(sectionSum);
+              sectionSumTime.text(sectionEffort);
 
-// Get Section Sum to calculate price spread 
-var sectionSumInhalt = parseInt($('span.section-sum-1').text())
-var sectionSumFunktionen = parseInt($('span.section-sum-2').text())
-var sectionSumDesign = parseInt($('span.section-sum-3').text())
-var sectionSumService = parseInt($('span.section-sum-4').text())
+              // Get Section Sum to calculate price spread 
+              var sectionSumInhalt = parseInt($('span.section-sum-1').text())
+              var sectionSumFunktionen = parseInt($('span.section-sum-2').text())
+              var sectionSumDesign = parseInt($('span.section-sum-3').text())
+              var sectionSumService = parseInt($('span.section-sum-4').text())
 
-      // Build Total Sum
-      totalSum += sectionSum
-      totalEffort += sectionEffort
-    }
+              // Build Total Sum
+              totalSum += sectionSum
+              totalEffort += sectionEffort
+            }
 
- // add Discount / Fees
- var totalSumFinal = Math.round((totalSum*discount)*mwst)
- var totalSumFinal = Math.round((totalSum*discount)*mwst)
+            // add Discount / Fees
+            var totalSumFinal = Math.round((totalSum*discount)*mwst)
+            var totalSumFinal = Math.round((totalSum*discount)*mwst)
 
-// Calculate Average Rate
-var averageRate = parseInt(totalSumFinal/totalEffort)
-var mwstValue = Math.round((totalSum*discount*mwst) - totalSum*discount)
+            // Calculate Average Rate
+            var averageRate = parseInt(totalSumFinal/totalEffort)
+            var mwstValue = Math.round((totalSum*discount*mwst) - totalSum*discount)
 
-// Set total Counters
-mwstPartSpan.text(mwstValue)
-averageRateSpan.text(averageRate)
-totalEffortSpan.text(totalEffort)
-counterValue.text(totalSumFinal)
+            // Set total Counters
+            mwstPartSpan.text(mwstValue)
+            averageRateSpan.text(averageRate)
+            totalEffortSpan.text(totalEffort)
+            counterValue.text(totalSumFinal)
 
-// Round Problem when animating
-// jQuery({ Counter: 0 }).animate({ Counter: totalSumFinal }, {
-//   duration: 500,
-//   easing: 'swing',
-//   step: function () {
-//     counterValue.text(Math.round(this.Counter));
-//   }
-// });
+            // Round Problem when animating
+            // jQuery({ Counter: 0 }).animate({ Counter: totalSumFinal }, {
+              //   duration: 500,
+              //   easing: 'swing',
+              //   step: function () {
+                //     counterValue.text(Math.round(this.Counter));
+                //   }
+                // });
 
 });
 </script>
