@@ -7,10 +7,12 @@
       <tr>
       <th><i class="fa fa-pencil fa-fw"></i></th>
         <th><i class="fa fa-user fa-fw"></i></th>
+        <th><i class="fa fa-globe fa-fw"></i></th>
         <th><i class="fa fa-compass fa-fw"></i></th>
         <th><i class="fa fa-university fa-fw"></i></th>
-        <th><i class="fa fa-legal fa-fw"></i></th>
-        <th><i class="fa fa-globe fa-fw"></i></th>
+        <th width="60px"><i class="fa fa-legal fa-fw"></i></th>
+        <th width="60px"><i class="fa fa-euro fa-fw"></i></th>
+
 
 
       </tr>
@@ -18,10 +20,11 @@
       <tr>
        <td>Testausschreibung</td>
         <td><a href="../_frontend/index.php?page=profile">Testworker</a></td>
+        <td><a href="">http://website.at</a></td>
         <td>Österreich - Wien</td>
         <td>SAE</td>
         <td>5</td>
-        <td><a href="">http://website.at</a></td>
+        <td>1500€</td>
         <td>
          <span class="label green-bg">angenommen</span>
         </td>
@@ -32,10 +35,12 @@
       <tr class="clickable" onclick="window.document.location='index.php?page=application_detail';">
        <td>Testausschreibung</td>
         <td>Testworker 2</td>
+         <td>http://website.at</td>
         <td>Österreich - Wien</td>
         <td>SAE</td>
         <td>3</td>
-        <td>http://website.at</td>
+        <td>2500€</td>
+
         <td></td>
     </tr>
 

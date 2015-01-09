@@ -1,14 +1,14 @@
-[  
-{  
-   "Inhalt":[  
-   {  
-      "Unterseiten": "Startseite, Impressum, Portfolio",
-      "Texterstellung":"Designer erhält fertigen Text",
-      "Grafikerstellung":"Designer erstellt individuelle Grafiken"
+[
+{
+   "content":[
+   {
+      "subpages": "Startseite, Impressum, Portfolio",
+      "text":"Designer erhält fertigen Text",
+      "graphics":"Designer erstellt individuelle Grafiken"
    }
    ],
 
-   "Funktionen":[  
+   "functions":[
    "Mehrsprachigkeit",
    "Buchungssystem",
    "Terminkalender",
@@ -16,25 +16,25 @@
    "Kontaktformular"
    ],
 
-   "Design":[  
-   {  
-      "Konzept":"Designer erstellt individuelles Design",
-      "Eigenschaften": "edel, seriös, teuer",
-      "Positive Referenz": "http://www.gute-beispielseite.at",
-      "Negative Referenz": "http://www.schlechte-beispielseite.at"
+   "design":[
+   {
+      "concept":"Designer erstellt individuelles Design",
+      "characteristics": "edel, seriös, teuer",
+      "positivereference": "http://www.gute-beispielseite.at",
+      "negativereference": "http://www.schlechte-beispielseite.at",
+      "revisions": "4"
    }
    ],
 
-   "Service":[  
-   {  
-      "Server":"Designer",
-      "Domain":"Kunde",
-      "E-mails":"ja",
-      "Statistiken":"ja",
-      "Schulung":"nein",
-      "Werbung":"ja"
+   "service":[
+   {
+      "server":"Designer",
+      "domain":"Kunde",
+      "emails":"ja",
+      "statistics":"ja",
+      "training":"nein",
+      "advertising":"ja"
    }
    ]
-
 }
 ]

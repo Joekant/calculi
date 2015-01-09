@@ -1,40 +1,40 @@
-[  
-{  
-   "general":[  
-   {  
+[
+{
+   "general":[
+   {
       "picture":"01_doblhoff.png",
       "birth":1992,
       "website":"doblhoff.at",
       "description":"Placeholder for personal description"
    }
    ],
-   "social":[  
-   {  
+   "social":[
+   {
       "platform":"facebook",
       "link":"https://www.facebook.com/profile.php?id=100006790449304"
       },
-      {  
+      {
          "platform":"twitter",
          "link":"https://twitter.com"
          },
-         {  
+         {
             "platform":"google-plus",
             "link":"https://plus.google.com/101637258964231067410/posts"
             },
-            {  
+            {
                "platform":"xing",
                "link":"https://xing.com"
             }
             ],
-            "education":[  
-            {  
+            "education":[
+            {
                "date":"2013",
                "location":"Wien",
                "institution":"SAE",
                "course":"Webdesign & Development",
                "qualification":"Diplom"
                },
-               {  
+               {
                   "date":"2015",
                   "location":"Wien",
                   "institution":"SAE",
@@ -42,15 +42,15 @@
                   "qualification":"Bachelor"
                }
                ],
-               "references":[  
-               {  
+               "references":[
+               {
                   "date":"2013",
                   "name":"Referenz 01",
                   "url":"http://project.com",
                   "description":"Reference Description here",
                   "picture":"01_reference.png"
                   },
-                  {  
+                  {
                      "date":"2014",
                      "name":"Referenz 02",
                      "url":"http://project2.com",
@@ -58,12 +58,12 @@
                      "picture":"01_reference.png"
                   }
                   ],
-                  "competencies":[  
+                  "competencies":[
                   "PHP",
                   "SQL",
                   "Photoshop"
                   ],
-                  "skills":[  
+                  "skills":[
                   "Disziplin",
                   "Pünklichkeit",
                   "Erfahrung"
