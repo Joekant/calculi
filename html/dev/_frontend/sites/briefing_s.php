@@ -1,22 +1,22 @@
 <!-- requires logic/logic_briefing.php -->
 <main>
-	
-	<div class="row text-center">			
-		<h1 id="headline"></h1>
+
+	<div class="row text-center">
+
 		<div class="panel text-center green-border">
 			<h5>Briefing erfolgreich!</h5>
 			<p>
-				Nachdem du den <strong>Aktivierungslink</strong> in deinem E-mail Postfach bestätigt hast wird dein Konto aktiviert, 
+				Nachdem du den <strong>Aktivierungslink</strong> in deinem E-mail Postfach bestätigt hast wird dein Konto aktiviert,
 				sodass du dich mit E-mail und Passwort anmelden kannst und die Kostenvoranschläge der Bewerber vergleichen.
 			</p>
 			<p>
 				Dein Passwort <br>
 				<span class="label secondary code padding-bottom">4gR6atg</span>
 			</p>
-					<!-- 
+					<!--
 					<br class="half-padding" /><a  href="index.php?page=login#kunde">jetzt anmleden</a>
 				</p> -->
-			</div>   
+			</div>
 			<form>
 				<label for="email">Feedback zum Formular?</label>
 				<textarea type="text" id="remail" rows="3" placeholder="Mir hat am Formular gefehlt, dass..."></textarea>
@@ -24,7 +24,7 @@
 			</form>
 		</div>
 		<div class="form-step dark-bg primary-full-border">
-			<h2>Zusammenfassung</h2> 
+			<h2>Zusammenfassung</h2>
 		</div>
 
 		<div class="row briefing-summary padding-top">
@@ -47,7 +47,7 @@
 						<td>-</td>
 					</tr>
 				</table>
-			</div> 
+			</div>
 
 			<div class="large-3 columns">
 				<h2>Kunde</h2>
@@ -103,7 +103,7 @@
 							<ul>
 								<li><i class="green-font fa fa-plus  fa-fw"></i> Startseite</li>
 								<li><i class="green-font fa fa-plus  fa-fw"></i> Impressum</li>
-								<?php 
+								<?php
                   // duplicating array in new Variable, because otherwiese it works only once - don't know why ;)
 								$subpages = $briefing;
 
@@ -149,7 +149,7 @@
 						<td width="250">Gewünschte Funktionen</td>
 						<td>
 							<ul>
-								<?php 
+								<?php
                   // duplicating array in new Variable, because otherwiese it works only once - don't know why ;)
 								$functions = $briefing;
 
@@ -167,7 +167,7 @@
 						<td>Externe Plattformen</td>
 						<td>
 							<ul>
-								<?php 
+								<?php
 
 								$plattforms = $briefing;
                   // Run through array and output all function fields (containing "c_function_")
@@ -219,15 +219,15 @@
 					<tr>
 						<td>Domain</td>
 						<td><?php echo $r_service_domain; ?></td>
-					</tr>   
+					</tr>
 					<tr>
 						<td>E-mail Adressen</td>
 						<td><?php echo $r_service_mail; ?></td>
-					</tr> 
+					</tr>
 					<tr>
 						<td>Statistiken</td>
 						<td><?php echo $r_service_statistics; ?></td>
-					</tr> 
+					</tr>
 					<tr>
 						<td>Mitarbeiterschulung</td>
 						<td><?php echo $r_service_instructions; ?></td>
@@ -249,5 +249,5 @@
 				</table>
 			</div>
 		</div>
-	</div> 
+	</div>
 </main>

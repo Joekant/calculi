@@ -1,6 +1,6 @@
-<main> 
+<main>
 
-<!-- 
+<!--
 #######################################
 HEADLINE
 #######################################
@@ -14,7 +14,7 @@ HEADLINE
 </div>
 <br class="end" />
 
-<!-- 
+<!--
 #######################################
 SLIDER
 #######################################
@@ -44,9 +44,9 @@ SLIDER
             <li><i class="fa fa-check  fa-fw"></i> <span>den Projektumfang abzuschätzen</span></li>
             <li><i class="fa fa-check  fa-fw"></i> <span>unkompliziert Rechnungen zu erstellen</span></li>
           </ul>
-        </div> 
+        </div>
       </div>
-    </div> 
+    </div>
 
     <div class="row">
       <div class="medium-5 columns">
@@ -58,7 +58,7 @@ SLIDER
     </div>
     <br class="end" />
 
-<!-- 
+<!--
 #######################################
 INSTRUCTION
 #######################################
@@ -90,7 +90,7 @@ INSTRUCTION
 </div>
 </div>
 
-<!-- 
+<!--
 #######################################
 COUNTER
 #######################################
@@ -114,7 +114,7 @@ COUNTER
   </div>
 </div>
 
-<!-- 
+<!--
 #######################################
 CLIENT
 #######################################
@@ -124,8 +124,8 @@ CLIENT
   <div class="large-8 columns small-text-center medium-text-center large-text-left">
     <h2 class="primary-color-font small-text-center medium-text-center large-text-left ">Ich brauche eine Website</h2>
     <h3 class="freestyle small-text-center medium-text-center large-text-left">und suche den Experten</h3>
-    <p class="">Du betreibst ein Unternehmen, startest eine 
-      Aktion oder möchtest deine persönlichen Leistungen im Internet professionell präsentieren, 
+    <p class="">Du betreibst ein Unternehmen, startest eine
+      Aktion oder möchtest deine persönlichen Leistungen im Internet professionell präsentieren,
       kennst aber niemanden, der das für dich erledigen kann?</p>
       <p >
         Du hast zwar schon große Agenturen im Internet gefunden, bist aber von deren Preispolitik etwas eingeschüchtert?
@@ -141,7 +141,7 @@ CLIENT
   </div>
 
 
-<!-- 
+<!--
 #######################################
 TESTIMONIAL CLIENT
 #######################################
@@ -149,14 +149,14 @@ TESTIMONIAL CLIENT
 
 <div id="testimonial" class=" dark-bg text-center half-padding ">
   <div class="row">
-    <div class="large-12 columns">"Über Calculi habe ich schnell und einfach den geeigneten 
-      Webdesigner für meine neue Firmenwebsite gefunden. Ich kann Calculi jedem empfehlen, der persönlich keinen guten Webworker kennt.“ 
+    <div class="large-12 columns">"Über Calculi habe ich schnell und einfach den geeigneten
+      Webdesigner für meine neue Firmenwebsite gefunden. Ich kann Calculi jedem empfehlen, der persönlich keinen guten Webworker kennt.“
       <span id="author">- Jon Travolter, CEO Tando GmbH </span>
     </div>
   </div>
 </div>
 
-<!-- 
+<!--
 #######################################
 WEBDESIGNER
 #######################################
@@ -169,15 +169,15 @@ WEBDESIGNER
   <div class="large-5 columns medium-text-center small-text-center large-text-right">
     <h2 class="primary-color-font medium-text-center small-text-center large-text-right">Ich bin Webdesigner</h2>
     <h3 class="freestyle medium-text-center small-text-center large-text-right">und suche Kunden</h3>
-    <p class=" ">Du gestaltest und realisierst Hauptberuflich oder nebenbei leidenschaftlich 
+    <p class=" ">Du gestaltest und realisierst Hauptberuflich oder nebenbei leidenschaftlich
       gerne Websites und bist stet's auf der Suche nach neuen Kundenprojekten?
-    </p><p>Dann lege jetzt kostenlos bei Calculi dein persönliches Profil an, bewirb dich auf Ausschreibungen 
+    </p><p>Dann lege jetzt kostenlos bei Calculi dein persönliches Profil an, bewirb dich auf Ausschreibungen
     und erweitere kontinuierlich dein Portfolio!</p>
     <a class="small button" href="index.php?page=register#webworker">Profil anlegen<i class="fa fa-chevron-right fa-fw"></i> </a>
   </div>
 </div>
 
-<!-- 
+<!--
 #######################################
 TESTIMONIAL - WORKER
 #######################################
@@ -185,15 +185,15 @@ TESTIMONIAL - WORKER
 
 <div id="testimonial" class=" dark-bg text-center half-padding">
   <div class="row">
-    <div class="large-12 columns">"Mit Hilfe von Calculi konnte ich ohne nennenswerten Aufwand zahlreiche 
-      neue Kunden akquirieren und mein persönliches Portfolio um einige aussagekräftige Referenzen erweitern." 
+    <div class="large-12 columns">"Mit Hilfe von Calculi konnte ich ohne nennenswerten Aufwand zahlreiche
+      neue Kunden akquirieren und mein persönliches Portfolio um einige aussagekräftige Referenzen erweitern."
       <span id="author">- Jon Travolter, Selbstständiger Webworker</span>
     </div>
   </div>
 </div>
 
 
-<!-- 
+<!--
 #######################################
 PRICING-TABLE
 #######################################
@@ -215,7 +215,7 @@ PRICING-TABLE
       <li class="bullet-item">analysiere deine Erfolgsstatistiken</li>
       <li class="bullet-item">erstelle automatisch Rechnungen</li>
       <li class="cta-button"><a class="button small" href="index.php?page=register#webworker">Profil anlegen <i class="fa fa-chevron-right fa-fw"></i></a> </li>
-    </ul>    
+    </ul>
   </div>
 
   <div class="large-6 columns">
@@ -223,17 +223,17 @@ PRICING-TABLE
       <li class="title">Kunden</li>
       <li class="price">9.99 €</li>
       <li class="description">Starte eine Ausschreibung für deine Website</li>
-      <li class="bullet-item">erstelle ein ausführliches Pflichtenheft</li> 
+      <li class="bullet-item">erstelle ein ausführliches Pflichtenheft</li>
       <li class="bullet-item">erhalte exklusiv individuelle Angebote</li>
       <li class="bullet-item">vergleiche Preise, Bewertungen & Referenzen</li>
       <li class="bullet-item">dokumentiere den gesamten Auftrag</li>
       <li class="bullet-item">finde den idealen Webworker</li>
       <li class="cta-button"><a class="button small" href="index.php?page=briefing_select">Auftrag starten <i class="fa fa-chevron-right fa-fw"></i></a></li>
-    </ul>    
-  </div>   
-</div> 
+    </ul>
+  </div>
+</div>
 
-<!-- 
+<!--
 #######################################
 LOGOS
 #######################################
@@ -253,7 +253,7 @@ LOGOS
  <br class="end" />
 </div>
 
-<!-- 
+<!--
 #######################################
 BUTTONS
 #######################################

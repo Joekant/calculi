@@ -1,5 +1,5 @@
 <main>
-  <div id="container-profile"> 
+  <div id="container-profile">
     <div class="row">
       <div class="row">
         <div class="medium-4 columns">
@@ -13,10 +13,10 @@
         </div>
         <div class="row">
           <div class="medium-3 columns picture">
-            <img src="img/thumb.jpeg" alt="">
+            <img src="../img/thumb.jpeg" alt="">
           </div>
           <div id="description" class="medium-9 columns">
-            Ich arbeite seit 2004 als professioneller Webdesigner und habe in der Vergangenheit bereits zahlreiche Kundenprojekte erfolgreich abgewickelt. Ich habe mich auf dier Anforderungen und Bedürfnisse von NeugründerInnen & JungunternehmerInnen spezialisiert. Ihre Website gestalte ich entsprechend der modernsten Standards. Benutzerfreundlichkeit, Browserkompatibilität, Suchmaschinenoptimierung und weitgehende Barrierefreiheit sind für mich  stehts selbstverständlich. 
+            Ich arbeite seit 2004 als professioneller Webdesigner und habe in der Vergangenheit bereits zahlreiche Kundenprojekte erfolgreich abgewickelt. Ich habe mich auf dier Anforderungen und Bedürfnisse von NeugründerInnen & JungunternehmerInnen spezialisiert. Ihre Website gestalte ich entsprechend der modernsten Standards. Benutzerfreundlichkeit, Browserkompatibilität, Suchmaschinenoptimierung und weitgehende Barrierefreiheit sind für mich  stehts selbstverständlich.
 
           </div>
         </div>
@@ -81,7 +81,7 @@
               </ul>
             </div>
           </div>
-          
+
 
           <div class="medium-5 columns" id="qualification">
             <h2>Ausbildung</h2>
@@ -105,7 +105,7 @@
               <li>InDesign</li>
               <li>Illustrator</li>
             </ul>
-            
+
             <h2 class="padding-top">Stärken</h2>
             <ul class="inline-list">
               <li>Organisation</li>
@@ -115,7 +115,7 @@
             </ul>
           </div>
         </div>
-      </div> 
+      </div>
 
       <div id="profile-references">
 
@@ -150,14 +150,14 @@
                 <li>Text</li>
               </ul>
             </div> -->
-          </div> 
+          </div>
         </a>
         <img src="http://lorempixel.com/300/300/<?php echo $pictures[$i] ?>/" alt="">
       </div>
       <?php } ?>
 
     </div>
-  </div> 
+  </div>
   <div id="profile-comments">
     <h2 class="text-center">Kundenstimmen</h2>
     <div class="row">
@@ -169,16 +169,6 @@
         Ich arbeite seit 2004 als professioneller Webdesigner und habe in der Vergangenheit bereits zahlreiche Kundenprojekte erfolgreich abgewickelt. Ich habe mich auf dier Anforderungen und Bedürfnisse von NeugründerInnen & JungunternehmerInnen spezialisiert. Ihre Website gestalte ich entsprechend der modernsten Standards. Benutzerfreundlichkeit, Browserkompatibilität, Suchmaschinenoptimierung und weitgehende Barrierefreiheit sind für mich stehts selbstverständlich.
       </div>
     </div>
-    
-    <div class="row">
-      <div class="medium-2 columns author text-center">
-        <span class="name">Autor</span><br />
-        <span class="time">1.1.2013</span>
-      </div>
-      <div class="medium-10 columns comment">
-        Lorem  Ipsum dolor sit amet
-      </div>
-    </div>
 
     <div class="row">
       <div class="medium-2 columns author text-center">
@@ -198,11 +188,21 @@
       <div class="medium-10 columns comment">
         Lorem  Ipsum dolor sit amet
       </div>
-    </div> 
+    </div>
+
+    <div class="row">
+      <div class="medium-2 columns author text-center">
+        <span class="name">Autor</span><br />
+        <span class="time">1.1.2013</span>
+      </div>
+      <div class="medium-10 columns comment">
+        Lorem  Ipsum dolor sit amet
+      </div>
+    </div>
     <div class="row text-center">
       <a href="" class="text-center" id="more-comments"><i class="fa fa-arrow-circle-down fa-fw"></i></a>
-    </div> 
-    
+    </div>
+
 
   </div>
 

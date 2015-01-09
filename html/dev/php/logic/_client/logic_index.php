@@ -5,12 +5,13 @@ function active_css_class($page_value) {
   if($_GET['page'] == $page_value || (empty($_GET['page']) && $page_value == "dashboard") ) {
     return "active";
   }
-} 
+}
 
 function header_navigation() {
   return array(
     array("Übersicht", "dashboard", "dashboard"),
     array("ausschreibungen", "ausschreibungen", "pencil"),
+    array("bewerber", "bewerber", "users"),
     array("Aufträge", "projekte", "wrench"),
     array("einstellungen", "einstellungen", "cogs"),
     );
@@ -23,20 +24,24 @@ $phpfiles = array();
 
 if($page == "dashboard") {
   $content = $page;
-} elseif($page == "ausschreibungen") {        
+} elseif($page == "ausschreibungen") {
   $content = $page;
-} elseif($page == "projekte") {        
+} elseif($page == "bewerber") {
   $content = $page;
-} elseif($page == "einstellungen") {        
+} elseif($page == "finishproject") {
+  $content = $page;
+} elseif($page == "projekte") {
+  $content = $page;
+} elseif($page == "einstellungen") {
   $content = $page;
 }
 
 include('header.php');
 
 // Include necessary PHP - Files
-if ($phpfile != "0") { 
+if ($phpfile != "0") {
   foreach ($phpfiles as $phpfile) {
-    include("../php/logic/_worker/$phpfile"); 
+    include("../php/logic/_worker/$phpfile");
   }
 }
 
@@ -44,9 +49,9 @@ if ($phpfile != "0") {
 include("sites/$content.php");
 
 // Include necessary JS - Files
-if ($jsfile != "0") { 
+if ($jsfile != "0") {
   foreach ($jsfiles as $jsfile) {
-   include("../js/$jsfile"); 
+   include("../js/$jsfile");
  }
 }
 

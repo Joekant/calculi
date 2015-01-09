@@ -1,5 +1,5 @@
 <header class="show-for-large-up">
-  <div class="icon-bar dark-bg large-horizontal four-up">
+  <div class="icon-bar dark-bg large-horizontal five-up">
     <?php
     foreach(header_navigation() as $navigation_item) {
       $css_class = active_css_class($navigation_item[1]);
@@ -10,7 +10,7 @@
       </a>
       <?php
     }
-    ?>  
+    ?>
   </div>
 </header>
 <header class="show-for-small-only-up hide-for-large-up">
