@@ -25,34 +25,71 @@
 
   <header class="show-for-large-up">
     <div class="icon-bar dark-bg large-horizontal six-up">
-     
-        <a href="#" id="" class="item active">
-          <i class="fa fa-dashboard fa-fw"></i>
-          <label>Dashboard</label>
-        </a>
-    
+      <a href="#" id="Übersicht" class="item active ">
+        <i class="fa fa-dashboard fa-fw"></i>
+        <label>Übersicht</label>
+      </a>
+      <a href="#" id="profil" class="item ">
+        <i class="fa fa-user fa-fw"></i>
+        <label>Profil</label>
+      </a>
+      <a href="#" id="ausschreibungen" class="item ">
+        <i class="fa fa-pencil fa-fw"></i>
+        <label>Ausschreibungen</label>
+      </a>
+      <a href="#" id="bewerbungen" class="item ">
+        <i class="fa fa-heart fa-fw"></i>
+        <label>Bewerbungen</label>
+      </a>
+      <a href="#" id="Aufträge" class="item ">
+        <i class="fa fa-wrench fa-fw"></i>
+        <label>Aufträge</label>
+      </a>
+      <a href="#" id="einstellungen" class="item ">
+        <i class="fa fa-cogs fa-fw"></i>
+        <label>Einstellungen</label>
+      </a>
     </div>
   </header>
+
   <header class="show-for-small-only-up hide-for-large-up">
-    <nav class="top-bar" id="frontpage-topbar" data-topbar role="navigation">
+    <nav class="top-bar" id="frontpage-topbar" data-topbar="" role="navigation">
       <ul class="title-area">
-        <li class="name">
-        </li>
+        <li class="name"></li>
         <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-      </ul class="right">
+      </ul>
       <section class="top-bar-section">
         <ul class="right">
-            <li class='<?= $css_class ?>'>
-              <a href='index.php?page=<?= $navigation_item[1] ?>'>
-               
-              </a>
-            </li>
+          <li class=""><a href="#">Übersicht</a></li>
+          <li class=""><a href="#">Profil</a></li>
+          <li class=""><a href="#">Ausschfeibungen</a></li>
+          <li class=""><a href="#">Bewerbungen</a></li>
+          <li class=""><a href="#">Aufträge</a></li>
+          <li class=""><a href="#">Einstellungen</a></li>
         </ul>
       </section>
     </nav>
   </header>
-  
-  <h1>HI!!!!</h1>
+
+  <?php 
+  include('views/profileView.html') 
+  ?>
+
+  <footer class="be-footer">  
+    <ul>
+      <li><a href="#" data-reveal-id="helpmodal"><span data-tooltip aria-haspopup="true" class="has-tip" title="Hilfestellungen"><i class="fa fa-question fa-fw"></i></span></a></li>
+      <li><a href="#" data-reveal-id="feedbackmodal"><span data-tooltip aria-haspopup="true" class="has-tip" title="Feedback"><i class="fa fa-comment fa-fw"></i></span></a></li>
+
+      <li><a href="#"  data-dropdown="drop1" aria-controls="drop1" ><span data-tooltip aria-haspopup="true" class="has-tip" title="Abmelden"><i class="fa fa-lock fa-fw"></i></span></a></li>
+      <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
+        <li><a href="../_frontend">Abmelden</a></li>
+      </ul> 
+
+    </ul>
+    <div class="love">
+      gemacht mit <i class="fa fa-heart-o fa-fw"></i> an der SAE
+    </div>
+  </footer>
 
   <!-- build:js ../scripts/scripts_bottom.min.js -->
   <script src="../js/foundation.min.js"></script>

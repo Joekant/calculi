@@ -1,0 +1,154 @@
+<div class="main-section">
+	<div class="row padding-top">
+		<div class="medium-12 columns">
+			<div class="view-switch right show-for-medium-up">
+				<a href="#" class="active" id="link-boxed"><i class="fa fa-th fa-fw"></i></a>
+				<a href="#" id="link-list"><i class="fa fa-list-ul fa-fw"></i></a>
+			</div>
+			<div class="sort">
+				<a href="" class="sortbuttons"><i class="fa fa-recycle fa-fw"></i></a>
+				<a href="" class="sortbuttons"><i class="fa fa-check fa-fw"></i></a>
+				<a href="" class="sortbuttons"><i class="fa fa-legal fa-fw"></i></a>
+			</div>
+		</div>
+	</div>
+	<br class="end">
+	<div class="row" >
+		<div id="list-style" class="hide">
+			
+			<table>
+				<tbody><tr>
+					<th><i class="fa fa-university fa-fw"></i></th>
+					<th><i class="fa fa-euro fa-fw"></i></th>
+					<th><i class="fa fa-dashboard fa-fw"></i></th>
+					<th><i class="fa fa-clock-o fa-fw"></i></th>
+					<th><i class="fa fa-edit fa-fw"></i></th>
+				</tr>
+				<tr>
+					<td>T-Mobile</td>
+					<td>1600 €</td>
+					<td>97</td>
+					<td>2 Tage</td>
+					<td><span class="label default">abgeschlossen</span></td>       
+				</tr>
+				<tr>
+					<td>Entasia</td>
+					<td>1600 €</td>
+					<td>97</td>
+					<td>2 Tage</td>
+					<td>
+						<a href="#" <i="" class="fa fa-check fa-fw green-font"></a>
+						<a href="#" <i="" class="fa fa-remove fa-fw orange-font"></a></td>       
+					</tr>
+					<tr>
+						<td>Thomas Henn</td>
+						<td>1600 €</td>
+						<td>97</td>
+						<td>2 Tage</td>
+						<td><span class="label secondary">Abnahme ausständig</span></td>       
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+		<div id="boxed-style">
+			<div class="medium-4 columns">
+				<div class="project">
+					<div class="project-name closed-header">
+						<h2>T-Mobile</h2>
+					</div>
+					<div class="project-content closed-content">
+						<div class="row text-center">
+							RATINGS
+						</div>
+					</div>
+					<div class="project-actions closed-footer">
+						<div class="button-bar">
+							<ul class="button-group">
+								<li><a href="#" class="small button grey-bg">abgeschlossen</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="medium-4 columns">
+				<div class="project">
+					<div class="project-name ">
+						<h2>Entasia</h2>
+					</div>
+					<div class="project-content ">
+						<div class="row text-center">
+							<div class="medium-4 columns"><i class="fa fa-euro fa-fw"></i><br>2500</div>
+							<div class="medium-4 columns"><i class="fa fa-dashboard fa-fw"></i><br>94</div>
+							<div class="medium-4 columns"><i class="fa fa-clock-o fa-fw"></i><br>22 Tage</div>
+						</div>
+					</div>
+					<div class="project-actions ">
+						<div class="button-bar">
+							<ul class="button-group">
+								<li><a href="#" class="small button green-bg"><i class="fa fa-check fa-fw"></i></a></li>
+								<li><a href="#" class="small button red-bg"><i class="fa fa-remove fa-fw"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="medium-4 columns">
+				<div class="project">
+					<div class="project-name closed-header">
+						<h2>Thomas Henn</h2>
+					</div>
+					<div class="project-content closed-content">
+						<div class="row text-center">
+							<div class="medium-4 columns"><i class="fa fa-euro fa-fw"></i><br>2500</div>
+							<div class="medium-4 columns"><i class="fa fa-dashboard fa-fw"></i><br>94</div>
+							<div class="medium-4 columns"><i class="fa fa-clock-o fa-fw"></i><br>22 Tage</div>
+						</div>
+					</div>
+					<div class="project-actions closed-footer">
+						<div class="button-bar">
+							<ul class="button-group">
+								<li><a href="#" class="small button grey-bg">warten auf abnahme</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="counter-area-3">
+		<div class="row text-center">
+			<div class="medium-4 columns">
+				<div class="label counter">
+					<i class="fa fa-recycle fa-fw"></i><br /><span class="counter-value">4</span><br />4500 €
+				</div>
+			</div>
+			<div class="medium-4 columns">
+				<div class="label green-bg counter">
+					<i class="fa fa-check fa-fw"></i><br /><span class="counter-value">4</span><br />4500 €
+				</div>
+			</div>
+			<div class="medium-4 columns">
+				<div class="label grey-bg counter">
+					<i class="fa fa-legal fa-fw"></i><br /><span class="counter-value">4</span><br />4500 €
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	$("#link-boxed").click(function(){
+		$("#list-style").slideUp("slow")
+		$("#boxed-style").slideDown("slow")
+		$("#link-boxed").addClass('active')
+		$("#link-list").removeClass('active')
+	}); 
+
+	$("#link-list").click(function(){
+		$("#list-style").slideDown("slow")
+		$("#boxed-style").slideUp("slow")
+		$("#link-list").addClass('active')
+		$("#link-boxed").removeClass('active')
+	}); 
+</script>
