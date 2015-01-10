@@ -2,16 +2,17 @@
   <div class="row text-center">
     <a href="index.php"><img src="../img/logo_symbol.png" class="logo half-padding" alt="logo"></a>
     <h1 class="padding-bottom">Registrieren</h1>
-    
+
 
 
     <?php if(isset($_GET['complete'])) {
       echo '
       <div class="panel text-center green-border">
         <h5> <i class="fa fa-check fa-fw"></i> Registrierung erfolgreich</h5>
-        <p>Bitte überprüfe deinen Posteingang</p>
-      </div> 
-      '; 
+        <p>Bitte überprüfe deinen Posteingang um das Konto zu aktivieren</p>
+        <a href="index.php?page=login" class="button expand">zum Login</a>
+      </div>
+      ';
     }
     else {
       echo '
@@ -36,7 +37,7 @@
        <a href="index.php?page=login" id="helplink"><span data-tooltip aria-haspopup="true" class="has-tip" title="zum Login"><i class="fa fa-lock fa-fw"></i></span></a>
      </div>
    </div>
-   '; 
+   ';
  }
  ?>
 

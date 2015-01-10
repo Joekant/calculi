@@ -63,8 +63,6 @@
                 <li class="orange-bg">6</li>
                 <li class="yellow-bg">7</li>
                 <li class="green-bg">10</li>
-                <li class="green-bg">10</li>
-                <li class="orange-bg">6</li>
                 <li class="yellow-bg sum-points">7</li>
               </ul>
             </div>
@@ -72,11 +70,11 @@
               <ul>
                 <li><i class="fa fa-comment fa-fw"></i> Kommunikation</li>
                 <li><i class="fa fa-clock-o fa-fw"></i> Geschwindikgiet</li>
-                <li><i class="fa fa-star fa-fw"></i> Qualität</li>
+
                 <li><i class="fa fa-heart fa-fw"></i> Design</li>
-                <li><i class="fa fa-gear fa-fw"></i> Technik</li>
-                <li><i class="fa fa-pencil fa-fw"></i> Dokumentation</li>
-                <li><i class="fa fa-question fa-fw"></i> Support</li>
+
+                <li><i class="fa fa-wrench fa-fw"></i> Funktionalität</li>
+                <li><i class="fa fa-question fa-fw"></i> Beratung</li>
                 <li id="sum-points">Gesamt<br /> <span id="vote-count">(4 Stimmen)</span></li>
               </ul>
             </div>
@@ -162,7 +160,7 @@
     <h2 class="text-center">Kundenstimmen</h2>
     <div class="row">
       <div class="medium-2 columns author text-center">
-        <span class="name">Autor</span><br />
+        <span class="name">Kunde</span><br />
         <span class="time">1.1.2013</span>
       </div>
       <div class="medium-10 columns comment">
@@ -172,7 +170,7 @@
 
     <div class="row">
       <div class="medium-2 columns author text-center">
-        <span class="name">Autor</span><br />
+        <span class="name">Kunde</span><br />
         <span class="time">1.1.2013</span>
       </div>
       <div class="medium-10 columns comment">
@@ -182,7 +180,7 @@
 
     <div class="row">
       <div class="medium-2 columns author text-center">
-        <span class="name">Autor</span><br />
+        <span class="name">Kunde</span><br />
         <span class="time">1.1.2013</span>
       </div>
       <div class="medium-10 columns comment">
@@ -192,7 +190,7 @@
 
     <div class="row">
       <div class="medium-2 columns author text-center">
-        <span class="name">Autor</span><br />
+        <span class="name">Kunde</span><br />
         <span class="time">1.1.2013</span>
       </div>
       <div class="medium-10 columns comment">

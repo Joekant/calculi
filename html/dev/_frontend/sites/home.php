@@ -169,9 +169,9 @@ WEBDESIGNER
   <div class="large-5 columns medium-text-center small-text-center large-text-right">
     <h2 class="primary-color-font medium-text-center small-text-center large-text-right">Ich bin Webdesigner</h2>
     <h3 class="freestyle medium-text-center small-text-center large-text-right">und suche Kunden</h3>
-    <p class=" ">Du gestaltest und realisierst Hauptberuflich oder nebenbei leidenschaftlich
+    <p class=" ">Du gestaltest und realisierst hauptberuflich oder nebenbei leidenschaftlich
       gerne Websites und bist stet's auf der Suche nach neuen Kundenprojekten?
-    </p><p>Dann lege jetzt kostenlos bei Calculi dein persönliches Profil an, bewirb dich auf Ausschreibungen
+    </p><p>Dann lege jetzt kostenlos dein persönliches Profil an, bewirb dich auf Ausschreibungen
     und erweitere kontinuierlich dein Portfolio!</p>
     <a class="small button" href="index.php?page=register#webworker">Profil anlegen<i class="fa fa-chevron-right fa-fw"></i> </a>
   </div>

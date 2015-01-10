@@ -2,31 +2,31 @@
 
 if($page == "projekte") {
 	$helptitle = "Hilfe zur Projektverwaltung";
-	$helptext = 'Hilfe';
+	$helptext = 'Für diesen Bereich der Seite existiert momentan noch kein Hilfebereich';
 }
 elseif($page == "bewerbungen") {
 	$helptitle = "Hilfe zu den Bewerbungen";
-	$helptext = 'Blablabla';
+	$helptext = 'Für diesen Bereich der Seite existiert momentan noch kein Hilfebereich';
 }
 elseif($page == "dashboard") {
 	$helptitle = "Hilfe zum Dashboard";
-	$helptext = 'Blablabla';
+	$helptext = 'Für diesen Bereich der Seite existiert momentan noch kein Hilfebereich';
 }
 elseif($page == "ausschreibungen") {
 	$helptitle = "Hilfe zu den Ausschreibungen";
-	$helptext = 'Blablabla';
+	$helptext = 'Für diesen Bereich der Seite existiert momentan noch kein Hilfebereich';
 }
 elseif($page == "einstellungen") {
 	$helptitle = "Hilfe zu den Kontoinstellungen";
-	$helptext = 'Blablabla';
+	$helptext = 'Für diesen Bereich der Seite existiert momentan noch kein Hilfebereich';
 }
 elseif($page == "profil") {
 	$helptitle = "Hilfe zum Profil";
-	$helptext = 'Blablabla';
+	$helptext = 'Für diesen Bereich der Seite existiert momentan noch kein Hilfebereich';
 }
 else {
 	$helptitle = "Allgemeine Hilfe";
-	$helptext = 'Blablabla';	
+	$helptext = 'Für diesen Bereich der Seite existiert momentan noch kein Hilfebereich';
 }
 
 ?>
@@ -35,7 +35,7 @@ else {
 	<h2><i class="fa fa-question fa-fw"></i> <?php echo $helptitle;  ?></h2>
 	<a class="close-reveal-modal">&#215;</a>
 	<?php echo $helptext;  ?>
-</div>	
+</div>
 
 <div id="feedbackmodal" class="reveal-modal" data-reveal>
 	<h2><i class="fa fa-comment fa-fw"></i> Feedback zur Seite "<?php echo ucfirst($page); ?>"</h2>
@@ -45,5 +45,5 @@ else {
 		<button type="submit" class="button">Absenden</button>
 	</form>
 	<a class="close-reveal-modal">&#215;</a>
-	
-</div>	
+
+</div>

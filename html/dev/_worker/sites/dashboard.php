@@ -7,16 +7,16 @@
     <p>
       <a href="" class="button small green-bg">Ja</a><a href="" class="button small grey-bg">Nein</a>
     </p>
-  </div>  -->  
+  </div>  -->
 
   <div class="row">
 
-    <?php 
+    <?php
 
     if ($num_rows != 0) {
 
-      echo '  
-      <h2 class="text-center">Ereignisse</h2> 
+      echo '
+      <h2 class="text-center">Ereignisse</h2>
       <div class="notification-info"></div>
       <div class="notification-area">
         <table>
@@ -36,7 +36,7 @@
           echo '
         </table>
         <span class="right"><a href=""><small>ältere anzeigen</a></small></span>
-      </div> 
+      </div>
     </div>';
   } ?>
 
@@ -71,12 +71,12 @@
     </div>
   </div>
 
-  <div class="row text-center padding-top">
+<!--   <div class="row text-center padding-top">
     <a href="index.php?page=<?php echo $page; ?>&popup&popup_message=Erfolgsmeldung&popup_icon=check&popup_color=green" class="button green-bg"><i class="fa fa-check fa-fw"></i> Success</a>
     <a href="index.php?page=<?php echo $page; ?>&popup&popup_message=Warnmeldung&popup_icon=warning&popup_color=yellow&popup_linktext=undo&popup_link=revert" class="button yellow-bg"><i class="fa fa-warning fa-fw"></i> Warning</a>
     <a href="index.php?page=<?php echo $page; ?>&popup&popup_message=Errormeldung&popup_icon=times&popup_color=orange" class="button orange-bg"><i class="fa fa-times fa-fw"></i> Error</a>
     <a href="index.php?page=<?php echo $page; ?>&popup&popup_message=Infomeldung&popup_icon=info&popup_color=primary" class="button primary-bg"><i class="fa fa-info fa-fw"></i> Info</a>
-  </div>
+  </div> -->
 </div>
 </div>
 <!-- Tour -->
@@ -118,7 +118,7 @@
     <h4>Geschafft!</h4>
     <p>Jetzt wo du alles gesehen hast, wünscht dir Calculi viel Erfolg bei deinen Bewerbungen.</p>
   </li>
-</ol> 
+</ol>
 
 <script type="text/javascript">
 

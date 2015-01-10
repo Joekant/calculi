@@ -60,6 +60,17 @@
 </div>
                   </td>
                 </tr>
+                </tr>
+                <tr>
+                  <td>Beratung</td>
+                  <td>
+<div class="range-slider" data-slider data-options="start: 1; end: 10;">
+  <span class="range-slider-handle" role="slider" tabindex="0"></span>
+  <span class="range-slider-active-segment"></span>
+  <input type="hidden">
+</div>
+                  </td>
+                </tr>
               </table>
 
 

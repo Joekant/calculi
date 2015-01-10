@@ -1,22 +1,25 @@
 <div class="main-section">
-	<div class="row padding-top">		
-<!-- 		<div class="row half-padding show-for-medium-up" id="profile-progress">
+	<div class="row">
+	<div class="clearfix">
+	<a href="../_frontend/index.php?page=profile" class="right">Öffentliches Profil anzeigen</a>
+</div>
+		<div class="row half-padding show-for-medium-up" id="profile-progress">
 			Profil zu 30% vollständig
 			<div class="progress">
 				<span class="meter" style="width:30%"></span>
-			</div> 
-		</div> -->
+			</div>
+		</div>
 		<div class="medium-2 columns show-for-medium-up">
 			<div id="profile-navigation">
 				<dl class="tabs vertical" data-tab>
 					<dd class="active"><a href="#panel1"><i class="fa fa-user fa-fw"></i></a></dd>
 					<dd><a href="#panel2"><i class="fa fa-mortar-board fa-fw"></i></a></dd>
-					<dd><a href="#panel3"><i class="fa fa-windows fa-fw"></i><br /></a></dd>
+					<dd><a href="#panel3"><i class="fa fa-windows fa-fw"></i></a></dd>
 				</dl>
-			</div>	 
+			</div>
 		</div>
 
-		<div class="icon-submenu medium-10 columns">		
+		<div class="icon-submenu medium-10 columns">
 			<div class="tabs-content">
 				<div class="content active" id="panel1">
 					<h1>Allgemeine Daten</h1>
@@ -25,7 +28,7 @@
 							<div id="dropzone" class="fade well">
 								<div id="upload-pic">
 									<!-- <img src="http://lorempixel.com/250/200/people/" alt=""> -->
-								</div>		    						
+								</div>
 								<a class="fileinput-button">
 									<i class="fa fa-upload fa-fw"></i><br />Profilbild wählen...
 									<!-- The file input field used as target for the file upload widget -->
@@ -115,16 +118,16 @@
 						<td>Wien</td>
 						<td>SAE Technology Institute</td>
 						<td>Webdesign & Development</td>
-						<td>Bachelor</td>      
-						<td><a href=""><i class="fa fa-edit fa-fw"></i></a></td>   
+						<td>Bachelor</td>
+						<td><a href=""><i class="fa fa-edit fa-fw"></i></a></td>
 					</tr>
 					<tr>
 						<td>2014</td>
 						<td>Wien</td>
 						<td>SAE Technology Institute</td>
 						<td>Webdesign & Development</td>
-						<td>Bachelor</td>   
-						<td><a href=""><i class="fa fa-edit fa-fw"></i></a></td>      
+						<td>Bachelor</td>
+						<td><a href=""><i class="fa fa-edit fa-fw"></i></a></td>
 					</tr>
 
 				</table>
@@ -159,7 +162,7 @@
 					<div class="medium-4 columns">
 						<label for="i_end">Ende</label>
 						<input type="text" nmae="i_end" id="i_end" placeholder="2016">
-					</div>	
+					</div>
 
 					<a class="close-reveal-modal">&#215;</a>
 					<a href="" class="button green-bg text-right"><i class="fa fa-save fa-fw"></i> Speichern</a>
