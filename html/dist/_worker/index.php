@@ -6,9 +6,9 @@
   <title>Calculi</title>
 
   <!-- build:css ../styles/styles.min.css -->
-  <link rel="stylesheet" href="../css/normalize.css" />
-  <link rel="stylesheet" href="../css/foundation.css" />
-  <link rel="stylesheet" href="../css/app.css" />
+  <link rel="stylesheet" href="../dev/css/normalize.css" />
+  <link rel="stylesheet" href="../dev/css/foundation.css" />
+  <link rel="stylesheet" href="../dev/css/app.css" />
   <!-- endbuild -->
 
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">

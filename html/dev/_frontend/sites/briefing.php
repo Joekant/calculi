@@ -164,10 +164,12 @@
     <input id="c_function_comment" name="c_function_comment" type="checkbox"> Kommentarfunktion<br />
     <input id="c_function_donate" name="c_function_donate" type="checkbox"> Spendenformular<br />
     <input id="c_function_calendar" name="c_function_calendar" type="checkbox" checked> Terminkalender<br /> -->
-    <input id="c_function_ml" name="c_function" type="checkbox" checked> Mehrsprachigkeit <br />
-    <input id="c_function_comment" name="c_function" type="checkbox"> Kommentarfunktion<br />
-    <input id="c_function_donate" name="c_functione" type="checkbox"> Spendenformular<br />
-    <input id="c_function_calendar" name="c_function" type="checkbox" checked> Terminkalender<br />
+    <div id ="r">
+    <input id="c_function_ml" name="functions" type="checkbox" value = "Mehrsprachigkeit" checked> Mehrsprachigkeit <br />
+    <input id="c_function_comment" name="functions" type="checkbox" value = "Kommentarfunktion"> Kommentarfunktion<br />
+    <input id="c_function_donate" name="functions" type="checkbox" value = "Spendenformular"> Spendenformular<br />
+    <input id="c_function_calendar" name="functions" type="checkbox" value="Terminkalender" checked> Terminkalender<br />
+    </div>
 
   </div>
   <div class="medium-4 columns">
@@ -260,54 +262,54 @@
   <h2 data-magellan-destination="5">Service <a name="5"></a></h2> 
 </div>
 </div>
-<div id="service">
+<div id="services">
   <div class="row">
     <div class="medium-9 columns">
       <label for="email">Wer stellt den Server für die Seite bereit?</label>
     </div>
     <div class="medium-3 columns">
-      <input id="r_service_server_d" name="r_service_server" value="Designer" type="radio" checked> Designer <br />
-      <input id="r_service_server_k" name="r_service_server" value="Kunde" type="radio"> Kunde
+      <input id="r_service_server_d" name="services" data-name="server" value="Designer" type="radio" checked> Designer <br />
+      <input id="r_service_server_k" name="services" data-name="server" value="Kunde" type="radio"> Kunde
     </div>
     <hr />
     <div class="medium-9 columns">
       <label for="email">Wer registriert die Domain?</label>
     </div>
     <div class="medium-3 columns">
-      <input id="r_service_domain_d" name="r_service_domain" value="Designer" type="radio" checked> Designer <br />
-      <input id="r_service_domain_k" name="r_service_domain" value="Kunde" type="radio"> Kunde
+      <input id="r_service_domain_d" name="services" data-name="domain" value="Designer" type="radio" checked> Designer <br />
+      <input id="r_service_domain_k" name="services" data-name="domain" value="Kunde" type="radio"> Kunde
     </div>
     <hr />
     <div class="medium-9 columns">
       <label for="email">Benötigen Sie E-mail Adressen?</label>
     </div>
     <div class="medium-3 columns">
-      <input id="r_service_mail_y" name="r_service_mail" value="yes" type="radio" checked> Ja<br />
-      <input id="r_service_mail_n" name="r_service_mail" value="no" type="radio"> Nein<br />
+      <input id="r_service_mail_y" name="services" data-name="emails" value="true" type="radio" checked> Ja<br />
+      <input id="r_service_mail_n" name="services" data-name="emails" value="false" type="radio"> Nein<br />
     </div>
     <hr />
     <div class="medium-9 columns">
       <label for="email">Benötigen Sie detaillierte Nutzungsstatistiken?</label>
     </div>
     <div class="medium-3 columns">
-      <input id="r_service_statistics_y" name="r_service_statistics" value="yes" type="radio" checked> Ja<br />
-      <input id="r_service_statistics_n" name="r_service_statistics" value="no" type="radio"> Nein<br />
+      <input id="r_service_statistics_y" name="services" data-name="statistics" value="true" type="radio" checked> Ja<br />
+      <input id="r_service_statistics_n" name="services" data-name="statistics" value="false" type="radio"> Nein<br />
     </div>
     <hr />
     <div class="medium-9 columns">
       <label for="email">Sollen Mitarbeiter in die Pflege & Wartung der Seite eingeschult werden?</label>
     </div>
     <div class="medium-3 columns">
-      <input id="r_service_instructions_y" name="r_service_instructions" value="yes" type="radio" checked> Ja<br />
-      <input id="r_service_instructions_n" name="r_service_instructions" value="no" type="radio"> Nein<br />
+      <input id="r_service_instructions_y" name="services" data-name="training" value="true" type="radio" checked> Ja<br />
+      <input id="r_service_instructions_n" name="services" data-name="training" value="false" type="radio"> Nein<br />
     </div>
     <hr />
     <div class="medium-9 columns">
       <label for="email"> Möchten Sie die Seite durch die Schaltung bezahlter Werbung in Suchmaschinen oder sozialen Netzwerken bewerben?</label>
     </div>
     <div class="medium-3 columns">
-      <input id="r_service_advertising_y" name="r_service_advertising" value="yes" type="radio" checked> Ja<br />
-      <input id="r_service_advertising_n" name="r_service_advertising" value="no" type="radio"> Nein<br />
+      <input id="r_service_advertising_y" name="services" data-name="advertising" value="true" type="radio" checked> Ja<br />
+      <input id="r_service_advertising_n" name="services" data-name="advertising" value="false" type="radio"> Nein<br />
     </div>
     <hr>
   </div>
@@ -341,12 +343,35 @@ $('[data-slider]').on('change.fndtn.slider', function(){
 </script> 
 
 <script>
-  var form = $('#form');
+  var data = {
+    'services' : {},
+    'functions' : [],
+    'content' : {},
+    'design' : {},
+    'general' : {}
+  };
+  var form = $('#services, #r');
 
-  console.log(form.serializeArray());
+  var inpS = form.find('input');
+  var temp;
 
+  for(var n = 0; n < inpS.length; n++) {
+    
+    temp = $(inpS[n]);
+    
+    if( temp.attr("checked") ) {
+      if(temp.attr("type") == "checkbox") {
+        //console.log(temp);
+        data[temp.attr("name")].push(temp.attr("value"));
 
+      } else if(temp.attr("type") == "radio") {
 
+        data[temp.attr("name")][temp.data("name")] = temp.attr("value");
+      }
+    }
+  }
+
+  console.log(data);
 
 </script>
 
