@@ -224,14 +224,14 @@
         <input id="r_design_template" name="design" value="Designer adaptiert gewähltes Template" data-name="concept" type="radio"> Designer adaptiert gewähltes Template<br />
       </div>
     </div>
-    <div class="columns medium-6">
+    <div  class="columns medium-6">
       <label for="design">Wie viele Revisionsdurchläufe sind gewünscht?<span class="required">*</span></label>
       <div id="asd" class="medium-12 columns">  
-        <input type="text" name="design" class="revision-count" data-name="revisions" value="0">
+        <input type="text" name="design" class="revision-count" data-name="revisions" >
         <div class="range-slider" id="revision-slider" name="s_revisions" data-slider data-options="start: 1; end: 5;">
           <span class="range-slider-handle" role="slider" tabindex="0" name="s_revisions"></span>
           <span class="range-slider-active-segment" name="s_revisions"></span>
-          <!--  <input type="hidden" name="design" data-name="revisions"> -->
+          <input type="hidden" name="design" data-name="revisions">
         </div>
  
       </div>
@@ -239,17 +239,17 @@
   </div>
   <div class="row">
    <label for="t_mood">Welche Eigenschaften soll die Seite vermitteln?</label>
-   <textarea type="text" id="t_mood" name="t_mood" rows="3">edel, seriös, teuer, einzigartig, limitiert</textarea>
+   <textarea id="t_mood" name="design" data-name="characteristics" rows="3">edel, seriös, teuer, einzigartig, limitiert</textarea>
  </div>
  <div class="row">
   <label for="email">Die Seite soll / soll nicht aussehen wie folgende Mitbewerberseiten <br /><em>(mehrere Adressen untereinander durch Absatz getrennt)</em></label>
   <div class="medium-6 columns text-center">
     <label for="email" class="green-font">positive Referenz</label>
-    <textarea type="text" id="t_reference_positive" name="t_reference_positive" rows="3">http://www.gute-beispielseite.at</textarea>
+    <textarea  id="t_reference_positive" name="design" data-name="positiveReference" rows="3">http://www.gute-beispielseite.at</textarea>
   </div>
   <div class="medium-6 columns text-center">
     <label for="email" class="orange-font">negative Referenz</label>
-    <textarea type="text" id="t_reference_negative" name="t_reference_negative" rows="3" >http://www.schlechte-beispielseite.at</textarea>
+    <textarea  id="t_reference_negative" name="design" data-name="negativeReference" rows="3" >http://www.schlechte-beispielseite.at</textarea>
   </div>
 </div>
 <div class="form-step dark-bg primary-full-border">
@@ -347,7 +347,7 @@ $('[data-slider]').on('change.fndtn.slider', function(){
       'general' : {}
     };
  
-    var form = $('#services, #functions, #contents, #design');
+    var form = $('#form');
  
     var inpS = form.find('input, textarea');
     var temp;
@@ -355,7 +355,7 @@ $('[data-slider]').on('change.fndtn.slider', function(){
     for(var n = 0; n < inpS.length; n++) {
  
       temp = $(inpS[n]);
- 
+      
       if( temp.attr("checked") ) {
         if(temp.attr("type") == "checkbox") {
  
@@ -366,13 +366,13 @@ $('[data-slider]').on('change.fndtn.slider', function(){
         } else if(temp.attr("type") == "radio") {
           data[temp.attr("name")][temp.data("name")] = temp.attr("value");
         }
-      } else if(temp.attr("type") == "hidden!!!!" ) {
-       data[temp.attr("name")][temp.data("name")] = temp.attr("value");
+      } else if(temp.attr("type") == "hidden" ) {
+        data[temp.attr("name")][temp.data("name")] = temp.attr("value");
+     
      } else if(temp.attr("type") == "text" ) {
-       data[temp.attr("name")][temp.data("name")] = temp.attr("value");
-       console.log(temp)
-     } else {
- 
+       data[temp.attr("name")][temp.data("name")] = temp.attr("value");     
+     } else if(temp[0].type == "textarea" ) {
+        data[temp.attr("name")][temp.data("name")] = temp.text();
      }
    }
  
