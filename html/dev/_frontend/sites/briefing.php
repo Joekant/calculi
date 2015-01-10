@@ -1,13 +1,13 @@
 <!-- requires briefing-effort-count.js -->
 <main>
   <div id="briefing-form">  
-
+ 
     <!-- Sticky Pagination -->
     <div class="row" id="form-instruction">
       <div class="large-12 columns text-center">
         <h1 id="headline">Ausschreibung erstellen</h1>
       </div>
-
+ 
       <h2 class="subline text-center padding-bottom">Nach dem Absenden des Formulars wird automatisch ein kostenloses Konto für dich eingerichtet, in dem du deine Ausschreibungen verwalten kannst </h2>
       <ul>
        <li><span>Mit <span class="required">*</span> gekennzeichnete Angaben sind verpfichtend</span></li>
@@ -15,16 +15,16 @@
        <li><span>Mit der Navigation am oberen Seitenrand können Sie zu den einzelnen Abschnitten wechseln</span></li>  
      </ul>
    </div>
-
+ 
    <div class="row padding-top">
      <div class="small-12 columns text-center">
        <div data-magellan-expedition="fixed" id="form-pagination">
         <div class="progress">
-          <div class="EffortCount"> 
+          <div class="EffortCount">
           </div>
           <span class="meter TotalEffortDiv"></span>
-        </div> 
-        <dl class="sub-nav">         
+        </div>
+        <dl class="sub-nav">        
           <dd data-magellan-arrival="1"><a href="#1">Allgemeines</a></dd>
           <dd data-magellan-arrival="2"><a href="#2">Inhalt</a></dd>
           <dd data-magellan-arrival="4"><a href="#4">Funktionalität</a></dd>
@@ -35,13 +35,13 @@
     </div>
   </div>
   <br class="end" />
-
+ 
   <form id ="form" data-abide action="../_worker/index.php?page=ausschreibungen_detail" method="POST" onsubmit="return checkForm(this);">
-
+ 
     <div id="general">
       <!-- Step -->
       <div class="form-step dark-bg primary-full-border">
-        <h2 data-magellan-destination="1">Allgemeines<a name="1"></a></h2> 
+        <h2 data-magellan-destination="1">Allgemeines<a name="1"></a></h2>
       </div>
       <div class="row">
         <div class="medium-6 columns">
@@ -52,7 +52,7 @@
         <div class="medium-6 columns">
           <label for="i_email">E-mail<span class="required">*</span></label>
           <input type="email" id="i_email" name="i_email" value="max@mustermann.at">
-        </div>   
+        </div>  
       </div>
       <div class="row">
         <div class="medium-6 columns">
@@ -111,143 +111,137 @@
           <option value="20-50">20-50</option>
           <option value="50+">50+</option>
         </select>
-      </div> 
+      </div>
     </div>
   </div>
-  <div id="content">
+  <div id="contents">
     <!-- Step -->
     <div class="form-step dark-bg primary-full-border">
-      <h2 data-magellan-destination="2">Inhalt<a name="2"></a></h2> 
+      <h2 data-magellan-destination="2">Inhalt<a name="2"></a></h2>
     </div>
     <div class="row">
       <label for="c_pages">Welche <span data-tooltip aria-haspopup="true" class="has-tip formtipp" title="Naja, was könnte wohl mit 'Unterseite' gemeint sein?">Unterseiten</span> wird die Seite voraussichtlich besitzen?</label><br >
       <div class="medium-4 columns">
-        <input name="c_pages_home" id="c_pages_home" type="checkbox" checked disabled> Startseite<br />
-        <input name="c_pages_legal" id="c_pages_legal" type="checkbox" checked disabled> Impressum<br />
-        <input name="c_pages_products" id="c_pages_products" type="checkbox"> Produktvorstellung <br />
+        <input name="content" id="c_pages_home" type="checkbox" value="Startseite" data-name="subpages" checked disabled> Startseite<br />
+        <input name="content" id="c_pages_legal" type="checkbox" value="Impressum" data-name="subpages" checked disabled> Impressum<br />
+        <input name="content" id="c_pages_products" type="checkbox" value="Produktvorstellung" data-name="subpages" > Produktvorstellung <br />
       </div>
       <div class="medium-4 columns">
-        <input name="c_pages_portfolio" id="c_pages_portfolio" type="checkbox" checked> Portfolio<br />
-        <input name="c_pages_contact" id="c_pages_contact" type="checkbox"> Kontaktseite<br />
-        <input name="c_pages_agb" id="c_pages_agb" type="checkbox"> AGB-Seite<br />
+        <input name="content" id="c_pages_portfolio" type="checkbox" value="Portfolio" data-name="subpages" checked> Portfolio<br />
+        <input name="content" id="c_pages_contact" type="checkbox" value="Kontaktseite" data-name="subpages" > Kontaktseite<br />
+        <input name="content" id="c_pages_agb" type="checkbox" value="AGB-Seite" data-name="subpages" > AGB-Seite<br />
       </div>
       <div class="medium-4 columns">
-        <input name="c_pages_team" id="c_pages_team" type="checkbox"> Teamvorstellung<br />
-        <input name="c_pages_download" id="c_pages_download" type="checkbox"> Downloadbereich<br />
-        <input name="c_pages_faq" id="c_pages_faq" type="checkbox"> F.A.Q - Seite<br />
+        <input name="content" id="c_pages_team" type="checkbox" value="Teamvorstellung" data-name="subpages" > Teamvorstellung<br />
+        <input name="content" id="c_pages_download" type="checkbox" value="Downloadbereich" data-name="subpages" > Downloadbereich<br />
+        <input name="content" id="c_pages_faq" type="checkbox" value="F.A.Q - Seite" data-name="subpages" > F.A.Q - Seite<br />
       </div>
     </div>
     <div class="row">
      <div class="large-6 columns">
       <label for="c_text">Wie soll der Text erstellt werden?<span class="required">*</span></label><br >
-      <input name="r_text" id="r_text_rdy" value="r_text_rdy" type="radio" class="has-effort" data-effort="10" checked> Designer erhält fertigen Text<br />
-      <input name="r_text" id="r_text_update" value="r_text_update" type="radio" class="has-effort" data-effort="30"> Designer bereitet vorhandenen Text auf<br />
-      <input name="r_text" id="r_text_create" value="r_text_create" type="radio" class="has-effort" data-effort="50"> Designer erstellt individuellen Text<br />
+      <input name="content" id="r_text_rdy" data-name="text" value="Designer erhält fertigen Text" type="radio" class="has-effort" data-effort="10" data checked> Designer erhält fertigen Text<br />
+      <input name="content" id="r_text_update" data-name="text" value="Designer bereitet vorhandenen Text auf" type="radio" class="has-effort" data-effort="30"> Designer bereitet vorhandenen Text auf<br />
+      <input name="content" id="r_text_create" data-name="text" value="Designer erstellt individuellen Text" type="radio" class="has-effort" data-effort="50"> Designer erstellt individuellen Text<br />
     </div>
     <div class="large-6 columns">
       <label for="c_grafik">Wie sollen die Grafiken erstellt werden?<span class="required">*</span></label><br >
-      <input name="r_grafik" id="r_grafik_rdy" value="r_grafik_rdy" type="radio"> Designer erhält fertige Grafiken<br />
-      <input name="r_grafik" id="r_grafik_update" value="r_grafik_update" type="radio"> Designer bereitet vorhandene Grafiken auf<br />
-      <input name="r_grafik" id="r_grafik_create" value="r_grafik_create" type="radio" checked> Designer erstellt individuelle Grafiken<br />
+      <input name="content" id="r_grafik_rdy" data-name="graphics" value="Designer erhält fertige Grafiken" type="radio"> Designer erhält fertige Grafiken<br />
+      <input name="content" id="r_grafik_update" data-name="graphics" value="Designer bereitet vorhandene Grafiken auf" type="radio"> Designer bereitet vorhandene Grafiken auf<br />
+      <input name="content" id="r_grafik_create" data-name="graphics" value="Designer erstellt individuelle Grafiken" type="radio" checked> Designer erstellt individuelle Grafiken<br />
     </div>
   </div>
 </div>
 <div id="functions">
   <!-- Step -->
   <div class="form-step dark-bg primary-full-border">
-    <h2 data-magellan-destination="4">Funktionalität <a name="4"></a></h2> 
+    <h2 data-magellan-destination="4">Funktionalität <a name="4"></a></h2>
   </div>
   <div class="row">
     <label for="email">Welche Funktionen werden benötigt?<span class="required">*</span></label><br >
-    <div class="medium-4 columns">
-    <!-- <input id="c_function_ml" name="c_function_ml" type="checkbox" checked> Mehrsprachigkeit <br />
-    <input id="c_function_comment" name="c_function_comment" type="checkbox"> Kommentarfunktion<br />
-    <input id="c_function_donate" name="c_function_donate" type="checkbox"> Spendenformular<br />
-    <input id="c_function_calendar" name="c_function_calendar" type="checkbox" checked> Terminkalender<br /> -->
-    <div id ="r">
-    <input id="c_function_ml" name="functions" type="checkbox" value = "Mehrsprachigkeit" checked> Mehrsprachigkeit <br />
-    <input id="c_function_comment" name="functions" type="checkbox" value = "Kommentarfunktion"> Kommentarfunktion<br />
-    <input id="c_function_donate" name="functions" type="checkbox" value = "Spendenformular"> Spendenformular<br />
-    <input id="c_function_calendar" name="functions" type="checkbox" value="Terminkalender" checked> Terminkalender<br />
+    <div class="medium-4 columns" id="tests">
+      <input id="c_function_ml" name="functions" type="checkbox" value = "Mehrsprachigkeit" data-name="subfunction" checked> Mehrsprachigkeit <br />
+      <input id="c_function_comment" name="functions" type="checkbox" value = "Kommentarfunktion" data-name="subfunction" > Kommentarfunktion<br />
+      <input id="c_function_donate" name="functions" type="checkbox" value = "Spendenformular" data-name="subfunction" > Spendenformular<br />
+      <input id="c_function_calendar" name="functions" type="checkbox" value = "Terminkalender" data-name="subfunction"  checked> Terminkalender<br />
     </div>
-
+    <div class="medium-4 columns">
+      <input id="c_function_booking" name="functions" type="checkbox" value="Buchungssystem" data-name="subfunction"  checked> Buchungssystem<br />
+      <input id="c_function_order" name="functions" type="checkbox" value="Bestellsystem" data-name="subfunction" > Bestellsystem<br />
+      <input id="c_function_poll" name="functions" type="checkbox" value="Umfragefunktion" data-name="subfunction" > Umfragefunktion<br />
+      <input id="c_function_intern" name="functions" type="checkbox" value="Interner Bereich" data-name="subfunction" > Interner Bereich<br />
+    </div>
+    <div class="medium-4 columns">
+      <input id="c_function_search" name="functions" type="checkbox" value="Suchfunktion" data-name="subfunction" > Suchfunktion<br />
+      <input id="c_function_newsletter" name="functions" type="checkbox" value="E-mail Newsletter" checked data-name="subfunction" > E-mail Newsletter <br />
+      <input id="c_function_gallery" name="functions" type="checkbox" value="Bildergallerie" checked data-name="subfunction" > Bildergallerie<br />
+      <input id="c_function_contact" name="functions" type="checkbox" value="Kontaktformular" checked data-name="subfunction" > Kontaktformular<br />
+    </div>
+ 
   </div>
-  <div class="medium-4 columns">
-    <input id="c_function_booking" name="c_function" type="checkbox" checked> Buchungssystem<br />
-    <input id="c_function_order" name="c_function" type="checkbox"> Bestellsystem<br />
-    <input id="c_function_poll" name="c_function" type="checkbox"> Umfragefunktion<br />
-    <input id="c_function_intern" name="c_function" type="checkbox"> Interner Bereich<br />
+  <div class="row">
+    <div class="large-6 columns">
+      <label for="r_cms">Möchten Sie Inhalte in Zukunft selbst bearbeiten oder hinzufügen können?<span class="required">*</span></label><br >
+      <input id="r_cms_yes" name="functions" value="true" type="radio" data-name="cms" checked> Ja<br />
+      <input id="r_cms_no" name="functions" value="false" type="radio" data-name="cms"> Nein<br />  
+    </div>
+    <div class="large-6 columns">
+      <label for="c_ext">Sollen externe Plattformen integriert werden?</label><br >
+      <div class="medium-3 columns"><input id="c_ext_blog" value="Blog" name="functions" type="checkbox" data-name="platform" checked> Blog</div>
+      <div class="medium-3 columns"><input id="c_ext_forum" value="Forum" name="functions" type="checkbox" data-name="platform"> Forum</div>
+      <div class="medium-3 columns"><input id="c_ext_wiki" value="Wiki" name="functions" type="checkbox" data-name="platform"> Wiki</div>
+      <div class="medium-3 columns"><input id="c_ext_shop" value="Shop" name="functions" type="checkbox" data-name="platform"> Shop</div>
+    </div>
   </div>
-  <div class="medium-4 columns">
-    <input id="c_function_search" name="c_function" type="checkbox"> Suchfunktion<br />
-    <input id="c_function_newsletter" name="c_function" type="checkbox" checked> E-mail Newsletter <br />
-    <input id="c_function_gallery" name="c_function" type="checkbox" checked> Bildergallerie<br />
-    <input id="c_function_contact" name="c_function" type="checkbox" checked> Kontaktformular<br />
-  </div>
-</div>
-<div class="row">
-  <div class="large-6 columns">
-    <label for="r_cms">Möchten Sie Inhalte in Zukunft selbst bearbeiten oder hinzufügen können?<span class="required">*</span></label><br >
-    <input id="r_cms_yes" name="r_cms" value="yes" type="radio" checked> Ja<br />
-    <input id="r_cms_no" name="r_cms" value="no" type="radio"> Nein<br />  
-  </div>
-  <div class="large-6 columns">
-    <label for="c_ext">Sollen externe Plattformen integriert werden?</label><br >
-    <div class="medium-3 columns"><input id="c_ext_blog" value="c_ext_blog" name="c_ext" type="checkbox" checked> Blog</div>
-    <div class="medium-3 columns"><input id="c_ext_forum" value="c_ext_forum" name="c_ext" type="checkbox"> Forum</div>
-    <div class="medium-3 columns"><input id="c_ext_wiki" value="c_ext_wiki" name="c_ext" type="checkbox"> Wiki</div>
-    <div class="medium-3 columns"><input id="c_ext_shop" value="c_ext_shop" name="c_ext" type="checkbox"> Shop</div>
-  </div>
-</div>
-<div class="row">
-  <div class="large-6 columns">
-    <label for="accessibility">Besteht ein erhöter Anspruch an die Barrierefreiheit?</label><br />
+  <div class="row">
+    <div class="large-6 columns">
+      <label for="accessibility">Besteht ein erhöter Anspruch an die Barrierefreiheit?</label><br />
     <!--  Wird die Seiter voraussichtlich häufig von Personen mit ausgeprägter Sehschwäche genutzt und muss daher besonders barierefrei sein
     (Screen-Reader kompatibel, kontrastreiche Darstellungsoption, individuelle Einstellung der Schriftgröße...) und auch in älteren Browsern einwandfrei funktionieren? -->
-    <input id="r_accessibility_yes" name="r_accessibility" value="yes" type="radio"> Ja<br />
-    <input id="r_accessibility_no" name="r_accessibility" value="no" type="radio" checked> Nein<br />
+    <input id="r_accessibility_yes" name="functions" value="true" data-name="accessibility" type="radio"> Ja<br />
+    <input id="r_accessibility_no" name="functions" value="false" data-name="accessibility" type="radio" checked> Nein<br />
   </div>
   <div class="large-6 columns">
    <label for="responsive">Benötigen Sie eine optimierte Version für mobile Geräte?<span class="required">*</span></label><br />
    <!-- Soll es eine optimierte Version für die Darstellung auf mobilen Geräten wie z.B. Smartphones oder Tablets geben? -->
-   <input id="r_responsive_yes" name="r_responsive" value="yes" type="radio" checked> Ja<br />
-   <input id="r_responsive_no" name="r_responsive" value="no" type="radio"> Nein<br />
+   <input id="r_responsive_yes" name="functions" value="true" data-name="mobile" type="radio" checked> Ja<br />
+   <input id="r_responsive_no" name="functions" value="false" data-name="mobile" type="radio"> Nein<br />
  </div>
 </div>
 </div>
 <div id="design">
   <!-- Step -->
   <div class="form-step dark-bg primary-full-border">
-    <h2 data-magellan-destination="3">Design<a name="3"></a></h2> 
+    <h2 data-magellan-destination="3">Design<a name="3"></a></h2>
   </div>  
   <div class="row">
     <div class="columns medium-6">
-
+ 
       <label for="design">Wie soll das grafische Konzept der Seite erstellt werden?<span class="required">*</span></label><br >
-      <div class="medium-12 columns">             
-        <input id="r_design_rdy" name="r_design" value="r_design_rdy" type="radio"> Designer setzt vorhandenes Design um<br />
-        <input id="r_design_create" name="r_design" value="r_design_create" type="radio" checked> Designer erstellt individuelles Design<br />
-        <input id="r_design_template" name="r_design" value="r_design_template" type="radio"> Designer adaptiert gewähltes Template<br />
+      <div class="medium-12 columns">            
+        <input id="r_design_rdy" name="design" value="Designer setzt vorhandenes Design um" data-name="concept" type="radio"> Designer setzt vorhandenes Design um<br />
+        <input id="r_design_create" name="design" value="Designer erstellt individuelles Design" data-name="concept" type="radio" checked> Designer erstellt individuelles Design<br />
+        <input id="r_design_template" name="design" value="Designer adaptiert gewähltes Template" data-name="concept" type="radio"> Designer adaptiert gewähltes Template<br />
       </div>
     </div>
     <div class="columns medium-6">
       <label for="design">Wie viele Revisionsdurchläufe sind gewünscht?<span class="required">*</span></label>
-      <div class="medium-12 columns">  
-       <input type="text" class="revision-count" value="0" disabled>
-       <div class="range-slider" id="revision-slider" name="s_revisions" data-slider data-options="start: 1; end: 5;">
-        <span class="range-slider-handle" role="slider" tabindex="0" name="s_revisions"></span>
-        <span class="range-slider-active-segment" name="s_revisions"></span>
-        <input type="hidden" name="s_revisions">
+      <div id="asd" class="medium-12 columns">  
+        <input type="text" name="design" class="revision-count" data-name="revisions" value="0">
+        <div class="range-slider" id="revision-slider" name="s_revisions" data-slider data-options="start: 1; end: 5;">
+          <span class="range-slider-handle" role="slider" tabindex="0" name="s_revisions"></span>
+          <span class="range-slider-active-segment" name="s_revisions"></span>
+          <!--  <input type="hidden" name="design" data-name="revisions"> -->
+        </div>
+ 
       </div>
-
     </div>
   </div>
-</div>
-<div class="row">
- <label for="t_mood">Welche Eigenschaften soll die Seite vermitteln?</label>
- <textarea type="text" id="t_mood" name="t_mood" rows="3">edel, seriös, teuer, einzigartig, limitiert</textarea>
-</div>
-<div class="row">
+  <div class="row">
+   <label for="t_mood">Welche Eigenschaften soll die Seite vermitteln?</label>
+   <textarea type="text" id="t_mood" name="t_mood" rows="3">edel, seriös, teuer, einzigartig, limitiert</textarea>
+ </div>
+ <div class="row">
   <label for="email">Die Seite soll / soll nicht aussehen wie folgende Mitbewerberseiten <br /><em>(mehrere Adressen untereinander durch Absatz getrennt)</em></label>
   <div class="medium-6 columns text-center">
     <label for="email" class="green-font">positive Referenz</label>
@@ -259,7 +253,7 @@
   </div>
 </div>
 <div class="form-step dark-bg primary-full-border">
-  <h2 data-magellan-destination="5">Service <a name="5"></a></h2> 
+  <h2 data-magellan-destination="5">Service <a name="5"></a></h2>
 </div>
 </div>
 <div id="services">
@@ -318,13 +312,13 @@
   <h3 class="subline padding-top">Ergänzende Bemerkungen</h3>
   <label for="t_comment"> Hier können Sie ergänzende Anmerkungen zum gesamten Briefing beifügen.</label>
   <textarea type="text" id="t_comment" name="t_comment" rows="3" >Mir ist besonders wichtig, dass...</textarea>
-
-  <input id="c_notifications" name="c_notifications" type="checkbox" value="yes" checked> 
-  Ich möchte automatisch per E-mail über neue Bewerber informiert werden <br />     
-
-  <input id="c_agb" name="agb" type="checkbox" required> 
+ 
+  <input id="c_notifications" name="c_notifications" type="checkbox" value="yes" checked>
+  Ich möchte automatisch per E-mail über neue Bewerber informiert werden <br />    
+ 
+  <input id="c_agb" name="agb" type="checkbox" required>
   Ich stimme den <a href="">AGB</a> zu
-
+ 
   <br class="full-padding">
   <div class="large-12 columns text-center padding-top">
     <button type="submit" class="button">Absenden</button>
@@ -340,39 +334,48 @@ $('[data-slider]').on('change.fndtn.slider', function(){
  var count = $('#revision-slider').attr('data-slider');
  span.val(count)
 });
-</script> 
-
-<script>
-  var data = {
-    'services' : {},
-    'functions' : [],
-    'content' : {},
-    'design' : {},
-    'general' : {}
-  };
-  var form = $('#services, #r');
-
-  var inpS = form.find('input');
-  var temp;
-
-  for(var n = 0; n < inpS.length; n++) {
-    
-    temp = $(inpS[n]);
-    
-    if( temp.attr("checked") ) {
-      if(temp.attr("type") == "checkbox") {
-        //console.log(temp);
-        data[temp.attr("name")].push(temp.attr("value"));
-
-      } else if(temp.attr("type") == "radio") {
-
-        data[temp.attr("name")][temp.data("name")] = temp.attr("value");
-      }
-    }
-  }
-
-  console.log(data);
-
 </script>
-
-
+ 
+<script>
+ 
+  function postToServer() {
+    var data = {
+      'services' : {},
+      'functions' : {},
+      'content' : {},
+      'design' : {},
+      'general' : {}
+    };
+ 
+    var form = $('#services, #functions, #contents, #design');
+ 
+    var inpS = form.find('input, textarea');
+    var temp;
+ 
+    for(var n = 0; n < inpS.length; n++) {
+ 
+      temp = $(inpS[n]);
+ 
+      if( temp.attr("checked") ) {
+        if(temp.attr("type") == "checkbox") {
+ 
+          if( data[temp.attr("name")][temp.data("name")] == undefined) data[temp.attr("name")][temp.data("name")] = [];
+         
+          data[temp.attr("name")][temp.data("name")].push(temp.attr("value"));
+ 
+        } else if(temp.attr("type") == "radio") {
+          data[temp.attr("name")][temp.data("name")] = temp.attr("value");
+        }
+      } else if(temp.attr("type") == "hidden!!!!" ) {
+       data[temp.attr("name")][temp.data("name")] = temp.attr("value");
+     } else if(temp.attr("type") == "text" ) {
+       data[temp.attr("name")][temp.data("name")] = temp.attr("value");
+       console.log(temp)
+     } else {
+ 
+     }
+   }
+ 
+   console.log(data);
+ }
+</script>
