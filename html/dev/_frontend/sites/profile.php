@@ -70,9 +70,7 @@
               <ul>
                 <li><i class="fa fa-comment fa-fw"></i> Kommunikation</li>
                 <li><i class="fa fa-clock-o fa-fw"></i> Geschwindikgiet</li>
-
                 <li><i class="fa fa-heart fa-fw"></i> Design</li>
-
                 <li><i class="fa fa-wrench fa-fw"></i> Funktionalität</li>
                 <li><i class="fa fa-question fa-fw"></i> Beratung</li>
                 <li id="sum-points">Gesamt<br /> <span id="vote-count">(4 Stimmen)</span></li>
