@@ -31,8 +31,8 @@
 		public function getPublicInfo($userId) {
 			$query = "SELECT public_info FROM users_meta WHERE user_id = '$userId'";
 			$result = mysqli_query($this->db, $query);
-			$row = mysqli_fetch_row($result);
-			return json_encode($row, JSON_UNESCAPED_SLASHES);;
+			$row = mysqli_fetch_object($result);
+			return $row->public_info;
 
 		}
 

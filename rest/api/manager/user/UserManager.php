@@ -28,7 +28,6 @@
 		public function getPublicInfo($userId) {
 			$dao = new UserDao;
 			$result = $dao->getPublicInfo($userId);
-			print_r($result);
 			return $result;
 		}
 
