@@ -1,0 +1,126 @@
+<div class="main-section">
+	<div class="row padding-top">
+		<div class="medium-12 columns">
+			<div class="view-switch right show-for-medium-up">
+				<a href="#" class="active" id="link-boxed"><i class="fa fa-th fa-fw"></i></a>
+				<a href="#" id="link-list"><i class="fa fa-list-ul fa-fw"></i></a>
+			</div>
+			<div class="sort">
+				<a href="" class="sortbuttons"><i class="fa fa-recycle fa-fw"></i></a>
+				<a href="" class="sortbuttons"><i class="fa fa-check fa-fw"></i></a>
+				<a href="" class="sortbuttons"><i class="fa fa-legal fa-fw"></i></a>
+			</div>
+		</div>
+	</div>
+	<br class="end">
+	<div class="row" >
+		<div id="boxed-style">
+			<div class="medium-4 columns">
+				<div class="project">
+					<div class="project-name ">
+						<h2>Testprojekt (aktiv)</h2>
+					</div>
+					<div class="project-content ">
+						<div class="row text-center">
+
+							<div class="medium-4 columns"><i class="fa fa-euro fa-fw"></i><br>2500</div>
+							<div class="medium-4 columns"><i class="fa fa-dashboard fa-fw"></i><br>94</div>
+							<div class="medium-4 columns"><i class="fa fa-clock-o fa-fw"></i><br>22 Tage</div>
+						</div>
+					</div>
+					<div class="project-actions ">
+						<div class="button-bar">
+							<ul class="button-group">
+								<li><a href="#" class="small button green-bg" data-reveal-id="finishproject"><i class="fa fa-check fa-fw"></i></a></li>
+								<li><a href="#" class="small button red-bg" data-reveal-id="deleteproject"><i class="fa fa-remove fa-fw"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="medium-4 columns">
+				<div class="project">
+					<div class="project-name closed-header">
+						<h2>Testprojekt (fertig)</h2>
+					</div>
+					<div class="project-content closed-content">
+						<div class="row text-center">
+
+							RATINGS
+						</div>
+					</div>
+					<div class="project-actions closed-footer">
+						<div class="button-bar">
+							<ul class="button-group">
+
+
+								<li><a href="#" class="small button grey-bg">abgeschlossen</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="list-style" class="hide" style="display: block;">
+			<table>
+				<tbody><tr>
+					<th><i class="fa fa-university fa-fw"></i></th>
+					<th><i class="fa fa-euro fa-fw"></i></th>
+					<th><i class="fa fa-clock-o fa-fw"></i></th>
+					<th><i class="fa fa-edit fa-fw"></i></th>
+				</tr>
+				<tr>
+					<td>Testprojekt (fertig)</td>
+					<td>1600 €</td>
+					<td>97</td>
+					<td>2 Tage</td>
+					<td><span class="label default">abgeschlossen</span></td>
+				</tr>
+				<tr>
+					<td>Testprojekt (aktiv)</td>
+					<td>1600 €</td>
+					<td>97</td>
+					<td>2 Tage</td>
+					<td>
+						<a href="#" data-reveal-id="finishproject"><i class="fa fa-check fa-fw green-font"></i></a><i class="fa fa-check fa-fw green-font">
+						<a href="#" data-reveal-id="deleteproject"><i class="fa fa-remove fa-fw orange-font"></i></a></i></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<div id="finishproject" class="reveal-modal" data-reveal>
+	<h2>Projekt abschließen</h2>
+	<a class="close-reveal-modal">&#215;</a>
+	<p>Sobald Sie das Projekt als abgeschlossen markieren wird der Webworker über die erfolgreiche Abnahme informiert und Sie können die Arbeit des Webworkers bewerten.</p>
+	<a href="index.php?page=finishproject" class="button small green-bg" ><i class="fa fa-check"></i> Projekt abnehmen</a>
+
+</div>
+
+<div id="deleteproject" class="reveal-modal" data-reveal>
+	<h2>Projekt abbrechen</h2>
+	<a class="close-reveal-modal">&#215;</a>
+	<p>Sind Sie sicher, dass Sie dieses Projekt abbrechenn möchten? Dieser Schritt kann nicht rückgängig gemacht werden.</p>
+	<a href="#" class="button small red-bg"><i class="fa fa-check"></i> Projekt löschen</a>
+
+</div>
+
+<script>
+		// View-Switch (boxed/list)
+		$("#link-boxed").click(function(){
+			$("#list-style").slideUp("slow")
+			$("#boxed-style").slideDown("slow")
+			$("#link-boxed").addClass('active')
+			$("#link-list").removeClass('active')
+		});
+
+		$("#link-list").click(function(){
+			$("#list-style").slideDown("slow")
+			$("#boxed-style").slideUp("slow")
+			$("#link-list").addClass('active')
+			$("#link-boxed").removeClass('active')
+		});
+	</script>
