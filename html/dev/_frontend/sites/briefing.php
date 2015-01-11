@@ -1,21 +1,21 @@
 <!-- requires briefing-effort-count.js -->
 <main>
-  <div id="briefing-form">  
- 
+  <div id="briefing-form">
+
     <!-- Sticky Pagination -->
     <div class="row" id="form-instruction">
       <div class="large-12 columns text-center">
         <h1 id="headline">Ausschreibung erstellen</h1>
       </div>
- 
+
       <h2 class="subline text-center padding-bottom">Nach dem Absenden des Formulars wird automatisch ein kostenloses Konto für dich eingerichtet, in dem du deine Ausschreibungen verwalten kannst </h2>
       <ul>
        <li><span>Mit <span class="required">*</span> gekennzeichnete Angaben sind verpfichtend</span></li>
        <li><span>Unterwellte Worte besitzen Tooltipps</span></li>
-       <li><span>Mit der Navigation am oberen Seitenrand können Sie zu den einzelnen Abschnitten wechseln</span></li>  
+       <li><span>Mit der Navigation am oberen Seitenrand können Sie zu den einzelnen Abschnitten wechseln</span></li>
      </ul>
    </div>
- 
+
    <div class="row padding-top">
      <div class="small-12 columns text-center">
        <div data-magellan-expedition="fixed" id="form-pagination">
@@ -24,20 +24,20 @@
           </div>
           <span class="meter TotalEffortDiv"></span>
         </div>
-        <dl class="sub-nav">        
+        <dl class="sub-nav">
           <dd data-magellan-arrival="1"><a href="#1">Allgemeines</a></dd>
           <dd data-magellan-arrival="2"><a href="#2">Inhalt</a></dd>
           <dd data-magellan-arrival="4"><a href="#4">Funktionalität</a></dd>
           <dd data-magellan-arrival="3"><a href="#3">Design</a></dd>
-          <dd data-magellan-arrival="5"><a href="#5">Service</a></dd>      
-        </dl>  
+          <dd data-magellan-arrival="5"><a href="#5">Service</a></dd>
+        </dl>
       </div>
     </div>
   </div>
   <br class="end" />
- 
+
   <form id ="form" data-abide action="../_worker/index.php?page=ausschreibungen_detail" method="POST" onsubmit="return checkForm(this);">
- 
+
     <div id="general">
       <!-- Step -->
       <div class="form-step dark-bg primary-full-border">
@@ -46,22 +46,22 @@
       <div class="row">
         <div class="medium-6 columns">
           <label for="i_name">Name<span class="required">*</span>
-            <input type="text" id="i_name" data-name="name" name="general" value="Max Mustermann">
+            <input type="text" id="i_name" name="name" data-category="general" value="Max Mustermann">
           </label>
         </div>
         <div class="medium-6 columns">
           <label for="i_email">E-mail<span class="required">*</span></label>
-          <input type="email" id="i_email" name="general" value="max@mustermann.at">
-        </div>  
+          <input type="email" id="i_email" name="email" data-category="general" value="max@mustermann.at">
+        </div>
       </div>
       <div class="row">
         <div class="medium-6 columns">
           <label for="i_company">Firma<span class="required">*</span></label>
-          <input type="text" id="i_company" name="general" value="Firma GmbH" >
+          <input type="text" id="i_company" name="company" data-category="general" value="Firma GmbH" >
         </div>
         <div class="medium-6 columns">
           <label for="i_website">Website</label>
-          <input type="text" id="i_website" name="general" value="http://company-site.com" >
+          <input type="text" id="i_website" name="website" data-category="general" value="http://company-site.com" >
         </div>
       </div>
       <div class="row">
@@ -86,11 +86,11 @@
     <div class="row">
       <div class="medium-8 columns">
         <label for="t_description">Beschreibung des Unternehmens</label>
-        <textarea type="text" id="t_description" name="t_description" rows="5">Unser Unternehmen befasst sich mit der...</textarea>
+        <textarea  id="t_description" name="description" data-cateogry="general" rows="5">Unser Unternehmen befasst sich mit der...</textarea>
       </div>
       <div class="medium-4 columns">
         <label for="s_branche">Branche
-          <datalist id="s_branche">
+<!--           <datalist id="s_branche">
             <select id="s_branche" name="s_branche" name="s_branche">
               <option value="Gastronomie">Gastronomie</option>
               <option value="Gesundheitswesen">Gesundheitswesen</option>
@@ -98,9 +98,9 @@
               <option value="Handwerk">Handwerk</option>
               <option value="Technik">Technik</option>
               <option value="Unterhaltung">Unterhaltung</option>
-            </select>    
-          </datalist>
-          <input type="text" name="s_branche" list="s_branche" >
+            </select>
+          </datalist> -->
+          <input type="text" name="branche" data-category="general" value="IT" list="s_branche" >
         </label>
         <label for="s_employees">Mitarbeiter</label>
         <select id="s_employees" name="s_employees">
@@ -140,15 +140,15 @@
     <div class="row">
      <div class="large-6 columns">
       <label for="c_text">Wie soll der Text erstellt werden?<span class="required">*</span></label><br >
-      <input name="content" id="r_text_rdy" data-name="text" value="Designer erhält fertigen Text" type="radio" class="has-effort" data-effort="10" data checked> Designer erhält fertigen Text<br />
-      <input name="content" id="r_text_update" data-name="text" value="Designer bereitet vorhandenen Text auf" type="radio" class="has-effort" data-effort="30"> Designer bereitet vorhandenen Text auf<br />
-      <input name="content" id="r_text_create" data-name="text" value="Designer erstellt individuellen Text" type="radio" class="has-effort" data-effort="50"> Designer erstellt individuellen Text<br />
+      <input name="text" id="r_text_rdy" data-name="text" data-category="content" value="Designer erhält fertigen Text" type="radio" class="has-effort" data-effort="10" data checked> Designer erhält fertigen Text<br />
+      <input name="text" id="r_text_update" data-name="text" data-category="content" value="Designer bereitet vorhandenen Text auf" type="radio" class="has-effort" data-effort="30"> Designer bereitet vorhandenen Text auf<br />
+      <input name="text" id="r_text_create" data-name="text" data-category="content" value="Designer erstellt individuellen Text" type="radio" class="has-effort" data-effort="50"> Designer erstellt individuellen Text<br />
     </div>
     <div class="large-6 columns">
       <label for="c_grafik">Wie sollen die Grafiken erstellt werden?<span class="required">*</span></label><br >
-      <input name="content" id="r_grafik_rdy" data-name="graphics" value="Designer erhält fertige Grafiken" type="radio"> Designer erhält fertige Grafiken<br />
-      <input name="content" id="r_grafik_update" data-name="graphics" value="Designer bereitet vorhandene Grafiken auf" type="radio"> Designer bereitet vorhandene Grafiken auf<br />
-      <input name="content" id="r_grafik_create" data-name="graphics" value="Designer erstellt individuelle Grafiken" type="radio" checked> Designer erstellt individuelle Grafiken<br />
+      <input name="grafics" id="r_grafik_rdy" data-name="grafics" data-category="content" value="Designer erhält fertige Grafiken" type="radio"> Designer erhält fertige Grafiken<br />
+      <input name="grafics" id="r_grafik_update" data-name="grafics" data-category="content" value="Designer bereitet vorhandene Grafiken auf" type="radio"> Designer bereitet vorhandene Grafiken auf<br />
+      <input name="grafics" id="r_grafik_create" data-name="grafics" data-category="content" value="Designer erstellt individuelle Grafiken" type="radio" checked> Designer erstellt individuelle Grafiken<br />
     </div>
   </div>
 </div>
@@ -177,13 +177,13 @@
       <input id="c_function_gallery" name="functions" type="checkbox" value="Bildergallerie" checked data-name="subfunction" > Bildergallerie<br />
       <input id="c_function_contact" name="functions" type="checkbox" value="Kontaktformular" checked data-name="subfunction" > Kontaktformular<br />
     </div>
- 
+
   </div>
   <div class="row">
     <div class="large-6 columns">
       <label for="r_cms">Möchten Sie Inhalte in Zukunft selbst bearbeiten oder hinzufügen können?<span class="required">*</span></label><br >
-      <input id="r_cms_yes" name="functions" value="true" type="radio" data-name="cms" checked> Ja<br />
-      <input id="r_cms_no" name="functions" value="false" type="radio" data-name="cms"> Nein<br />  
+      <input id="r_cms_yes" name="cms" value="true" type="radio" data-name="cms" data-category="functions" checked> Ja<br />
+      <input id="r_cms_no" name="cms" value="false" type="radio" data-name="cms" data-category="functions"> Nein<br />
     </div>
     <div class="large-6 columns">
       <label for="c_ext">Sollen externe Plattformen integriert werden?</label><br >
@@ -198,14 +198,14 @@
       <label for="accessibility">Besteht ein erhöter Anspruch an die Barrierefreiheit?</label><br />
     <!--  Wird die Seiter voraussichtlich häufig von Personen mit ausgeprägter Sehschwäche genutzt und muss daher besonders barierefrei sein
     (Screen-Reader kompatibel, kontrastreiche Darstellungsoption, individuelle Einstellung der Schriftgröße...) und auch in älteren Browsern einwandfrei funktionieren? -->
-    <input id="r_accessibility_yes" name="functions" value="true" data-name="accessibility" type="radio"> Ja<br />
-    <input id="r_accessibility_no" name="functions" value="false" data-name="accessibility" type="radio" checked> Nein<br />
+    <input id="r_accessibility_yes" name="accessibility" value="true" data-name="accessibility" data-category="functions" type="radio"> Ja<br />
+    <input id="r_accessibility_no" name="accessibility" value="false" data-name="accessibility" data-category="functions" type="radio" checked> Nein<br />
   </div>
   <div class="large-6 columns">
    <label for="responsive">Benötigen Sie eine optimierte Version für mobile Geräte?<span class="required">*</span></label><br />
    <!-- Soll es eine optimierte Version für die Darstellung auf mobilen Geräten wie z.B. Smartphones oder Tablets geben? -->
-   <input id="r_responsive_yes" name="functions" value="true" data-name="mobile" type="radio" checked> Ja<br />
-   <input id="r_responsive_no" name="functions" value="false" data-name="mobile" type="radio"> Nein<br />
+   <input id="r_responsive_yes" name="mobile" value="true" data-name="mobile" data-category="functions" type="radio" checked> Ja<br />
+   <input id="r_responsive_no" name="mobile" value="false" data-name="mobile" data-category="functions" type="radio"> Nein<br />
  </div>
 </div>
 </div>
@@ -213,43 +213,42 @@
   <!-- Step -->
   <div class="form-step dark-bg primary-full-border">
     <h2 data-magellan-destination="3">Design<a name="3"></a></h2>
-  </div>  
+  </div>
   <div class="row">
     <div class="columns medium-6">
- 
+
       <label for="design">Wie soll das grafische Konzept der Seite erstellt werden?<span class="required">*</span></label><br >
-      <div class="medium-12 columns">            
-        <input id="r_design_rdy" name="design" value="Designer setzt vorhandenes Design um" data-name="concept" type="radio"> Designer setzt vorhandenes Design um<br />
-        <input id="r_design_create" name="design" value="Designer erstellt individuelles Design" data-name="concept" type="radio" checked> Designer erstellt individuelles Design<br />
-        <input id="r_design_template" name="design" value="Designer adaptiert gewähltes Template" data-name="concept" type="radio"> Designer adaptiert gewähltes Template<br />
+      <div class="medium-12 columns">
+        <input id="r_design_rdy" name="concept" value="Designer setzt vorhandenes Design um" data-name="concept" data-category="design" type="radio"> Designer setzt vorhandenes Design um<br />
+        <input id="r_design_create" name="concept" value="Designer erstellt individuelles Design" data-name="concept" data-category="design" type="radio" checked> Designer erstellt individuelles Design<br />
+        <input id="r_design_template" name="concept" value="Designer adaptiert gewähltes Template" data-name="concept" data-category="design" type="radio"> Designer adaptiert gewähltes Template<br />
       </div>
     </div>
     <div  class="columns medium-6">
       <label for="design">Wie viele Revisionsdurchläufe sind gewünscht?<span class="required">*</span></label>
-      <div id="asd" class="medium-12 columns">  
-        <input type="text" name="design" class="revision-count" data-name="revisions" >
+      <div id="asd" class="medium-12 columns">
+        <input type="text" name="design" class="revision-count" data-category="design" >
         <div class="range-slider" id="revision-slider" name="s_revisions" data-slider data-options="start: 1; end: 5;">
           <span class="range-slider-handle" role="slider" tabindex="0" name="s_revisions"></span>
           <span class="range-slider-active-segment" name="s_revisions"></span>
-          <input type="hidden" name="design" data-name="revisions">
+          <input type="hidden" name="design" data-name="revisions" cata-category="design">
         </div>
- 
       </div>
     </div>
   </div>
   <div class="row">
    <label for="t_mood">Welche Eigenschaften soll die Seite vermitteln?</label>
-   <textarea id="t_mood" name="design" data-name="characteristics" rows="3">edel, seriös, teuer, einzigartig, limitiert</textarea>
+   <textarea id="t_mood" name="characteristics" data-cateogry="design" rows="3">edel, seriös, teuer, einzigartig, limitiert</textarea>
  </div>
  <div class="row">
   <label for="email">Die Seite soll / soll nicht aussehen wie folgende Mitbewerberseiten <br /><em>(mehrere Adressen untereinander durch Absatz getrennt)</em></label>
   <div class="medium-6 columns text-center">
     <label for="email" class="green-font">positive Referenz</label>
-    <textarea  id="t_reference_positive" name="design" data-name="positiveReference" rows="3">http://www.gute-beispielseite.at</textarea>
+    <textarea  id="t_reference_positive" name="positivereference" data-cateogry="design" rows="3">http://www.gute-beispielseite.at</textarea>
   </div>
   <div class="medium-6 columns text-center">
     <label for="email" class="orange-font">negative Referenz</label>
-    <textarea  id="t_reference_negative" name="design" data-name="negativeReference" rows="3" >http://www.schlechte-beispielseite.at</textarea>
+    <textarea  id="t_reference_negative" name="negativereference" data-cateogry="design" rows="3" >http://www.schlechte-beispielseite.at</textarea>
   </div>
 </div>
 <div class="form-step dark-bg primary-full-border">
@@ -262,63 +261,64 @@
       <label for="email">Wer stellt den Server für die Seite bereit?</label>
     </div>
     <div class="medium-3 columns">
-      <input id="r_service_server_d" name="services" data-name="server" value="Designer" type="radio" checked> Designer <br />
-      <input id="r_service_server_k" name="services" data-name="server" value="Kunde" type="radio"> Kunde
+      <input id="r_service_server_d" name="server" data-name="server" data-category="service" value="Designer" type="radio" checked> Designer <br />
+      <input id="r_service_server_k" name="server" data-name="server" data-category="service" value="Kunde" type="radio"> Kunde
     </div>
     <hr />
     <div class="medium-9 columns">
       <label for="email">Wer registriert die Domain?</label>
     </div>
     <div class="medium-3 columns">
-      <input id="r_service_domain_d" name="services" data-name="domain" value="Designer" type="radio" checked> Designer <br />
-      <input id="r_service_domain_k" name="services" data-name="domain" value="Kunde" type="radio"> Kunde
+      <input id="r_service_domain_d" name="domain" data-name="domain" data-category="service" value="Designer" type="radio" checked> Designer <br />
+      <input id="r_service_domain_k" name="domain" data-name="domain" data-category="service" value="Kunde" type="radio"> Kunde
     </div>
     <hr />
     <div class="medium-9 columns">
       <label for="email">Benötigen Sie E-mail Adressen?</label>
     </div>
     <div class="medium-3 columns">
-      <input id="r_service_mail_y" name="services" data-name="emails" value="true" type="radio" checked> Ja<br />
-      <input id="r_service_mail_n" name="services" data-name="emails" value="false" type="radio"> Nein<br />
+      <input id="r_service_mail_y" name="emails" data-name="emails" data-category="service" value="true" type="radio" checked> Ja<br />
+      <input id="r_service_mail_n" name="emails" data-name="emails" data-category="service" value="false" type="radio"> Nein<br />
     </div>
     <hr />
     <div class="medium-9 columns">
       <label for="email">Benötigen Sie detaillierte Nutzungsstatistiken?</label>
     </div>
     <div class="medium-3 columns">
-      <input id="r_service_statistics_y" name="services" data-name="statistics" value="true" type="radio" checked> Ja<br />
-      <input id="r_service_statistics_n" name="services" data-name="statistics" value="false" type="radio"> Nein<br />
+      <input id="r_service_statistics_y" name="statistics" data-name="statistics" data-category="service" value="true" type="radio" checked> Ja<br />
+      <input id="r_service_statistics_n" name="statistics" data-name="statistics" data-category="service" value="false" type="radio"> Nein<br />
     </div>
     <hr />
     <div class="medium-9 columns">
       <label for="email">Sollen Mitarbeiter in die Pflege & Wartung der Seite eingeschult werden?</label>
     </div>
     <div class="medium-3 columns">
-      <input id="r_service_instructions_y" name="services" data-name="training" value="true" type="radio" checked> Ja<br />
-      <input id="r_service_instructions_n" name="services" data-name="training" value="false" type="radio"> Nein<br />
+      <input id="r_service_instructions_y" name="training" data-name="training" data-category="service" value="true" type="radio" checked> Ja<br />
+      <input id="r_service_instructions_n" name="training" data-name="training" data-category="service" value="false" type="radio"> Nein<br />
     </div>
     <hr />
     <div class="medium-9 columns">
       <label for="email"> Möchten Sie die Seite durch die Schaltung bezahlter Werbung in Suchmaschinen oder sozialen Netzwerken bewerben?</label>
     </div>
     <div class="medium-3 columns">
-      <input id="r_service_advertising_y" name="services" data-name="advertising" value="true" type="radio" checked> Ja<br />
-      <input id="r_service_advertising_n" name="services" data-name="advertising" value="false" type="radio"> Nein<br />
+      <input id="r_service_advertising_y" name="advertising" data-name="advertising" data-category="service" value="true" type="radio" checked> Ja<br />
+      <input id="r_service_advertising_n" name="advertising" data-name="advertising" data-category="service" value="false" type="radio"> Nein<br />
     </div>
     <hr>
   </div>
 </div>
+
 <div class="row">
   <h3 class="subline padding-top">Ergänzende Bemerkungen</h3>
   <label for="t_comment"> Hier können Sie ergänzende Anmerkungen zum gesamten Briefing beifügen.</label>
-  <textarea type="text" id="t_comment" name="t_comment" rows="3" >Mir ist besonders wichtig, dass...</textarea>
- 
+  <textarea id="t_comment" name="t_comment"  data-cateogry="comment" rows="3" >Mir ist besonders wichtig, dass...</textarea>
+
   <input id="c_notifications" name="c_notifications" type="checkbox" value="yes" checked>
-  Ich möchte automatisch per E-mail über neue Bewerber informiert werden <br />    
- 
+  Ich möchte automatisch per E-mail über neue Bewerber informiert werden <br />
+
   <input id="c_agb" name="agb" type="checkbox" required>
   Ich stimme den <a href="">AGB</a> zu
- 
+
   <br class="full-padding">
   <div class="large-12 columns text-center padding-top">
     <button type="submit" class="button">Absenden</button>
@@ -335,10 +335,10 @@ $('[data-slider]').on('change.fndtn.slider', function(){
  span.val(count)
 });
 </script>
- 
+
 <script>
- 
-  function postToServer() {
+
+   function postToServer() {
     var data = {
       'services' : {},
       'functions' : {},
@@ -346,36 +346,39 @@ $('[data-slider]').on('change.fndtn.slider', function(){
       'design' : {},
       'general' : {}
     };
- 
+
     var form = $('#form');
- 
-    var inpS = form.find('input, textarea');
+
+    var inpS = form.find('input');
     var temp;
- 
+
     for(var n = 0; n < inpS.length; n++) {
- 
+
       temp = $(inpS[n]);
-      
+
       if( temp.attr("checked") ) {
         if(temp.attr("type") == "checkbox") {
- 
+
           if( data[temp.attr("name")][temp.data("name")] == undefined) data[temp.attr("name")][temp.data("name")] = [];
-         
+
           data[temp.attr("name")][temp.data("name")].push(temp.attr("value"));
- 
+
         } else if(temp.attr("type") == "radio") {
-          data[temp.attr("name")][temp.data("name")] = temp.attr("value");
+          data[temp.data("category")][temp.data("name")] = temp.attr("value");
         }
       } else if(temp.attr("type") == "hidden" ) {
         data[temp.attr("name")][temp.data("name")] = temp.attr("value");
-     
+
      } else if(temp.attr("type") == "text" ) {
-       data[temp.attr("name")][temp.data("name")] = temp.attr("value");     
+       data[temp.data("category")][temp.attr("name")] = temp.attr("value");
      } else if(temp[0].type == "textarea" ) {
-        data[temp.attr("name")][temp.data("name")] = temp.text();
+        data[temp.data("category")][temp.attr("name")] = temp.text();
      }
    }
- 
-   console.log(data);
+
+    console.log(data);
  }
+
+ postToServer()
+
 </script>
