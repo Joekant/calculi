@@ -10,14 +10,18 @@
 			$this->db = $db->db_connect(); 
 		}
 
-		public function getBriefings() {
+		public function getBriefings($assoc = false) {
 			$query = "SELECT * FROM briefings";
 			$result = mysqli_query($this->db, $query);
-			while ($row[] = mysqli_fetch_assoc($result) );
+			if(!$assoc) {
+				$row = mysqli_fetch_all($result, MYSQLI_ASSOC);	
+			} else {
+				
+			}
+			
 
 			return $row;
 		}
-
 
 
 		/*

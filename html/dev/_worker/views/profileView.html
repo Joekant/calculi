@@ -39,33 +39,34 @@
 						<div class="medium-8 columns">
 							<div class="medium-5 columns">
 								<label for="i_name">Name</label>
-								<input type="text" id="i_name" placeholder="Max Mustermann">
+								<input  type="text" id="i_name" placeholder="Max Mustermann">
 							</div>
 							<div class="medium-5 columns">
 								<label for="i_website">Website</label>
-								<input type="text" id="i_website" placeholder="http://website.at">
+								<input ng-model="pub.general.website" type="text" id="i_website" placeholder="http://website.at">
 							</div>
 							<div class="medium-2 columns">
 								<label for="i_birth">Geburtsjahr</label>
-								<input type="text" id="i_birth" placeholder="1988">
+								<input ng-model="pub.general.birth" type="text" id="i_birth" placeholder="1988">
 							</div>
 
 							<div class="medium-5 columns">
 								<label for="i_competence">Kompetenzen</label>
-								<input type="text" id="i_competence" placeholder="PHP, SQL, Photoshop...">
+								
+								<input ng-model="pub.competencies[0]" type="text" id="i_competence" placeholder="PHP, SQL, Photoshop...">
 							</div>
 							<div class="medium-7 columns">
 								<label for="i_skills">Stärken</label>
-								<input type="text" id="i_skills" placeholder="Disziplin, Pünktlichkeit...">
+								<input ng-model="pub.skills[0]"  type="text" id="i_skills" placeholder="Disziplin, Pünktlichkeit...">
 							</div>
 
 							<div class="medium-6 columns">
 								<label for="s_country">Land</span></label>
 								<select id="s_country" name="s_country" >
 									<option value="unselected">Land auswählen...</option>
-									<option value="Österreich">Österreich</option>
-									<option value="Deutschland" >Deutschland</option>
-									<option value="Schweiz" >Schweiz</option>
+									<option value="Austria">Österreich</option>
+									<option value="Germany" >Deutschland</option>
+									<option value="Switzerland" >Schweiz</option>
 								</select>
 							</label>
 						</div>
@@ -77,23 +78,24 @@
 						</div>
 					</div>
 					<div class="medium-12 columns">
-						<textarea type="text" id="t_description" rows="5" placeholder="Ich arbeite seit 2004 als ..."></textarea>
+						<textarea ng-model="pub.general.description" type="text" id="t_description" rows="5" placeholder="Ich arbeite seit 2004 als ..."></textarea>
 					</div>
+					
 					<div class="medium-3 columns">
 						<label for="t_facebook" class="text-center"><i class="fa fa-facebook fa-fw"></i></label>
-						<input type="text" id="t_facebook" placeholder="http://facebook.com/...">
+						<input ng-model="pub.social[0].link" type="text" id="t_facebook" placeholder="http://facebook.com/...">
 					</div>
 					<div class="medium-3 columns">
 						<label for="t_googleplis" class="text-center"><i class="fa fa-google-plus fa-fw"></i></label>
-						<input type="text" id="t_googleplus" placeholder="http://google.com/...">
+						<input ng-model="pub.social[1].link" type="text" id="t_googleplus" placeholder="http://google.com/...">
 					</div>
 					<div class="medium-3 columns">
 						<label for="t_twitter" class="text-center"><i class="fa fa-twitter fa-fw"></i></label>
-						<input type="text" id="t_twitter" placeholder="http://twitter.com/...">
+						<input ng-model="pub.social[2].link" type="text" id="t_twitter" placeholder="http://twitter.com/...">
 					</div>
 					<div class="medium-3 columns">
 						<label for="t_xing" class="text-center"><i class="fa fa-xing fa-fw"></i></label>
-						<input type="text" id="t_xing" placeholder="http://xing.com/...">
+						<input ng-model="pub.social[3].link" type="text" id="t_xing" placeholder="http://xing.com/...">
 					</div>
 					<div class="text-right padding-top">
 						<a href="" class="button green-bg"><i class="fa fa-save fa-fw"></i> Speichern</a>

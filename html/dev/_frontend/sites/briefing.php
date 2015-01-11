@@ -46,22 +46,22 @@
       <div class="row">
         <div class="medium-6 columns">
           <label for="i_name">Name<span class="required">*</span>
-            <input type="text" id="i_name" name="i_name" value="Max Mustermann">
+            <input type="text" id="i_name" data-name="name" name="general" value="Max Mustermann">
           </label>
         </div>
         <div class="medium-6 columns">
           <label for="i_email">E-mail<span class="required">*</span></label>
-          <input type="email" id="i_email" name="i_email" value="max@mustermann.at">
+          <input type="email" id="i_email" name="general" value="max@mustermann.at">
         </div>  
       </div>
       <div class="row">
         <div class="medium-6 columns">
           <label for="i_company">Firma<span class="required">*</span></label>
-          <input type="text" id="i_company" name="i_company" value="Firma GmbH" >
+          <input type="text" id="i_company" name="general" value="Firma GmbH" >
         </div>
         <div class="medium-6 columns">
           <label for="i_website">Website</label>
-          <input type="text" id="i_website" name="i_website" value="http://company-site.com" >
+          <input type="text" id="i_website" name="general" value="http://company-site.com" >
         </div>
       </div>
       <div class="row">

@@ -2,6 +2,8 @@
 	
 	include_once('api/REST.php');
 	include_once('api/manager/application/ApplicationManager.php');
+	include_once('api/manager/briefing/BriefingManager.php');
+
 
 	class ApplicationController extends REST {
 
@@ -24,23 +26,36 @@
 			}
 		}
 
+		public function getapplications() {
+			//$userId = $_SESSION['userId'];
+			$briefing = ( isset($this->_request['briefing']) ? true : false );
+			$userId = 1;
+
+			if($_SESSION['role'] != 'worker' ) {
+				$manager  = new ApplicationManager;
+				$result = $manager->getApplications($userId);
+				
+				if($briefing) {
+					$briefingManager = new BriefingManager;
+					$briefingResult = $briefingManager->getBriefings();
+					
+					$briefing = array("briefings" => $briefingResult );
+					$applications = array("applications" => $result );
+					
+					$result = array_merge($briefing, $applications);
+				}
+
+				$this->response($result, 200);
+			} else {
+				$this->response(array('success' => 'false'), 200);	
+			}
+		}
+
+
 		public function test() {
 			$this->response(array('success' => 'true'), 200);
 		}
 
-		/*public function getpublicinfo() {
-			$manager = new UserManager;
-			$result = $manager->getUsers();
-			$this->response($result,200);
-
-		}
-
-		public function getprivateinfo() {
-			$manager = new UserManager;
-			$result = $manager->getUsers();
-			$this->response($result,200);
-
-		}*/
 
 
 	}

@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" ng-app="Core">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,6 +16,21 @@
   <script src="../js/vendor/jquery.js"></script>
   <!-- endbuild -->
 
+  <!-- Angular Core Files -->
+  <script src="../js/vendor/angular/angular.min.js"></script>
+  <script src="../js/vendor/angular/angular-route.min.js"></script>
+
+  <!-- App files -->
+  <script src="../js/core/core.js"></script>
+  <script src="../js/core/services/services.js"></script>
+  <script src="../js/core/directives/directives.js"></script>
+
+  <!-- App Controllers -->
+  <script src="../js/core/controllers/ProfileCtrl.js"></script>  
+  <script src="../js/core/controllers/BriefingsCtrl.js"></script>  
+  <script src="../js/core/controllers/ApplicationsCtrl.js"></script>  
+
+
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Lato:100,200,300,400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
@@ -24,56 +39,38 @@
 <body>
 
   <header class="show-for-large-up">
-    <div class="icon-bar dark-bg large-horizontal six-up">
-      <a href="#" id="Übersicht" class="item active ">
-        <i class="fa fa-dashboard fa-fw"></i>
-        <label>Übersicht</label>
+    <div navmenu class="icon-bar dark-bg large-horizontal five-up">
+
+      <a  ng-repeat="item in items" href="#{{item.url}}" class="item">
+        <i class="fa fa-{{item.class}} fa-fw"></i>
+        <label>{{item.title}}</label>
       </a>
-      <a href="#" id="profil" class="item ">
-        <i class="fa fa-user fa-fw"></i>
-        <label>Profil</label>
-      </a>
-      <a href="#" id="ausschreibungen" class="item ">
-        <i class="fa fa-pencil fa-fw"></i>
-        <label>Ausschreibungen</label>
-      </a>
-      <a href="#" id="bewerbungen" class="item ">
-        <i class="fa fa-heart fa-fw"></i>
-        <label>Bewerbungen</label>
-      </a>
-      <a href="#" id="Aufträge" class="item ">
-        <i class="fa fa-wrench fa-fw"></i>
-        <label>Aufträge</label>
-      </a>
-      <a href="#" id="einstellungen" class="item ">
-        <i class="fa fa-cogs fa-fw"></i>
-        <label>Einstellungen</label>
-      </a>
+
     </div>
   </header>
 
-  <header class="show-for-small-only-up hide-for-large-up">
+  <header  class="show-for-small-only-up hide-for-large-up">
     <nav class="top-bar" id="frontpage-topbar" data-topbar="" role="navigation">
       <ul class="title-area">
         <li class="name"></li>
         <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
       </ul>
-      <section class="top-bar-section">
-        <ul class="right">
-          <li class=""><a href="#">Übersicht</a></li>
+      <section  class="top-bar-section">
+        <ul navmenu class="right">
+          <li ng-repeat = "item in items"><a href="#">{{item.title}}</a></li>
+          <!-- <li class=""><a href="#">{{item.title}}</a></li>
           <li class=""><a href="#">Profil</a></li>
           <li class=""><a href="#">Ausschfeibungen</a></li>
           <li class=""><a href="#">Bewerbungen</a></li>
           <li class=""><a href="#">Aufträge</a></li>
-          <li class=""><a href="#">Einstellungen</a></li>
+          <li class=""><a href="#">Einstellungen</a></li> -->
         </ul>
       </section>
     </nav>
   </header>
 
-  <?php 
-  include('views/profileView.html') 
-  ?>
+  <div ng-view></div>
+
 
   <footer class="be-footer">  
     <ul>

@@ -11,6 +11,14 @@
 			return $result;
 		}
 
+
+		public function getApplications($userId) {
+			$dao = new ApplicationDao;
+			$result = $dao->getApplications($userId);
+
+			return $result;
+		}
+
 		
 
 	}

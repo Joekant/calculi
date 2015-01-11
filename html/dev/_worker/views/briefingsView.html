@@ -37,36 +37,19 @@
         
       </tr>
       
-      <tr class="clickable" onclick="window.document.location='index.php?page=ausschreibungen_detail';">
-        <td>T-mobile GmbH</td>
-        <td>Kommunikation</td>
-        <td>Wien</td>
-        <td>96</td>
-        <td>7</td>
-        <td>6 Tage<br /> 18 Stunden</td>  
-        <td><span class="label green-bg">beworben</span></td>      
-
-      </a>
+      <tr ng-repeat="el in briefings" class="clickable">
+        <td>{{el.general_briefing.general.firma}}</td>
+        <td>{{el.general_briefing.general.branche}}</td>
+        <td>{{el.country}}</td>
+        <td>{{el.effort}}</td>
+        <td>{{el.estimated_price}}</td>
+        <td>{{el.expire_at}}</td>  
+        <td>
+          <span class="label grey-bg">{{el.status}}
+        </span></td>
     </tr>
 
-    <tr class="clickable" onclick="window.document.location='index.php?page=ausschreibungen_detail';">
-      <td>Entasia Restaurant</td>
-      <td>Gastronomie</td>
-      <td>St. Pölten</td>
-      <td>48</td>
-      <td>4</td>
-      <td>0 Tage<br /> 4 Stunden</td> 
-      <td></td>       
-    </tr>
-    <tr class="clickable" onclick="window.document.location='index.php?page=ausschreibungen_detail';">
-      <td>Thomas Henn</td>
-      <td>Künstler</td>
-      <td>Salzburg</td>
-      <td>70</td>
-      <td>11</td>
-      <td>3 Tage<br /> 3 Stunden</td> 
-      <td> <span class="label green-bg">beworben</span></td>      
-    </tr>
+    
   </table>
 
   <br class="padding-top"</br>
