@@ -2,7 +2,7 @@
   <div class="row text-center">
     <a href="index.php"><img src="../img/logo_symbol.png" class="logo half-padding" alt="logo"></a>
     <h1 class="padding-bottom">Login</h1>
-        <form class="loginform" action="../_worker" method="POST">
+        <form class="loginform" method="POST">
           <input type="email" id="email" placeholder="E-mail" value="a@a.at" />
           <input type="password" id="password" placeholder="Passwort" value="3uiC8Mag" />
           <input type="submit" class="button expand padding-top" id="loginbutton" value="Login">
@@ -29,12 +29,16 @@
 </div>
 
 <script>
-var email = $('#email').val();
-var password = $('#password').val();
+  var submit = $('#loginbutton')
+  submit.click(function() {
+
+
+  var email = $('#email').val();
+  var password = $('#password').val();
 
   $.post( "/calculi/rest/auth/login", { email: email, password: password })
   .done(function( data ) {
-    console.log(data)
+    // console.log(data)
     if (data.success == "true") {
       window.location = "/calculi/html/dev/_worker/index2.php";
     }
@@ -42,4 +46,6 @@ var password = $('#password').val();
       alert("keine Berechtigung");
     }
   });
+event.preventDefault();
+})
 </script>

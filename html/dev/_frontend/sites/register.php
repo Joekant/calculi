@@ -22,9 +22,10 @@
       </dl>
       <div class="tabs-content">
         <div class="content active" id="webworker">
-          <form class="loginform" action="index.php?page=register&complete" method="POST">
-            <input type="text" placeholder="E-mail" />
-            <input type="submit" class="button expand padding-top" id="loginbutton" value="Los">
+          <form class="loginform">
+          <input type="text" id="name" placeholder="Max Mustermann" />
+            <input type="text" id="email" placeholder="E-mail" />
+            <input type="submit" class="button expand padding-top" id="registerbutton" value="Los">
           </form>
         </div>
         <div class="content" id="kunde">
@@ -40,7 +41,30 @@
    ';
  }
  ?>
-
-
-
 </div>
+
+<script>
+
+
+
+<script>
+  var submit = $('#loginbutton')
+  submit.click(function() {
+
+var email = $('#email').val();
+var name = $('#name').val();
+
+  $.post( "/calculi/rest/auth/addnewuser", { email: email, fullName: name, role: "client" })
+  .done(function( data ) {
+    // console.log(data)
+    if (data.success == "true") {
+      alert("success")
+      // window.location = "/calculi/html/dev/_worker/index2.php";
+    }
+    else {
+      alert("keine Berechtigung");
+    }
+  });
+event.preventDefault();
+})
+</script>

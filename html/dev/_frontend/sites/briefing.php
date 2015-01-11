@@ -330,6 +330,7 @@
 </div>
 </main>
 <script>
+
 // Handle Revision-Range-Slider
 var span = $('.revision-count')
 $('[data-slider]').on('change.fndtn.slider', function(){

@@ -1,3 +1,33 @@
+    <div class="large-3 columns">
+      <h2> Inhalt</h2>
+      <span class="section-sum-money">0</span><span class="section-sum-time">0</span>
+    </div>
+    <div class="briefing-section large-9 columns table-border-left">
+      <table>
+        <tr>
+          <td width="30%">Unterseiten</td>
+          <td  width="49%">
+            <ul>
+              <li><i class="green-font fa fa-plus fa-fw"></i> Startseite</li>
+              <li><i class="green-font fa fa-plus fa-fw"></i> Impressum</li>
+            </ul>
+          </td>
+          <td width="21%"><input type="text" class="left effort" value="3"><input type="text" class="right rate" value="50"></td>
+        </tr>
+        <tr>
+         <td>Texterstellung</td>
+         <td>Designer erstellt Text</td>
+         <td><input type="text" class="left effort" value="0"><input type="text" class="right rate" value="50"></td>
+       </tr>
+    </table>
+  </div>
+
+
+  <!-- -->
+
+
+
+
 <div class="main-section">
   <h1 class="text-center padding-bottom">Bewerbung einreichen</h1>
   <div class="row application-summary padding-top">
@@ -32,7 +62,7 @@
         <td>-</td>
       </tr>
     </table>
-  </div> 
+  </div>
 
   <div class="large-3 columns">
     <h2>Kunde</h2>
@@ -99,14 +129,15 @@
   </div>
 
 </div>
-</div> 
+</div>
 <div class="form-step dark-bg primary-full-border">
-  <h2>Anforderungen</h2> 
+  <h2>Anforderungen</h2>
 </div>
 <div class="main-section">
   <div class="row briefing-summary">
 
     <br class="end">
+
     <div class="large-3 columns">
       <h2> Inhalt</h2>
       <span class="section-sum-money section-sum-1">0</span><span class="section-sum-time section-time-1">0</span>
@@ -119,7 +150,7 @@
             <ul>
               <li><i class="green-font fa fa-plus  fa-fw"></i> Startseite</li>
               <li><i class="green-font fa fa-plus  fa-fw"></i> Impressum</li>
-              <?php 
+              <?php
                   // duplicating array in new Variable, because otherwiese it works only once - don't know why ;)
               $subpages = $briefing;
 
@@ -174,7 +205,7 @@
       <td>Funktionen</td>
       <td>
         <ul>
-          <?php 
+          <?php
             // duplicating array in new Variable, because otherwiese it works only once - don't know why ;)
           $functions = $briefing;
 
@@ -193,7 +224,7 @@
       <td>Externe Plattformen</td>
       <td>
         <ul>
-          <?php 
+          <?php
 
           $plattforms = $briefing;
                   // Run through array and output all function fields (containing "c_function_")
@@ -251,17 +282,17 @@
         <td>Domain</td>
         <td><?php echo $r_service_domain; ?></td>
         <td><input type="text" class="left effort-4-2" value="0"><input type="text" class="right rate-4-2" value="50"></td>
-      </tr>   
+      </tr>
       <tr>
         <td>E-mail Adressen</td>
         <td><?php echo $r_service_mail; ?></td>
         <td><input type="text" class="left effort-4-3" value="0"><input type="text" class="right rate-4-3" value="50"></td>
-      </tr> 
+      </tr>
       <tr>
         <td>Statistiken</td>
         <td><?php echo $r_service_statistics; ?></td>
         <td><input type="text" class="left effort-4-4" value="0"><input type="text" class="right rate-4-4" value="50"></td>
-      </tr> 
+      </tr>
       <tr>
         <td>Mitarbeiterschulung</td>
         <td><?php echo $r_service_instructions; ?></td>
@@ -283,7 +314,7 @@
     </table>
   </div>
 </div>
-</div> 
+</div>
 
 <div class="sticky-application-form">
   <div class="large-3 columns">
