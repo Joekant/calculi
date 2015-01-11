@@ -35,7 +35,7 @@
 				
 				//print_r($generatedPass);
 				
-				if($result == 1)  return array('success' => true);	
+				if($result == 1)  return array('success' => $password);	
 				else return array( 'success' => false );	
 			
 			} catch(Exception $e) {

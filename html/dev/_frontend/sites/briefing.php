@@ -86,11 +86,11 @@
     <div class="row">
       <div class="medium-8 columns">
         <label for="t_description">Beschreibung des Unternehmens</label>
-        <textarea  id="t_description" name="description" data-cateogry="general" rows="5">Unser Unternehmen befasst sich mit der...</textarea>
+        <textarea  id="t_description" name="description" data-category="general" rows="5">Unser Unternehmen befasst sich mit der...</textarea>
       </div>
       <div class="medium-4 columns">
         <label for="s_branche">Branche
-<!--           <datalist id="s_branche">
+          <datalist id="s_branche">
             <select id="s_branche" name="s_branche" name="s_branche">
               <option value="Gastronomie">Gastronomie</option>
               <option value="Gesundheitswesen">Gesundheitswesen</option>
@@ -99,7 +99,7 @@
               <option value="Technik">Technik</option>
               <option value="Unterhaltung">Unterhaltung</option>
             </select>
-          </datalist> -->
+          </datalist>
           <input type="text" name="branche" data-category="general" value="IT" list="s_branche" >
         </label>
         <label for="s_employees">Mitarbeiter</label>
@@ -226,29 +226,31 @@
     </div>
     <div  class="columns medium-6">
       <label for="design">Wie viele Revisionsdurchläufe sind gewünscht?<span class="required">*</span></label>
-      <div id="asd" class="medium-12 columns">
-        <input type="text" name="design" class="revision-count" data-category="design" >
+      <div  class="medium-12 columns">
+        <div id="asd">
+        <input type="text" class="revision-count" data-category="design">
+      </div>
         <div class="range-slider" id="revision-slider" name="s_revisions" data-slider data-options="start: 1; end: 5;">
           <span class="range-slider-handle" role="slider" tabindex="0" name="s_revisions"></span>
           <span class="range-slider-active-segment" name="s_revisions"></span>
-          <input type="hidden" name="design" data-name="revisions" cata-category="design">
+          <input type="hidden" name="design" data-name="revisions" data-category="design">
         </div>
       </div>
     </div>
   </div>
   <div class="row">
    <label for="t_mood">Welche Eigenschaften soll die Seite vermitteln?</label>
-   <textarea id="t_mood" name="characteristics" data-cateogry="design" rows="3">edel, seriös, teuer, einzigartig, limitiert</textarea>
+   <textarea id="t_mood" name="characteristics" data-category="design" rows="3">edel, seriös, teuer, einzigartig, limitiert</textarea>
  </div>
  <div class="row">
   <label for="email">Die Seite soll / soll nicht aussehen wie folgende Mitbewerberseiten <br /><em>(mehrere Adressen untereinander durch Absatz getrennt)</em></label>
   <div class="medium-6 columns text-center">
     <label for="email" class="green-font">positive Referenz</label>
-    <textarea  id="t_reference_positive" name="positivereference" data-cateogry="design" rows="3">http://www.gute-beispielseite.at</textarea>
+    <textarea  id="t_reference_positive" name="positivereference" data-category="design" rows="3">http://www.gute-beispielseite.at</textarea>
   </div>
   <div class="medium-6 columns text-center">
     <label for="email" class="orange-font">negative Referenz</label>
-    <textarea  id="t_reference_negative" name="negativereference" data-cateogry="design" rows="3" >http://www.schlechte-beispielseite.at</textarea>
+    <textarea  id="t_reference_negative" name="negativereference" data-category="design" rows="3" >http://www.schlechte-beispielseite.at</textarea>
   </div>
 </div>
 <div class="form-step dark-bg primary-full-border">
@@ -257,52 +259,52 @@
 </div>
 <div id="services">
   <div class="row">
-    <div class="medium-9 columns">
+    <div  class="medium-9 columns">
       <label for="email">Wer stellt den Server für die Seite bereit?</label>
     </div>
     <div class="medium-3 columns">
-      <input id="r_service_server_d" name="server" data-name="server" data-category="service" value="Designer" type="radio" checked> Designer <br />
-      <input id="r_service_server_k" name="server" data-name="server" data-category="service" value="Kunde" type="radio"> Kunde
+      <input id="r_service_server_d" name="server" data-name="server" data-category="services" value="Designer" type="radio" checked> Designer <br />
+      <input id="r_service_server_k" name="server" data-name="server" data-category="services" value="Kunde" type="radio"> Kunde
     </div>
     <hr />
     <div class="medium-9 columns">
       <label for="email">Wer registriert die Domain?</label>
     </div>
-    <div class="medium-3 columns">
-      <input id="r_service_domain_d" name="domain" data-name="domain" data-category="service" value="Designer" type="radio" checked> Designer <br />
-      <input id="r_service_domain_k" name="domain" data-name="domain" data-category="service" value="Kunde" type="radio"> Kunde
+    <div  class="medium-3 columns">
+      <input id="r_service_domain_d" name="domain" data-name="domain" data-category="services" value="Designer" type="radio" checked> Designer <br />
+      <input id="r_service_domain_k" name="domain" data-name="domain" data-category="services" value="Kunde" type="radio"> Kunde
     </div>
     <hr />
     <div class="medium-9 columns">
       <label for="email">Benötigen Sie E-mail Adressen?</label>
     </div>
     <div class="medium-3 columns">
-      <input id="r_service_mail_y" name="emails" data-name="emails" data-category="service" value="true" type="radio" checked> Ja<br />
-      <input id="r_service_mail_n" name="emails" data-name="emails" data-category="service" value="false" type="radio"> Nein<br />
+      <input id="r_service_mail_y" name="emails" data-name="emails" data-category="services" value="true" type="radio" checked> Ja<br />
+      <input id="r_service_mail_n" name="emails" data-name="emails" data-category="services" value="false" type="radio"> Nein<br />
     </div>
     <hr />
     <div class="medium-9 columns">
       <label for="email">Benötigen Sie detaillierte Nutzungsstatistiken?</label>
     </div>
     <div class="medium-3 columns">
-      <input id="r_service_statistics_y" name="statistics" data-name="statistics" data-category="service" value="true" type="radio" checked> Ja<br />
-      <input id="r_service_statistics_n" name="statistics" data-name="statistics" data-category="service" value="false" type="radio"> Nein<br />
+      <input id="r_service_statistics_y" name="statistics" data-name="statistics" data-category="services" value="true" type="radio" checked> Ja<br />
+      <input id="r_service_statistics_n" name="statistics" data-name="statistics" data-category="services" value="false" type="radio"> Nein<br />
     </div>
     <hr />
     <div class="medium-9 columns">
       <label for="email">Sollen Mitarbeiter in die Pflege & Wartung der Seite eingeschult werden?</label>
     </div>
     <div class="medium-3 columns">
-      <input id="r_service_instructions_y" name="training" data-name="training" data-category="service" value="true" type="radio" checked> Ja<br />
-      <input id="r_service_instructions_n" name="training" data-name="training" data-category="service" value="false" type="radio"> Nein<br />
+      <input id="r_service_instructions_y" name="training" data-name="training" data-category="services" value="true" type="radio" checked> Ja<br />
+      <input id="r_service_instructions_n" name="training" data-name="training" data-category="services" value="false" type="radio"> Nein<br />
     </div>
     <hr />
     <div class="medium-9 columns">
       <label for="email"> Möchten Sie die Seite durch die Schaltung bezahlter Werbung in Suchmaschinen oder sozialen Netzwerken bewerben?</label>
     </div>
     <div class="medium-3 columns">
-      <input id="r_service_advertising_y" name="advertising" data-name="advertising" data-category="service" value="true" type="radio" checked> Ja<br />
-      <input id="r_service_advertising_n" name="advertising" data-name="advertising" data-category="service" value="false" type="radio"> Nein<br />
+      <input id="r_service_advertising_y" name="advertising" data-name="advertising" data-category="services" value="true" type="radio" checked> Ja<br />
+      <input id="r_service_advertising_n" name="advertising" data-name="advertising" data-category="services" value="false" type="radio"> Nein<br />
     </div>
     <hr>
   </div>
@@ -311,13 +313,13 @@
 <div class="row">
   <h3 class="subline padding-top">Ergänzende Bemerkungen</h3>
   <label for="t_comment"> Hier können Sie ergänzende Anmerkungen zum gesamten Briefing beifügen.</label>
-  <textarea id="t_comment" name="t_comment"  data-cateogry="comment" rows="3" >Mir ist besonders wichtig, dass...</textarea>
+  <textarea id="t_comment" name="t_comment"  data-category="general" rows="3" >Mir ist besonders wichtig, dass...</textarea>
 
-  <input id="c_notifications" name="c_notifications" type="checkbox" value="yes" checked>
+  <input id="c_notifications"  type="checkbox" value="yes" checked>
   Ich möchte automatisch per E-mail über neue Bewerber informiert werden <br />
 
-  <input id="c_agb" name="agb" type="checkbox" required>
-  Ich stimme den <a href="">AGB</a> zu
+  <input id="c_agb"  type="checkbox" required>
+  Ich stimme den <a href="">AGB</a> 
 
   <br class="full-padding">
   <div class="large-12 columns text-center padding-top">
@@ -349,27 +351,28 @@ $('[data-slider]').on('change.fndtn.slider', function(){
 
     var form = $('#form');
 
-    var inpS = form.find('input');
+    var inpS = form.find('input, textarea');
     var temp;
 
     for(var n = 0; n < inpS.length; n++) {
 
       temp = $(inpS[n]);
+      
+      if(temp.attr("name") == undefined) continue;
 
       if( temp.attr("checked") ) {
         if(temp.attr("type") == "checkbox") {
-
           if( data[temp.attr("name")][temp.data("name")] == undefined) data[temp.attr("name")][temp.data("name")] = [];
-
           data[temp.attr("name")][temp.data("name")].push(temp.attr("value"));
 
         } else if(temp.attr("type") == "radio") {
-          data[temp.data("category")][temp.data("name")] = temp.attr("value");
+          data[temp.data("category")][temp.attr("name")] = temp.attr("value");
         }
       } else if(temp.attr("type") == "hidden" ) {
         data[temp.attr("name")][temp.data("name")] = temp.attr("value");
 
-     } else if(temp.attr("type") == "text" ) {
+     } else if(temp.attr("type") == "text"  ) {
+
        data[temp.data("category")][temp.attr("name")] = temp.attr("value");
      } else if(temp[0].type == "textarea" ) {
         data[temp.data("category")][temp.attr("name")] = temp.text();
