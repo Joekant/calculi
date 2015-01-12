@@ -60,9 +60,9 @@ function postToServer() {
 
 	var dataStringify = JSON.stringify(data);
 	// console.log(dataStringify);
-	console.log(data);
+	// console.log(data);
 
-	/*$.post( "/calculi/rest/briefing/newBriefing", { briefingData: dataStringify })
+	$.post( "/calculi/rest/briefing/newBriefing", { briefingData: dataStringify })
 	.done(function( response ) {
 		console.log(response)
 		if (response.success == "true") {
@@ -73,7 +73,7 @@ function postToServer() {
 			alert("error" + response.success)
 			// $(".login-error").slideDown("slow")
 		}
-	});*/
+	});
 }
 
 </script>
