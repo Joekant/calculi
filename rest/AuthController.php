@@ -44,9 +44,8 @@
 		*/
 		public function login($email = "", $password = "") {
 			$request = $this->_request;
-
 			$manager = new AuthUserManager;
-			if(strlen($email) > 0 && strlen($password) > 0 ) {
+			if(strlen($email) > 5 && strlen($password) > 5 ) {
 				$result = $manager->login($email, $password);
 			} else {
 				$result = $manager->login($request['email'], $request['password']);

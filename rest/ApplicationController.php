@@ -33,17 +33,23 @@
 			if($_SESSION['role'] == 'worker' ) {
 				$manager  = new ApplicationManager;
 				$result = $manager->getApplications($userId);
-				
-				if($briefing) {
-					$briefingManager = new BriefingManager;
-					$briefingResult = $briefingManager->getBriefings();
-					
+				if(count($result) < 1) {
+					if($briefing) {
+						$briefingManager = new BriefingManager;
+						$briefingResult = $briefingManager->getBriefings();
+						
 
-					$briefing = array("briefings" => $briefingResult );
-					$applications = array("applications" => $result );
+						$briefing = array("briefings" => $briefingResult );
+						$applications = array("applications" => $result );
+						
+						$result = array_merge($briefing, $applications);
+					}
+				}else {
+					$briefingManager = new BriefingManager;
+					$result = $briefingManager->getBriefings();
 					
-					$result = array_merge($briefing, $applications);
 				}
+				
 
 				$this->response($result, 200);
 			} else {

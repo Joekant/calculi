@@ -8,18 +8,16 @@ class BriefingManager {
 	public function getBriefings() {
 		$dao = new BriefingDao;
 		$result = $dao->getBriefings();
-
+		
 		for($n = 0; $n < count($result); $n++) {
+		
 			$generalBriefing = json_decode($result[$n]['general_briefing'], JSON_UNESCAPED_SLASHES);
+		
 			$result[$n]['general_briefing'] = $generalBriefing;
 
-			for($n = 0; $n < count($result); $n++) {
-				$generalBriefing = json_decode($result[$n]['general_briefing'], JSON_UNESCAPED_SLASHES);
-				$result[$n]['general_briefing'] = $generalBriefing;
-			}
-			return $result;
 
 		}
+		//print_r($result);		
 		return $result;
 	}
 

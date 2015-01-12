@@ -1,5 +1,7 @@
 <!-- requires briefing-effort-count.js -->
-
+<?php 
+  print_r($_SESSION);
+ ?>
 <main>
   <div id="briefing-form">
 

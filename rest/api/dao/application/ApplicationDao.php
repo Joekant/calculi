@@ -22,9 +22,10 @@
 			$result = mysqli_query($this->db, $query);
 			//echo "hi";
 
+			if( $result == false || $result->num_rows == 0) return array();
 			$row = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-			return $row;
+			return $result;
 		}	
 
 		public function applicants($userId)	{
