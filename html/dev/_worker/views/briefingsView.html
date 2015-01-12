@@ -31,18 +31,17 @@
         <th width="160px"><i class="fa fa-wrench fa-fw"></i></th>
         <th width="100px"><i class="fa fa-compass fa-fw"></i></th>
         <th width="50px"><i class="fa fa-dashboard fa-fw"></i></th>
-        <th width="50px"><i class="fa fa-users fa-fw"></i></th>
+        <!-- <th width="50px"><i class="fa fa-users fa-fw"></i></th> -->
         <th width="100px"><i class="fa fa-clock-o fa-fw"></i></th>
         <th width="80px"><i class="fa fa-heart fa-fw"></i></th>
         
       </tr>
       
       <tr ng-repeat="el in briefings" ng-click="toCalculator(el)" class="clickable">
-        <td>{{el.general_briefing.general.firma}}</td>
+        <td>{{el.general_briefing.general.company}}</td>
         <td>{{el.general_briefing.general.branche}}</td>
-        <td>{{el.country}}</td>
+        <td>{{el.general_briefing.general.country}}</td>
         <td>{{el.effort}}</td>
-        <td>{{el.estimated_price}}</td>
         <td>{{el.expire_at}}</td>  
         <td>
           <span class="label grey-bg">{{el.status}}</span>

@@ -1,4 +1,4 @@
-<script>
+
 // Generate & Enable state-selection depending on chosen country.
 $('#s_country').change(function() {
   $("#s_state").prop('disabled', false);
@@ -18,4 +18,3 @@ $('#s_country').change(function() {
   }    
   $('#s_state').html(options);
 });
-</script>

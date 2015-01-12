@@ -17,6 +17,7 @@
 			$req = $this->_request;
 			$status = "pending";
 			
+			
 			if($_SESSION['role'] == 'worker' ) {
 				$manager = new ApplicationManager;
 				$result = $manager->newApplication( $req['briefingId'], $workerId, $req['clientId'], $req['estimatedPrice'], $req['comment'], $status );
@@ -33,7 +34,8 @@
 			if($_SESSION['role'] == 'worker' ) {
 				$manager  = new ApplicationManager;
 				$result = $manager->getApplications($userId);
-				if(count($result) < 1) {
+				
+				if(count($result) > 0) {
 					if($briefing) {
 						$briefingManager = new BriefingManager;
 						$briefingResult = $briefingManager->getBriefings();
@@ -47,7 +49,7 @@
 				}else {
 					$briefingManager = new BriefingManager;
 					$result = $briefingManager->getBriefings();
-					
+
 				}
 				
 

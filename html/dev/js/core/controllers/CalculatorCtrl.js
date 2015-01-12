@@ -2,6 +2,7 @@ Core.controller('CalculatorCtrl', function ($scope, MyHTTP, $routeParams, $locat
 	var id = $routeParams.id;
 	var ex = {'briefingId' : id};
 	var param = "briefing/getbriefingbyid?briefingId=" + id;
+	var logedInParam = "auth/logedIn";
 
 	$scope.rate = 50;
 	$scope.discount = 0;
@@ -15,6 +16,11 @@ Core.controller('CalculatorCtrl', function ($scope, MyHTTP, $routeParams, $locat
 	$scope.data = {};
 	$scope.meta = {};
 
+	$scope.clientId = 0;
+
+
+
+
 	MyHTTP.post(param,ex).
 		then(function(result) {
 			var data = result.data;
@@ -22,6 +28,12 @@ Core.controller('CalculatorCtrl', function ($scope, MyHTTP, $routeParams, $locat
 			console.log(data);
 			dataFormat(data);
 
+		});
+
+	MyHTTP.get(logedInParam).
+		then(function(result) {
+			$scope.clientId = result.data.userId;
+			console.log($scope.clientId);
 		});
 
 
@@ -50,7 +62,7 @@ Core.controller('CalculatorCtrl', function ($scope, MyHTTP, $routeParams, $locat
 				'subTime' : []
 			},*/{
 				'name' : 'Service',
-				'data' : data.general_briefing.service,
+				'data' : data.general_briefing.services,
 				'time' : 0,
 				'cost' : 0,
 				'subCost' : [],
@@ -89,7 +101,8 @@ Core.controller('CalculatorCtrl', function ($scope, MyHTTP, $routeParams, $locat
 		var param = {
 			'briefingId' : id,
 			'comment' : $scope.comment,
-			'estimatedPrice' : $scope.price
+			'estimatedPrice' : $scope.price,
+			'clientId' : $scope.meta.user_id
 		};
 
 		MyHTTP.post(path, param).

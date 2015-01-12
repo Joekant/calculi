@@ -1,4 +1,3 @@
-<script>
 // Count Effort
 // Select Elements with class "has-effort"
 var $EffortInputs = $('.has-effort') 
@@ -30,5 +29,4 @@ $('.EffortCount').text('Aufwand (~' + totalEffort + '%)')
 })
 
 // initialize Counter
-$EffortInputs.first().change()
-</script>
+$EffortInputs.first().change();

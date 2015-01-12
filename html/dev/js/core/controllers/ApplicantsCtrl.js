@@ -1,6 +1,7 @@
 Core.controller('ApplicantsCtrl', function ($scope, MyHTTP, $routeParams, $location) {
 	var path = "application/applicants";
 	$scope.data = [];
+	
 	MyHTTP.get(path).
 		then(function(result) {
 			var data = getNumberReferences(result.data[0]);

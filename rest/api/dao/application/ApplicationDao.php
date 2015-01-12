@@ -10,22 +10,21 @@
 			$this->db = $db->db_connect(); 
 		}
 
-		public function newApplication($briefingId, $userId, $estimatedPrice, $comment, $stauts) {
-			$query = "INSERT INTO applications(briefing_id, user_id, estimated_price, comment, status) VALUES('$briefingId', '$userId', '$estimatedPrice', '$comment', '$stauts')";
+		public function newApplication($briefingId, $workerId, $clientId, $estimatedPrice, $comment, $stauts) {
+			$query = "INSERT INTO applications(briefing_id, worker_id, client_id, estimated_price, comment, status) VALUES('$briefingId', '$workerId', '$clientId', '$estimatedPrice', '$comment', '$stauts')";
 
 			$result = mysqli_query($this->db, $query);
 			return $result;
 		}
 
 		public function getApplications($userId) {
-			$query = "SELECT  * FROM applications WHERE user_id = '$userId'";
+			$query = "SELECT  * FROM applications WHERE worker_id = '$userId'";
 			$result = mysqli_query($this->db, $query);
-			//echo "hi";
 
 			if( $result == false || $result->num_rows == 0) return array();
 			$row = mysqli_fetch_all($result, MYSQLI_ASSOC);
-
-			return $result;
+			
+			return $row;
 		}	
 
 		public function applicants($userId)	{

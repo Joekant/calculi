@@ -42,6 +42,16 @@
 		* @param email, password
 		* 
 		*/
+
+		public function logedIn() {
+			if( isset($_SESSION["userId"])  ) {
+				$this->response($_SESSION,200);		
+			} else {
+				$this->response(array('success' => 'false'),200);		
+			}
+			
+		}
+
 		public function login($email = "", $password = "") {
 			$request = $this->_request;
 			$manager = new AuthUserManager;

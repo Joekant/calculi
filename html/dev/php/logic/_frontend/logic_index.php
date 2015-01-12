@@ -79,7 +79,8 @@ include("sites/$content.php");
 // Include necessary JS - Files
 if ($jsfile != "0") {
   foreach ($jsfiles as $jsfile) {
-   include("../js/$jsfile");
+   echo "<script src='../js/$jsfile'></script>";
+   //include("../js/$jsfile");
  }
 }
 

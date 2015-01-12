@@ -1,4 +1,4 @@
-<script>
+
 var dellink = $('.delnot')
 dellink.on('click', function(e){
 	e.preventDefault();
@@ -16,4 +16,3 @@ dellink.on('click', function(e){
 	}
 });
 
-</script>

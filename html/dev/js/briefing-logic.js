@@ -1,13 +1,9 @@
-<script>
-// Handle Revision-Range-Slider
 var span = $('.revision-count')
 $('[data-slider]').on('change.fndtn.slider', function(){
 	var count = $('#revision-slider').attr('data-slider');
 	span.val(count)
 });
-</script>
 
-<script>
 
 // PARSE FORM AND POST JSON ans stringify to newBriefing Controller
 var submit = $('#submit')
@@ -49,7 +45,7 @@ function postToServer() {
 			data[temp.attr("name")][temp.data("name")] = temp.attr("value");
 
 		} else if(temp.attr("type") == "text" ) {
-			data[temp.data("category")][temp.attr("name")] = temp.attr("value");
+			data[temp.data("category")][temp.attr("name")] = temp.val();
 		} else if(temp[0].type == "textarea" ) {
 			data[temp.data("category")][temp.attr("name")] = temp.text();
 		} else if (temp[0].type == "select-one" ) {
@@ -60,9 +56,9 @@ function postToServer() {
 
 	var dataStringify = JSON.stringify(data);
 	// console.log(dataStringify);
-	// console.log(data);
+	console.log(data);
 
-	$.post( "/calculi/rest/briefing/newBriefing", { briefingData: dataStringify })
+	/*$.post( "/calculi/rest/briefing/newBriefing", { briefingData: dataStringify })
 	.done(function( response ) {
 		console.log(response)
 		if (response.success == "true") {
@@ -74,6 +70,5 @@ function postToServer() {
 			// $(".login-error").slideDown("slow")
 		}
 	});
+*/
 }
-
-</script>

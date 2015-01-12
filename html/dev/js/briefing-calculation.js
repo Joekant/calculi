@@ -1,7 +1,7 @@
 // Veralteter Prototype
 // Neue Version in Angular
 
-<script>
+
   // get DOM Elements
   var error = false
   var allInputs = $('input');
@@ -181,4 +181,3 @@ var totalEffort = 0;
                 // });
 
 });
-</script>

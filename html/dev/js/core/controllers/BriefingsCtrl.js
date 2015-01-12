@@ -3,7 +3,7 @@ Core.controller('BriefingsCtrl', function ($scope, MyHTTP, $location) {
 	var path = "application/getapplications&briefing";
 	var data= [];
 
-
+	$scope.briefings = [];
 
 	var fetchInfo = function() {
 		
@@ -27,7 +27,6 @@ Core.controller('BriefingsCtrl', function ($scope, MyHTTP, $location) {
 	}
 
 	$scope.toCalculator= function(el) {
-		console.log(el);
 		if( !el.hasOwnProperty("estimated_price")) $location.path("calculator/" + el.briefing_id);
 	}
 
@@ -35,9 +34,13 @@ Core.controller('BriefingsCtrl', function ($scope, MyHTTP, $location) {
 		then(function(result) {
 			console.log(result);
 			if(result.data.success == "false") return;
-			data = result.data;
 			
-			fetchInfo();
+			data = result.data;
+
+			if(result.data.hasOwnProperty("applications")) fetchInfo();
+			else $scope.briefings = data;
+
+			//console.log($scope.brefings)
 		});
 
 

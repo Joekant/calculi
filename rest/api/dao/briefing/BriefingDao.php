@@ -31,7 +31,8 @@ class BriefingDao {
 		*/
 		public function getBriefingById($briefingId) {
 
-			$query = "SELECT * FROM briefings WHERE briefing_id = $briefingId ";
+			//$query = "SELECT briefings.briefing_id, briefings.user_id AS client_id, briefings.general_briefing, briefings.country, briefings.state, briefings.status, briefings.effort, briefings.expire_at, briefings.created_at, users.user_id, users.email, users.full_name FROM briefings INNER JOIN users on briefings.user_id = users.user_id WHERE briefing_id = '$briefingId'";
+			$query = "SELECT * FROM briefings WHERE briefing_id = '$briefingId'";
 			$result = mysqli_query($this->db, $query);
 
 
