@@ -2,6 +2,13 @@
   <div class="row text-center">
     <a href="index.php"><img src="../img/logo_symbol.png" class="logo half-padding" alt="logo"></a>
     <h1 class="padding-bottom">Login</h1>
+
+
+<div class="panel text-center red-border login-error hide">
+        <h5> <i class="fa fa-cross fa-fw"></i> Login fehlgeschlagen</h5>
+        <p>Bitte überprüfe deine Eingaben</p>
+      </div>
+
         <form class="loginform" method="POST">
           <input type="email" id="email" placeholder="E-mail" value="a@a.at" />
           <input type="password" id="password" placeholder="Passwort" value="3uiC8Mag" />
@@ -32,7 +39,6 @@
   var submit = $('#loginbutton')
   submit.click(function() {
 
-
   var email = $('#email').val();
   var password = $('#password').val();
 
@@ -40,10 +46,10 @@
   .done(function( data ) {
     // console.log(data)
     if (data.success == "true") {
-      window.location = "/calculi/html/dev/_worker/index2.php";
+      window.location = "/calculi/html/dev/_worker/index2.php#profile";
     }
     else {
-      alert("keine Berechtigung");
+      $(".login-error").slideDown("slow")
     }
   });
 event.preventDefault();
