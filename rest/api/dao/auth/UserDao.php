@@ -1,17 +1,17 @@
 <?php
 
-	include_once('api/util/Connect.php');
+include_once('api/util/Connect.php');
 
-	class UserDao {
+class UserDao {
 
 
-		const TOKEN_SALT = "gh-0sX-hEl-fT+~6CS<d1R5]6p,0c6rq[Gt|9C}:+4dDHu>5v^t50wFD_:=rV6ae";
-		const PASS_SALT = "w-Z06f.L-?vLfXX6P{r`XnkY^v&6Fz^4QjZ&BD[ 9{[|+I|@=I)aXb+M#(2tb.jv";
+	const TOKEN_SALT = "gh-0sX-hEl-fT+~6CS<d1R5]6p,0c6rq[Gt|9C}:+4dDHu>5v^t50wFD_:=rV6ae";
+	const PASS_SALT = "w-Z06f.L-?vLfXX6P{r`XnkY^v&6Fz^4QjZ&BD[ 9{[|+I|@=I)aXb+M#(2tb.jv";
 
-		public function __construct() {
-			$db = new DB_Connect;
-			$this->db = $db->db_connect();
-		}
+	public function __construct() {
+		$db = new DB_Connect;
+		$this->db = $db->db_connect();
+	}
 
 		/*
 		* Add new User
@@ -34,17 +34,13 @@
 				$result = mysqli_query($this->db, $query);
 
 				//print_r($generatedPass);
-<<<<<<< HEAD
 
 				if($result == 1)  return array('success' => $generatedPass);
 				else return array( 'success' => false );
 
-=======
-				
-				if($result == 1)  return array('success' => $generatedPass);	
-				else return array( 'success' => false );	
-			
->>>>>>> FETCH_HEAD
+				if($result == 1)  return array('success' => $generatedPass);
+				else return array( 'success' => false );
+
 			} catch(Exception $e) {
 				echo $e->getMessage();
 			}
@@ -88,17 +84,17 @@
 		*/
 
 		private function generatePassword($length = 8) {
-		    $chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-		    $count = mb_strlen($chars);
+			$chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+			$count = mb_strlen($chars);
 
-		    for ($i = 0, $result = ''; $i < $length; $i++) {
-		        $index = rand(0, $count - 1);
-		        $result .= mb_substr($chars, $index, 1);
-		    }
+			for ($i = 0, $result = ''; $i < $length; $i++) {
+				$index = rand(0, $count - 1);
+				$result .= mb_substr($chars, $index, 1);
+			}
 
-		    return $result;
+			return $result;
 		}
 
 	}
 
-?>
+	?>
