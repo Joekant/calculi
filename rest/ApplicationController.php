@@ -13,13 +13,13 @@
 		}
 		
 		public function newapplication() {
-			$userId = $_SESSION['userId'];
+			$workerId = $_SESSION['userId'];
 			$req = $this->_request;
 			$status = "pending";
 			
 			if($_SESSION['role'] == 'worker' ) {
 				$manager = new ApplicationManager;
-				$result = $manager->newApplication( $req['briefingId'], $userId, $req['estimatedPrice'], $req['comment'], $status );
+				$result = $manager->newApplication( $req['briefingId'], $workerId, $req['clientId'], $req['estimatedPrice'], $req['comment'], $status );
 				$this->response(array('success' => $result), 200);
 			} else {
 				$this->response(array('success' => 'false'), 200);
@@ -27,9 +27,9 @@
 		}
 
 		public function getapplications() {
-			//$userId = $_SESSION['userId'];
+			$userId = $_SESSION['userId'];
 			$briefing = ( isset($this->_request['briefing']) ? true : false );
-			$userId = 1;
+			
 			if($_SESSION['role'] == 'worker' ) {
 				$manager  = new ApplicationManager;
 				$result = $manager->getApplications($userId);
@@ -51,6 +51,18 @@
 			}
 		}
 
+		public function applicants() {
+
+			$userId = $_SESSION['userId'];
+			
+			if($_SESSION['role'] == 'client' ) {
+				$manager  = new ApplicationManager;
+				$result = $manager->applicants($userId);
+				$this->response(array($result), 200);	
+			} else {
+				$this->response(array('success' => 'false'), 200);	
+			}
+		}
 
 		public function test() {
 			$this->response(array('success' => 'true'), 200);

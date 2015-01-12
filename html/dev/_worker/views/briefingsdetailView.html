@@ -9,27 +9,23 @@
     <table>
       <tr>
         <td width="250">Ausschreibungs-ID</td>
-        <td>-</td>
+        <td ng-bind="meta.briefing_id"></td>
       </tr>
       <tr>
         <td>Status</td>
-        <td>-</td>
+        <td ng-bind="meta.status"></td>
       </tr>
       <tr>
         <td>Startzeit </td>
-        <td>-</td>
+        <td ng-bind="meta.created_at"></td>
       </tr>
       <tr>
         <td>Endzeit </td>
-        <td>-</td>
+        <td ng-bind="meta.expire_at"></td>
       </tr>
       <tr>
         <td>Aufwandsindex </td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>Anzahl Bewerber </td>
-        <td>-</td>
+        <td ng-bind="meta.effort"></td>
       </tr>
     </table>
   </div>
@@ -40,40 +36,32 @@
   <div class="large-9 columns table-border-left">
     <table>
       <tr>
-        <td width="250">Name</td>
-        <td><?php echo $i_name; ?></td>
-      </tr>
-      <tr>
-        <td>E-mail </td>
-        <td><?php echo $i_email; ?></td>
-      </tr>
-      <tr>
         <td>Unternehmen </td>
-        <td><?php echo $i_company; ?></td>
+        <td ng-bind="meta.general_briefing.general.firma"></td>
       </tr>
       <tr>
         <td>Website</td>
-        <td><?php echo $i_website; ?></td>
+        <td ng-bind="meta.general_briefing.general.website"></td>
       </tr>
       <tr>
         <td>Land</td>
-        <td><?php echo $s_country; ?></td>
+        <td ng-bind="meta.country"></td>
       </tr>
       <tr>
         <td>Ort</td>
-        <td><?php echo $s_state; ?></td>
+        <td ng-bind="meta.state"></td>
       </tr>
       <tr>
         <td>Beschreibung</td>
-        <td><?php echo $t_description; ?></td>
+        <td ng-bind="meta.general_briefing.general.description"></td>
       </tr>
       <tr>
         <td>Branche</td>
-        <td><?php echo $s_branche; ?></td>
+        <td ng-bind="meta.general_briefing.general.branche"></td>
       </tr>
       <tr>
         <td>Mitarbeiter</td>
-        <td><?php echo $s_employees; ?></td>
+        <td ng-bind="meta.general_briefing.general.employees"></td>
       </tr>
     </table>
   </div>
@@ -85,15 +73,21 @@
     <table>
       <tr>
         <td width="250">Eigenschaften</td>
-        <td><?php echo $t_mood; ?></td>
+        <td ng-bind="meta.general_briefing.design.characteristics"></td>
       </tr>
+
+      <tr>
+        <td width="250">Concept</td>
+        <td ng-bind="meta.general_briefing.design.concept"></td>
+      </tr>
+
       <tr>
         <td>Positive Referenzen</td>
-        <td><?php echo $t_reference_positive; ?></td>
+        <td ng-bind="meta.general_briefing.design.positiveReference"></td>
       </tr>
       <tr>
         <td>Negative Referenzen</td>
-        <td><?php echo $t_reference_negative; ?></td>
+        <td ng-bind="meta.general_briefing.design.negativeReference"></td>
       </tr>
     </table>
   </div>
@@ -168,14 +162,16 @@
 
 <div id="sendApplication" class="reveal-modal tiny" data-reveal>
   <h2>Bewerbung absenden</h2>
-  <p class="lead">Kosten: <strong><span class="counter-value">0</span></strong> €</p>
+  <p class="lead">Kosten: <strong><span ng-bind="price" class="counter-value"></span></strong> €</p>
   <ul>
     <li>
       Nach dem Absenden kann der Auftraggeber dein komplettes Profil einsehen und die Bewerbung nicht mehr geändert werden (lediglich gänzlich zurückgezogen). Aktualisierungen des Profils hingegen sind jederzeit möglich.
     </li>
     <li>Die Kalkulation ist nicht transparent. Der Kunde sieht lediglich den finalen Preis</li>
   </ul>
-  <a href="#" class="button small green-bg" data-reveal-id="sendApplication"><i class="fa fa-check"></i> Absenden</a>
-  <a href="#" class="button small grey-bg right" data-reveal-id="sendApplication"><i class="fa fa-cancel"></i> zurück</a>
+  <a href ng-click="send()" class="button small green-bg" data-reveal-id="sendApplication">
+    <i class="fa fa-check"></i> Absenden
+  </a>
+  <a href class="button small grey-bg right" data-reveal-id="sendApplication"><i class="fa fa-cancel"></i> zurück</a>
   <a class="close-reveal-modal">&#215;</a>
 </div>

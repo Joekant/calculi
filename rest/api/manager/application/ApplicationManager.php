@@ -4,9 +4,9 @@
 
 	class ApplicationManager {
 
-		public function newApplication($briefingId, $userId, $estimatedPrice, $comment, $status) {
+		public function newApplication($briefingId, $workerId, $clientId, $estimatedPrice, $comment, $status) {
 			$dao = new ApplicationDao;
-			$result = $dao->new($briefingId, $userId, $estimatedPrice, $comment, $status);
+			$result = $dao->newApplication($briefingId, $workerId, $clientId, $estimatedPrice, $comment, $status);
 
 			return $result;
 		}
@@ -17,6 +17,14 @@
 			$result = $dao->getApplications($userId);
 
 			return $result;
+		}
+
+
+		public function applicants($userId) {
+			$dao = new ApplicationDao;
+			$result = $dao->applicants($userId);
+
+			return $result;			
 		}
 
 		

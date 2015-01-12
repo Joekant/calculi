@@ -1,4 +1,4 @@
-Core.controller('CalculatorCtrl', function ($scope, MyHTTP, $routeParams) {
+Core.controller('CalculatorCtrl', function ($scope, MyHTTP, $routeParams, $location) {
 	var id = $routeParams.id;
 	var ex = {'briefingId' : id};
 	var param = "briefing/getbriefingbyid?briefingId=" + id;
@@ -13,11 +13,13 @@ Core.controller('CalculatorCtrl', function ($scope, MyHTTP, $routeParams) {
 	$scope.comment = "";
 
 	$scope.data = {};
+	$scope.meta = {};
 
 	MyHTTP.post(param,ex).
 		then(function(result) {
 			var data = result.data;
-			
+			$scope.meta = data;
+			console.log(data);
 			dataFormat(data);
 
 		});
@@ -39,14 +41,14 @@ Core.controller('CalculatorCtrl', function ($scope, MyHTTP, $routeParams) {
 				'cost' : 0,
 				'subCost' : [],
 				'subTime' : []
-			},{
+			},/*{
 				'name' : 'Design',
 				'data' : data.general_briefing.design,
 				'time' : 0,
 				'cost' : 0,
 				'subCost' : [],
 				'subTime' : []
-			},{
+			},*/{
 				'name' : 'Service',
 				'data' : data.general_briefing.service,
 				'time' : 0,
@@ -79,6 +81,27 @@ Core.controller('CalculatorCtrl', function ($scope, MyHTTP, $routeParams) {
 		$scope.pricePerHour = $scope.price / time;
  		
 		//console.log(len);
+	}
+
+
+	$scope.send = function() {
+		var path = "applications/newapplication";
+		var param = {
+			'briefingId' : id,
+			'comment' : $scope.comment,
+			'estimatedPrice' : $scope.price
+		};
+
+		MyHTTP.post(path, param).
+			then(function(result) {
+				console.log(result);
+				if(result.data.success == false) {
+
+				}else {
+					$location.path("briefings");
+				}
+			});
+
 	}
 
 });

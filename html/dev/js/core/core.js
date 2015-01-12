@@ -28,6 +28,8 @@ Core.config(function( $routeProvider, INIT ){
 	$routeProvider.when( '/applications', { "templateUrl" : INIT.VIEW_URL + "applicationsView.html", "controller" : "ApplicationsCtrl" } );
 	$routeProvider.when( '/calculator/:id', { "templateUrl" : INIT.VIEW_URL + "briefingsdetailView.html", "controller" : "CalculatorCtrl" } );
 
+	$routeProvider.when( '/applicants', { "templateUrl" : INIT.VIEW_URL + "applicantsView.html", "controller" : "ApplicantsCtrl" } );
+
 	/*$routeProvider.when( '/browse', { "templateUrl" : INIT.VIEW_URL + "browseView.html", "controller" : "browseCtrl" } );
 	$routeProvider.when( '/browse/:id', { "templateUrl" : INIT.VIEW_URL + "browseView.html", "controller" : "browseCtrl" } );*/
 

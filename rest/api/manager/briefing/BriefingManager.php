@@ -4,6 +4,7 @@ include_once('api/dao/briefing/BriefingDao.php');
 
 class BriefingManager {
 
+
 	public function getBriefings() {
 		$dao = new BriefingDao;
 		$result = $dao->getBriefings();
@@ -11,7 +12,25 @@ class BriefingManager {
 		for($n = 0; $n < count($result); $n++) {
 			$generalBriefing = json_decode($result[$n]['general_briefing'], JSON_UNESCAPED_SLASHES);
 			$result[$n]['general_briefing'] = $generalBriefing;
+
+			for($n = 0; $n < count($result); $n++) {
+				$generalBriefing = json_decode($result[$n]['general_briefing'], JSON_UNESCAPED_SLASHES);
+				$result[$n]['general_briefing'] = $generalBriefing;
+			}
+			return $result;
+
 		}
+		return $result;
+	}
+
+
+	public function getBriefingById($briefingId) {
+		$dao = new BriefingDao;
+		$result = $dao->getBriefingById($briefingId);
+
+		$generalBriefing = json_decode($result['general_briefing'], JSON_UNESCAPED_SLASHES);
+		$result['general_briefing'] = $generalBriefing;
+
 		return $result;
 	}
 
@@ -21,7 +40,7 @@ class BriefingManager {
 
 		$generalBriefing = json_decode($result['general_briefing'], JSON_UNESCAPED_SLASHES);
 		$result['general_briefing'] = $generalBriefing;
-
+			//print_r($result);
 		return $result;
 	}
 

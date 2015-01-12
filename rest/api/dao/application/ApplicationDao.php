@@ -25,7 +25,15 @@
 			$row = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 			return $row;
-		}		
+		}	
+
+		public function applicants($userId)	{
+			$query = "SELECT applications.application_id, applications.briefing_id, applications.worker_id, applications.client_id, applications.comment, applications.estimated_price, applications.status, users_meta.public_info, users_meta.country, users_meta.state, users.full_name FROM applications  INNER JOIN users_meta ON applications.client_id = users_meta.user_id  INNER JOIN users ON users_meta.user_id = users.user_id WHERE client_id = '$userId'";
+			$result = mysqli_query($this->db, $query);
+			$row = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+			return $row;
+		}
 
 
 	}
