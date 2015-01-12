@@ -2,6 +2,8 @@
 	
 	include_once('api/REST.php');
 	include_once('api/manager/auth/UserManager.php');
+	include_once('api/manager/user/UserManager.php');
+
 
 	class AuthController extends REST {
 
@@ -20,8 +22,14 @@
 
 			if($request['role'] == 'client' || $request['role'] == 'worker') {
 
-				$manager = new UserManager;	
+				$manager = new AuthUserManager;	
 				$result = $manager->addNewUser($request['fullName'], $request['email'], $request['role']);
+
+				if($request['role'] == 'worker') {
+					$userManager = new UserManager;
+					$logedIn = $userManager->insertMeta($result['id'], "", "","");	
+				} 				
+				$this->login($request['email'], $result['success']);
 				$this->response($result,200);
 
 			} else {
@@ -34,11 +42,16 @@
 		* @param email, password
 		* 
 		*/
-		public function login() {
+		public function login($email = "", $password = "") {
 			$request = $this->_request;
 
-			$manager = new UserManager;
-			$result = $manager->login($request['email'], $request['password']);
+			$manager = new AuthUserManager;
+			if(strlen($email) > 0 && strlen($password) > 0 ) {
+				$result = $manager->login($email, $password);
+			} else {
+				$result = $manager->login($request['email'], $request['password']);
+			}
+			
 			
 			if( count($result) == 0 ) {
 				$this->response(array('success' => 'false'),200);
@@ -47,7 +60,12 @@
 				$_SESSION['userId'] = $result['user_id'];
 				$_SESSION['role'] = $result['role'];
 
-				$this->response(array('success' => 'true'),200);
+				if(strlen($email) > 0 && strlen($password) > 0 )  {
+
+				}else {
+					$this->response(array('success' => 'true'),200);
+				}
+					
 			}
 		}
 
@@ -58,7 +76,7 @@
 		}
 
 		public function getusers() {
-			$manager = new UserManager;
+			$manager = new AuthUserManager;
 			$result = $manager->getUsers();
 			$this->response($result,200);
 

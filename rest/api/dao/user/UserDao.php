@@ -43,10 +43,15 @@
 		*/
 
 		public function insertMeta($userId, $userInfo, $country, $state) {
-			$info = json_decode($userInfo, true);
-			$publicInfo = json_encode($info['public_info'],JSON_UNESCAPED_SLASHES);
-			$privateInfo = json_encode($info['private_info'],JSON_UNESCAPED_SLASHES);
 			
+			$publicInfo = "";
+			$privateInfo = "";
+
+			if( strlen($userInfo) > 1) {
+				$info = json_decode($userInfo, true);
+				$publicInfo = json_encode($info['public_info'],JSON_UNESCAPED_SLASHES);
+				$privateInfo = json_encode($info['private_info'],JSON_UNESCAPED_SLASHES);				
+			}			
 			
 			$query = "INSERT INTO users_meta(user_id, public_info, private_info, country, state) VALUES('$userId', '$publicInfo', '$privateInfo', '$country', '$state')";
 			$result = mysqli_query($this->db, $query);

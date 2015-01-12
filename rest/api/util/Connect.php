@@ -3,7 +3,7 @@
 	class DB_Connect {
 		const DB_SERVER = "localhost";
 		const DB_USERNAME = "root";
-		const DB_PASSWORD = "root";
+		const DB_PASSWORD = "";
 		const DB_NAME = "calculi";
 
 		public function db_connect() {

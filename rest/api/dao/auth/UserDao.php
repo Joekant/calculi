@@ -2,7 +2,7 @@
 
 	include_once('api/util/Connect.php');
 
-	class UserDao {
+	class AuthUserDao {
 
 
 		const TOKEN_SALT = "gh-0sX-hEl-fT+~6CS<d1R5]6p,0c6rq[Gt|9C}:+4dDHu>5v^t50wFD_:=rV6ae";
@@ -33,18 +33,12 @@
 
 				$result = mysqli_query($this->db, $query);
 
-				//print_r($generatedPass);
-<<<<<<< HEAD
-
-				if($result == 1)  return array('success' => $generatedPass);
-				else return array( 'success' => false );
-
-=======
+				//print_r($generatedPass)
 				
-				if($result == 1)  return array('success' => $generatedPass);	
+				if($result == 1)  return array('success' => $generatedPass, 'id' => mysqli_insert_id($this->db));	
 				else return array( 'success' => false );	
 			
->>>>>>> FETCH_HEAD
+
 			} catch(Exception $e) {
 				echo $e->getMessage();
 			}
