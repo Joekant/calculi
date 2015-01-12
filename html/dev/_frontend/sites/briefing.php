@@ -68,10 +68,9 @@
               <input type="email" id="i_email" name="email" data-category="general" value="max@mustermann.at" required>
             </div>
 
-
             <div class="medium-6 columns">
               <label for="i_company">Firma<span class="required">*</span></label>
-              <input type="text" id="i_company" name="company" data-category="general" value="Firma GmbH" required >
+              <input type="text" id="i_company" name="company" data-category="general" data-name="company" value="Firma GmbH" required >
             </div>
             <div class="medium-6 columns">
               <label for="i_website">Website</label>
@@ -79,9 +78,9 @@
             </div>
           </div>
           <div class="row">
-            <div class="medium-6 columns">
+            <div id="a" class="medium-6 columns">
               <label for="s_country">Land</label>
-              <select id="s_country" name="s_country" >
+              <select id="s_country" name="s_country" data-category="general" data-name="country" >
                 <option value="unselected">Land auswählen...</option>
                 <option value="Österreich" selected>Österreich</option>
                 <option value="Deutschland" >Deutschland</option>
@@ -91,7 +90,7 @@
           </div>
           <div class="medium-6 columns">
             <label for="s_state">Bundesland</label>
-            <select id="s_state" name="s_state" disabled>
+            <select id="s_state" name="s_state" data-category="general" data-name="state" disabled>
               <option value="">zuerst Land wählen...</option>
               <!--          -->
             </select>
@@ -105,7 +104,7 @@
           <div class="medium-4 columns">
             <label for="s_branche">Branche
               <datalist id="s_branche">
-                <select id="s_branche" name="s_branche" name="s_branche">
+                <select id="s_branche">
                   <option value="Gastronomie">Gastronomie</option>
                   <option value="Gesundheitswesen">Gesundheitswesen</option>
                   <option value="Kunst">Kunst</option>
@@ -114,10 +113,10 @@
                   <option value="Unterhaltung">Unterhaltung</option>
                 </select>
               </datalist>
-              <input type="text" name="branche" data-category="general" value="IT" list="s_branche" >
+              <input type="text" name="branche" data-name="branche" data-category="general" value="IT" list="s_branche" >
             </label>
             <label for="s_employees">Mitarbeiter</label>
-            <select id="s_employees" name="s_employees">
+            <select id="s_employees" data-category="general" data-name="employees" name="s_employees">
               <option value="1">1</option>
               <option value="2-5">2-5</option>
               <option value="5-10">5-10</option>
@@ -328,7 +327,7 @@
 <div class="row">
   <h3 class="subline padding-top">Ergänzende Bemerkungen</h3>
   <label for="t_comment"> Hier können Sie ergänzende Anmerkungen zum gesamten Briefing beifügen.</label>
-  <textarea id="t_comment" name="t_comment"  data-category="general" rows="3" >Mir ist besonders wichtig, dass...</textarea>
+  <textarea id="t_comment" name="comment"  data-category="general" rows="3" >Mir ist besonders wichtig, dass...</textarea>
 
   <input id="c_notifications"  type="checkbox" value="yes" checked>
   Ich möchte automatisch per E-mail über neue Bewerber informiert werden <br />

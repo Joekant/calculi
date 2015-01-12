@@ -24,10 +24,11 @@ function postToServer() {
 		'content' : {},
 		'design' : {},
 		'general' : {}
+
 	};
 
 	var form = $('#form');
-	var inpS = form.find('input, textarea');
+	var inpS = form.find('input, textarea, select');
 	var temp;
 
 	for(var n = 0; n < inpS.length; n++) {
@@ -47,18 +48,21 @@ function postToServer() {
 		} else if(temp.attr("type") == "hidden" ) {
 			data[temp.attr("name")][temp.data("name")] = temp.attr("value");
 
-		} else if(temp.attr("type") == "text"  ) {
-
+		} else if(temp.attr("type") == "text" ) {
 			data[temp.data("category")][temp.attr("name")] = temp.attr("value");
 		} else if(temp[0].type == "textarea" ) {
 			data[temp.data("category")][temp.attr("name")] = temp.text();
+		} else if (temp[0].type == "select-one" ) {
+			console.log(temp, temp.val());
+			data[temp.data("category")][temp.data("name")] = temp.val();
 		}
 	}
 
 	var dataStringify = JSON.stringify(data);
 	// console.log(dataStringify);
+	console.log(data);
 
-	$.post( "/calculi/rest/briefing/newBriefing", { briefingData: dataStringify })
+	/*$.post( "/calculi/rest/briefing/newBriefing", { briefingData: dataStringify })
 	.done(function( response ) {
 		console.log(response)
 		if (response.success == "true") {
@@ -69,7 +73,7 @@ function postToServer() {
 			alert("error" + response.success)
 			// $(".login-error").slideDown("slow")
 		}
-	});
+	});*/
 }
 
 </script>
