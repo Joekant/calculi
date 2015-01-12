@@ -8,7 +8,15 @@ $('[data-slider]').on('change.fndtn.slider', function(){
 </script>
 
 <script>
-// PARSE FORM AND POST JSON
+
+// PARSE FORM AND POST JSON ans stringify to newBriefing Controller
+var submit = $('#submit')
+
+submit.click(function() {
+	postToServer()
+	event.preventDefault();
+})
+
 function postToServer() {
 	var data = {
 		'services' : {},
@@ -47,7 +55,21 @@ function postToServer() {
 		}
 	}
 
-	console.log(data);
+	var dataStringify = JSON.stringify(data);
+	// console.log(dataStringify);
+
+	$.post( "/calculi/rest/briefing/newBriefing", { briefingData: dataStringify })
+	.done(function( response ) {
+		console.log(response)
+		if (response.success == "true") {
+			// console.log("briefing eingetragen")
+			window.location = "/calculi/html/dev/_frontend/index.php?page=briefing_s";
+		}
+		else {
+			alert("error" + response.success)
+			// $(".login-error").slideDown("slow")
+		}
+	});
 }
-postToServer()
+
 </script>

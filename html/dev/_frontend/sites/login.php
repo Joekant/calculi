@@ -4,22 +4,22 @@
     <h1 class="padding-bottom">Login</h1>
 
 
-<div class="panel text-center red-border login-error hide">
-        <h5> <i class="fa fa-cross fa-fw"></i> Login fehlgeschlagen</h5>
-        <p>Bitte überprüfe deine Eingaben</p>
-      </div>
+    <div class="panel text-center red-border login-error hide">
+      <h5> <i class="fa fa-cross fa-fw"></i> Login fehlgeschlagen</h5>
+      <p>Bitte überprüfe deine Eingaben</p>
+    </div>
 
-        <form class="loginform" method="POST">
-          <input type="email" id="email" placeholder="E-mail" value="a@a.at" />
-          <input type="password" id="password" placeholder="Passwort" value="3uiC8Mag" />
-          <input type="submit" class="button expand padding-top" id="loginbutton" value="Login">
-        </form>
-        <div id="loginlinks" class="padding-top" >
-          <a href="index.php?page=register" id="reglink"><span data-tooltip aria-haspopup="true" class="has-tip" title="zur Registrierung"><i class="fa fa-plus fa-fw"></i></span></a>
-          <a href="" data-reveal-id="help" id="helplink"><span data-tooltip aria-haspopup="true" class="has-tip" title="Passwort widerherstellen"><i class="fa fa-question fa-fw"></i></span></a>
-        </div>
-   </div>
- </div>
+    <form class="loginform" method="POST">
+      <input type="email" id="email" placeholder="E-mail" value="a@a.at" />
+      <input type="password" id="password" placeholder="Passwort" value="3uiC8Mag" />
+      <input type="submit" class="button expand padding-top" id="loginbutton" value="Login">
+    </form>
+    <div id="loginlinks" class="padding-top" >
+      <a href="index.php?page=register" id="reglink"><span data-tooltip aria-haspopup="true" class="has-tip" title="zur Registrierung"><i class="fa fa-plus fa-fw"></i></span></a>
+      <a href="" data-reveal-id="help" id="helplink"><span data-tooltip aria-haspopup="true" class="has-tip" title="Passwort widerherstellen"><i class="fa fa-question fa-fw"></i></span></a>
+    </div>
+  </div>
+</div>
 </div>
 
 <div id="help" class="reveal-modal" data-reveal>
@@ -39,11 +39,11 @@
   var submit = $('#loginbutton')
   submit.click(function() {
 
-  var email = $('#email').val();
-  var password = $('#password').val();
+    var email = $('#email').val();
+    var password = $('#password').val();
 
-  $.post( "/calculi/rest/auth/login", { email: email, password: password })
-  .done(function( data ) {
+    $.post( "/calculi/rest/auth/login", { email: email, password: password })
+    .done(function( data ) {
     // console.log(data)
     if (data.success == "true") {
       window.location = "/calculi/html/dev/_worker/index2.php#profile";
@@ -52,6 +52,6 @@
       $(".login-error").slideDown("slow")
     }
   });
-event.preventDefault();
-})
+    event.preventDefault();
+  })
 </script>

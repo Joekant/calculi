@@ -1,22 +1,5 @@
 <!-- requires briefing-effort-count.js -->
 
-<?php
-// Simple und nicht besonders benutzerfreundliche validierung ;)
-
-if(isset($_POST['submit'])) {
-  $name = str_replace(' ', '', $_POST['name']);
-  $email = $_POST['email'];
-  $company = $_POST['company'];
-
-  if (empty($name) || ctype_alpha($name) == false || empty($company) || eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$", $email) == false ) {
-    $error = true;
-  }
-  else {
-    $error = false;
-  }
-}
-?>
-
 <main>
   <div id="briefing-form">
 
@@ -53,7 +36,7 @@ if(isset($_POST['submit'])) {
       </div>
     </div>
     <br class="end" />
-    <form id ="form" METHOD="POST" ACTION="#" >
+    <form id ="form" >
 
       <div id="general">
         <!-- Step -->
@@ -355,7 +338,7 @@ if(isset($_POST['submit'])) {
 
   <br class="full-padding">
   <div class="large-12 columns text-center padding-top">
-    <button type="submit" name="submit" class="button">Absenden</button>
+    <button type="submit" name="submit" id="submit" class="button">Absenden</button>
   </div>
 </div>
 </form>

@@ -7,6 +7,8 @@ function active_css_class($page_value) {
   }
 }
 
+// :: ToDo: Change Navigation depending on login status
+
 // generate menu
 function header_navigation() {
   return array(
@@ -28,6 +30,7 @@ if($page == "home") {
   $content = $page;
 } elseif($page == "profile") {
   $content = $page;
+  array_push($jsfiles, "profile-get-meta.js");
 } elseif($page == "designer") {
   $content = $page;
 } elseif($page == "impress") {
