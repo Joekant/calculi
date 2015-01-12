@@ -8,7 +8,7 @@
         <div class="panel text-center green-border">
           <h5>Projekt abgeschlossen</h5>
           <p>
-            Gratulation, das Projekt wurde nun erfolgreich abgeschlossen!
+            Gratulation, das Projekt wurde erfolgreich abgeschlossen!
           </p>
           <p>
             Um die qualitative Arbeit unserer Experten sicherzustellen, bitten wir dich, den Webworker nach folgenden Kriterien zu bewerten.
@@ -96,7 +96,7 @@
 
 <script>
 // Handle Rating-Sliders
-// Aus zeitgründen wenig flexibler Pfusch mit copy/paste ;) 
+// Aus zeitgründen wenig flexibler Pfusch mit copy/paste ;)
 
   var allRatings = $('input.rating');
   var ratingsumspan = $('span.rating-sum');
@@ -108,7 +108,7 @@
    $('.rating-speed').val($('#rating-speed').attr('data-slider'))
    $('.rating-cons').val($('#rating-cons').attr('data-slider'))
    var ratingsum = 0;
-   
+
    $.each(allRatings, function( index, value ) {
     ratingsum += parseInt($(this).val())
   });
@@ -123,4 +123,4 @@
     ratingsumspan.css('color', 'green');
   }
 });
-</script> 
+</script>

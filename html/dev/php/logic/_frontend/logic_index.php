@@ -26,33 +26,33 @@ $phpfiles = array();
 
 if($page == "home") {
   $content = $page;
-} elseif($page == "profile") {        
+} elseif($page == "profile") {
   $content = $page;
-} elseif($page == "designer") {        
+} elseif($page == "designer") {
   $content = $page;
-} elseif($page == "impress") {        
+} elseif($page == "impress") {
   $content = $page;
-} elseif($page == "compare") {        
+} elseif($page == "compare") {
   $content = $page;
-} elseif($page == "briefing_select") {        
+} elseif($page == "briefing_select") {
   $content = $page;
-} elseif($page == "briefing_s") {  
+} elseif($page == "briefing_s") {
   $content = $page;
-  array_push($phpfiles, "logic_briefing.php");     
-} elseif($page == "register") {        
+  array_push($phpfiles, "logic_briefing.php");
+} elseif($page == "register") {
   $content = $page;
   $footerv = "0";
   $header = "0";
-} elseif($page == "briefing") {  
+} elseif($page == "briefing") {
   $content = $page;
-  array_push($jsfiles, "briefing-effort-count.js", "country-state-select.js");
-} elseif($page == "team") {        
+  array_push($jsfiles, "briefing-effort-count.js", "country-state-select.js", "briefing-logic.js");
+} elseif($page == "team") {
   $content = $page;
-} elseif($page == "press") {        
+} elseif($page == "press") {
   $content = $page;
-} elseif($page == "faq") {        
+} elseif($page == "faq") {
   $content = $page;
-} elseif($page == "login") {        
+} elseif($page == "login") {
   $content = $page;
   $footerv = "0";
   $header = "0";
@@ -64,9 +64,9 @@ if ($header=="1") {
 }
 
 // Include necessary PHP - Files
-if ($phpfile != "0") { 
+if ($phpfile != "0") {
   foreach ($phpfiles as $phpfile) {
-    include("../php/logic/_frontend/$phpfile"); 
+    include("../php/logic/_frontend/$phpfile");
   }
 }
 
@@ -74,9 +74,9 @@ if ($phpfile != "0") {
 include("sites/$content.php");
 
 // Include necessary JS - Files
-if ($jsfile != "0") { 
+if ($jsfile != "0") {
   foreach ($jsfiles as $jsfile) {
-   include("../js/$jsfile"); 
+   include("../js/$jsfile");
  }
 }
 

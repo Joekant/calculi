@@ -2,7 +2,7 @@
    Shared Properties
 ----------------------------------------- */
 .end {
-	clear: both; 
+	clear: both;
 }
 
 @mixin rounded( $radius ) {
@@ -47,17 +47,17 @@ a:hover {
 
 a.active {
 	-webkit-transition: background-color .7s ease;
-	-moz-transition: background-color .7s ease;		
+	-moz-transition: background-color .7s ease;
 }
 
 main {
 	margin-top: 50px;
 	width:100%;
 	min-height: 100%;
-	position: relative;  
+	position: relative;
 	z-index: 10;
 	border-bottom: 4px solid $primary-color;
-	@media only screen and (max-width: 40em) { 
+	@media only screen and (max-width: 40em) {
 		margin-top: -10px;
 	}
 }
@@ -131,8 +131,8 @@ main {
 	padding-right: 20px;
 	color: $primary-color;
 	text-align: right;
-	
-	@media only screen and (max-width: 64em) { 
+
+	@media only screen and (max-width: 64em) {
 		text-align: center;
 	}
 }
@@ -148,7 +148,7 @@ main {
 	letter-spacing: 1.1px;
 	color: $orange;
 
-	@media only screen and (max-width: 40em) { 
+	@media only screen and (max-width: 40em) {
 		margin-top: 10px;
 		font-size: 1.6em;
 	}
@@ -244,12 +244,12 @@ main {
 
 .half-padding {
 	padding-top:30px;
-	padding-bottom:30px;	
+	padding-bottom:30px;
 }
 
 .half-margin {
 	margin-top:30px;
-	margin-bottom:30px;	
+	margin-bottom:30px;
 }
 
 .margin-top {
@@ -271,7 +271,7 @@ main {
 .logo {
 	width: 150px;
 
-	@media only screen and (max-width: 40em) { 
+	@media only screen and (max-width: 40em) {
 		width: 80px;
 		padding: 20px 0px;
 	}
@@ -279,17 +279,17 @@ main {
 }
 
 .expanded {
-	background-color: transparent;	
+	background-color: transparent;
 }
 
 .top-bar {
 	background-color: transparent;
-	
+
 	margin: 0px auto;
 
 	.top-bar-section {
 		ul.right {
-			border-bottom: 4px solid $primary-color;	
+			border-bottom: 4px solid $primary-color;
 			li.active {
 				a {
 					background-color: $primary-color;
@@ -340,7 +340,7 @@ main {
 
 
 input[type=text],
-textarea[type=text],
+textarea,
 input[type=email],
 input[type=password],
 select {
@@ -358,9 +358,9 @@ select {
 input[type=text]:focus,
 input[type=email]:focus,
 input[type=password]:focus,
-textarea[type=text]:focus,
+textarea:focus,
 select
-{	
+{
 	padding: 10px;
 	border: none;
 	background: url("../img/bg_pattern.png") repeat;
@@ -372,12 +372,12 @@ select:focus {
 	border: none;
 	background: url("../img/bg_pattern.png") repeat;
 	border: 2px solid $primary-color;
-	box-shadow: none;	
+	box-shadow: none;
 }
 
 .reveal-modal {
 	input[type=text],
-	textarea[type=text],
+	textarea,
 	input[type=email],
 	input[type=password], {
 		background: transparent;
@@ -388,18 +388,18 @@ select:focus {
 	}
 }
 
-textarea[type=text] {
+textarea {
 	border: 2px solid $darkgrey;
 	margin-top: 10px;
 }
 
-textarea[type=text]:focus {
-	border: 2px solid $primary-color;	
+textarea:focus {
+	border: 2px solid $primary-color;
 }
 
 select {
 	margin-top: 10px;
-	border: 2px solid $darkgrey;	
+	border: 2px solid $darkgrey;
 	padding: 0px;
 	padding-left: 10px;
 }
@@ -421,7 +421,7 @@ span.range-slider-handle {
 
 	#upload-pic {
 		position: absolute;
-		top: 12px;	
+		top: 12px;
 		height: 190px;
 		width: 246px;
 		height: 196px;
@@ -524,7 +524,7 @@ table {
 	tr {
 		color: $orange;
 		border: 0px;
-		
+
 		th {
 			color: $secondary-color;
 			font-size: 0.95em;
