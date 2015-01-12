@@ -34,16 +34,6 @@ class BriefingManager {
 		return $result;
 	}
 
-	public function getBriefingById($briefingId) {
-		$dao = new BriefingDao;
-		$result = $dao->getBriefingById($briefingId);
-
-		$generalBriefing = json_decode($result['general_briefing'], JSON_UNESCAPED_SLASHES);
-		$result['general_briefing'] = $generalBriefing;
-			//print_r($result);
-		return $result;
-	}
-
 	public function newBriefing( $userId, $briefingData ) {
 		$dao = new BriefingDao;
 
