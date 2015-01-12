@@ -29,6 +29,7 @@
   <script src="../js/core/controllers/ProfileCtrl.js"></script>  
   <script src="../js/core/controllers/BriefingsCtrl.js"></script>  
   <script src="../js/core/controllers/ApplicationsCtrl.js"></script>  
+  <script src="../js/core/controllers/CalculatorCtrl.js"></script>  
 
 
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">

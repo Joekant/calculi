@@ -34,10 +34,17 @@
 				$result = mysqli_query($this->db, $query);
 
 				//print_r($generatedPass);
+<<<<<<< HEAD
 
 				if($result == 1)  return array('success' => $generatedPass);
 				else return array( 'success' => false );
 
+=======
+				
+				if($result == 1)  return array('success' => $generatedPass);	
+				else return array( 'success' => false );	
+			
+>>>>>>> FETCH_HEAD
 			} catch(Exception $e) {
 				echo $e->getMessage();
 			}

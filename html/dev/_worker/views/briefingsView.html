@@ -37,7 +37,7 @@
         
       </tr>
       
-      <tr ng-repeat="el in briefings" class="clickable">
+      <tr ng-repeat="el in briefings" ng-click="toCalculator(el)" class="clickable">
         <td>{{el.general_briefing.general.firma}}</td>
         <td>{{el.general_briefing.general.branche}}</td>
         <td>{{el.country}}</td>
@@ -45,8 +45,8 @@
         <td>{{el.estimated_price}}</td>
         <td>{{el.expire_at}}</td>  
         <td>
-          <span class="label grey-bg">{{el.status}}
-        </span></td>
+          <span class="label grey-bg">{{el.status}}</span>
+        </td>
     </tr>
 
     

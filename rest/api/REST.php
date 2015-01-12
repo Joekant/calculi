@@ -83,8 +83,16 @@
 		private function inputs(){
 			switch($this->get_request_method()){
 				case "POST":
-					$this->_request = $this->cleanInputs($_POST);
+					
+					if(count($_POST) == 0 ) {
+						$arr  = json_decode(file_get_contents("php://input"), true);
+						$this->_request = $this->cleanInputs($arr);
+
+					}else { 
+						$this->_request = $this->cleanInputs($_POST);
+					}
 					break;
+
 				case "GET":
 				case "DELETE":
 					$this->_request = $this->cleanInputs($_GET);

@@ -17,13 +17,23 @@
 		}
 
 		public function getbriefingbyid() {
-			session_start();
 			
-			if( isset($_SESSION['userId']) ) {
-				$userId = $_SESSION['userId'];
-
+			if( $_SESSION['role'] == 'worker' ) {
 				$manager = new BriefingManager;
-				$result = $manager->getBriefingById($userId);
+				$result = $manager->getBriefingById($this->_request['briefingId']);
+				$this->response($result, 200);	
+			} else {
+				$this->response(array('success' => 'false'), 200);
+			}
+			
+		}
+
+
+		public function getbriefing() {
+			if( $_SESSION['role'] == 'worker' ) {
+			
+				$manager = new BriefingManager;
+				$result = $manager->getBriefing($this->_request['briefingId']);
 				$this->response($result, 200);	
 			} else {
 				$this->response(array('success' => 'false'), 200);
