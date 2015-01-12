@@ -58,7 +58,7 @@ function postToServer() {
 	// console.log(dataStringify);
 	console.log(data);
 
-	/*$.post( "/calculi/rest/briefing/newBriefing", { briefingData: dataStringify })
+	$.post( "/calculi/rest/briefing/newBriefing", { briefingData: dataStringify })
 	.done(function( response ) {
 		console.log(response)
 		if (response.success == "true") {
@@ -70,5 +70,5 @@ function postToServer() {
 			// $(".login-error").slideDown("slow")
 		}
 	});
-*/
+
 }
