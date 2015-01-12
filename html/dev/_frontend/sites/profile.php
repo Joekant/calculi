@@ -49,7 +49,6 @@
             </div>
           </div>
         </div>
-
       </div>
 
       <div id="profile-body">
@@ -77,7 +76,6 @@
               </ul>
             </div>
           </div>
-
 
           <div class="medium-5 columns" id="qualification">
             <h2>Ausbildung</h2>
@@ -198,12 +196,7 @@
     <div class="row text-center">
       <a href="" class="text-center" id="more-comments"><i class="fa fa-arrow-circle-down fa-fw"></i></a>
     </div>
-
-
   </div>
-
-
-
 </div>
 </div>
 </main>

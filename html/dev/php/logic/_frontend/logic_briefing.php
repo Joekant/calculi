@@ -1,11 +1,14 @@
-<?php 	
+<?php
+
+// Veraltete Translation-Logik
+
 // create empty array
 $briefing = array();
 
 // Run through POST-Array and change field names to printable words
 while( list( $field, $value ) = each( $_POST )) {
 
-	// Manipulate output 
+	// Manipulate output
 	if ($value == "yes" || $value == "Designer") {
 		$value = '<i class="green-font fa fa-check fa-fw"></i> Ja';
 	}
@@ -77,41 +80,41 @@ while( list( $field, $value ) = each( $_POST )) {
 	}
 	elseif  ($field == "c_ext_blog") {
 		$value = 'Blog';
-	}	
+	}
 	elseif  ($field == "c_ext_forum") {
 		$value = 'Forum';
-	}	
+	}
 	elseif  ($field == "c_ext_shop") {
 		$value = 'Shop';
-	}		
+	}
 	elseif  ($field == "c_ext_wiki") {
 		$value = 'Wiki';
-	}				
+	}
 	elseif  ($field == "c_pages_products") {
 		$value = 'Produktvorstellung';
-	}	
+	}
 	elseif  ($field == "c_pages_portfolio") {
 		$value = 'Portfolio';
-	}	
+	}
 	elseif  ($field == "c_pages_contact") {
 		$value = 'Kontaktseite';
-	}	
+	}
 	elseif  ($field == "c_pages_agb") {
 		$value = 'AGB-Seite';
-	}	
+	}
 	elseif  ($field == "c_pages_team") {
 		$value = 'Teamvorstellung';
-	}	
+	}
 	elseif  ($field == "c_pages_download") {
 		$value = 'Downloadbereich';
-	}	
+	}
 	elseif  ($field == "c_pages_faq") {
 		$value = 'F.A.Q - Seite';
-	}	
+	}
 
 	// Append current element to array
 	$briefing += array($field => $value);
-	
+
 	$$field = $value;
 }
 

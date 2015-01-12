@@ -1,3 +1,6 @@
+// Veralteter Prototype
+// Neue Version in Angular
+
 <script>
   // get DOM Elements
   var error = false
@@ -36,7 +39,7 @@ console.log(numberOfSections)
     totalTimeSpan.slideUp("slow")
     totalPriceSpan.slideUp("slow")
     e.preventDefault();
-  }); 
+  });
 
   linkTime.click(function(e){
     settingsPauschal.slideUp("slow")
@@ -50,12 +53,12 @@ console.log(numberOfSections)
     totalPriceSpan.slideDown("slow")
     pauschalPriceInput.val(0)
     e.preventDefault();
-  }); 
+  });
 
 // When input Change
 allInputs.change(function() {
 
-// if Method = Pauschal 
+// if Method = Pauschal
 var pauschalPrice = parseInt(pauschalPriceInput.val());
 
 if (pauschalPrice != 0) {
@@ -130,9 +133,9 @@ var totalEffort = 0;
                 var rowSum = parseInt(efforts.val()) * parseInt(rates.val())
 
                 // check if rowsum is a number (otherweise NaN Error)
-                if (!isNaN(rowSum)) { 
+                if (!isNaN(rowSum)) {
                   sectionSum += rowSum
-                  sectionEffort += parseInt(efforts.val())    
+                  sectionEffort += parseInt(efforts.val())
                 }
               }
               // Get right Section Sum-Field
@@ -143,7 +146,7 @@ var totalEffort = 0;
               sectionSumMoney.text(sectionSum);
               sectionSumTime.text(sectionEffort);
 
-              // Get Section Sum to calculate price spread 
+              // Get Section Sum to calculate price spread
               var sectionSumInhalt = parseInt($('span.section-sum-1').text())
               var sectionSumFunktionen = parseInt($('span.section-sum-2').text())
               var sectionSumDesign = parseInt($('span.section-sum-3').text())

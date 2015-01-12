@@ -1,4 +1,4 @@
- <footer class="frontend-footer dark-bg"> 
+ <footer class="frontend-footer dark-bg">
    <div class="row half-padding">
     <div class="medium-4 columns" id="link">
       <a href="index.php?page=press" class="links">Presse</a>
@@ -8,7 +8,7 @@
     <div class="medium-4 columns" id="logo">
       <a href="index.php"><img src="../img/logo_invert.png" alt="logo_invert"/></a>
       <div id="copyright">
-        © Copyright 2014 calculi
+        © 2014 Calculi
       </div>
     </div>
     <div class="medium-4 columns" id="social">
@@ -17,7 +17,7 @@
       <a href="" class="links"><i class="fa fa-twitter"></i></a>
     </div>
   </div>
-</footer> 
+</footer>
 
 
 
