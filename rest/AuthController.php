@@ -43,7 +43,6 @@
 			if( count($result) == 0 ) {
 				$this->response(array('success' => 'false'),200);
 			} else {
-				session_start();
 				
 				$_SESSION['userId'] = $result['user_id'];
 				$_SESSION['role'] = $result['role'];

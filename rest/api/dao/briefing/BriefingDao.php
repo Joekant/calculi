@@ -16,7 +16,7 @@
 			if(!$assoc) {
 				$row = mysqli_fetch_all($result, MYSQLI_ASSOC);	
 			} else {
-				
+
 			}
 			
 
@@ -31,7 +31,7 @@
 		*/
 		public function getBriefingById($briefingId) {
 			
-			$query = "SELECT * FROM briefings WHERE user_id = $briefingId ";
+			$query = "SELECT * FROM briefings WHERE briefing_id = $briefingId ";
 			$result = mysqli_query($this->db, $query);
 			
 

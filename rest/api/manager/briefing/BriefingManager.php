@@ -17,6 +17,8 @@
 			
 		}
 
+		
+
 		public function getBriefingById($briefingId) {
 			$dao = new BriefingDao;
 			$result = $dao->getBriefingById($briefingId);

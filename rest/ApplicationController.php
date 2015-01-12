@@ -30,8 +30,7 @@
 			//$userId = $_SESSION['userId'];
 			$briefing = ( isset($this->_request['briefing']) ? true : false );
 			$userId = 1;
-
-			if($_SESSION['role'] != 'worker' ) {
+			if($_SESSION['role'] == 'worker' ) {
 				$manager  = new ApplicationManager;
 				$result = $manager->getApplications($userId);
 				
@@ -39,6 +38,7 @@
 					$briefingManager = new BriefingManager;
 					$briefingResult = $briefingManager->getBriefings();
 					
+
 					$briefing = array("briefings" => $briefingResult );
 					$applications = array("applications" => $result );
 					
