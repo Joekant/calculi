@@ -12,12 +12,8 @@
 				$generalBriefing = json_decode($result[$n]['general_briefing'], JSON_UNESCAPED_SLASHES);
 				$result[$n]['general_briefing'] = $generalBriefing;
 			}
-
-			return $result;
-			
+			return $result;	
 		}
-
-		
 
 		public function getBriefingById($briefingId) {
 			$dao = new BriefingDao;
@@ -25,9 +21,7 @@
 			
 			$generalBriefing = json_decode($result['general_briefing'], JSON_UNESCAPED_SLASHES);
 			$result['general_briefing'] = $generalBriefing;
-
 			//print_r($result);
-			
 			return $result;
 		}
 

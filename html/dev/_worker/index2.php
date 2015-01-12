@@ -1,3 +1,15 @@
+<?php  
+  session_start();
+  $class = "five-up";
+  if($_SESSION["role"] == "worker") {
+    $worker = true;
+  }else {
+    $worker = false;
+    $class="four-up";
+  }
+  
+?>
+
 <!doctype html>
 <html class="no-js" lang="en" ng-app="Core">
 <head>
@@ -31,6 +43,8 @@
   <script src="../js/core/controllers/ApplicationsCtrl.js"></script>  
   <script src="../js/core/controllers/CalculatorCtrl.js"></script>  
 
+  <!-- App Controller Client -->
+  <script src="../js/core/controllers/ApplicantsCtrl.js"></script>  
 
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Lato:100,200,300,400,700' rel='stylesheet' type='text/css'>
@@ -40,7 +54,7 @@
 <body>
 
   <header class="show-for-large-up">
-    <div navmenu class="icon-bar dark-bg large-horizontal five-up">
+    <div navmenu role="<?php echo $worker; ?>" class="icon-bar dark-bg large-horizontal <?php echo $class ?>">
 
       <a  ng-repeat="item in items" href="#{{item.url}}" class="item">
         <i class="fa fa-{{item.class}} fa-fw"></i>
@@ -57,7 +71,7 @@
         <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
       </ul>
       <section  class="top-bar-section">
-        <ul navmenu class="right">
+        <ul navmenu role="<?php echo $worker; ?>" class="right">
           <li ng-repeat = "item in items"><a href="#">{{item.title}}</a></li>
           <!-- <li class=""><a href="#">{{item.title}}</a></li>
           <li class=""><a href="#">Profil</a></li>
