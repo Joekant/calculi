@@ -45,7 +45,6 @@ class BriefingDao {
 		public function newBriefing($userId, $briefingData, $country, $state, $status, $effort, $expire_at, $created_at) {
 
 			$data = json_encode($briefingData);
-			print_r($data);
 			$query = "INSERT INTO briefings(user_id, general_briefing, country, state, status, effort, expire_at) VALUES('$userId'," . $data . ",'$country' , '$state', '$status', '$effort', '$expire_at' )" or die( mysqli_error($this->db));
 			$result = mysqli_query($this->db, $query);
 			//print_r($result);

@@ -66,20 +66,20 @@
 
 							<div class="medium-6 columns">
 								<label for="s_country">Land</span></label>
-								<select id="s_country" name="s_country" >
-									<option value="unselected">Land auswählen...</option>
-									<option value="Austria">Österreich</option>
-									<option value="Germany" >Deutschland</option>
-									<option value="Switzerland" >Schweiz</option>
+									<select ng-model="country" id="s_country" name="s_country" >
+										<option value="unselected">Land auswählen...</option>
+										<option value="Austria">Österreich</option>
+										<option value="Germany" >Deutschland</option>
+										<option value="Switzerland" >Schweiz</option>
+									</select>
+								</label>
+							</div>
+							<div class="medium-6 columns">
+								<label for="s_state">Bundesland</label>
+								<select id="s_state" name="s_state" disabled>
+									<option value="">Bitte Land wählen</option>
 								</select>
-							</label>
-						</div>
-						<div class="medium-6 columns">
-							<label for="s_state">Bundesland</label>
-							<select id="s_state" name="s_state" disabled>
-								<option value="">Bitte Land wählen</option>
-							</select>
-						</div>
+							</div>
 					</div>
 					<div class="medium-12 columns">
 						<textarea ng-model="pub.general.description" type="text" id="t_description" rows="5" placeholder="Ich arbeite seit 2004 als ..."></textarea>

@@ -58,12 +58,12 @@
             ?>
             <div class="medium-6 columns">
               <label for="i_name">Name<span class="required">*</span>
-                <input type="text" id="i_name" name="name" data-category="general" value="Max Mustermann" required>
+                <input type="text" id="i_name"  data-category="general" value="Max Mustermann" required>
               </label>
             </div>
             <div class="medium-6 columns">
               <label for="i_email">E-mail<span class="required">*</span></label>
-              <input type="email" id="i_email" name="email" data-category="general" value="max@mustermann.at" required>
+              <input type="text" id="i_email" data-category="general" value="max@mustermann.at" required>
             </div>
 
             <div class="medium-6 columns">

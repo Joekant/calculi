@@ -25,9 +25,9 @@
 			return $result;
 		}
 
-		public function updatePublicMeta($userId, $userInfo) {
+		public function updatePublicMeta($userId, $userInfo, $country) {
 			$dao = new UserDao;
-			$result = $dao->updatePublicMeta($userId, $userInfo);
+			$result = $dao->updatePublicMeta($userId, $userInfo, $country);
 			return $result;
 		}
 

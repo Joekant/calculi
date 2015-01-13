@@ -24,7 +24,7 @@ Core.controller('ProfileCtrl', function ($scope, MyHTTP, $http, INIT) {
 			if(result.data['public_info'] != null)  {
 				//if(result.data["publicInfo"].)
 				$scope.pub = result.data["public_info"];
-
+				$scope.country = result.data["country"];
 			}
 			
 
@@ -101,7 +101,8 @@ Core.controller('ProfileCtrl', function ($scope, MyHTTP, $http, INIT) {
 
 	$scope.save = function() {
 		var wrapper = {
-			'userInfo' : $scope.pub
+			'userInfo' : $scope.pub,
+			'userCountry' : $scope.country
 		};
 
 		MyHTTP.post(updateParam,wrapper).

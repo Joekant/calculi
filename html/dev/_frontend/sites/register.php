@@ -7,7 +7,10 @@
 
 <div class="panel text-center green-border register-success hide">
         <h5> <i class="fa fa-check fa-fw"></i> Registrierung erfolgreich</h5>
-        <p>Bitte überprüfe deinen Posteingang um das Konto zu aktivieren</p>
+        <p>Bitte überprüfe deinen Posteingang um das Konto zu aktivieren<br /><br />
+          Dein Passwort ist
+        </p>
+        <p id="showPass"></p>
         <a href="index.php?page=login" class="button expand">zum Login</a>
       </div>
 
@@ -48,16 +51,18 @@
   var email = $('#email').val();
   var name = $('#name').val();
 
-  $.post( "/calculi/rest/auth/addnewuser", { email: email, fullName: name, role:"client" })
+  $.post( "/calculi/rest/auth/addnewuser", { email: email, fullName: name, role:"worker" })
   .done(function( data ) {
 
-if (data.success == "true") {
-    $(".register-success").slideDown("slow")
-    $(".login-form").slideUp("slow")
-}
-$(".register-error").slideDown("slow")
+    if (data.success != "true") {
+        $(".register-success").slideDown("slow")
+        $(".login-form").slideUp("slow")
+        $("#showPass").html(data.success);
+    }else {
+      $(".register-error").slideDown("slow")  
+    }
 
-  });
+    });
 
 event.preventDefault();
 })

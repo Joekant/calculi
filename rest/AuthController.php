@@ -79,7 +79,6 @@
 		}
 
 		public function logout() {
-			session_start();
 			session_destroy();
 			$this->response(array('success' => 'true'),200);
 		}

@@ -47,9 +47,9 @@ class BriefingManager {
 		$status = "active";
 		$expire_at = date("Y-m-d H:i:s", $nextWeek);
 
-		/*$result = $dao->newBriefing($userId, $briefingData,$country, $state, $status, $effort, $expire_at, $now);*/
+		$result = $dao->newBriefing($userId, $briefingData,$country, $state, $status, $effort, $expire_at, $now);
 
-		/*return $result;*/
+		return $result;
 	}
 
 	private function validateBriefing($briefingData) {

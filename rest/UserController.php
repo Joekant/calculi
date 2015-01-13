@@ -68,7 +68,7 @@
 		public function updatepublicmeta() {
 			$userId = $_SESSION['userId'];
 			$manager = new UserManager;
-			$result = $manager->updatePublicMeta($userId, $this->_request['userInfo'] );
+			$result = $manager->updatePublicMeta($userId, $this->_request['userInfo'], $this->_request['userCountry'] );
 			$this->response( array('success'=> $result), 200);			
 		}
 

@@ -64,7 +64,7 @@
   <header class="show-for-large-up">
     <div navmenu role="<?php echo $worker; ?>" class="icon-bar dark-bg large-horizontal <?php echo $class ?>">
 
-      <a  ng-repeat="item in items" href="#{{item.url}}" class="item">
+      <a  ng-repeat="item in items" href="#{{item.url}}" class="item {{item.active}}">
         <i class="fa fa-{{item.class}} fa-fw"></i>
         <label>{{item.title}}</label>
       </a>
@@ -97,10 +97,10 @@
 
   <footer class="be-footer">  
     <ul>
-      <li><a href="#" data-reveal-id="helpmodal"><span data-tooltip aria-haspopup="true" class="has-tip" title="Hilfestellungen"><i class="fa fa-question fa-fw"></i></span></a></li>
-      <li><a href="#" data-reveal-id="feedbackmodal"><span data-tooltip aria-haspopup="true" class="has-tip" title="Feedback"><i class="fa fa-comment fa-fw"></i></span></a></li>
+      <li><a href data-reveal-id="helpmodal"><span data-tooltip aria-haspopup="true" class="has-tip" title="Hilfestellungen"><i class="fa fa-question fa-fw"></i></span></a></li>
+      <li><a href data-reveal-id="feedbackmodal"><span data-tooltip aria-haspopup="true" class="has-tip" title="Feedback"><i class="fa fa-comment fa-fw"></i></span></a></li>
 
-      <li><a href="#"  data-dropdown="drop1" aria-controls="drop1" ><span data-tooltip aria-haspopup="true" class="has-tip" title="Abmelden"><i class="fa fa-lock fa-fw"></i></span></a></li>
+      <li><a href  data-dropdown="drop1" aria-controls="drop1" ><span data-tooltip aria-haspopup="true" class="has-tip" title="Abmelden"><i class="fa fa-lock fa-fw"></i></span></a></li>
       <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
         <li><a href="../_frontend">Abmelden</a></li>
       </ul> 
@@ -110,6 +110,23 @@
       gemacht mit <i class="fa fa-heart-o fa-fw"></i> an der SAE
     </div>
   </footer>
+
+  <div id="helpmodal" class="reveal-modal" data-reveal>
+  <h2><i class="fa fa-question fa-fw"></i> Hilfe></h2>
+  <a class="close-reveal-modal">&#215;</a>
+  <p>Hi</p>
+</div>
+
+<div id="feedbackmodal" class="reveal-modal" data-reveal>
+  <h2><i class="fa fa-comment fa-fw"></i> Feedback zur Seite</h2>
+  Wir sind stet's bemüht Calculi zu verbessern. Sag uns deine Meinung!
+  <form action="index.php?page=briefing_s" method="POST">
+    <textarea type="text" id="remail" rows="3" placeholder="Auf dieser Seite ist mir aufgefallen, dass..."></textarea>
+    <button type="submit" class="button">Absenden</button>
+  </form>
+  <a class="close-reveal-modal">&#215;</a>
+
+</div>
 
   <!-- build:js ../scripts/scripts_bottom.min.js -->
   <script src="../js/foundation.min.js"></script>

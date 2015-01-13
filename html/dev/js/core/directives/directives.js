@@ -1,28 +1,66 @@
-Core.directive('navmenu', function() {
+Core.directive('navmenu', function($location, $routeParams) {
+	
+
+
 	return {
 		
 		link : function(scope, element, attr) {
+			
 			if(attr.role == "true") {
 				scope.items = [
-					{'title' : 'Übersicht', 'class' : 'fa fa-dashboard fa-fw', 'url' : 'dashboard'},
-					{'title' : 'Profil', 'class' : 'fa fa-user fa-fw', 'url' : 'profile'},
-					{'title' : 'Ausschreibungen', 'class' : 'fa fa-pencil fa-fw', 'url' : 'briefings'},
-					{'title' : 'Aufträge', 'class' : 'fa fa-wrench fa-fw', 'url' : 'projects'},
-					{'title' : 'Einstellungen', 'class' : 'fa fa-cogs fa-fw', 'url' : 'settings'}
+					{'title' : 'Übersicht', 'class' : 'fa fa-dashboard fa-fw', 'url' : 'dashboard', 'active' : ''},
+					{'title' : 'Profil', 'class' : 'fa fa-user fa-fw', 'url' : 'profile', 'active' : ''},
+					{'title' : 'Ausschreibungen', 'class' : 'fa fa-pencil fa-fw', 'url' : 'briefings', 'active' : '' },
+					{'title' : 'Aufträge', 'class' : 'fa fa-wrench fa-fw', 'url' : 'projects', 'active' : ''},
+					{'title' : 'Einstellungen', 'class' : 'fa fa-cogs fa-fw', 'url' : 'settings', 'active' : ''}
 				];
 			} else {
 				scope.items = [
-					{'title' : 'Übersicht', 'class' : 'fa fa-dashboard fa-fw', 'url' : 'dashboard'},
+					{'title' : 'Übersicht', 'class' : 'fa fa-dashboard fa-fw', 'url' : 'dashboard', 'active' : ''},
 					/*{'title' : 'Briefings', 'class' : 'fa fa-pencil fa-fw', 'url' : 'briefings'},*/
-					{'title' : 'Bewerber', 'class' : 'fa fa-pencil fa-fw', 'url' : 'applicants'},
-					{'title' : 'Projekte', 'class' : 'fa fa-wrench fa-fw', 'url' : 'projects'},
-					{'title' : 'Einstellungen', 'class' : 'fa fa-cogs fa-fw', 'url' : 'settings'}
+					{'title' : 'Bewerber', 'class' : 'fa fa-pencil fa-fw', 'url' : 'applicants', 'active' : ''},
+					{'title' : 'Projekte', 'class' : 'fa fa-wrench fa-fw', 'url' : 'projects', 'active' : ''},
+					{'title' : 'Einstellungen', 'class' : 'fa fa-cogs fa-fw', 'url' : 'settings', 'active' : ''}
 				];
 			}
+
+
+			scope.$on('$routeChangeStart', function(next, current) { 
+				var tmp = $location.$$path;
+				var route = tmp.substring(1);
+				
+				
+				for(var n = 0; n < scope.items.length ; n ++) {
+					//console.log(scope.items[n].url, route)
+					if( scope.items[n].url == route ) {
+
+						scope.items[n].active = "active";
+					}else {
+						scope.items[n].active = "";
+					}						
+				}
+					console.log(scope.items);
+
+			});
+
+
+			
 
 		}
 	};
 
+});
+
+
+Core.directive('noclick', function() {
+	'use strict'
+	return {
+		link : function(scope,element, attr) {
+			element.bind("click", function(ev) {
+				ev.preventDefault();
+			})
+		}
+	}
 });
 
 Core.directive('foundationTab', function($document) {

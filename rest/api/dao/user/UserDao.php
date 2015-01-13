@@ -21,15 +21,17 @@
 			
 			$public_info = array("public_info" => json_decode($row['public_info'],true) );
 			$private_info = array( "private_info" => json_decode($row['private_info'],true) );
+
+			$country = array( "country" => $row['country'] );
 			
-			$info = array_merge($public_info, $private_info);
+			$info = array_merge($public_info, $private_info, $country);
 			
 			return json_encode($info, JSON_UNESCAPED_SLASHES);
 		}
 
 
 		public function getPublicInfo($userId) {
-			$query = "SELECT public_info FROM users_meta WHERE user_id = '$userId'";
+			$query = "SELECT public_info, country FROM users_meta WHERE user_id = '$userId'";
 			$result = mysqli_query($this->db, $query);
 			$row = mysqli_fetch_object($result);
 			return $row->public_info;
@@ -72,10 +74,10 @@
 
 		}
 
-		public function updatePublicMeta($userId, $userInfo) {
+		public function updatePublicMeta($userId, $userInfo, $country) {
 			$publicInfo = json_encode($userInfo, JSON_UNESCAPED_SLASHES);
 			//print_r($publicInfo);
-			$query = "UPDATE users_meta SET public_info='$publicInfo' WHERE user_id = '$userId'";
+			$query = "UPDATE users_meta SET public_info='$publicInfo', country='$country' WHERE user_id = '$userId'";
 			$result = mysqli_query($this->db, $query) or die( mysqli_error($this->db));
 			return $result;
 

@@ -54,20 +54,68 @@ function postToServer() {
 		}
 	}
 
-	var dataStringify = JSON.stringify(data);
-	// console.log(dataStringify);
-	// console.log(data);
+	
+	
+	var afterCreateUser = function(pass) {
+		$.ajax({
+			type: "POST",
+			url : "/calculi/rest/briefing/newBriefing",
+			data : {
+				briefingData: dataStringify	
+			}
+		}).done(function(response)  {
+			console.log(response)
+			if(response.success != false) {
+				if(pass == null) {
+					window.location = "/calculi/html/dev/_frontend/index.php?page=briefing_s";	
+				} else {
+					window.location = "/calculi/html/dev/_frontend/index.php?page=briefing_s&pass=" + pass;	
+				}
+				
+			}
+			
+			
+		}).fail(function(response)  {
+			console.log(response)
+		});		
+	}
 
-	$.ajax({
-		type: "POST",
-		url : "/calculi/rest/briefing/newBriefing",
-		briefingData: dataStringify
-	}).done(function(response)  {
-		// window.location = "/calculi/html/dev/_frontend/index.php?page=briefing_s";
-		console.log(response)
-	}).fail(function(response)  {
-		alert("error" + response.success)
-	});
+	var fullName = $("#i_name").val();
+	var email = $("#i_email").val();
+
+	var dataStringify = JSON.stringify(data);
+
+	if(fullName == undefined || email == undefined)  {
+		afterCreateUser(null)
+	} else {
+
+		console.log(data, fullName, email);
+		
+		$.ajax({
+			type: "POST",
+			url : "/calculi/rest/auth/addnewuser",
+			data : {
+				'fullName': fullName,
+				'email' : email,
+				'role' : 'client'
+			}
+		}).done(function(response)  {
+			console.log(response);
+			if(response.success== false) {
+				console.log(response);
+			}else {
+				afterCreateUser(response.success);	
+			}
+			
+		}).fail(function(response)  {
+			alert("error" + response.success);
+		});
+	}
+	
+
+
+	
+	
 
 
 	// $.post( "/calculi/rest/briefing/newBriefing", { briefingData: dataStringify })

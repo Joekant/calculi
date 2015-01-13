@@ -47,8 +47,6 @@ class BriefingController extends REST {
 			$request = $this->_request;
 
 			$briefingData = $request['briefingData'];
-			
-
 			$manager = new BriefingManager;
 			$result  = $manager->newBriefing($userId, $briefingData);
 
