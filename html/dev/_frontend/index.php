@@ -28,7 +28,7 @@
 
 	error_reporting(E_ERROR | E_WARNING | E_PARSE);
 // session_start();
-// include('dbconnect.php');
+	// include('dbconnect.php');
 	include('../php/logic/_frontend/logic_index.php');
 	?>
 
@@ -36,7 +36,7 @@
 	<script src="../js/foundation.min.js"></script>
 	<script src="../js/vendor/fastclick.js"></script>
 	<script src="../js/vendor/placeholder.js"></script>
-	
+
 	<!-- endbuild -->
 
 	<script>

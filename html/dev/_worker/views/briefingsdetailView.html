@@ -8,7 +8,7 @@
 
     <table>
       <tr>
-        <td width="250">Ausschreibungs-ID</td>
+        <td width="30%">Ausschreibungs-ID</td>
         <td ng-bind="meta.briefing_id"></td>
       </tr>
       <tr>
@@ -36,7 +36,7 @@
   <div class="large-9 columns table-border-left">
     <table>
       <tr>
-        <td>Unternehmen </td>
+        <td width="30%">Unternehmen </td>
         <td ng-bind="meta.general_briefing.general.company"></td>
       </tr>
       <tr>
@@ -72,12 +72,12 @@
   <div class="large-9 columns table-border-left">
     <table>
       <tr>
-        <td width="250">Eigenschaften</td>
+        <td width="30%">Eigenschaften</td>
         <td ng-bind="meta.general_briefing.design.characteristics"></td>
       </tr>
 
       <tr>
-        <td width="250">Concept</td>
+        <td>Concept</td>
         <td ng-bind="meta.general_briefing.design.concept"></td>
       </tr>
 
@@ -101,13 +101,13 @@
   <div ng-repeat="el in data" class="row briefing-summary">
     <br class="end">
 
-      <div class="large-3 columns">
+    <div class="large-3 columns">
       <h2>{{el.name}}</h2>
       <span ng-bind="el.cost" class="section-sum-money"></span><span ng-bind="el.time" class="section-sum-time"></span>
     </div>
     <div class="briefing-section large-9 columns table-border-left">
       <table calculator-value>
-        
+
         <tr ng-repeat="(key, value) in el.data">
           <td width="30%" style="text-transform: capitalize;">{{key}}</td>
           <td width="49%">{{value}}</td>
@@ -147,12 +147,12 @@
   <div class="large-3 columns">
     <div class="label primary-bg counter application-final-result">
       <span ng-bind="price" class="counter-value">0</span> (inkl. <span ng-bind="msw" class="mwst-part"></span> € MwSt.)
-      
+
       <div class="total-calculatet">
-        <span  ng-bind="totalTime" class="total-effort"></span> 
+        <span  ng-bind="totalTime" class="total-effort"></span>
         <span ng-bind = "pricePerHour" class="average-rate"></span>
       </div>
-      
+
       <div class="total-pauschal hide">Pauschalpreis</div>
 
     </div>
