@@ -1,5 +1,6 @@
-"use strict";
 Core.controller('ProfileCtrl', function ($scope, MyHTTP, $http, INIT) {
+	"use strict";
+
 	var param = "user/getmeta";
 	var updateParam = "user/updatepublicmeta";
 	var fileParam = "file/savefile";
@@ -38,8 +39,26 @@ Core.controller('ProfileCtrl', function ($scope, MyHTTP, $http, INIT) {
 	}
 
 	$scope.addReference = function(button) {
-		$scope.pub.references.push($scope.refTmp);
-		$scope.refTmp = {};
+		var formData = new FormData();
+		formData.append("file", $scope.refTmp.img[0].files[0]);
+
+		
+		
+		MyHTTP.postFile(fileParam, formData).success(function(data) {
+			
+			console.log(data);
+
+			if(data.fileName) {
+				$scope.refTmp.img = data.fileName,
+				$scope.pub.references.push($scope.refTmp);	
+				
+				$scope.refTmp = {};	
+			}
+
+			console.log($scope.pub);
+		
+		});
+
 
 
 		$(button.target).foundation('reveal', 'close');	
@@ -56,6 +75,8 @@ Core.controller('ProfileCtrl', function ($scope, MyHTTP, $http, INIT) {
 		var newPic = $(pic);
 		formData.append("file", newPic[0].files[0]);
 
+
+
 		MyHTTP.postFile(fileParam, formData).success(function(data) {
 			$scope.pub.general.picture =  data.fileName;
 				
@@ -65,17 +86,16 @@ Core.controller('ProfileCtrl', function ($scope, MyHTTP, $http, INIT) {
 	}
 
 	$scope.addThumbnail = function(pic) {
-		var formData = new FormData();
-		var newPic = $(pic);
-		console.log("hi");
-		formData.append("file", newPic[0].files[0]);
+		
+		$scope.refTmp.img = pic;
 
-		MyHTTP.postFile(fileParam, formData).success(function(data) {
+		
+		/*MyHTTP.postFile(fileParam, formData).success(function(data) {
 			$scope.pub.reference.push({
 				'picture' : data.fileName
 			});
 				
-		});
+		});*/
 	}
 
 

@@ -177,9 +177,12 @@
 				<h1>Referenzen</h1>
 				<a href="" data-reveal-id="add-reference" class="button green-bg half-margin"><i class="fa fa-plus fa-fw"></i></a>
 				<div id="profile-references">
-					<div class="medium-4 columns reference-item">
+					<div ng-repeat="el in pub.references" class="medium-4 columns reference-item">
 						<a href="" data-reveal-id="add-reference">
-							<img src="http://lorempixel.com/300/300/people" alt="">
+							
+    							<img ng-src="{{picFolder}}{{el.img}}" alt="">	
+							
+							
 						</a>
 					</div>
 				</div>
@@ -188,19 +191,19 @@
 					<div class="row">
 						<div class="medium-3 columns">
 							<label for="i_name">Projektname</label>
-							<input ng-model="pub.refTmp.name" type="text" name="i_name" id="i_name" placeholder="Calculi">
+							<input ng-model="refTmp.name" type="text" name="i_name" id="i_name" placeholder="Calculi">
 						</div>
 						<div class="medium-3 columns">
 							<label for="i_url">URL</label>
-							<input ng-model="pub.refTmp.url" type="text" name="i_url" id="i_url" placeholder="http://calculi.at">
+							<input ng-model="refTmp.url" type="text" name="i_url" id="i_url" placeholder="http://calculi.at">
 						</div>
 
 						<div class="medium-2 columns">
 							<label for="i_date">Datum</label>
-							<input ng-model="pub.refTmp.date" type="text" name="i_date" id="i_date" placeholder="2014">
+							<input ng-model="refTmp.date" type="text" name="i_date" id="i_date" placeholder="2014">
 						</div>
 						<div class="medium-4 columns">
-							<input id="fileuploadss" onchange="angular.element(this).scope().addThumbnail(this)" type="file" name="filesss">
+							<input id="fileuploadss" custom-on-change="addThumbnail" type="file" name="filesss">
 							<a class="fileinput-button button padding-top">
 								Thumbnail wählen
 								<!-- The file input field used as target for the file upload widget -->
@@ -211,7 +214,7 @@
 					<div class="row">
 						<div class="medium-12 columns">
 							<label for="i_description">Beschreibung</label>
-							<textarea ng-model="pub.refTmp.description" type="text" name="i_description" id="i_description" rows="5" placeholder="Das Projekt wurde..."></textarea>
+							<textarea ng-model="refTmp.description" type="text" name="i_description" id="i_description" rows="5" placeholder="Das Projekt wurde..."></textarea>
 						</div>
 					</div>
 					<a class="close-reveal-modal">&#215;</a>
