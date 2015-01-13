@@ -159,7 +159,7 @@ $public_info = json_decode($json, true);
             </div> -->
           </div>
         </a>
-        <img src="http://lorempixel.com/300/300/<?php echo $pictures[$i] ?>/" alt="">
+        <img src="http://lorempixel.com/100/500/<?php echo $pictures[$i] ?>/" alt="">
       </div>
       <?php } ?>
 
