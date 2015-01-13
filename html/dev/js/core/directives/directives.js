@@ -51,6 +51,23 @@ Core.directive('navmenu', function($location, $routeParams) {
 
 });
 
+Core.directive('logout', function(MyHTTP, $location) {
+	return {
+		link : function(scope, element, attr) {
+			var logoutPath = "auth/logout";
+			
+			element.bind("click", function() {
+				MyHTTP.get(logoutPath).
+					then(function(result) {
+						if(result.success) {
+							$location.path("/calculi/html/dev/_frontend/index.php?page=login");
+						}
+					});
+			});
+		} 
+	}
+});
+
 
 Core.directive('noclick', function() {
 	'use strict'

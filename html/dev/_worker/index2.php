@@ -4,10 +4,12 @@
   
   if($_SESSION["role"] == "worker") {
     $worker = "true";
-  }else {
+  }else if($_SESSION["role"] == "client") {
 
     $worker = "false";
     $class="four-up";
+  } else {
+    header("Location:/calculi/html/dev/_frontend/");
   }
 
   
@@ -101,7 +103,7 @@
       <li><a href data-reveal-id="feedbackmodal"><span data-tooltip aria-haspopup="true" class="has-tip" title="Feedback"><i class="fa fa-comment fa-fw"></i></span></a></li>
 
       <li><a href  data-dropdown="drop1" aria-controls="drop1" ><span data-tooltip aria-haspopup="true" class="has-tip" title="Abmelden"><i class="fa fa-lock fa-fw"></i></span></a></li>
-      <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
+      <ul id="drop1" logout data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
         <li><a href="../_frontend">Abmelden</a></li>
       </ul> 
 
