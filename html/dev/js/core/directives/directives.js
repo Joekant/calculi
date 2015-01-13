@@ -69,6 +69,31 @@ Core.directive('logout', function(MyHTTP, $location) {
 });
 
 
+Core.directive('dateformat', function($timeout) {
+	return {
+		link : function(scope, element, attr) {
+			var dateFilter = function(d) {
+				if(d < 30) return false;
+				var startDate = new Date;
+				var endDate = new Date(d);
+				
+				var oneDay = 24*60*60*1000;
+				
+
+				var diffDays = Math.round(Math.abs((startDate.getTime() - endDate.getTime())/(oneDay)));
+				element.find("span").html(diffDays);
+			}
+			scope.$watch(function() {
+				
+				dateFilter(element.find("span").text());
+			});
+			/*var el = ;
+			console.log(el);*/
+		}
+	}
+})
+
+
 Core.directive('noclick', function() {
 	'use strict'
 	return {

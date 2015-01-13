@@ -22,11 +22,11 @@
 		<div class="icon-submenu medium-10 columns">
 			<div class="tabs-content">
 				<div class="content active" id="panel1">
-					<h1>Allgemeine Daten</h1>
+					<h1>Allgemeine Datensss</h1>
 					<div class="row">
 						<div class="large-4 columns">
 							<div id="dropzone" class="fade well">
-								<div id="upload-pic">
+								<div style="overflow:hidden;" id="upload-pic">
 									<!-- <img src="http://lorempixel.com/250/200/people/" alt=""> -->
 								</div>
 								<a class="fileinput-button">

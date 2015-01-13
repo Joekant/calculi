@@ -31,10 +31,10 @@
 
 
 		public function getPublicInfo($userId) {
-			$query = "SELECT public_info, country FROM users_meta WHERE user_id = '$userId'";
+			$query = "SELECT users_meta.public_info, users_meta.country, users.full_name FROM users_meta INNER JOIN users ON users.user_id = users_meta.user_id WHERE users_meta.user_id = '$userId'";
 			$result = mysqli_query($this->db, $query);
 			$row = mysqli_fetch_object($result);
-			return $row->public_info;
+			return $row;
 
 		}
 

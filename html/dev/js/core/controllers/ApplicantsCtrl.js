@@ -2,6 +2,8 @@ Core.controller('ApplicantsCtrl', function ($scope, MyHTTP, $routeParams, $locat
 	var path = "application/applicants";
 	var sendPath = "project/accept";
 	$scope.data = [];
+
+
 	
 	MyHTTP.get(path).
 		then(function(result) {
@@ -16,9 +18,12 @@ Core.controller('ApplicantsCtrl', function ($scope, MyHTTP, $routeParams, $locat
 	var getNumberReferences = function(data) {
 		var ref = {};
 		var wb = {};
+
 		for(var n = 0; n < data.length; n ++) {
-			if(!data[n].public_info.hasOwnProperty('references')) continue;
+			if(data[n].public_info.length == 0 ) continue;
+			
 			ref = JSON.parse(data[n].public_info);
+		
 			if(ref.hasOwnProperty("references") && ref.references.length > 0) {
 				data[n].numberReferences = ref.references.length;
 			}

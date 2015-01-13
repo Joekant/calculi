@@ -25,10 +25,10 @@
 					<th><i class="fa fa-edit fa-fw"></i></th>
 				</tr>
 				<tr ng-repeat="el in data">
-					<td ng-bind="el.general_briefing.general.company">T-Mobile</td>
+					<td ng-bind="el.general_briefing.general.company"></td>
 					<td>{{el.estimated_price}} €</td>
 					<td>{{el.effort}}</td>
-					<td>{{el.expire_at}}</td>
+					<td dateformat><span>{{el.expire_at}}</span></td>
 					<td><span class="label default">{{el.status}}</span></td>       
 				</tr>
 				<!-- <tr>
@@ -75,19 +75,19 @@
 			<div ng-repeat="el in data" class="medium-4 columns">
 				<div class="project">
 					<div  class="project-name ">
-						<h2 ng-bind="el.general_briefing.general.company">Entasia</h2>
+						<h2 ng-bind="el.general_briefing.general.company"></h2>
 					</div>
 					<div class="project-content ">
 						<div class="row text-center">
 							<div class="medium-4 columns"><i class="fa fa-euro fa-fw"></i><br>{{el.estimated_price}}</div>
 							<div class="medium-4 columns"><i class="fa fa-dashboard fa-fw"></i><br>{{el.effort}}</div>
-							<div class="medium-4 columns"><i class="fa fa-clock-o fa-fw"></i><br>{{el.expire_at | date:'yyyy'}}</div>
+							<div class="medium-4 columns" dateformat><i class="fa fa-clock-o fa-fw"></i><br><span>{{el.expire_at}}</span> Tage</div>
 						</div>
 					</div>
 					<div ng-hide="worker" class="project-actions ">
 						<div class="button-bar">
 							<ul class="button-group">
-								<li><a href="#" class="small button green-bg"><i class="fa fa-check fa-fw"></i></a></li>
+								<li><a href="../_client/index.php?page=finishproject" class="small button green-bg"><i class="fa fa-check fa-fw"></i></a></li>
 								<li><a href="#" class="small button red-bg"><i class="fa fa-remove fa-fw"></i></a></li>
 							</ul>
 						</div>

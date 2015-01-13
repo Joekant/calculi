@@ -1,9 +1,11 @@
 <?php  
   session_start();
   $class = "five-up";
+  $userId = 0;
   
   if($_SESSION["role"] == "worker") {
     $worker = "true";
+
   }else if($_SESSION["role"] == "client") {
 
     $worker = "false";
@@ -11,6 +13,10 @@
   } else {
     header("Location:/calculi/html/dev/_frontend/");
   }
+
+  
+    $userId = $_SESSION["userId"];
+  
 
   
   
@@ -54,6 +60,7 @@
 
   <script>
     var WORKER = <?php echo $worker; ?>;
+    var ID = <?php echo $userId; ?>;
   </script>
 
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">

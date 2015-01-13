@@ -6,10 +6,11 @@
 //   header('Location: http://calculi.at');
 // }
 
-$userid = $_GET['userid'];
+$userid = $_GET['userId'];
 // $userid = 1;
-$json = file_get_contents("http://localhost:8091/calculi/rest/user/getpublicinfo?userId=".$userid);
-$public_info = json_decode($json, true);
+$json = file_get_contents("http://localhost/calculi/rest/user/getpublicinfo?userId=".$userid);
+$data = json_decode($json, true);
+$public_info = json_decode($data["public_info"],true);
 ?>
 
 <main>
@@ -22,12 +23,12 @@ $public_info = json_decode($json, true);
       </div>
       <div id="profile-head" class="dark-bg">
         <div class="text-center">
-          <h1>Philipp Doblhoff</h1>
+          <h1><?php echo $data["full_name"]; ?></h1>
           <div id="website"><a href="http://<?php echo ($public_info["general"]["website"]); ?>"><?php echo ($public_info["general"]["website"]); ?></a></div>
         </div>
         <div class="row">
           <div class="medium-3 columns picture">
-            <img src="../img/thumb.jpeg" alt="">
+            <img src="/calculi/rest/uploads/<?php echo $public_info["general"]["picture"] ?>" alt="">
           </div>
           <div id="description" class="medium-9 columns">
             <?php echo ($public_info["general"]["description"]); ?>

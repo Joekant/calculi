@@ -7,8 +7,6 @@ if(isset($_GET["pass"])) {
 	$pass = $_GET['pass'];	
 }
 
-
-
 ?>
 <main>
 	<div class="row text-center half-padding">

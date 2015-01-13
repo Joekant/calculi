@@ -5,6 +5,8 @@ Core.controller('ProfileCtrl', function ($scope, MyHTTP, $http, INIT) {
 	var updateParam = "user/updatepublicmeta";
 	var fileParam = "file/savefile";
 
+	$scope.userId = ID;
+
 	$scope.picFolder = INIT.UPLOAD_DIR;
 
 	$scope.pub = {
