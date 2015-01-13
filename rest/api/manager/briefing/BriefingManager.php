@@ -8,16 +8,16 @@ class BriefingManager {
 	public function getBriefings() {
 		$dao = new BriefingDao;
 		$result = $dao->getBriefings();
-		
+
 		for($n = 0; $n < count($result); $n++) {
-		
+
 			$generalBriefing = json_decode($result[$n]['general_briefing'], JSON_UNESCAPED_SLASHES);
-		
+
 			$result[$n]['general_briefing'] = $generalBriefing;
 
 
 		}
-		//print_r($result);		
+		//print_r($result);
 		return $result;
 	}
 
@@ -34,8 +34,9 @@ class BriefingManager {
 
 	public function newBriefing( $userId, $briefingData ) {
 		$dao = new BriefingDao;
+		$data = json_decode($briefingData, true);
 
-		$this->validateBriefing($briefingData);
+		$this->validateBriefing($data);
 
 		$now = date("Y-m-d H:i:s");
 		$nextWeek = time() + (7 * 24 * 60 * 60);
@@ -46,13 +47,13 @@ class BriefingManager {
 		$status = "active";
 		$expire_at = date("Y-m-d H:i:s", $nextWeek);
 
-		$result = $dao->newBriefing($userId, $briefingData,$country, $state, $status, $effort, $expire_at, $now);
+		/*$result = $dao->newBriefing($userId, $briefingData,$country, $state, $status, $effort, $expire_at, $now);*/
 
-		return $result;
+		/*return $result;*/
 	}
 
 	private function validateBriefing($briefingData) {
-		$data = json_decode($briefingData, true);
+
 
 		// $name =
 		// $email =

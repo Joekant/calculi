@@ -49,26 +49,37 @@ function postToServer() {
 		} else if(temp[0].type == "textarea" ) {
 			data[temp.data("category")][temp.attr("name")] = temp.text();
 		} else if (temp[0].type == "select-one" ) {
-			console.log(temp, temp.val());
+			// console.log(temp, temp.val());
 			data[temp.data("category")][temp.data("name")] = temp.val();
 		}
 	}
 
 	var dataStringify = JSON.stringify(data);
 	// console.log(dataStringify);
-	console.log(data);
+	// console.log(data);
 
-	$.post( "/calculi/rest/briefing/newBriefing", { briefingData: dataStringify })
-	.done(function( response ) {
-		console.log(response)
-		if (response.success == "true") {
-			// console.log("briefing eingetragen")
-			window.location = "/calculi/html/dev/_frontend/index.php?page=briefing_s";
-		}
-		else {
-			alert("error" + response.success)
-			// $(".login-error").slideDown("slow")
-		}
+	$.ajax({
+		type: "POST",
+		url : "/calculi/rest/briefing/newBriefing",
+		briefingData: dataStringify
+	}).done(function(response)  {
+		window.location = "/calculi/html/dev/_frontend/index.php?page=briefing_s";
+		// console.log(response)
+	}).fail(function(response)  {
+		alert("error" + response.success)
 	});
 
-}
+
+	// $.post( "/calculi/rest/briefing/newBriefing", { briefingData: dataStringify })
+	// .done(function( response ) {
+	// 	console.log(response)
+	// 	if (response.success == "true") {
+	// 		// console.log("briefing eingetragen")
+	// 		window.location = "/calculi/html/dev/_frontend/index.php?page=briefing_s";
+	// 	}
+	// 	else {
+	// 		alert("error" + response.success)
+	// 		// $(".login-error").slideDown("slow")
+	// 	}
+};
+
