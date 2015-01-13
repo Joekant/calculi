@@ -59,10 +59,17 @@
 
 		public function updatemeta() {
 			$manager = new UserManager;
-			$userId = 1;
+			
 			$result = $manager->updateMeta($userId, $this->_request['userInfo'] );
 			if($result == true) $this->response( array('success'=> 'true'), 200);
 			else $this->response( array('success'=> 'false'), 200);
+		}
+
+		public function updatepublicmeta() {
+			$userId = $_SESSION['userId'];
+			$manager = new UserManager;
+			$result = $manager->updatePublicMeta($userId, $this->_request['userInfo'] );
+			$this->response( array('success'=> $result), 200);			
 		}
 
 		public function getpublicinfo() {

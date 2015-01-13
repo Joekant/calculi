@@ -1,15 +1,18 @@
 <?php  
   session_start();
   $class = "five-up";
+  
   if($_SESSION["role"] == "worker") {
-    $worker = true;
+    $worker = "true";
   }else {
-    $worker = false;
+
+    $worker = "false";
     $class="four-up";
   }
+
+  
   
 ?>
-
 <!doctype html>
 <html class="no-js" lang="en" ng-app="Core">
 <head>
@@ -42,9 +45,14 @@
   <script src="../js/core/controllers/BriefingsCtrl.js"></script>  
   <script src="../js/core/controllers/ApplicationsCtrl.js"></script>  
   <script src="../js/core/controllers/CalculatorCtrl.js"></script>  
+  <script src="../js/core/controllers/ProjectsCtrl.js"></script>  
 
   <!-- App Controller Client -->
   <script src="../js/core/controllers/ApplicantsCtrl.js"></script>  
+
+  <script>
+    var WORKER = <?php echo $worker; ?>;
+  </script>
 
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Lato:100,200,300,400,700' rel='stylesheet' type='text/css'>

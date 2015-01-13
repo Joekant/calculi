@@ -59,7 +59,7 @@
 			return $result;
 		}
 
-		public function updateMeta($userId = 1, $userInfo) {
+		public function updateMeta($userId, $userInfo) {
 			$info = json_decode($userInfo);
 			$public_info = json_encode($info->public_info,JSON_UNESCAPED_SLASHES);
 			$private_info = json_encode($info->private_info,JSON_UNESCAPED_SLASHES);
@@ -68,6 +68,15 @@
 			$query = "UPDATE users_meta SET public_info='$public_info', private_info = '$private_info' WHERE user_id = '$userId'";
 			$result = mysqli_query($this->db, $query);
 			
+			return $result;
+
+		}
+
+		public function updatePublicMeta($userId, $userInfo) {
+			$publicInfo = json_encode($userInfo, JSON_UNESCAPED_SLASHES);
+			//print_r($publicInfo);
+			$query = "UPDATE users_meta SET public_info='$publicInfo' WHERE user_id = '$userId'";
+			$result = mysqli_query($this->db, $query) or die( mysqli_error($this->db));
 			return $result;
 
 		}

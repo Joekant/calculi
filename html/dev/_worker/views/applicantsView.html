@@ -11,17 +11,18 @@
         <th width="50px"><i class="fa fa-compass fa-fw"></i></th>
         <th width="50px"><i class="fa fa-legal fa-fw"></i></th>
         <th width="100px"><i class="fa fa-euro fa-fw"></i></th>
-        
+        <th width="80px"><i class="fa fa-heart fa-fw"></i></th>
         
       </tr>
       
-      <tr ng-repeat="el in data" ng-click="" class="clickable">
+      <tr ng-repeat="el in data" ng-click="send(el)" class="clickable">
         <td>{{el.briefing_id}}</td>
         <td>{{el.full_name}}</td>
         <td>{{el.website}}</td>
         <td>{{el.country}}</td>
         <td>{{el.numberReferences}}</td>
         <td>{{el.estimated_price}}</td>
+        <td>{{el.status}}</td>
         <!-- <td>{{el.expire_at}}</td>   -->
         <!-- <td>
           <span class="label grey-bg">{{el.status}}</span>

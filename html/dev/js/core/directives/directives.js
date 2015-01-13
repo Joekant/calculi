@@ -2,8 +2,7 @@ Core.directive('navmenu', function() {
 	return {
 		
 		link : function(scope, element, attr) {
-			
-			if(attr.role) {
+			if(attr.role == "true") {
 				scope.items = [
 					{'title' : 'Übersicht', 'class' : 'fa fa-dashboard fa-fw', 'url' : 'dashboard'},
 					{'title' : 'Profil', 'class' : 'fa fa-user fa-fw', 'url' : 'profile'},
@@ -15,7 +14,7 @@ Core.directive('navmenu', function() {
 				scope.items = [
 					{'title' : 'Übersicht', 'class' : 'fa fa-dashboard fa-fw', 'url' : 'dashboard'},
 					/*{'title' : 'Briefings', 'class' : 'fa fa-pencil fa-fw', 'url' : 'briefings'},*/
-					{'title' : 'Bewerber', 'class' : 'fa fa-wrench fa-fw', 'url' : 'applicants'},
+					{'title' : 'Bewerber', 'class' : 'fa fa-pencil fa-fw', 'url' : 'applicants'},
 					{'title' : 'Projekte', 'class' : 'fa fa-wrench fa-fw', 'url' : 'projects'},
 					{'title' : 'Einstellungen', 'class' : 'fa fa-cogs fa-fw', 'url' : 'settings'}
 				];
@@ -24,6 +23,21 @@ Core.directive('navmenu', function() {
 		}
 	};
 
+});
+
+Core.directive('foundationTab', function($document) {
+	return {
+		link : function(scope, element, attr) {
+			//console.log("hi");
+			
+			var a = element.find("a");
+			
+			a.bind("click", function(event,element) {
+				event.preventDefault();
+			});
+			
+		}
+	}
 });
 
 

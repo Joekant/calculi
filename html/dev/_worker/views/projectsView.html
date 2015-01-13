@@ -2,8 +2,8 @@
 	<div class="row padding-top">
 		<div class="medium-12 columns">
 			<div class="view-switch right show-for-medium-up">
-				<a href="#" class="active" id="link-boxed"><i class="fa fa-th fa-fw"></i></a>
-				<a href="#" id="link-list"><i class="fa fa-list-ul fa-fw"></i></a>
+				<a  class="active" id="link-boxed"><i class="fa fa-th fa-fw"></i></a>
+				<a id="link-list"><i class="fa fa-list-ul fa-fw"></i></a>
 			</div>
 			<div class="sort">
 				<a href="" class="sortbuttons"><i class="fa fa-recycle fa-fw"></i></a>
@@ -24,38 +24,39 @@
 					<th><i class="fa fa-clock-o fa-fw"></i></th>
 					<th><i class="fa fa-edit fa-fw"></i></th>
 				</tr>
-				<tr>
-					<td>T-Mobile</td>
-					<td>1600 €</td>
-					<td>97</td>
-					<td>2 Tage</td>
-					<td><span class="label default">abgeschlossen</span></td>       
+				<tr ng-repeat="el in data">
+					<td ng-bind="el.general_briefing.general.company">T-Mobile</td>
+					<td>{{el.estimated_price}} €</td>
+					<td>{{el.effort}}</td>
+					<td>{{el.expire_at}}</td>
+					<td><span class="label default">{{el.status}}</span></td>       
 				</tr>
-				<tr>
+				<!-- <tr>
 					<td>Entasia</td>
 					<td>1600 €</td>
 					<td>97</td>
 					<td>2 Tage</td>
 					<td>
 						<a href="#" <i="" class="fa fa-check fa-fw green-font"></a>
-						<a href="#" <i="" class="fa fa-remove fa-fw orange-font"></a></td>       
-					</tr>
-					<tr>
-						<td>Thomas Henn</td>
-						<td>1600 €</td>
-						<td>97</td>
-						<td>2 Tage</td>
-						<td><span class="label secondary">Abnahme ausständig</span></td>       
-					</tr>
+						<a href="#" <i="" class="fa fa-remove fa-fw orange-font"></a>
+					</td>       
+				</tr>
+				<tr>
+					<td>Thomas Henn</td>
+					<td>1600 €</td>
+					<td>97</td>
+					<td>2 Tage</td>
+					<td><span class="label secondary">Abnahme ausständig</span></td>       
+				</tr> -->
 				</tbody>
 			</table>
 
 		</div>
 		<div id="boxed-style">
-			<div class="medium-4 columns">
+			<!-- <div ng-repeat="el in data" class="medium-4 columns">
 				<div class="project">
 					<div class="project-name closed-header">
-						<h2>T-Mobile</h2>
+						<h2>{{el.general_briefing.general.compan}}</h2>
 					</div>
 					<div class="project-content closed-content">
 						<div class="row text-center">
@@ -70,20 +71,20 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="medium-4 columns">
+			</div> -->
+			<div ng-repeat="el in data" class="medium-4 columns">
 				<div class="project">
-					<div class="project-name ">
-						<h2>Entasia</h2>
+					<div  class="project-name ">
+						<h2 ng-bind="el.general_briefing.general.company">Entasia</h2>
 					</div>
 					<div class="project-content ">
 						<div class="row text-center">
-							<div class="medium-4 columns"><i class="fa fa-euro fa-fw"></i><br>2500</div>
-							<div class="medium-4 columns"><i class="fa fa-dashboard fa-fw"></i><br>94</div>
-							<div class="medium-4 columns"><i class="fa fa-clock-o fa-fw"></i><br>22 Tage</div>
+							<div class="medium-4 columns"><i class="fa fa-euro fa-fw"></i><br>{{el.estimated_price}}</div>
+							<div class="medium-4 columns"><i class="fa fa-dashboard fa-fw"></i><br>{{el.effort}}</div>
+							<div class="medium-4 columns"><i class="fa fa-clock-o fa-fw"></i><br>{{el.expire_at | date:'yyyy'}}</div>
 						</div>
 					</div>
-					<div class="project-actions ">
+					<div ng-hide="worker" class="project-actions ">
 						<div class="button-bar">
 							<ul class="button-group">
 								<li><a href="#" class="small button green-bg"><i class="fa fa-check fa-fw"></i></a></li>
@@ -93,7 +94,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="medium-4 columns">
+			<!--<div class="medium-4 columns">
 				<div class="project">
 					<div class="project-name closed-header">
 						<h2>Thomas Henn</h2>
@@ -113,7 +114,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 

@@ -8,7 +8,8 @@ Core.constant('INIT', {
    	'VIEW_URL' : '../_worker/views/',
 	'ASSETS_URL' : 'img/assets/',
 	'HOME' : '/',
-	'APP_PATH' : '/calculi/rest/'
+	'APP_PATH' : '/calculi/rest/',
+	'UPLOAD_DIR' : '/calculi/rest/uploads/'
 });
 
 Core.run(function ($rootScope) {
@@ -29,6 +30,7 @@ Core.config(function( $routeProvider, INIT ){
 	$routeProvider.when( '/calculator/:id', { "templateUrl" : INIT.VIEW_URL + "briefingsdetailView.html", "controller" : "CalculatorCtrl" } );
 
 	$routeProvider.when( '/applicants', { "templateUrl" : INIT.VIEW_URL + "applicantsView.html", "controller" : "ApplicantsCtrl" } );
+	$routeProvider.when( '/projects', { "templateUrl" : INIT.VIEW_URL + "projectsView.html", "controller" : "ProjectsCtrl" } );
 
 	/*$routeProvider.when( '/browse', { "templateUrl" : INIT.VIEW_URL + "browseView.html", "controller" : "browseCtrl" } );
 	$routeProvider.when( '/browse/:id', { "templateUrl" : INIT.VIEW_URL + "browseView.html", "controller" : "browseCtrl" } );*/

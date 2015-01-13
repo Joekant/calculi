@@ -11,7 +11,9 @@
 		
 		public function __construct(){
 			session_start();
+			
 			$this->inputs();
+
 		}
 		
 		/*public function get_referer(){
@@ -82,9 +84,9 @@
 		
 		private function inputs(){
 			switch($this->get_request_method()){
+				
 				case "POST":
-					
-					if(count($_POST) == 0 ) {
+					if(count($_POST) == 0 ) {						
 						$arr  = json_decode(file_get_contents("php://input"), true);
 						$this->_request = $this->cleanInputs($arr);
 

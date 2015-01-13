@@ -32,6 +32,16 @@ Core.factory('MyHTTP', function(INIT, $http,$q) {
                 });  
         },
 
+        postFile : function(url, file) {
+            return $http.post(INIT.APP_PATH + url, file, {
+                        
+                transformRequest: function(data, headersGetterFunction) {
+                    return data;
+                },
+                headers: { 'Content-Type': undefined }
+                });
+        },
+
         post : function(url, body) {
             if (body == undefined) body = '';
             return $http({
@@ -50,3 +60,9 @@ Core.factory('MyHTTP', function(INIT, $http,$q) {
         }
     };
 }); //End MyHTTP
+
+Core.factory('Date', function(INIT) {
+    return {
+
+    }
+});

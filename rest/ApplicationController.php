@@ -16,7 +16,7 @@
 			$workerId = $_SESSION['userId'];
 			$req = $this->_request;
 			$status = "pending";
-			
+
 			
 			if($_SESSION['role'] == 'worker' ) {
 				$manager = new ApplicationManager;
@@ -67,6 +67,7 @@
 				$manager  = new ApplicationManager;
 				$result = $manager->applicants($userId);
 				$this->response(array($result), 200);	
+				
 			} else {
 				$this->response(array('success' => 'false'), 200);	
 			}
