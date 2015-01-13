@@ -63,8 +63,8 @@ function postToServer() {
 		url : "/calculi/rest/briefing/newBriefing",
 		briefingData: dataStringify
 	}).done(function(response)  {
-		window.location = "/calculi/html/dev/_frontend/index.php?page=briefing_s";
-		// console.log(response)
+		// window.location = "/calculi/html/dev/_frontend/index.php?page=briefing_s";
+		console.log(response)
 	}).fail(function(response)  {
 		alert("error" + response.success)
 	});

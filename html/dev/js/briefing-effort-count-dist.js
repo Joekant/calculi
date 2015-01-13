@@ -1,0 +1,1 @@
+var $EffortInputs=$(".has-effort");$EffortInputs.change(function(){var t=0;$EffortInputs.each(function(){if($(this).is(":checked")){var f=$(this).data("effort");console.log(f),t+=f}}),t>100&&(t=100),$(".TotalEffortDiv").animate({width:t+"%"},1e3),$(".EffortCount").text("Aufwand (~"+t+"%)")}),$EffortInputs.first().change();

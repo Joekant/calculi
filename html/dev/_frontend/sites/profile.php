@@ -6,8 +6,6 @@
 //   header('Location: http://calculi.at');
 // }
 
-
-
 $userid = $_GET['userid'];
 // $userid = 1;
 $json = file_get_contents("http://localhost:8091/calculi/rest/user/getpublicinfo?userId=".$userid);

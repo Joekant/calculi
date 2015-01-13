@@ -10,7 +10,7 @@
       </a>
       <?php
     }
-    ?>  
+    ?>
   </div>
 </header>
 <header class="show-for-small-only-up hide-for-large-up">
@@ -39,7 +39,7 @@
   </nav>
 </header>
 
-<?php 
+<?php
 if (isset($_GET['popup_message'])) {
   $icon = $_GET['popup_icon'];
   $message = $_GET['popup_message'];
@@ -52,7 +52,7 @@ if (isset($_GET['popup_message'])) {
   echo '
   <div class="popup-message '.$color.'-bg" id="popup">
     <i class="fa fa-'.$icon.' fa-fw"></i>
-    '.$message, $link.' 
+    '.$message, $link.'
   </div>
 
   <script>
@@ -60,5 +60,5 @@ if (isset($_GET['popup_message'])) {
     popup_container.className = popup_container.className + " active";
   </script>
   ';
-} 
+}
 ?>
